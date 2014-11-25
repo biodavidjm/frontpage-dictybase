@@ -1,0 +1,83 @@
+[
+    {
+        "main": "Genomes",         
+        "submain": {
+            "D. discoideum": "discoideum",
+            "D. fasciculatum": "fasciculatum",
+            "D. purpureum": "purpureum",
+            "P. pallidum": "pallidum"
+        }
+    }, 
+    {
+        "main": "DictyAccess", 
+        "submain": {
+            "Genome Eye View": "Genome_Eye_View",
+            "Genomic statistics": "Genomic_statistics",
+            "Annotations": "Annotations",
+            "Ontology": "Ontology",
+            "Phylogeny": "Phylogeny"
+        }
+    }, 
+    {
+        "main": "Tools", 
+        "submain": {
+            "DictyMine": "DictyMine",
+            "Signaling Pathways": "Signaling_Pathways",
+            "Genome Browser": "Genome_Browser",
+            "BLAST": "BLAST",
+            "ID Converter": "ID Converter",
+            "dictyMart": "dictyMart",
+            "Textpresso": "Textpresso",
+            "Biochemical Pathways": "Biochemical_Pathways",
+            "Third Party Tools": "Third_Party_Tools"
+        }
+    }, 
+    {
+        "main": "Stock Center", 
+        "submain": {
+            "Home": "Home",
+            "About SC": "About_SC",
+            "Search SC": "Search SC",
+            "Order": "Order",
+            "Deposit": "Deposit",
+            "Strain Catalog": "Strain_Catalog",
+            "Plasmid Catalog": "Plasmid_Catalog",
+            "Additional Materials": "Additional_Materials",
+            "SC FAQ": "SC_FAQ",
+            "Other SC": "Other_SC"
+        }
+    }, 
+    {
+        "main": "Research", 
+        "submain": {
+            "Learn about Dicty": "Learn_about_Dicty",
+            "Teaching Protocols": "Teaching_Protocols",
+            "Techniques": "Techniques",
+            "Anatomy Ontology": "Anatomy_Ontology",
+            "Mutant Phenotypes": "Mutant_Phenotypes",
+            "HTP Phenotyping at Princeton": "HTP_Phenotyping_at_Princeton",
+            "Codon Bias Table": "Codon_Bias_Table",
+            "Nomenclature Guidelines": "Nomenclature_Guidelines",
+            "Axenic Strains History": "Axenic_Strains_History",
+            "Franke Dicty Reference Library": "Franke_Dicty_Reference_Library",
+            "Genome Resources": "Genome_Resources"
+        }
+    },
+    {
+        "main": "Community", 
+        "submain": {
+            "Submit an Abstract": "Submit_an_Abstract",
+            "Dicty News": "Dicty_News",
+            "Listserv Archive": "Listserv_Archive",
+            "Colleagues profiles": "Colleagues_profiles",
+            "Dicty Anual Conference": "Dicty_Anual_Conference",
+            "Job Opportunities": "Job_Opportunities",
+            "History": "History",
+            "DictyLabs web": "DictyLabs_web",
+            "Pictures/Videos": "Pictures_Videos",
+            "dictyArt": "dictyArt",
+            "Useful Links": "Useful_Links",
+            "Virtual Library": "Virtual_Library"
+        }
+    }
+]
