@@ -21,8 +21,8 @@ angular
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        templateUrl: 'views/mainFrontpage.html',
+        controller: 'MainFrontpageCtrl'
       })
       .when('/about', {
         templateUrl: 'views/about.html',
@@ -32,7 +32,11 @@ angular
         templateUrl: 'views/contact.html',
         controller: 'ContactCtrl'
       })
-      .otherwise({
-        redirectTo: '/'
+      .otherwise ({
+        templateUrl: 'views/notyet.html',
+        controller: 'NotYet'
       });
+      // .otherwise({
+      //   redirectTo: 'views/notyet.html'
+      // });
   });

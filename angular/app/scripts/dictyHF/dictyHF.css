@@ -1,19 +1,20 @@
-/* app css stylesheet */
+/* dictyHeaderFooter css stylesheet */
 
 .dictyHeader {
     min-width: 320px;
     text-align: center;
-    padding-bottom: 10px;
-}
-
-.dictyHeader > .container {
-    max-width: 1000px;
+    margin-bottom: 5px;
 }
 
 .dictyHeader > .menuContainer > .container {
-    max-width: 1000px;
     padding-left: 0px;
 }
+
+/*Footer Rollover effects*/
+.dictyHeader > a:link { color: #D8D8D8; text-decoration: none }
+.dictyHeader > a:active { color: #D8D8D8; text-decoration: none }
+.dictyHeader > a:visited { color: #D8D8D8; text-decoration: none }
+.dictyHeader > a:hover { color: white; text-decoration: underline;}
 
 /*HEADER details*/
 
@@ -43,7 +44,9 @@
     padding-bottom: 5px;
 }
 
+
 /*SEARCH BOXES*/
+
 .searchBoxSpace {
 /*    border-style: solid;
     border-color: green;    */
@@ -72,40 +75,28 @@
 }
 
 
-
 /*HEADER NAVIGATION BAR CUSTOMIZED*/
 
 .menuContainer {
     background-color: #15317E;
-    opacity: 0.9;
-    z-index: 10;
 }
 
-/*Fix the navigation bar when scrolling down*/
-/*First version*/
-#nav.affix {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    min-height:50px;
+.menuContainer > .container {
+    /*Needed to keep the menu on top of the divs*/
+    position: relative;
 }
-
-
 /*CUSTOMIZE DEFAULT PARAMETERS*/
 /* navbar */
 .navbar-default {
     background-color: #15317E;
-    opacity: 0.9;
     border-style: none;
     margin:0px;
 }   
 /* title */
 .navbar-default .navbar-brand {
-    color: fuchsia;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
-    color: pink;
 }
 /* link */
 .navbar-default .navbar-nav > li > a {
@@ -197,31 +188,29 @@
     }
 }
 
-
 /*FOOTER DETAILS*/ 
 .dictyFooter {
+    margin-top: 5px;
     min-width:320px;
     padding-bottom: 20px;
 
     /*BACKGROUND COLOR*/
-    background: #000099;
-    background: linear-gradient(#000099, #0099FF); /* Standard syntax */
-    background: -webkit-linear-gradient(#000099, #0099FF); /*Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(#000099, #0099FF);  /*Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(#000099, #0099FF);  /*Firefox 3.6 to 15 */
-}
-
-.dictyFooter > .container {
-    max-width: 1000px;
+    background: #15317E;
+    background: linear-gradient(#15317E, #0099FF); /* Standard syntax */
+    background: -webkit-linear-gradient(#15317E, #0099FF); /*Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#15317E, #0099FF);  /*Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#15317E, #0099FF);  /*Firefox 3.6 to 15 */
 }
 
 .dictyFooter > .col-xs-12 > .footMenuSupport {
     text-align: left;
 }
 
-.footPadding {
-    padding-right: 0px;
-}
+/*Footer Rollover effects*/
+.dictyFooter > a:link { color: #D8D8D8; text-decoration: none }
+.dictyFooter > a:active { color: #D8D8D8; text-decoration: none }
+.dictyFooter > a:visited { color: #D8D8D8; text-decoration: none }
+.dictyFooter > a:hover { color: white; text-decoration: underline;}
 
 .footMenus {
     font: 14px helvetica,arial,sans-serif;
@@ -243,13 +232,6 @@
     color: #D8D8D8;
     padding-top: 8px;
 }
-
-
-/*Footer Rollover effects*/
-a:link { color: #D8D8D8; text-decoration: none }
-a:active { color: #D8D8D8; text-decoration: none }
-a:visited { color: #D8D8D8; text-decoration: none }
-a:hover { color: white; text-decoration: underline;}
 
 
 /* Responsive: define what to do on every screen size */
@@ -291,58 +273,4 @@ a:hover { color: white; text-decoration: underline;}
         float: none;
         margin-right: 0;
     }
-}
-
-
-/*TESTING TEXT. TO DELETE EVENTUALLY*/ 
-
-/*MAIN BODY*/
-
-.theCenter {
-/*    border: 10px;
-    border: 10px solid black;*/
-    overflow: scroll;
-}
-.panelBlack {
-    height: 300px;
-    background-color: #0041C2;
-    color: white;
-    border: 10px solid white;
-}
-.panelBlue {
-    height: 300px;
-    line-height: 200px;
-    background-color: #15317E;
-    color: white;
-    border: 10px solid white;
-    vertical-align: middle;
-}
-.panelGreen {
-    height: 300px;
-    background-color: #2B547E;
-    color: white;
-    border: 10px solid white;
-}
-.panelShiny {
-    height: 300px;
-    background-color: #1F45FC;
-    color: white;
-    border: 10px solid white;
-}
-
-
-
-/*Colors for screen sizes*/
-.cmedium {
-    color:green;
-}
-.csmall {
-    color:orange;
-}
-.cextra {
-    color:red;
-}
-.cimp{
-    /*color:#00CCCC;*/
-    text-shadow: 0px 0px 5px #FFFF66;
 }

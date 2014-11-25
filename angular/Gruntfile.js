@@ -304,11 +304,14 @@ module.exports = function (grunt) {
           dest: '<%= yeoman.dist %>',
           src: [
             '*.{ico,png,txt}',
-            '.htaccess',
+            // '.htaccess',
             '*.html',
             'views/{,*/}*.html',
             'images/{,*/}*.{webp}',
-            'fonts/*'
+            'fonts/*',
+            //DJM
+            'scripts/dictyHF/*',
+            'styles/mainFrontpage.css'
           ]
         }, {
           expand: true,
