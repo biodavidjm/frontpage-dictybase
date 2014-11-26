@@ -2,8 +2,8 @@
     {
         "main": "Genomes",         
         "submain": {
-            "D. discoideum": "discoideum",
-            "D. fasciculatum": "fasciculatum",
+            "D. discoideum": "contact",
+            "D. fasciculatum": "about",
             "D. purpureum": "purpureum",
             "P. pallidum": "pallidum"
         }

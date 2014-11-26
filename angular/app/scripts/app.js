@@ -10,12 +10,7 @@
  */
 angular
   .module('dictyFrontpageApp', [
-    'ngAnimate',
-    'ngCookies',
-    'ngResource',
     'ngRoute',
-    'ngSanitize',
-    'ngTouch',
     'dictyHeaderFooterApp'
   ])
   .config(function ($routeProvider) {
@@ -32,11 +27,11 @@ angular
         templateUrl: 'views/contact.html',
         controller: 'ContactCtrl'
       })
+      .when('/download', {
+        templateUrl: 'views/download.html',
+        controller: 'DownloadCtrl'
+      })
       .otherwise ({
         templateUrl: 'views/notyet.html',
-        controller: 'NotYet'
       });
-      // .otherwise({
-      //   redirectTo: 'views/notyet.html'
-      // });
   });
