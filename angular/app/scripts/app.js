@@ -11,7 +11,8 @@
 angular
   .module('dictyFrontpageApp', [
     'ngRoute',
-    'dictyHeaderFooterApp'
+    'dictyHeaderFooterApp',
+    'frontImageApp'
   ])
   .config(function ($routeProvider) {
     $routeProvider
