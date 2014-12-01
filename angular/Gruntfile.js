@@ -311,6 +311,7 @@ module.exports = function (grunt) {
             'fonts/*',
             //DJM
             'scripts/dictyHF/*',
+            'scripts/frontImage/*',
             'styles/mainFrontpage.css'
           ]
         }, {

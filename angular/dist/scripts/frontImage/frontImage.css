@@ -1,0 +1,276 @@
+/* dictyHeaderFooter css stylesheet */
+
+.dictyHeader {
+    min-width: 320px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.dictyHeader > .menuContainer > .container {
+    padding-left: 0px;
+}
+
+/*Footer Rollover effects*/
+.dictyHeader > a:link { color: #D8D8D8; text-decoration: none }
+.dictyHeader > a:active { color: #D8D8D8; text-decoration: none }
+.dictyHeader > a:visited { color: #D8D8D8; text-decoration: none }
+.dictyHeader > a:hover { color: white; text-decoration: underline;}
+
+/*HEADER details*/
+
+.firstHeaderRow {
+    background-color: white;
+    /*border-style: solid;*/
+    /*border-color: grey;*/
+}
+
+.logoSpace {
+/*    border-style: solid;
+    border-color: #00CCFF;*/
+    vertical-align: bottom;
+}
+
+.cologoSpace {
+/*    border-style: solid;
+    border-color: red;*/
+    text-align: right;
+    height: 93;
+}
+
+.linksSpace {
+/*    border-style: solid;
+    border-color: green;*/
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+
+/*SEARCH BOXES*/
+
+.searchBoxSpace {
+/*    border-style: solid;
+    border-color: green;    */
+}
+.searchGeneSpace {
+    font-size: 10px;
+}
+
+.searchGuidedSpace {
+    font-size: 10px;
+}
+
+.searchNavbarDicty {
+    border-style: none;
+    margin:0px;
+    font-size: 10px;
+}
+
+.textboxclass {
+    height: 22px;
+    width: 80px;
+}
+
+.form-control-dicty {
+    font-size: 11px;
+}
+
+
+/*HEADER NAVIGATION BAR CUSTOMIZED*/
+
+.menuContainer {
+    background-color: #15317E;
+}
+
+.menuContainer > .container {
+    /*Needed to keep the menu on top of the divs*/
+    position: relative;
+}
+/*CUSTOMIZE DEFAULT PARAMETERS*/
+/* navbar */
+.navbar-default {
+    background-color: #15317E;
+    border-style: none;
+    margin:0px;
+}   
+/* title */
+.navbar-default .navbar-brand {
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: white;
+    font-size: 18px;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #CCFFCC;
+}
+/* I don't know what is this for */
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: yellow;
+    background-color: yellow;
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #333399;
+    background-color: white;
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: white;
+    border-bottom-color: fuchsia;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #CCFFCC;
+    border-bottom-color: red;
+}
+.navbar-default .navbar-nav > .open > a .caret, 
+.navbar-default .navbar-nav > .open > a:hover .caret, 
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+
+/*DROPDOWN MENU*/
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: black;
+    text-align: left;
+    font-size: 18px;
+    padding-top: 10px;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: white;
+    background-color: #000099;
+}
+
+/* mobile version */
+.navbar-default .navbar-toggle {
+    border-color: white;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: orange;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+@media(max-width:992px){
+    /*The font-size of the navigation menu in tablets has to be small to be in the same line*/
+    .navbar-default .navbar-nav > li > a {
+        color: white;
+        font-size: 18px;
+        padding-right: 2px;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #CCFFCC;
+        text-align: right;
+        font-size: 16px;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: orange;
+    }
+    /*FONT SIZE FOR THE NAVIGATION BIGGER LARGER FOR BETTER READ*/
+    .navbar-default .navbar-nav > li > a {
+        color: white;
+        font-size: 20px;
+    }
+}
+
+/*FOOTER DETAILS*/ 
+.dictyFooter {
+    margin-top: 5px;
+    min-width:320px;
+    padding-bottom: 20px;
+
+    /*BACKGROUND COLOR*/
+    background: #15317E;
+    background: linear-gradient(#15317E, #0099FF); /* Standard syntax */
+    background: -webkit-linear-gradient(#15317E, #0099FF); /*Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#15317E, #0099FF);  /*Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#15317E, #0099FF);  /*Firefox 3.6 to 15 */
+}
+
+.dictyFooter > .col-xs-12 > .footMenuSupport {
+    text-align: left;
+}
+
+/*Footer Rollover effects*/
+.dictyFooter > a:link { color: #D8D8D8; text-decoration: none }
+.dictyFooter > a:active { color: #D8D8D8; text-decoration: none }
+.dictyFooter > a:visited { color: #D8D8D8; text-decoration: none }
+.dictyFooter > a:hover { color: white; text-decoration: underline;}
+
+.footMenus {
+    font: 14px helvetica,arial,sans-serif;
+    color: #CCFFCC;
+    padding-bottom: 1px;
+    padding-top: 10px;
+    text-align: left;
+}
+
+.footMenuSupport {
+    font: 14px arial,sans-serif;
+    color: yellow;
+    padding-top: 25px;
+    text-align: left;
+}
+
+.footLinks {
+    font: 11px arial, sans-serif;
+    color: #D8D8D8;
+    padding-top: 8px;
+}
+
+
+/* Responsive: define what to do on every screen size */
+@media(min-width:1200px){
+
+}
+
+@media(max-width:767px){
+
+    .logoSpace {
+        padding-top: 10px;
+        /*Same space from the top on mobile devices*/
+    }
+    .linksSpace {
+        text-align: center;
+    }
+    .footLinks {
+        font: 12px arial, sans-serif;
+        color: #D8D8D8;
+        padding-top: 8px;
+        text-align: center;
+    }
+    .footMenus {
+        font: 16px helvetica,arial,sans-serif;
+        color: #CCFFCC;
+        padding-bottom: 1px;
+        padding-top: 30px;
+        text-align: center;
+    }
+
+    .footMenuSupport {
+        font: 16px arial,sans-serif;
+        color: yellow;
+        padding-top: 25px;
+        text-align: center;
+    }
+
+    .navbar-toggle {
+        float: none;
+        margin-right: 0;
+    }
+}
