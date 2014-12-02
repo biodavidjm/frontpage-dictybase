@@ -6,13 +6,11 @@
 .imageSpace {
   color: white;
 
-  height: 300px;
   background-color: black;
-  
+
   border: 10px solid white;
-  border-radius: 50px;
-  
 }
+
 
 /*TO ALL*/
 .borderIt {

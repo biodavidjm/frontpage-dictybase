@@ -11,6 +11,7 @@
 angular
   .module('dictyFrontpageApp', [
     'ngRoute',
+    'ngTouch',
     'dictyHeaderFooterApp',
     'frontImageApp'
   ])
