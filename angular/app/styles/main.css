@@ -40,6 +40,22 @@
 }
 
 
+/*GENOME CARD*/
+.genomeHeader {
+	text-align: center;
+}
+
+.mainCard {
+	text-align: left;
+	width: 400px;
+	background-color: black;
+	color:white;
+}
+.rowCard {
+	text-align: left;
+}
+
+
 
 @media (max-width: 767px) {
 	.technical {

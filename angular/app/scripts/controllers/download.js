@@ -2,11 +2,12 @@
 
 /**
  * @ngdoc function
- * @name dictyFrontpageApp.controller:AboutCtrl
+ * @name dictyFrontpageApp.controller:DownloadCtrl
  * @description
- * # AboutCtrl
+ * # DownloadCtrl
  * Controller of the dictyFrontpageApp
  */
+
 angular.module('dictyFrontpageApp')
   .controller('DownloadCtrl', function ($scope) {
     $scope.awesomeThings = [
