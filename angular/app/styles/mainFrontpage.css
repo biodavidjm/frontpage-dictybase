@@ -1,16 +1,14 @@
-/* Space out content a bit */
+/* FRONT PAGE CSS */
+
 .frontpage {
   text-align: center;
 }
 
 .imageSpace {
   color: white;
-
   background-color: black;
-
   border: 10px solid white;
 }
-
 
 /*TO ALL*/
 .borderIt {
@@ -25,7 +23,7 @@
 
 .newsSpace {
   background-color: #CEF6D8;
-  height: 200px;
+  height: 260px;
 }
 
 .widgetSpace {
