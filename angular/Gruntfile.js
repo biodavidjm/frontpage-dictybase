@@ -314,6 +314,7 @@ module.exports = function (grunt) {
             //DJM
             'scripts/dictyHF/*',
             'scripts/frontImage/*',
+            'scripts/frontNews/*',
             'styles/mainFrontpage.css'
           ]
         }, {

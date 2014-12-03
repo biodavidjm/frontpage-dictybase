@@ -23,7 +23,6 @@ angular
       templateUrl:'scripts/dictyHF/dicty-footer.html',
       scope: true,
       controller: function(dictyhfFactory, $scope, $log) {
-
         $scope.title = 'Dynamic Footer';
         $scope.sections = {};
 

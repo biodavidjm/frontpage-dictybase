@@ -4,7 +4,7 @@
  * @ngdoc module 
  * @name frontImageApp
  * @description
- * Module with the directive of the main image of the dicty front page
+ * Module with the directive of the image for the dicty front page
  */
 
 angular

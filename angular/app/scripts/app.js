@@ -14,7 +14,8 @@ angular
     'ngRoute',
     'ngTouch',
     'dictyHeaderFooterApp',
-    'frontImageApp'
+    'frontImageApp',
+    'frontNewsApp'
   ])
   .config(function ($routeProvider) {
     $routeProvider

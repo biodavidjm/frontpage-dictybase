@@ -22,12 +22,15 @@
 }
 
 .newsSpace {
-  background-color: #CEF6D8;
-  height: 260px;
+  margin-top: 10px;
+  background-color: #F8FBEF; /*#F8FBEF;#CEF6D8; #D8F6CE;*/
+  /*height: 260px;*/
+  border: 1px dotted #E6E6E6;
+  margin-bottom: 10px;
 }
 
 .widgetSpace {
-  background-color: #F7D358;
+  background-color: #D8F781;
   height: 400px;
 }
 
