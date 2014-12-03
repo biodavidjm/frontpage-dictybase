@@ -1,0 +1,50 @@
+/*front-papers CSS*/
+
+.papersMain {
+	text-align: left;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.papersHeader{
+	color:#0A122A;
+	font-size: 20px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	padding-left:30px;
+}
+
+.papersBox{
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 20px;
+}
+
+.papersAuthors {
+	color:#0B3861;
+	font-size: 14px;
+	padding-right: 10px;
+}
+
+.papersTitle{
+	color: grey;
+	font-size: 14px;
+	font-style: italic;
+	padding-right: 10px;
+}
+
+.papersJournal {
+	font-size: 15px;
+	color: #086A87;
+}
+
+.papersMore {
+	color: #0B610B;
+	font-size: 11px;
+	font-style: italic;
+	font-weight: normal;
+	text-align: center;
+
+	padding-bottom: 20px;
+}
