@@ -1,0 +1,18 @@
+<!-- front-news.html -->
+<link rel="stylesheet" href="scripts/frontNews/frontNews.css">
+
+<div class="row newsMain">
+	<div class="newsHeader">
+		<h4>{{newsHeader}}<h4>
+	</div>
+	<div class="row newsBox" ng-repeat="detail in details">
+		<span class="newsDate">{{detail.date}}</span> 
+		<span class="newsContent">{{detail.content}} </span>
+		<span class="newsSource"><strong>Source</strong>: {{detail.source}} </span>
+	</div>
+	<div class="row newsMore">
+		<span class="glyphicon glyphicon-plus"></span> more news
+	</div>
+</div>
+
+
