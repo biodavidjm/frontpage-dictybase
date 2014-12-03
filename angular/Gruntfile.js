@@ -315,6 +315,7 @@ module.exports = function (grunt) {
             'scripts/dictyHF/*',
             'scripts/frontImage/*',
             'scripts/frontNews/*',
+            'scripts/frontPapers/*',
             'styles/mainFrontpage.css'
           ]
         }, {

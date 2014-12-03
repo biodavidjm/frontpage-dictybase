@@ -17,16 +17,31 @@
 }
 
 .paperSpace {
-  background-color: #A9D0F5;
-  height: 300px;
+  background-color: #EFF8FB;
+  border-radius: 10px;
+  margin-right: 0px;
+  margin-left: 0px;
+
 }
 
 .newsSpace {
-  margin-top: 10px;
-  background-color: #F8FBEF; /*#F8FBEF;#CEF6D8; #D8F6CE;*/
-  /*height: 260px;*/
+  background-color: #F8FBEF;
   border: 1px dotted #E6E6E6;
+  border-radius: 10px;
+  margin-top: 10px;
   margin-bottom: 10px;
+}
+
+@media(max-width:767px){
+  .newsSpace {
+    margin-top: 10px;
+    background-color: #0B243B;
+    border: 1px dotted #E6E6E6;
+    margin-bottom: 10px;
+
+    margin-right: 0px;
+    margin-left: 0px;
+  }
 }
 
 .widgetSpace {

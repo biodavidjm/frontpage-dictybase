@@ -8,8 +8,13 @@
 
 .newsHeader{
 	color:#0B6121;
-	text-align: center;
+	font-size: 20px;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	text-align: right;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	padding-left:30px;
+	padding-right: 30px;
 }
 
 .newsBox{
@@ -28,6 +33,14 @@
 .newsContent{
 	font-size: 12px;
 	padding-right: 10px;
+}
+
+@media(max-width:767px){
+	.newsContent{
+		color: white;
+		font-size: 12px;
+		padding-right: 10px;
+	}
 }
 
 .newsSource {
