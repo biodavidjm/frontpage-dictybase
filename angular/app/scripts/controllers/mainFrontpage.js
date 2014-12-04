@@ -2,14 +2,14 @@
 
 /**
  * @ngdoc function
- * @name dictyFrontpageApp.controller:MainCtrl
+ * @name dictyFrontpageApp.controller:MainFrontpage
  * @description
- * # MainCtrl
+ * # MainFrontpage
  * Controller of the dictyFrontpageApp
  */
 angular.module('dictyFrontpageApp')
   .controller('MainFrontpageCtrl', function ($scope) {
-    $scope.awesomeThings = [
+    $scope.Stuff = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'

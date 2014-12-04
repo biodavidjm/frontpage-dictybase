@@ -10,7 +10,7 @@
 
 angular.module('dictyFrontpageApp')
   .controller('DownloadCtrl', function ($scope) {
-    $scope.awesomeThings = [
+    $scope.Stuff = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'

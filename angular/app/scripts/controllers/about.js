@@ -9,7 +9,7 @@
  */
 angular.module('dictyFrontpageApp')
   .controller('AboutCtrl', function ($scope) {
-    $scope.awesomeThings = [
+    $scope.Stuff = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'

@@ -1,22 +1,22 @@
 'use strict';
 
-describe('Controller: MainFrontpageCtrl', function () {
+describe('Controller: GenomesCtrl', function () {
 
   // load the controller's module
   beforeEach(module('dictyFrontpageApp'));
 
-  var MainCtrl,
+  var GenomesCtrl,
     scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    MainCtrl = $controller('MainFrontpageCtrl', {
+    GenomesCtrl = $controller('GenomesCtrl', {
       $scope: scope
     });
   }));
 
-  it('should attach a list of awesomeThings to the scope', function () {
-    expect(scope.awesomeThings.length).toBe(3);
+  it('should attach a list of Stuff to the scope', function () {
+    expect(scope.Stuff.length).toBe(3);
   });
 });
