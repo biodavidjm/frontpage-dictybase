@@ -9,8 +9,6 @@ describe('First clean test', function() {
 
 // DIRECTIVE 
 
-'use strict';
-
 describe('Directive: dictyFooter', function () {
 
   beforeEach(module('dictyHeaderFooterApp'));
@@ -21,7 +19,7 @@ describe('Directive: dictyFooter', function () {
     scope = $rootScope.$new();
   }));
 
-  it('should make the directive visible', inject(function ($compile) {
+  it('should make the dicty-footer directive visible', inject(function ($compile) {
     element = angular.element('<dicty-footer></dicty-footer>');
     element = $compile(element)(scope);
   }));
