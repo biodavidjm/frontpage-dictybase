@@ -3,7 +3,6 @@ frontpage-dictybase
 
 *The new dynamic FrontPage of dictyBase.*
 
-
 ---
 
 # Introduction
@@ -13,5 +12,12 @@ Development of a dynamic framework for the dictybase using AngularJS, an open-so
 # Design principles
 
 Documentation about design [can be found here](/documentation/frontpage-design.md).
+
+# Build Status
+
+### Travis CI configuration
+[![Travis Build Status](https://travis-ci.org/dictyBase/frontpage-dictybase.svg?branch=develop)](https://travis-ci.org/dictyBase/frontpage-dictybase.svg?branch=develop)
+
+The configuration file `.travis.yml` contains the specifications for [Travis](https://travis-ci.org/), including the `node` versions to be tested, required installations, and specifications to run the browsers Firefox and Travis. 
 
 
