@@ -3,6 +3,8 @@ frontpage-dictybase
 
 *The new dynamic FrontPage of dictyBase.*
 
+<img src="https://github.com/dictyBase/frontpage-dictybase/blob/develop/images/frontpageGrid/frontpageGridApp.jpg" width="600">
+
 ---
 
 # Introduction
