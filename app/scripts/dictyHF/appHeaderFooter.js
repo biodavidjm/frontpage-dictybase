@@ -4,10 +4,11 @@
  * @ngdoc directive and factory
  * @name dictyFooterApp
  * @description
- * dictyFooterApp includes everything requires by the factury, directive and the controller within the directive.
+ * dictyFooterApp includes everything requires by the factory, directive and the controller within the directive.
  *
  * This is the main module of the application.
  */
+
 angular
   .module('dictyHeaderFooterApp', [])
   .factory('dictyhfFactory', function ($http) {
