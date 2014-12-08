@@ -30,6 +30,23 @@ module.exports = function(config) {
       'test/spec/**/*.js'
     ],
 
+    //DJM. Coverage reporter generates the coverage
+    reporters: ['progress','coverage'],
+
+    //DJM. For coverage
+    preprocessors: {
+      // source files, that you wanna generate coverage for
+      // do not include tests or libraries
+      // (these files will be instrumented by Istanbul)
+      'app/scripts/**/*.js': ['coverage']
+    },
+    //DJM. For coverage
+    // optionally, configure the reporter
+    coverageReporter: {
+      type : 'html',
+      dir : 'coverage/'
+    },
+
     // list of files / patterns to exclude
     exclude: [],
 
@@ -52,7 +69,8 @@ module.exports = function(config) {
     plugins: [
       'karma-phantomjs-launcher',
       'karma-firefox-launcher',
-      'karma-jasmine'
+      'karma-jasmine',
+      'karma-coverage'
     ],
 
     // Continuous Integration mode
