@@ -12,7 +12,7 @@ describe('Directive: frontPapers', function () {
     scope = $rootScope.$new();
   }));
 
-  it('should make the front-image directive visible', inject(function ($compile) {
+  it('should make the front-papers directive visible', inject(function ($compile) {
     element = angular.element('<front-papers></front-papers>');
     element = $compile(element)(scope);
   }));
