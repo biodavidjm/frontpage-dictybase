@@ -15,17 +15,15 @@ angular.module('dictyFrontpageApp')
       'AngularJS',
       'Karma'
     ];
+    $scope.genomes = 'DICTYOSTELID GENOMICS';
+    $scope.comparative = 'COMPARATIVE GENOMICS';
   })
   .directive('genomeCard', function() {
     return{
       restrict:'E',
       templateUrl:'templates/genome-card.html',
       scope: true,
-      controller: function($scope) {
-        $scope.title = 'Dicty Carousel Directive';
-        $scope.species = [
-            {name: 'Dictyostelium discoideum', file: 'images/dictyPic.png'}
-        ];
-      }
     };
-  });
+});
+
+

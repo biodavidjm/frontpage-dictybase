@@ -47,12 +47,17 @@
 
 .mainCard {
 	text-align: left;
-	width: 400px;
-	background-color: black;
+	width: 500px;
+	height: 200px;
+	background-color: #21610B;
 	color:white;
+	margin-bottom: 5px;
+	border-radius: 20px;
 }
 .rowCard {
 	text-align: left;
+	padding-left: 10px;
+	color: yellow;
 }
 
 
