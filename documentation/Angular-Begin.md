@@ -29,8 +29,31 @@ These are interesting readings about Angular:
 * Library for testing [Jasmine](http://jasmine.github.io/)
 * Test runner: [karma](http://karma-runner.github.io/0.12/index.html)
 * Adding coverage:
-    1. `npm install karma-coverage --save-dev`
-    2. 
+    1. Install `npm install karma-coverage --save-dev` (only if not already included in the package.json file for development)
+    2. Add the following parameters to the `karma.conf.js`
+
+        ```       
+        reporters: ['progress','coverage'],
+
+        preprocessors: {
+          // source files, that you wanna generate coverage for
+          // do not include tests or libraries
+          // (these files will be instrumented by Istanbul)
+          'app/scripts/**/*.js': ['coverage']
+        },
+        // optionally, configure the reporter
+        coverageReporter: {
+          type : 'html',
+          dir : 'coverage/'
+        },
+        // Which plugins to enable
+        plugins: [
+          'karma-phantomjs-launcher',
+          'karma-firefox-launcher',
+          'karma-jasmine',
+          'karma-coverage' <--------- To Include!
+        ],
+        ```
 
 ## Tips
 
