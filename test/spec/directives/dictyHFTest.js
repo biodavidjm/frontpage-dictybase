@@ -7,17 +7,69 @@ describe('First clean test', function() {
     });
 });
 
+// FACTORY
+describe('The Factory dictyhfFactory', function() {
+
+  var $httpBackend;
+
+  beforeEach(module('dictyHeaderFooterApp'));
+
+  beforeEach(inject(function($injector) {
+    $httpBackend = $injector.get('$httpBackend');
+    $httpBackend.whenGET('scripts/dictyHF/dicty-footer.html').respond(200, '');
+  }));
+
+});
+
+// TESTING DIRECTIVE
+
+describe('Testing the dictyFooter directive', function() {
+  var $compile, $rootScope;
+
+  //Load the application module that contains the directive:
+  beforeEach(module('dictyHeaderFooterApp'));
+
+  // Store the references to $rootScope and $compile: in this 
+  // way, they will be available to all tests in this describe
+  // block:
+  
+  beforeEach(inject(function(_$compile_, _$rootScope_){
+    // Now the injecto will unwrap the underscore from around
+    // the parameters names when matching
+    $compile = _$compile_;
+    $rootScope = _$rootScope_;
+
+  }));
+
+  // it('Replaces the element with the appropiate content', function() {
+
+  //   var element = $compile('<dicty-footer></dicty-footer>')($rootScope);
+
+  //   $rootScope.$digest();
+
+  //   $compile(element)($rootScope);
+
+  // });
+
+
+
+});
+
+
+
+
 // DIRECTIVE 
 
 describe('Directive: dictyFooter', function () {
 
+  var element,scope,$compile;
+
   beforeEach(module('dictyHeaderFooterApp'));
 
-  var element,scope;
-
-  beforeEach(inject(function ($rootScope) {
-    scope = $rootScope.$new();
-  }));
+  beforeEach(inject(function(_$compile_, $rootScope) {
+      scope = $rootScope;
+      $compile = _$compile_;
+    }));
 
   it('should make the dicty-footer directive visible', inject(function ($compile) {
     element = angular.element('<dicty-footer></dicty-footer>');

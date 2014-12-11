@@ -39,12 +39,19 @@ module.exports = function(config) {
       // do not include tests or libraries
       // (these files will be instrumented by Istanbul)
       'app/scripts/**/!(ui-bootstrap-tpls-0.12.0).js': ['coverage']
+      // 'app/scripts/**/*.html': ['ng-html2js']
     },
     //DJM. Coverage reporter
     // optionally, configure the reporter
     coverageReporter: {
       type : 'html',
       dir : 'coverage/'
+    },
+
+    //DJM: this is for the problem of testing templateUrl.
+    ngHtml2JsPreprocessor: { 
+      stripPrefix: 'app/', 
+      moduleName: 'my.templates' 
     },
 
     // list of files / patterns to exclude
@@ -70,7 +77,8 @@ module.exports = function(config) {
       'karma-phantomjs-launcher',
       'karma-firefox-launcher',
       'karma-jasmine',
-      'karma-coverage'
+      'karma-coverage',
+      'karma-ng-html2js-preprocessor'
     ],
 
     // Continuous Integration mode
