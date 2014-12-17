@@ -1,14 +1,9 @@
 Developers corner
 ===================
-
 *Computational framework for the development of the dictybase*
 
-
-
-##### Basic installation
+##### Basic installations
 You should have already installed and running in your Mac computer `node`, `npm`, `grunt`, `bower`, `karma`, `yo`. If you have not, then you should VERY carefully install all of them.
-
---- 
 
 # Grunt
 
@@ -49,12 +44,73 @@ And then the `test/karma.conf.js` file must be updated in the section `plugins`:
 ---
 
 # AngularJS
-I used the Yeoman generator `generator-angular`, which creates the scaffold to build a web application. It also takes care of Bootstrap and Sass. Steps:
+
+Use the Yeoman generator `generator-angular`, which creates the scaffold to build a web application. It also takes care of Bootstrap and Sass. Steps:
 
 1. `sudo npm install -g generator-angular`
 2. `yo angular`
 
-#### Dicty Angular Carousel
+## Initial steps
+
+* [Official tutorial](https://docs.angularjs.org/tutorial)
+* Install Chrome extension AngularJS Batarang
+
+## Recommended readings
+These are interesting readings about Angular:
+* [Things I wish I were told about AngularJS](http://ruoyusun.com/2013/05/25/things-i-wish-i-were-told-about-angular-js.html)
+
+## Scaffolding the project
+
+* `generator-angular`: Yeoman scaffold to develop and test AngularJS. It has its problems
+* `angular-seed`: This is an official alternative to keep in mind.
+
+
+## Style Guides
+
+* Main by [John Papa](https://github.com/johnpapa/angularjs-styleguide)
+* Close alternative by [Todd Motto](https://github.com/toddmotto/angularjs-styleguide)
+
+### Principles
+
+The general consensus - shared at some conference talks by members of the AngularJS team - is fortunately quite clear: it's best to group your source-code into modules by functionality. 
+
+## Unit testing
+
+* Library for testing [Jasmine](http://jasmine.github.io/)
+* Test runner: [karma](http://karma-runner.github.io/0.12/index.html)
+* Adding coverage:
+    1. Install `npm install karma-coverage --save-dev` (only if not already included in the package.json file for development)
+    2. Add the following parameters to the `karma.conf.js`
+
+        ```       
+        reporters: ['progress','coverage'],
+
+        preprocessors: {
+          // source files, that you wanna generate coverage for
+          // do not include tests or libraries
+          // (these files will be instrumented by Istanbul)
+          'app/scripts/**/*.js': ['coverage']
+        },
+        // optionally, configure the reporter
+        coverageReporter: {
+          type : 'html',
+          dir : 'coverage/'
+        },
+        // Which plugins to enable
+        plugins: [
+          'karma-phantomjs-launcher',
+          'karma-firefox-launcher',
+          'karma-jasmine',
+          'karma-coverage' <--------- To Include!
+        ],
+        ```
+
+## Tips
+
+* [JShint](http://www.jshint.com/) to detect errors in javascript code
+
+
+## Dicty Angular Carousel
 * it requires the Angular-UI package (you might choose to install it locally)
 
 	`<script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.js"></script>`
