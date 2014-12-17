@@ -1,5 +1,5 @@
 .conferenceMain{
-	border: 1px solid #00BFFF;
+	border: 1px solid #86B404;
 	border-bottom-left-radius:10px;
 	border-bottom-right-radius:10px;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
@@ -10,7 +10,7 @@
 .conferenceHeader{
 	padding-top: 5px;
 	padding-bottom: 5px;
-	background-color: #00BFFF;
+	background-color: #86B404;
 	color: white;
 }
 
@@ -31,4 +31,19 @@
 	font-size: 12px;
 	color:#86B404;
 	font-weight: bold;
+}
+
+@media(max-width:767px){
+	.conferenceDetails{
+		text-align: center;
+		padding-left: 20px;
+		padding-top: 5px;
+	}
+	.conferenceDate {
+		font-size: 12px;
+	}
+
+	.conferenceName {
+		font-size: 14px;
+	}
 }

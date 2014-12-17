@@ -28,7 +28,7 @@ module.exports = function(config) {
       'bower_components/angular-touch/angular-touch.js',
       'app/scripts/**/*.js',
       'test/spec/**/*.js',
-      // include the directories the directive tempplates are stored:
+      // include the directories where the directive templates are stored:
       'app/scripts/**/*.html',
       'app/views/*.html'
     ],
@@ -41,7 +41,7 @@ module.exports = function(config) {
       // source files, that you wanna generate coverage for
       // do not include tests or libraries
       // (these files will be instrumented by Istanbul)
-      'app/scripts/**/!(ui-bootstrap-tpls-0.12.0).js': ['coverage'],
+      'app/scripts/**/!(ui-bootstrap-tpls-0.12.0).js': ['coverage'], //Not including the ui-bootstrap library in the coverage
       'views/**/*.html': ['ng-html2js'],
       'app/scripts/**/*.html': ['ng-html2js']
     },
@@ -55,7 +55,8 @@ module.exports = function(config) {
     //DJM: this is for the problem of testing templateUrl.
     //we will access this by module name later on in Jasmine
     ngHtml2JsPreprocessor: { 
-      moduleName: 'templates' 
+      // moduleName: 'templates',
+      stripPrefix: 'app/' //This is necessary to strip the "app/" part from the "preprocessors"
     },
 
     // list of files / patterns to exclude

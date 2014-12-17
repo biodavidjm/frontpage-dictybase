@@ -18,3 +18,29 @@ describe('Directive: frontConference', function () {
     // expect(element.text()).toBe('UPCOMING MEETINGS');
   }));
 });
+
+describe('testing the conference directive', function() {
+
+  var element, scope;
+
+  beforeEach(module('frontConferenceApp'));
+
+  beforeEach(module('scripts/frontConference/front-conference.html'));
+
+  beforeEach(inject(function ($compile, $rootScope) {
+
+    scope = $rootScope.$new();
+    element = angular.element('<front-conference></front-conference>');
+    $compile(element)(scope);
+    $rootScope.$digest();
+
+  }));
+
+  it('should load the template', function(){
+
+    expect(element.html()).toContain('conferenceMain');
+    expect(element.html()).toContain('conferenceDetails');
+    expect(element.conferenceHeader).toEqual('UPCOMING MEETINGS');
+  });
+
+});
