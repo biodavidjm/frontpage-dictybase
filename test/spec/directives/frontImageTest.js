@@ -2,6 +2,39 @@
 // 
 'use strict';
 
+describe('Testing frontImage directive', function() {
+
+  var $compile, $rootScope, template;
+
+  beforeEach(module('frontImageApp'));
+
+  beforeEach(module('templates'));
+
+// The file '/app/scripts/frontImage/front-image.html' has to be inserted as a module dependency somehow
+
+  beforeEach(inject(function ($templateCache, _$compile_, _$rootScope_) {
+
+    //assign the template to the expected url called by the directive and put it in the cache
+    template = $templateCache.get('scripts/frontImage/front-image.html');
+    $templateCache.put('/app/scripts/frontImage/front-image.html', template);
+
+    $compile = _$compile_;
+    $rootScope = _$rootScope_;
+
+  }));
+
+  it('Checking the content of the directive', function(){
+
+    // var element = $compile('<front-image></front-image>')($rootScope);
+
+    // $rootScope.$digest();
+
+    // expect(element.html()).toContain('ictyPic.png');
+
+  });
+
+});
+
 describe('Directive: frontImage', function () {
 
   var element,scope;
