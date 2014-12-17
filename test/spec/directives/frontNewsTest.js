@@ -3,44 +3,39 @@
 'use strict';
 
 
-describe('testing frontNewsApp', function() {
-  describe('frontNews directive', function() {
-    var element, scope;
+describe('frontNews directive', function() {
+  var element, scope, dictyNewsFactory;
 
-    beforeEach(module('frontNewsApp'));
-    beforeEach(module('/Users/djt469/github/frontpage-dictybase/app/scripts/frontNews/front-news.html'));
-    beforeEach(inject(function($rootScope, $compile) {
-      element = angular.element('<div> <front-news></front-news></div>');
-      scope = $rootScope;
-      $compile(element)(scope);
-      scope.$digest();
-    }));
+  beforeEach(module('frontNewsApp'));
+  
+  beforeEach(module('scripts/frontNews/front-news.html'));
 
-    // it('renders the dicty news', function() {
-    //   var news = element.find('.newsHeader');
-    //   expect(news.length).toBe(1);
-      // expect(news.attr('aria-valuenow')).toBe('50');
-      // expect(news.css('width')).toBe('50%');
-    // });
+  beforeEach(inject(function($rootScope, $compile, _dictyNewsFactory_) {
 
-    // it('renders caption text', function() {
-    //   var caption = element.find('span');
-    //   expect(caption.length).toBe(1);
-    //   expect(caption.text()).toBe('50% Complete');
-    // });
-  });
+    scope = $rootScope;
+    element = angular.element('<front-news></front-news>');
+    dictyNewsFactory = _dictyNewsFactory_;
+    $compile(element)(scope);
+    $rootScope.$digest();
+
+  }));
+
+  // it('renders the dicty news', function() {
+  //   expect(element.html()).toContain('newsHeader');
+  // });
+
 });
-
-
 
 
 describe('Checking the factory', function (){
 
 	var dictyNewsFactory;
 
+  beforeEach(module('frontNewsApp'));
+
 	beforeEach(function(){
 
-		module('frontNewsApp');
+		// module('frontNewsApp');
 
 		inject(function(_dictyNewsFactory_) {
 			dictyNewsFactory = _dictyNewsFactory_;
@@ -51,12 +46,6 @@ describe('Checking the factory', function (){
 	it ('should hava a getJasonFile function', function() {
 		expect(angular.isFunction(dictyNewsFactory.getJasonFile)).toBe(true);
 	});
-
-	// check to see if it does what it's supposed to do.
-	// it('should make function works', function (){
-	// 	var result = dictyNewsFactory.getJasonFile();
-	// 	expect(result).toBe('news.json');
-	// });
 
 });
 

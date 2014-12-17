@@ -10,7 +10,7 @@ describe('Testing frontImage directive', function() {
 
   beforeEach(inject(function ($compile, $rootScope) {
 
-    scope = $rootScope.$new();
+    scope = $rootScope;
     element = angular.element('<front-image></front-image>');
     $compile(element)(scope);
     $rootScope.$digest();
@@ -25,4 +25,26 @@ describe('Testing frontImage directive', function() {
 
   });
 
+});
+
+describe('UnitTesting: the FrontImageCtrl controller', function() {
+
+  beforeEach(module('frontImageApp'));
+
+  var ctrl, scope;
+  
+  beforeEach(inject(function($controller, $rootScope) {
+  
+    scope = $rootScope.$new();
+    ctrl = $controller('FrontImageCtrl', {
+      $scope: scope
+    });
+  }));
+
+  it('should access the scope', function() {
+    expect(scope.name).toBeDefined();
+    expect(scope.name).toEqual('Dicty Carousel Directive');
+    expect(scope.myInterval).toEqual(8000);
+    expect(scope.slides.length).toEqual(6);
+  });
 });

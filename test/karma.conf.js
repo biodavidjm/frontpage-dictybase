@@ -30,7 +30,10 @@ module.exports = function(config) {
       'test/spec/**/*.js',
       // include the directories where the directive templates are stored:
       'app/scripts/**/*.html',
-      'app/views/*.html'
+      'app/views/*.html',
+      'app/scripts/**/*.json',
+      // fixtures
+      {pattern: 'app/scripts/**/*.json', watched: true, served: true, included: false}
     ],
 
     //DJM. Coverage reporter generates the coverage
@@ -43,7 +46,8 @@ module.exports = function(config) {
       // (these files will be instrumented by Istanbul)
       'app/scripts/**/!(ui-bootstrap-tpls-0.12.0).js': ['coverage'], //Not including the ui-bootstrap library in the coverage
       'views/**/*.html': ['ng-html2js'],
-      'app/scripts/**/*.html': ['ng-html2js']
+      'app/scripts/**/*.html': ['ng-html2js'],
+      'app/scripts/**/*.json': ['ng-json2js']
     },
     //DJM. Coverage reporter
     // optionally, configure the reporter
@@ -58,6 +62,13 @@ module.exports = function(config) {
       // moduleName: 'templates',
       stripPrefix: 'app/' //This is necessary to strip the "app/" part from the "preprocessors"
     },
+
+    ngJson2JsPreprocessor: {
+      // strip this from the file path
+      stripPrefix: 'app/',
+      // prepend this to the
+      prependPrefix: 'served/',
+     },
 
     // list of files / patterns to exclude
     exclude: [],
@@ -83,11 +94,12 @@ module.exports = function(config) {
       'karma-firefox-launcher',
       'karma-jasmine',
       'karma-coverage',
-      'karma-ng-html2js-preprocessor' 
+      'karma-ng-html2js-preprocessor',
       //karma's ng-html2js preprocessor which will enable 
       //Karma to automatically generates the js file and 
       //adds the html into $templateCache, which can also 
       //be done by hand if needed.
+      'karma-ng-json2js-preprocessor'
     ],
 
     // Continuous Integration mode
