@@ -16,6 +16,7 @@ angular
     'dictyHeaderFooterApp',
     'frontImageApp',
     'frontNewsApp',
+    'frontConferenceApp',
     'frontPapersApp'
   ])
   .config(function ($routeProvider) {

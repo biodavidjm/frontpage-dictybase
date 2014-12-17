@@ -27,7 +27,10 @@ module.exports = function(config) {
       'bower_components/angular-sanitize/angular-sanitize.js',
       'bower_components/angular-touch/angular-touch.js',
       'app/scripts/**/*.js',
-      'test/spec/**/*.js'
+      'test/spec/**/*.js',
+      // include the directories the directive tempplates are stored:
+      'app/scripts/**/*.html',
+      'app/views/*.html'
     ],
 
     //DJM. Coverage reporter generates the coverage
@@ -38,8 +41,9 @@ module.exports = function(config) {
       // source files, that you wanna generate coverage for
       // do not include tests or libraries
       // (these files will be instrumented by Istanbul)
-      'app/scripts/**/!(ui-bootstrap-tpls-0.12.0).js': ['coverage']
-      // 'app/scripts/**/*.html': ['ng-html2js']
+      'app/scripts/**/!(ui-bootstrap-tpls-0.12.0).js': ['coverage'],
+      'views/**/*.html': ['ng-html2js'],
+      'app/scripts/**/*.html': ['ng-html2js']
     },
     //DJM. Coverage reporter
     // optionally, configure the reporter
@@ -49,9 +53,9 @@ module.exports = function(config) {
     },
 
     //DJM: this is for the problem of testing templateUrl.
+    //we will access this by module name later on in Jasmine
     ngHtml2JsPreprocessor: { 
-      stripPrefix: 'app/', 
-      moduleName: 'my.templates' 
+      moduleName: 'templates' 
     },
 
     // list of files / patterns to exclude
@@ -78,7 +82,11 @@ module.exports = function(config) {
       'karma-firefox-launcher',
       'karma-jasmine',
       'karma-coverage',
-      'karma-ng-html2js-preprocessor'
+      'karma-ng-html2js-preprocessor' 
+      //karma's ng-html2js preprocessor which will enable 
+      //Karma to automatically generates the js file and 
+      //adds the html into $templateCache, which can also 
+      //be done by hand if needed.
     ],
 
     // Continuous Integration mode
