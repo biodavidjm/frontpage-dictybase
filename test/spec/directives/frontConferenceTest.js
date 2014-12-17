@@ -39,7 +39,7 @@ describe('testing the conference directive', function() {
 
     expect(element.html()).toContain('conferenceMain');
     expect(element.html()).toContain('conferenceDetails');
-    // expect(element.conferenceHeader).toEqual('UPCOMING MEETINGS');
+    
   });
 
 });

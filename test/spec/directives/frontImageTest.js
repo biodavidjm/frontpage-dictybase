@@ -1,88 +1,28 @@
-// Unit testing appFrontImage.js module
-// 
 'use strict';
 
 describe('Testing frontImage directive', function() {
 
-  var $compile, $rootScope, template;
+  var element, scope;
 
   beforeEach(module('frontImageApp'));
 
-  beforeEach(module('templates'));
+  beforeEach(module('scripts/frontImage/front-image.html'));
 
-// The file '/app/scripts/frontImage/front-image.html' has to be inserted as a module dependency somehow
+  beforeEach(inject(function ($compile, $rootScope) {
 
-  beforeEach(inject(function ($templateCache, _$compile_, _$rootScope_) {
-
-    //assign the template to the expected url called by the directive and put it in the cache
-    template = $templateCache.get('scripts/frontImage/front-image.html');
-    $templateCache.put('/app/scripts/frontImage/front-image.html', template);
-
-    $compile = _$compile_;
-    $rootScope = _$rootScope_;
-
-  }));
-
-  it('Checking the content of the directive', function(){
-
-    // var element = $compile('<front-image></front-image>')($rootScope);
-
-    // $rootScope.$digest();
-
-    // expect(element.html()).toContain('ictyPic.png');
-
-  });
-
-});
-
-describe('Directive: frontImage', function () {
-
-  var element,scope;
-
-  beforeEach(module('frontImageApp'));
-
-  beforeEach(inject(function ($rootScope, $compile) {
-    scope = $rootScope;
-    element = angular.element('<div simple-test>{{30+3}}</div>');
-    $compile(element)($rootScope);
-  }));
-
-  it('should be equal to 33', function(){
-  	scope.$digest();
-  	expect(element.html()).toBe('33');
-  });
-
-  it('should make the front-image directive visible', inject(function ($compile) {
+    scope = $rootScope.$new();
     element = angular.element('<front-image></front-image>');
-    element = $compile(element)(scope);
-  }));
-
-});
-
-// TESTING DIRECTIVE
-
-describe('Testing the frontImage directive', function() {
-  var $compile, $rootScope;
-
-  //Load the application module that contains the directive:
-  beforeEach(module('frontImageApp'));
-  
-  // Store the references to $rootScope and $compile: in this 
-  // way, they will be available to all tests in this describe
-  // block:
-  
-  beforeEach(inject(function(_$compile_, _$rootScope_){
-    // Now the injecto will unwrap the underscore from around
-    // the parameters names when matching
-    $compile = _$compile_;
-    $rootScope = _$rootScope_;
+    $compile(element)(scope);
+    $rootScope.$digest();
 
   }));
 
-  it('Replaces the element with the appropiate content', function() {
-    // var element = $compile('<front-image></front-image>')($rootScope);
-    // $rootScope.$digest();
-    // $compile(element)($rootScope);
+  it('Checking the content of the front-image directive', function(){
+
+    expect(element.html()).toContain('images/dictyFront01.jpg');
+    expect(element.html()).toContain('images/dictyFront02.jpg');
+    expect(element.html()).toContain('images/dictyFront03.jpg');
+
   });
 
 });
