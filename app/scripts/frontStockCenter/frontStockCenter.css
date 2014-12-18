@@ -69,5 +69,8 @@
 
 
 @media(max-width:767px){
-
+	.stockPlasmidsMain {
+		border-bottom-left-radius:0px;
+		border-bottom-right-radius:0px;
+	}
 }

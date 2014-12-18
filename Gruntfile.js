@@ -317,6 +317,7 @@ module.exports = function (grunt) {
             'scripts/frontNews/*',
             'scripts/frontPapers/*',
             'scripts/frontConference/*',
+            'scripts/frontStockCenter/*',
             'styles/mainFrontpage.css',
             'templates/*'
           ]

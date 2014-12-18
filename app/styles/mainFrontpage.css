@@ -45,8 +45,16 @@
 }
 
 .widgetSpace {
-  height: 500px;
-  border: 1px dotted black;
+  /*border: 1px dotted black;*/
+}
+
+.widgetDiv {
+  padding-bottom: 20px;
+}
+
+#widgetImages {
+  text-align:center;
+  border-radius:5px;
 }
 
 .variableSpace {
@@ -55,8 +63,8 @@
 }
 
 .dictyAccess {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-left: auto;
   margin-right: auto;
   width: 70%;
