@@ -21,7 +21,7 @@
 .dictyHeader > a:visited { color: #D8D8D8; text-decoration: none }
 .dictyHeader > a:hover { color: white; text-decoration: underline;}
 
-/*HEADER details*/
+/*HEADER details*/  
 
 .firstHeaderRow {
     background-color: white;
@@ -51,6 +51,10 @@
 
 .linksSpace button {
     padding-right: 0px;
+}
+
+ul > .nav > .nav-pills > .pull-right {
+    
 }
 
 
