@@ -45,21 +45,21 @@
 }
 
 .widgetSpace {
-  background-color: #D8F781;
-  height: 400px;
+  height: 500px;
+  border: 1px dotted black;
 }
 
 .variableSpace {
   background-color: #0B4C5F;
   color:white;
-  height: 400px;
 }
 
 .dictyAccess {
   padding-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 70%;
+  padding-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
 }
 
 .dictyAccess > h4 {

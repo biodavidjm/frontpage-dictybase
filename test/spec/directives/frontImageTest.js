@@ -10,7 +10,7 @@ describe('Testing frontImage directive', function() {
 
   beforeEach(inject(function ($compile, $rootScope) {
 
-    scope = $rootScope;
+    scope = $rootScope.$new();
     element = angular.element('<front-image></front-image>');
     $compile(element)(scope);
     $rootScope.$digest();

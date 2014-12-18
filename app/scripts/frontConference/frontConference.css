@@ -1,17 +1,20 @@
 .conferenceMain{
 	border: 1px solid #86B404;
-	border-bottom-left-radius:10px;
-	border-bottom-right-radius:10px;
+	border-top-right-radius:20px;
+	border-bottom-right-radius:20px;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 	padding-bottom: 10px;
 }
 
 
 .conferenceHeader{
+	text-align: left;
 	padding-top: 5px;
 	padding-bottom: 5px;
+	padding-left: 10px;
 	background-color: #86B404;
-	color: white;
+	border-top-right-radius:20px;
+	color: #EFFBF2;
 }
 
 .conferenceDetails{

@@ -17,7 +17,8 @@ angular
     'frontImageApp',
     'frontNewsApp',
     'frontConferenceApp',
-    'frontPapersApp'
+    'frontPapersApp',
+    'frontStockCenterApp'
   ])
   .config(function ($routeProvider) {
     $routeProvider
