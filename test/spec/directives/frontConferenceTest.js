@@ -38,7 +38,8 @@ describe('testing the conference directive', function() {
   it('should load the front-conference template', function(){
 
     expect(element.html()).toContain('conferenceMain');
-    expect(element.html()).toContain('conferenceDetails');
+    expect(element.html()).toContain('conferenceHeader');
+    expect(element.html()).toContain('conferenceDate');
     
   });
 
