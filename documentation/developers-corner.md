@@ -104,7 +104,12 @@ The general consensus - shared at some conference talks by members of the Angula
           'karma-coverage' <--------- To Include!
         ],
         ```
-#### How to access `templateUrl` in unit tests. It is not a trivial business. 
+* Running `grunt test` generates and updates
+
+#### How to access `templateUrl` in unit tests. 
+
+It is not a trivial business. 
+
 * Install karma's ng-html2js preprocessor, which will enable Karma to automatically generates the js file and adds the html into $templateCache, which can also be done by hand if needed. 
 
 	`npm install karma-ng-html2js-preprocessor --save-dev`

@@ -1,5 +1,27 @@
 'use strict';
 
+describe('Testing the Genomes controller', function() {
+
+  var element, scope;
+
+  beforeEach(module('dictyFrontpageApp'));
+
+  beforeEach(module('templates/genome-card.html'));
+
+  beforeEach(inject(function($compile, $rootScope) {
+    scope = $rootScope.$new();
+    element = angular.element('<genome-card></genome-card>');
+    $compile(element)(scope);
+    $rootScope.$digest();
+  }));
+
+  it('Checking that the content of the genome-card is there', function() {
+    expect(element.html()).toContain('<div class="container mainCard">');
+    
+  });
+});
+
+
 describe('Controller: GenomesCtrl', function () {
 
   // load the controller's module
