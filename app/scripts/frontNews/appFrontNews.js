@@ -27,7 +27,7 @@ angular
         restrict:'E',
         templateUrl:'scripts/frontNews/front-news.html',
         scope: true,
-        controller: function(dictyNewsFactory, $scope) {
+        controller: function($scope, dictyNewsFactory) {
           $scope.newsHeader = 'DICTY NEWS';
           $scope.details = {};
           dictyNewsFactory.getJasonFile(function(data) {

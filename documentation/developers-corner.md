@@ -54,6 +54,7 @@ Use the Yeoman generator `generator-angular`, which creates the scaffold to buil
 
 * [Official tutorial](https://docs.angularjs.org/tutorial)
 * Install Chrome extension AngularJS Batarang
+* Install [AngularJs Sublime Text 2 Bundle](https://github.com/Iristyle/Sublime-AngularJS-Coffee-Completions)
 
 ## Recommended readings
 These are interesting readings about Angular:
@@ -142,6 +143,17 @@ It is not a trivial business.
     ],    
 
 ```
+
+#### How to access `JSON files` in unit tests. 
+
+It is not definitely trivial. 
+
+* Install `karma-ng-json2js-preprocessor`:
+
+	npm install karma-ng-json2js-preprocessor --save-dev
+
+
+
 
 ## Tips
 
