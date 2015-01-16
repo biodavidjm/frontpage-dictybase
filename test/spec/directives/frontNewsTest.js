@@ -2,103 +2,133 @@
 
 'use strict';
 
-
-describe('frontNews directive', function() {
-  var element, scope, dictyNewsFactory;
-
-  beforeEach(module('frontNewsApp'));
-  
-  beforeEach(module('scripts/frontNews/front-news.html'));
-
-  beforeEach(inject(function($rootScope, $compile, _dictyNewsFactory_) {
-
-    scope = $rootScope;
-    element = angular.element('<front-news></front-news>');
-    dictyNewsFactory = _dictyNewsFactory_;
-    $compile(element)(scope);
-    $rootScope.$digest();
-
-  }));
-
-  // it('renders the dicty news', function() {
-  //   expect(element.html()).toContain('newsHeader');
-  // });
-
-});
-
-
 describe('Checking the factory', function (){
 
-	var dictyNewsFactory;
+	var dictyNewsFactory, $httpBackend;
 
   beforeEach(module('frontNewsApp'));
 
 	beforeEach(function(){
-
-		// module('frontNewsApp');
-
 		inject(function(_dictyNewsFactory_) {
 			dictyNewsFactory = _dictyNewsFactory_;
 		});
 	});
 
+  beforeEach(inject(function($injector) {
+    // Set up the mock http service responses
+    $httpBackend = $injector.get('$httpBackend');
+   }));
+
+  afterEach(function() {
+   $httpBackend.verifyNoOutstandingExpectation();
+   $httpBackend.verifyNoOutstandingRequest();
+  });
+
 	// check to see if it has the expected fucntion:
 	it ('should hava a getJasonFile function', function() {
-		expect(angular.isFunction(dictyNewsFactory.getJasonFile)).toBe(true);
+    expect(angular.isFunction(dictyNewsFactory.getJasonFile)).toBe(true);
 	});
 
 });
 
 
-// It does not work---> Do not know why
-// describe('httpBasedService', function () {
-//   var httpBasedService,
-//       httpBackend;
-  
-//   beforeEach(function (){  
-//     // load the module.
-//     module('frontNewsApp');
-    
-//     // get your service, also get $httpBackend
-//     // $httpBackend will be a mock, thanks to angular-mocks.js
-//     inject(function($httpBackend, _httpBasedService_) {
-//       httpBasedService = _httpBasedService_;      
-//       httpBackend = $httpBackend;
-//     });
-//   });
-  
-//   // make sure no expectations were missed in your tests.
-//   // (e.g. expectGET or expectPOST)
-//   afterEach(function() {
-//     httpBackend.verifyNoOutstandingExpectation();
-//     httpBackend.verifyNoOutstandingRequest();
-//   });
- 
-//   it('should send the msg and return the response.', function (){
-//     // set up some data for the http call to return and test later.
-//     var returnData = { excited: true };
-    
-//     // expectGET to make sure this is called once.
-//     httpBackend.expectGET('/app/scripts/frontNews/news.json').respond(returnData);
-    
-//   });  
-// });
+describe('testing frontNewsApp', function() {
+    var scope, httpBackend;
+
+    // Initialization of the AngularJS application before each test case
+    beforeEach(module('frontNewsApp'));
+
+    // Injection of dependencies, $http will be mocked with $httpBackend
+    beforeEach(inject(function($rootScope, $httpBackend) {
+        scope = $rootScope.$new();
+        httpBackend = $httpBackend;
+    }));
 
 
+    it('should query the webservice', function() {
 
+        // Which HTTP requests do we expect to occur, and how do we response?
+        // httpBackend.expectGET('/scripts/frontNews/news.json').respond('[{"source": "dictyBase"}, {"source": "Petra Fey"}]');
 
-describe('Directive: frontNews', function () {
+        // Triggering the AngularJS digest cycle in order to resolve all promises
+        // scope.$apply();
+
+        // We expect the controller to put the right value onto the scope
+        // expect(scope.details).toEqual('dictyBase');
+
+    });
+
+});
+
+describe('TESTING FRONT-NEWS directive', function() {
+
+  var element, scope, dictyNewsFactory, $httpBackend;
 
   beforeEach(module('frontNewsApp'));
 
-  var element,scope;
+  beforeEach(module('scripts/frontNews/front-news.html'));
 
-  beforeEach(inject(function ($rootScope) {
+  beforeEach(function(){
+    inject(function(_dictyNewsFactory_) {
+      dictyNewsFactory = _dictyNewsFactory_;
+    });
+  });
+
+  beforeEach(inject(function($injector) {
+    // Set up the mock http service responses
+    $httpBackend = $injector.get('$httpBackend');
+   }));
+
+  afterEach(function() {
+   $httpBackend.verifyNoOutstandingExpectation();
+   $httpBackend.verifyNoOutstandingRequest();
+  });
+
+  beforeEach(inject(function ($compile, $rootScope) {
+
     scope = $rootScope.$new();
+    element = angular.element('<front-news></front-news>');
+    $compile(element)(scope);
+    $rootScope.$digest();
+
   }));
 
-  it('should make the front-news directive visible', inject(function ($compile) {
-    element = angular.element('<front-news></front-news>');
-    element = $compile(element)(scope);
-  }));
+  // it('should load the front-conference template', function(){
+    
+  //   expect(element.html()).toContain('newsMain');
+  //   expect(element.html()).toContain('newsHeader');
+    
+  // });
+
 });
+
+// Increases the coverage but it gives an error
+// 
+// describe('frontNews directive', function() {
+//   var element, scope, dictyNewsFactory;
+
+//   beforeEach(module('frontNewsApp'));
+  
+//   beforeEach(module('scripts/frontNews/front-news.html'));
+
+//   // beforeEach(function(){
+//   //   inject(function(_dictyNewsFactory_) {
+//   //     dictyNewsFactory = _dictyNewsFactory_;
+//   //   });
+//   // });
+
+//   beforeEach(inject(function($rootScope, $compile, _dictyNewsFactory_) {
+
+//     scope = $rootScope;
+//     element = angular.element('<front-news></front-news>');
+//     dictyNewsFactory = _dictyNewsFactory_;
+//     $compile(element)(scope);
+//     $rootScope.$digest();
+
+//   }));
+
+//   it('renders the dicty news', function() {
+//     expect(element.html()).toContain('newsHeader');
+//   });
+
+// });

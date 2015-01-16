@@ -9,10 +9,16 @@
 
 angular
   .module('frontNewsApp', [])
-    .factory('dictyNewsFactory', function ($http) {
+    .factory('dictyNewsFactory', function ($http, $log) {
       return {
-        getJasonFile: function() {
-          return $http.get('scripts/frontNews/news.json');
+        getJasonFile: function(done) {
+          $http.get('scripts/frontNews/news.json')
+            .success(function(data) {
+              done(data);
+            })
+            .error(function() {
+              $log.error('ERROR while trying to retrieve the NEWS data');
+            });
         }
       };
     })
@@ -21,16 +27,12 @@ angular
         restrict:'E',
         templateUrl:'scripts/frontNews/front-news.html',
         scope: true,
-        controller: function(dictyNewsFactory, $scope, $log) {
+        controller: function(dictyNewsFactory, $scope) {
           $scope.newsHeader = 'DICTY NEWS';
           $scope.details = {};
-          dictyNewsFactory.getJasonFile()
-            .success(function(data) {
+          dictyNewsFactory.getJasonFile(function(data) {
               $scope.details = data;
-            })
-            .error(function() {
-              $log.error('Error connecting to the NEWS!!');
-            });
+          });
         }
       };
     });
