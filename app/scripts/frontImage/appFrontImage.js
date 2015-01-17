@@ -9,7 +9,7 @@
 
 angular
   .module('frontImageApp', ['ui.bootstrap'])
-  .controller('FrontImageCtrl', ['$scope', function FrontImageCtrl($scope){
+  .controller('FrontImageController', ['$scope', function FrontImageController($scope){
     $scope.name = 'Dicty Carousel Directive';
     $scope.myInterval = 8000;
     $scope.slides = [
@@ -26,7 +26,7 @@ angular
       restrict:'E',
       templateUrl:'scripts/frontImage/front-image.html',
       scope: true,
-      controller: 'FrontImageCtrl'
+      controller: 'FrontImageController'
     };
   });
   

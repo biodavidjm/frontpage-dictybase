@@ -11,7 +11,7 @@ describe('Controller: MainFrontpageCtrl', function () {
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    MainFrontpageCtrl = $controller('MainFrontpageCtrl', {
+    MainFrontpageCtrl = $controller('MainFrontpageController', {
       $scope: scope
     });
   }));

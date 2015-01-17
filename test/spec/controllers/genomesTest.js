@@ -22,18 +22,18 @@ describe('Testing the Genomes controller', function() {
 });
 
 
-describe('Controller: GenomesCtrl', function () {
+describe('Controller: DownloadController', function () {
 
   // load the controller's module
   beforeEach(module('dictyFrontpageApp'));
 
-  var GenomesCtrl,
+  var DownloadController,
     scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    GenomesCtrl = $controller('GenomesCtrl', {
+    DownloadController = $controller('DownloadController', {
       $scope: scope
     });
   }));

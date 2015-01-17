@@ -24,27 +24,27 @@ angular
     $routeProvider
       .when('/', {
         templateUrl: 'views/mainFrontpage.html',
-        controller: 'MainFrontpageCtrl'
+        controller: 'MainFrontpageController'
       })
       .when('/main', {
         templateUrl: 'views/mainFrontpage.html',
-        controller: 'MainFrontpageCtrl'
+        controller: 'MainFrontpageController'
       })
       .when('/about', {
         templateUrl: 'views/about.html',
-        controller: 'AboutCtrl'
+        controller: 'AboutController'
       })
       .when('/contact', {
         templateUrl: 'views/contact.html',
-        controller: 'ContactCtrl'
+        controller: 'ContactController'
       })
       .when('/download', {
         templateUrl: 'views/download.html',
-        controller: 'DownloadCtrl'
+        controller: 'DownloadController'
       })
       .when('/genomes', {
         templateUrl: 'views/genomes.html',
-        controller: 'GenomesCtrl'
+        controller: 'GenomesController'
       })
       .otherwise ({
         templateUrl: 'views/notyet.html',

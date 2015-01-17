@@ -1,17 +1,17 @@
 'use strict';
 
-describe('Controller: DownloadCtrl', function () {
+describe('Controller: DownloadController', function () {
 
   // load the controller's module
   beforeEach(module('dictyFrontpageApp'));
 
-  var DownloadCtrl,
+  var DownloadController,
     scope;
 
   // Initialize the controller and a mock scope
   beforeEach(inject(function ($controller, $rootScope) {
     scope = $rootScope.$new();
-    DownloadCtrl = $controller('DownloadCtrl', {
+    DownloadController = $controller('DownloadController', {
       $scope: scope
     });
   }));

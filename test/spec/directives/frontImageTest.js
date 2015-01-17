@@ -27,7 +27,7 @@ describe('Testing frontImage directive', function() {
 
 });
 
-describe('UnitTesting: the FrontImageCtrl controller', function() {
+describe('UnitTesting: the FrontImageController controller', function() {
 
   beforeEach(module('frontImageApp'));
 
@@ -36,7 +36,7 @@ describe('UnitTesting: the FrontImageCtrl controller', function() {
   beforeEach(inject(function($controller, $rootScope) {
   
     scope = $rootScope.$new();
-    ctrl = $controller('FrontImageCtrl', {
+    ctrl = $controller('FrontImageController', {
       $scope: scope
     });
   }));

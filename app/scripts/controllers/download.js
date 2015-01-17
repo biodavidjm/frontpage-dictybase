@@ -9,7 +9,7 @@
  */
 
 angular.module('dictyFrontpageApp')
-  .controller('DownloadCtrl', function ($scope) {
+  .controller('DownloadController', function ($scope) {
     $scope.Stuff = [
       'HTML5 Boilerplate',
       'AngularJS',

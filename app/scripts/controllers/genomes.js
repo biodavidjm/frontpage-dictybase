@@ -9,7 +9,7 @@
  */
 
 angular.module('dictyFrontpageApp')
-  .controller('GenomesCtrl', function ($scope) {
+  .controller('GenomesController', function ($scope) {
     $scope.Stuff = [
       'HTML5 Boilerplate',
       'AngularJS',

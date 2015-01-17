@@ -8,7 +8,7 @@
  * Controller of the dictyFrontpageApp
  */
 angular.module('dictyFrontpageApp')
-  .controller('MainFrontpageCtrl', function ($scope) {
+  .controller('MainFrontpageController', function ($scope) {
     $scope.Stuff = [
       'HTML5 Boilerplate',
       'AngularJS',
