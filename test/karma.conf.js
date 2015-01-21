@@ -34,7 +34,7 @@ module.exports = function(config) {
       'app/scripts/**/*.json',
       'app/templates/*.html',
       // fixtures
-      {pattern: 'app/scripts/**/*.json', watched: true, served: true, included: false}
+      {pattern: 'app/scripts/frontNews/*.json', included: false}
     ],
 
     //DJM. Coverage reporter generates the coverage
@@ -48,7 +48,7 @@ module.exports = function(config) {
       'app/scripts/**/!(ui-bootstrap-tpls-0.12.0).js': ['coverage'], //Not including the ui-bootstrap library in the coverage
       'views/**/*.html': ['ng-html2js'],
       'app/scripts/**/*.html': ['ng-html2js'],
-      'app/scripts/**/*.json': ['ng-json2js'],
+      'app/scripts/frontNews/*.json': ['ng-json2js'],
       'app/templates/*.html': ['ng-html2js']
     },
     //DJM. Coverage reporter
@@ -67,7 +67,7 @@ module.exports = function(config) {
 
     ngJson2JsPreprocessor: {
       // strip this from the file path
-      stripPrefix: 'app/',
+      stripPrefix: 'app/scripts/frontNews/',
       // prepend this to the
       prependPrefix: 'served/',
      },
