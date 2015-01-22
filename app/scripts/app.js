@@ -46,6 +46,10 @@ angular
         templateUrl: 'views/genomes.html',
         controller: 'GenomesController'
       })
+      .when('/techniques', {
+        templateUrl: 'views/techniques.html',
+        controller: 'TechniquesController'
+      })
       .otherwise ({
         templateUrl: 'views/notyet.html',
       });
