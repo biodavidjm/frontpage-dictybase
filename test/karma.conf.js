@@ -66,9 +66,14 @@ module.exports = function(config) {
     },
 
     ngJson2JsPreprocessor: {
-      // strip this from the file path
+      // Specify a module name if you would like all files to be added as values to a single module
+      moduleName : "stubs",
+
+      // Enable / Disable RequireJS support (default is true)
+      enableRequireJs : true,
+      
       stripPrefix: 'app/scripts/frontNews/',
-      // prepend this to the
+      
       prependPrefix: 'served/',
      },
 
