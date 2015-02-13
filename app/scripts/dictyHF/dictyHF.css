@@ -1,4 +1,4 @@
-/* dictyHeaderFooter css stylesheet */
+/* DICTYHEADERFOOTER CSS STYLESHEET */
 
 .dictyHeader {
     min-width: 320px;
@@ -14,12 +14,6 @@
     padding-left: 0px;
     /*max-width: 1100px;*/
 }
-
-/*Footer Rollover effects*/
-.dictyHeader > a:link { color: #D8D8D8; text-decoration: none }
-.dictyHeader > a:active { color: #D8D8D8; text-decoration: none }
-.dictyHeader > a:visited { color: #D8D8D8; text-decoration: none }
-.dictyHeader > a:hover { color: white; text-decoration: underline;}
 
 /*HEADER details*/  
 
@@ -45,17 +39,34 @@
 .linksSpace {
 /*    border-style: solid;
     border-color: green;*/
-    padding-top: 10px;
-    padding-bottom: 5px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    color: #15317E;
 }
 
-.linksSpace button {
-    padding-right: 0px;
+.linksSpace a:link { 
+    text-decoration: none;
+    color:inherit;
+}
+.linksSpace a:active { 
+    text-decoration: none; 
+    color:inherit;
+}
+.linksSpace a:visited { 
+    text-decoration: none;
+    color:inherit;
+}
+.linksSpace a:hover { 
+    text-decoration: none;
+    color: #81DAF5; 
 }
 
-ul > .nav > .nav-pills > .pull-right {
-    
+.submenuFront {
+    padding-right: 5px;
+    padding-left: 5px;
 }
+
 
 
 /*SEARCH BOXES*/
@@ -75,7 +86,9 @@ ul > .nav > .nav-pills > .pull-right {
 .searchNavbarDicty {
     border-style: none;
     margin:0px;
-    font-size: 10px;
+    font-size: 12px;
+    padding-top: 0px;
+    padding: 0px;
 }
 
 .textboxclass {
@@ -176,6 +189,8 @@ ul > .nav > .nav-pills > .pull-right {
     background-color: white;
 }
 
+/*BE RESPONSIVE*/
+
 @media(max-width:992px){
     /*The font-size of the navigation menu in tablets has to be small to be in the same line*/
     .navbar-default .navbar-nav > li > a {
@@ -187,9 +202,9 @@ ul > .nav > .nav-pills > .pull-right {
 
 @media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
-        color: #CCFFCC;
-        text-align: right;
-        font-size: 16px;
+        color: #F7BE81;
+        text-align: center;
+        font-size: 14px;
     }
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
     .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
@@ -199,6 +214,14 @@ ul > .nav > .nav-pills > .pull-right {
     .navbar-default .navbar-nav > li > a {
         color: white;
         font-size: 20px;
+    }
+
+    .searchNavbarDicty {
+        border-style: none;
+        margin:0px;
+        font-size: 12px;
+        padding-top: 5px;
+        padding-bottom: 15px;
     }
 }
 
@@ -225,10 +248,10 @@ ul > .nav > .nav-pills > .pull-right {
 }
 
 /*Footer Rollover effects*/
-.dictyFooter > a:link { color: #D7DF01; text-decoration: none }
-.dictyFooter > a:active { color: #D7DF01; text-decoration: none }
-.dictyFooter > a:visited { color: #D7DF01; text-decoration: none }
-.dictyFooter > a:hover { color: white; text-decoration: underline;}
+.dictyFooter a:link { color: #D8D8D8; text-decoration: none; }
+.dictyFooter a:active { color: #D8D8D8; text-decoration: none; }
+.dictyFooter a:visited { color: #D8D8D8; text-decoration: none; }
+.dictyFooter a:hover { color: white; text-decoration: underline;}
 
 .footMenus {
     font: 14px helvetica,arial,sans-serif;
