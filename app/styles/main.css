@@ -17,7 +17,16 @@
 	zoom:3;
 }
 
+.citeUs {
+	background-color: #CEF6E3;
+	padding: 70px 0px 50px 0px;
+}
+
 .inAbout .glyphicon-heart {
+	zoom:3;
+}
+
+.citeUs .glyphicon-plus {
 	zoom:3;
 }
 
@@ -37,6 +46,10 @@
 .technical {
 	padding-left: 50px;
 	padding-bottom: 50px;
+}
+
+.notYet {
+	padding:50px 0px 300px 0px;
 }
 
 

@@ -42,6 +42,10 @@ angular
         templateUrl: 'views/download.html',
         controller: 'DownloadController'
       })
+      .when('/citeus', {
+        templateUrl: 'views/citeus.html',
+        controller: 'CiteusController'
+      })
       .when('/genomes', {
         templateUrl: 'views/genomes.html',
         controller: 'GenomesController'
