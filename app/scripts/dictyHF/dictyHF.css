@@ -225,6 +225,11 @@
         padding-top: 5px;
         padding-bottom: 15px;
     }
+
+    .submenuFront {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
 }
 
 /*FOOTER DETAILS*/ 
