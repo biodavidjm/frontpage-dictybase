@@ -15,34 +15,44 @@
     /*max-width: 1100px;*/
 }
 
-/*HEADER details*/  
+/*HEADER details*/
 
-.firstHeaderRow {
-    background-color: white;
-    /*border-style: solid;*/
-    /*border-color: grey;*/
+/*equalheights: solves the issue of a row with two columns with 
+content that results in different height.
+In this case, the 
+*/
+.row.equalheights {
+  overflow: hidden; 
+}
+.row.equalheights > [class*="col-"]{
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
 }
 
-.logoSpace {
+.logoSpace {    
+    text-align: left;
 /*    border-style: solid;
-    border-color: #00CCFF;*/
-    vertical-align: bottom;
-    margin: 5px 0px 5px 0px;
-    padding-left: 50px;
+    border-color: red;*/
+}
+
+.logoImageDiv {
+    text-align: left;
+    padding: 5px 0px 5px 50px;
 }
 
 .cologoSpace {
+    text-align: right;
+    /*height: 93;*/
+    height: 100%;
+
 /*    border-style: solid;
     border-color: red;*/
-    text-align: right;
-    height: 93;
 }
 
-.linksSpace {
+.row.linksSpace {
 /*    border-style: solid;
     border-color: green;*/
-    padding-top: 20px;
-    padding-bottom: 10px;
+    padding-top: 15px;
     font-size: 12px;
     color: #15317E;
 }
@@ -73,33 +83,10 @@
 
 /*SEARCH BOXES*/
 
-.searchBoxSpace {
+.row.searchBoxSpace {
 /*    border-style: solid;
-    border-color: green;    */
-}
-.searchGeneSpace {
-    font-size: 10px;
-}
-
-.searchGuidedSpace {
-    font-size: 10px;
-}
-
-.searchNavbarDicty {
-    border-style: none;
-    margin:0px;
-    font-size: 12px;
-    padding-top: 0px;
-    padding: 0px;
-}
-
-.textboxclass {
-    height: 22px;
-    width: 80px;
-}
-
-.form-control-dicty {
-    font-size: 11px;
+    border-color: green;*/    
+    padding-top: 10px;
 }
 
 
@@ -191,7 +178,7 @@
     background-color: white;
 }
 
-/*BE RESPONSIVE*/
+/*ONLY NAVIGATION MENU RESPONSIVE BEHAVIOR*/
 
 @media(max-width:992px){
     /*The font-size of the navigation menu in tablets has to be small to be in the same line*/
@@ -217,19 +204,6 @@
         color: white;
         font-size: 20px;
     }
-
-    .searchNavbarDicty {
-        border-style: none;
-        margin:0px;
-        font-size: 12px;
-        padding-top: 5px;
-        padding-bottom: 15px;
-    }
-
-    .submenuFront {
-        padding-left: 2px;
-        padding-right: 2px;
-    }
 }
 
 /*FOOTER DETAILS*/ 
@@ -237,6 +211,7 @@
     margin-top: 5px;
     min-width:320px;
     padding-bottom: 20px;
+    
 
     /*BACKGROUND COLOR*/
     background: #15317E;
@@ -290,13 +265,27 @@
 @media(max-width:767px){
 
     .logoSpace {
-        padding-top: 10px;
-        padding-left: 0px;
-        /*Same space from the top on mobile devices*/
-    }
-    .linksSpace {
         text-align: center;
     }
+
+    .logoImageDiv {
+        text-align: center;
+        padding: 5px 0px 10px 0px;
+    }
+    .row.linksSpace {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .submenuFront {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    .searchBoxSpace {
+        padding-bottom: 10px;
+    }
+
     .footLinks {
         font: 12px arial, sans-serif;
         color: #D7DF01;

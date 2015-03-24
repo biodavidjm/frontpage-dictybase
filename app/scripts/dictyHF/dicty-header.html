@@ -5,14 +5,17 @@
 <!-- The header -->
 <div class="dictyHeader">
     <div class="container">
-    	<div class="row firstHeaderRow"> <!-- first row: Logo, Search boxes, static links -->
-			<div class="col-sm-3 col-xs-12 logoSpace" > <!-- The logo -->
-				<a ng-href="#/main">
-					<img src="scripts/dictyHF/dictyLogo.png" alt="dictyBase home" width=220>
-				</a>
-			</div>
+    	<div class="row equalheights"> <!-- first row: Logo, Search boxes, static links -->
+    	
+			<div class="logoSpace col-sm-5 col-xs-12"> <!-- The logo -->
+				<div class="logoImageDiv">
+					<a ng-href="#/main">
+						<img src="scripts/dictyHF/dictyLogo.png" alt="dictyBase home" width=220>
+					</a>
+				</div>
+			</div> <!-- end of logoSpace -->
 
-			<div class="col-sm-9 col-xs-12 cologoSpace"> <!-- Static links, search boxes -->
+			<div class="cologoSpace col-sm-7 col-xs-12"> <!-- Static links, search boxes -->
 
  				<div class="row linksSpace"> 
 
@@ -35,28 +38,20 @@
 
 				<!-- SEARCH BOXES -->
 				<div class="row searchBoxSpace">
-			        <div class="col-md-4 col-sm-6 pull-right">
-			            <form class="navbar-form searchNavbarDicty" role="search">
-			                <div class="input-group">
-			                    <input type="text" class="form-control form-control-dicty textboxclass" placeholder="Guided Search">
-			                    <div class="input-group-btn">
-			                        <button class="btn btn-default btn-xs" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-			                    </div>
-			                </div>
-			            </form>
-			        </div> <!-- Gene search -->
-<!-- 			        <div class="col-md-4 col-sm-6 pull-right">
-			            <form class="navbar-form searchNavbarDicty" role="search">
-			                <div class="input-group">
-			                    <input type="text" class="form-control form-control-dicty textboxclass" placeholder="Gene Search">
-			                    <div class="input-group-btn">
-			                        <button class="btn btn-default btn-xs" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-			                    </div>
-			                </div>
-			            </form>
-			        </div> -->
+				  
+				  <div class="col-lg-4 col-sm-2 col-xs-12"> </div> 
 
-				</div> <!-- search box ends -->
+				  <div class="col-lg-8 col-sm-10 col-xs-12 pull-right">
+				    <div class="input-group">
+				      <input type="text" class="form-control" placeholder="Guided Search">
+				      <span class="input-group-btn">
+				        <button class="btn btn-default" type="button"> <span class="glyphicon glyphicon-search"></span> </button>
+				      </span>
+				    </div><!-- /input-group -->
+				  </div>
+
+				</div>
+
 			</div> <!-- Column Next to logo -->
     	</div> <!-- first row: Logo, Search boxes, static links -->
     </div>    <!-- class="container" -->
