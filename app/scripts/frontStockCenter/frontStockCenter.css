@@ -1,8 +1,7 @@
 /*Front Stock Center CSS*/
 
 .stockHouse{
-	padding-left: 5px;
-	padding-right:5px;
+	padding: 8px 5px 5px 5px;
 }
 
 .stockMain{
@@ -17,18 +16,31 @@
 	color: #EFEFFB;
 	font-size: 15px;
 	text-align: center;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	border: 3px solid black;
+	padding: 15px 0px 15px 0px;
+	border: 1px dotted #F5F6CE;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+
 }
+
+.stockSubheader{
+	background-color: #610B4B;
+	color: #F5F6CE;
+	font-size: 10px;
+	letter-spacing: 5px;
+
+	padding: 2px 0px 2px 0px;
+
+}
+
 
 .stockPlasmidsMain {
 	text-align: center;
 	padding-bottom: 10px;
 	/*padding-left: 10px;*/
 	background-color: #BCA9F5;
-	border-bottom-left-radius:20px;
-	border-bottom-right-radius:20px;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius:30px;
 /*	border: 1px solid hotpink;*/
 }
 
@@ -47,8 +59,8 @@
 	text-align: center;
 	padding-bottom: 10px;
 	background-color: #9A2EFE;
-	border-bottom-left-radius:20px;
-	border-bottom-right-radius:20px;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius:30px;
 	/*border: 1px solid mediumpurple*/;
 }
 

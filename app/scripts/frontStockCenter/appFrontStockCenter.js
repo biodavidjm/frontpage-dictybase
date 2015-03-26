@@ -16,7 +16,8 @@ angular
         templateUrl:'scripts/frontStockCenter/front-stockcenter.html',
         scope: true,
         controller: function($scope) {
-          $scope.stockcenterHeader = 'New in STOCK CENTER';
+          $scope.stockcenterHeader = 'STOCK CENTER';
+          $scope.stockcenterSubHead = 'New items';
         }
       };
     });
