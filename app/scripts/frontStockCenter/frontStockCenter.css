@@ -16,7 +16,7 @@
 	color: #EFEFFB;
 	font-size: 15px;
 	text-align: center;
-	padding: 15px 0px 15px 0px;
+	padding: 10px 0px 10px 0px;
 	border: 1px dotted #F5F6CE;
 	border-top-left-radius:10px;
 	border-top-right-radius:10px;
@@ -24,12 +24,12 @@
 }
 
 .stockSubheader{
-	background-color: #610B4B;
-	color: #F5F6CE;
+	background-color: #EFFBFB;
+	color: black;
 	font-size: 10px;
 	letter-spacing: 5px;
-
-	padding: 2px 0px 2px 0px;
+	border: 3px solid #380B61;
+	padding: 1px 0px 1px 0px;
 
 }
 
@@ -46,8 +46,8 @@
 
 .stockPlasmidHeader{
 	font-size: 14px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 7px;
+	
 }
 .stockPlasmidItems {
 	font-size: 11px;
@@ -66,8 +66,7 @@
 
 .stockStrainsHeader{
 	font-size: 14px;
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 7px;
 	color:#FBFBEF;
 }
 
