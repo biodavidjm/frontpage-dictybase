@@ -45,6 +45,6 @@ describe('UnitTesting: the FrontImageController controller', function() {
     expect(scope.name).toBeDefined();
     expect(scope.name).toEqual('Dicty Carousel Directive');
     expect(scope.myInterval).toEqual(8000);
-    expect(scope.slides.length).toEqual(6);
+    expect(scope.slides.length).toEqual(5);
   });
 });
