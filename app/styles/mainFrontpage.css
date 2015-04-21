@@ -56,10 +56,13 @@
     margin-right: 0px;
     margin-left: 0px;
   }
+
   .definition {
     text-align: center;
     padding-left: 0px;
+    padding-right: 0px;
     background-color: white;
+    font-size: 12px;
 /*    border-radius: 10px;
     padding: 5px 5px 5px 30px;*/
 
