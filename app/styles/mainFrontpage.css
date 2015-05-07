@@ -1,0 +1,120 @@
+/* FRONT PAGE CSS */
+
+.frontpage {
+  text-align: center;
+}
+
+.definition {
+  text-align: right;
+  
+  color: #15317E;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+
+  background-color: #EFF8FB;
+  border-radius: 10px;
+  padding: 5px 30px 5px 30px;
+
+}
+
+.imageSpace {
+  color: white;
+  background-color: black;
+  border: 10px solid white;
+}
+
+/*TO ALL*/
+.borderIt {
+  border: 3px solid white;
+  border-radius: 25px;
+}
+
+.paperSpace {
+  background-color: #EFF8FB;
+  border-radius: 10px;
+  margin-right: 0px;
+  margin-left: 0px;
+
+}
+
+.newsSpace {
+  background-color: #F8FBEF;
+  border: 1px dotted #E6E6E6;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media(max-width:767px){
+  .newsSpace {
+    margin-top: 10px;
+    background-color: #0B243B;
+    border: 1px dotted #E6E6E6;
+    margin-bottom: 10px;
+
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+
+  .definition {
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: white;
+    font-size: 12px;
+/*    border-radius: 10px;
+    padding: 5px 5px 5px 30px;*/
+
+  }
+}
+
+.widgetSpace {
+  /*border: 1px dotted black;*/
+}
+
+.widgetHeader {
+  text-align: left;
+  font-weight: bold;
+
+  color:#BDBDBD;
+
+  font-size: 12px;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  /*font-family: Arial;*/
+  font-style: italic;
+
+  padding-bottom: 5px;
+
+}
+
+.widgetDiv {
+  padding-bottom: 15px;
+}
+
+.widgetDivHover img:last-child{display:none}
+.widgetDivHover:hover img:first-child{display:none}
+.widgetDivHover:hover img:last-child{display:inline-block}
+
+#widgetImages {
+  text-align:center;
+  border-radius:5px;
+}
+
+.variableSpace {
+  background-color: #0B4C5F;
+  color:white;
+}
+
+.dictyAccess {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.dictyAccess > h4 {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  text-align: left;
+}

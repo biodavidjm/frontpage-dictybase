@@ -1,0 +1,89 @@
+/*MAIN STYLE*/
+
+ html, body {
+    height: 100%;
+}
+
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+.inDownload {
+	background-color: #BCF5A9;
+}
+
+.inDownload .glyphicon-download {
+	zoom:3;
+}
+
+.citeUs {
+	background-color: #CEF6E3;
+	padding: 70px 0px 50px 0px;
+}
+
+.inAbout .glyphicon-heart {
+	zoom:3;
+}
+
+.citeUs .glyphicon-plus {
+	zoom:3;
+}
+
+.inContact {
+	background-color: #ECF6CE;
+}
+.inContact .glyphicon-comment {
+	zoom:3;
+}
+
+.contact {
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.technical {
+	padding-left: 50px;
+	padding-bottom: 50px;
+}
+
+.notYet {
+	padding:50px 0px 300px 0px;
+}
+
+
+/*GENOME CARD*/
+.genomeHeader {
+	text-align: center;
+}
+
+.mainCard {
+	text-align: left;
+	width: 500px;
+	height: 200px;
+	background-color: #21610B;
+	color:white;
+	margin-bottom: 5px;
+	border-radius: 20px;
+}
+.rowCard {
+	text-align: left;
+	padding-left: 10px;
+	color: yellow;
+}
+
+
+
+@media (max-width: 767px) {
+	.technical {
+		padding-left: 50px;
+		padding-right: 50px;
+		padding-bottom: 5px;
+	}
+}

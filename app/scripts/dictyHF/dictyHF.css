@@ -1,0 +1,312 @@
+/* DICTYHEADERFOOTER CSS STYLESHEET */
+
+.dictyHeader {
+    min-width: 320px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/*.dictyHeader > .container {     
+    max-width: 1100px;     
+}*/
+
+.dictyHeader > .menuContainer > .container {
+    padding-left: 0px;
+    /*max-width: 1100px;*/
+}
+
+/*HEADER details*/
+
+/*equalheights: solves the issue of a row with two columns with 
+content that results in different height.
+In this case, the 
+*/
+.row.equalheights {
+  overflow: hidden; 
+}
+.row.equalheights > [class*="col-"]{
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+
+.logoSpace {    
+    text-align: left;
+/*    border-style: solid;
+    border-color: red;*/
+}
+
+.logoImageDiv {
+    text-align: left;
+    padding: 5px 0px 5px 50px;
+}
+
+.cologoSpace {
+    text-align: right;
+    /*height: 93;*/
+    height: 100%;
+
+/*    border-style: solid;
+    border-color: red;*/
+}
+
+.row.linksSpace {
+/*    border-style: solid;
+    border-color: green;*/
+    padding-top: 15px;
+    font-size: 12px;
+    color: #15317E;
+}
+
+.linksSpace a:link { 
+    text-decoration: none;
+    color:inherit;
+}
+.linksSpace a:active { 
+    text-decoration: none; 
+    color:inherit;
+}
+.linksSpace a:visited { 
+    text-decoration: none;
+    color:inherit;
+}
+.linksSpace a:hover { 
+    text-decoration: none;
+    color: #81DAF5; 
+}
+
+.submenuFront {
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+
+
+/*SEARCH BOXES*/
+
+.row.searchBoxSpace {
+/*    border-style: solid;
+    border-color: green;*/    
+    padding-top: 10px;
+}
+
+
+/*HEADER NAVIGATION BAR CUSTOMIZED*/
+
+.menuContainer {
+    background-color: #15317E;
+}
+
+.menuContainer > .container {
+    /*Needed to keep the menu on top of the divs*/
+    /*position: relative;*/
+}
+
+/*CUSTOMIZE DEFAULT PARAMETERS*/
+/* navbar */
+.navbar-default {
+    background-color: #15317E;
+    border-style: none;
+    margin:0px;
+}   
+/* title */
+.navbar-default .navbar-brand {
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+}
+/* link */
+.navbar-default .navbar-nav > li > a {
+    color: white;
+    font-size: 18px;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #CCFFCC;
+}
+/* I don't know what is this for */
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: yellow;
+    background-color: yellow;
+}
+.navbar-default .navbar-nav > .open > a, 
+.navbar-default .navbar-nav > .open > a:hover, 
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #333399;
+    background-color: white;
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: white;
+    border-bottom-color: fuchsia;
+}
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #CCFFCC;
+    border-bottom-color: red;
+}
+.navbar-default .navbar-nav > .open > a .caret, 
+.navbar-default .navbar-nav > .open > a:hover .caret, 
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #555;
+    border-bottom-color: #555;
+}
+
+/*DROPDOWN MENU*/
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: black;
+    text-align: left;
+    font-size: 18px;
+    padding-top: 10px;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: white;
+    background-color: #000099;
+}
+
+/* mobile version */
+.navbar-default .navbar-toggle {
+    border-color: white;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: orange;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+/*ONLY NAVIGATION MENU RESPONSIVE BEHAVIOR*/
+
+@media(max-width:992px){
+    /*The font-size of the navigation menu in tablets has to be small to be in the same line*/
+    .navbar-default .navbar-nav > li > a {
+        color: white;
+        font-size: 18px;
+        padding-right: 2px;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+        color: #F7BE81;
+        text-align: center;
+        font-size: 14px;
+    }
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+    .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+        color: orange;
+    }
+    /*FONT SIZE FOR THE NAVIGATION BIGGER LARGER FOR BETTER READ*/
+    .navbar-default .navbar-nav > li > a {
+        color: white;
+        font-size: 20px;
+    }
+}
+
+/*FOOTER DETAILS*/ 
+.dictyFooter {
+    margin-top: 5px;
+    min-width:320px;
+    padding-bottom: 20px;
+    
+
+    /*BACKGROUND COLOR*/
+    background: #15317E;
+    background: linear-gradient(#15317E, #0099FF); /* Standard syntax */
+    background: -webkit-linear-gradient(#15317E, #0099FF); /*Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#15317E, #0099FF);  /*Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#15317E, #0099FF);  /*Firefox 3.6 to 15 */
+}
+
+.dictyFooter > .container {
+    /*max-width: 1100px;*/
+}
+
+.dictyFooter > .col-xs-12 > .footMenuSupport {
+    text-align: left;
+}
+
+/*Footer Rollover effects*/
+.dictyFooter a:link { color: #D8D8D8; text-decoration: none; }
+.dictyFooter a:active { color: #D8D8D8; text-decoration: none; }
+.dictyFooter a:visited { color: #D8D8D8; text-decoration: none; }
+.dictyFooter a:hover { color: white; text-decoration: underline;}
+
+.footMenus {
+    font: 14px helvetica,arial,sans-serif;
+    color: #CCFFCC;
+    padding-bottom: 1px;
+    padding-top: 10px;
+    text-align: left;
+}
+
+.footMenuSupport {
+    font: 14px arial,sans-serif;
+    color: white;
+    padding-top: 25px;
+    text-align: left;
+}
+
+.footLinks {
+    font: 11px arial, sans-serif;
+    color: white;
+    padding-top: 8px;
+}
+
+
+/* Responsive: define what to do on every screen size */
+/*@media(min-width:1200px){
+
+}*/
+
+@media(max-width:767px){
+
+    .logoSpace {
+        text-align: center;
+    }
+
+    .logoImageDiv {
+        text-align: center;
+        padding: 5px 0px 10px 0px;
+    }
+    .row.linksSpace {
+        text-align: center;
+        padding-bottom: 10px;
+    }
+
+    .submenuFront {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    .searchBoxSpace {
+        padding-bottom: 10px;
+    }
+
+    .footLinks {
+        font: 12px arial, sans-serif;
+        color: #D7DF01;
+        padding-top: 8px;
+        text-align: center;
+    }
+    .footMenus {
+        font: 16px helvetica,arial,sans-serif;
+        color: #CCFFCC;
+        padding-bottom: 1px;
+        padding-top: 30px;
+        text-align: center;
+    }
+    .footMenuSupport {
+        font: 16px arial,sans-serif;
+        color: yellow;
+        padding-top: 25px;
+        text-align: center;
+    }
+    .navbar-toggle {
+        float: none;
+        margin-right: 0;
+    }
+}

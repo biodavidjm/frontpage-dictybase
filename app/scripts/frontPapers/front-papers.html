@@ -1,0 +1,19 @@
+<!-- front-news.html -->
+<link rel="stylesheet" href="scripts/frontPapers/frontPapers.css">
+
+<div class="row papersMain">
+	<div class="papersHeader">
+		<span class="glyphicon glyphicon-paperclip"></span> {{papersHeader}}
+
+	</div>
+	<div class="row papersBox" ng-repeat="paper in papers">
+		<span class="papersAuthors">{{paper.authors}}</span> 
+		<span class="papersTitle">{{paper.title}} </span>
+		<span class="papersJournal">{{paper.journal}} </span>
+	</div>
+	<div class="row papersMore">
+		<span class="glyphicon glyphicon-plus"></span> more papers
+	</div>
+</div>
+
+

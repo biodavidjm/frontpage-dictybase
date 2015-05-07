@@ -1,0 +1,62 @@
+.conferenceMain{
+	padding-left: 5px;
+	padding-right:5px;
+	padding-top: 10px;
+	padding: 10px 5px 10px 5px;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+
+.conferenceHeader{
+	text-align: center;
+	font-size: 16px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: #86B404;
+	border-top-right-radius:10px;
+	border-bottom-left-radius:10px;
+	color: #EFFBF2;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+
+.conferenceDate {
+	padding-top: 10px;
+	font-size: 12px;
+	font-weight: bold;
+	font-family: arial;
+}
+
+.conferenceName {
+	font-size: 16px;
+	color:#86B404;
+	font-weight: bold;
+}
+
+@media(max-width:992px){
+
+
+}
+
+@media(max-width:767px){
+
+	.conferenceMain{
+		padding-top: 20px;
+		padding-bottom: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.conferenceHeader{
+		font-size: 18px;
+	}
+
+	.conferenceDate {
+		font-size: 14px;
+	}
+
+	.conferenceName {
+		font-size: 18px;
+	}
+}
