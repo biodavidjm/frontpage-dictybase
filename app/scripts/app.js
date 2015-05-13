@@ -20,7 +20,7 @@ angular
     'frontPapersApp',
     'frontStockCenterApp'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/mainFrontpage.html',
@@ -57,4 +57,6 @@ angular
       .otherwise ({
         templateUrl: 'views/notyet.html',
       });
+
+      $locationProvider.html5Mode(true);
   });
