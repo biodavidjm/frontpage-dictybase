@@ -1,5 +1,12 @@
 'use strict';
 
+/**
+ * @ngdoc directive
+ * @name frontConferenceApp.directive:frontConference
+ * @description
+ * # Directive for the conference box on the frontPage
+ */
+
 angular
   .module('frontConferenceApp', [])
     .directive('frontConference', function() {
@@ -13,12 +20,6 @@ angular
       };
     });
 
-/**
- * @ngdoc directive
- * @name frontConferenceApp.directive:frontConference
- * @description
- * # Directive for the conference box on the frontPage
- */
 // angular
 //   .module('frontConferenceApp',[])
 //     .directive('frontConference', function () {
