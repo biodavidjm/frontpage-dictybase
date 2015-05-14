@@ -69,38 +69,6 @@
   }
 }
 
-.widgetSpace {
-  /*border: 1px dotted black;*/
-}
-
-.widgetHeader {
-  text-align: left;
-  font-weight: bold;
-
-  color:#BDBDBD;
-
-  font-size: 12px;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  /*font-family: Arial;*/
-  font-style: italic;
-
-  padding-bottom: 5px;
-
-}
-
-.widgetDiv {
-  padding-bottom: 15px;
-}
-
-.widgetDivHover img:last-child{display:none}
-.widgetDivHover:hover img:first-child{display:none}
-.widgetDivHover:hover img:last-child{display:inline-block}
-
-#widgetImages {
-  text-align:center;
-  border-radius:5px;
-}
-
 .variableSpace {
   background-color: #0B4C5F;
   color:white;
