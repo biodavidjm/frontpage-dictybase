@@ -1,62 +1,46 @@
 .meetingsMain{
-	padding-left: 5px;
-	padding-right:5px;
-	padding-top: 10px;
-	padding: 10px 5px 10px 5px;
+	text-align: left;
+	padding-left: 0px;
+	padding-right: 0px;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
-
 .meetingsHeader{
-	text-align: center;
+	color:#B45F04;
 	font-size: 16px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	background-color: #86B404;
-	border-top-right-radius:10px;
-	border-bottom-left-radius:10px;
-	color: #EFFBF2;
-	margin-left: 10px;
-	margin-right: 10px;
+	padding-top: 15px;
+	padding-bottom: 10px;
+	padding-left: 30px;
 }
 
-
-.meetingsDate {
-	padding-top: 10px;
+.meetingBox{
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 20px;
 	font-size: 12px;
-	font-weight: bold;
-	font-family: arial;
 }
 
 .meetingsName {
-	font-size: 16px;
-	color:#86B404;
+	color: #0B243B;
 	font-weight: bold;
+	padding-right: 10px;
 }
 
-@media(max-width:992px){
-
-
+.meetingsLocation {
+	color: #848484;
+	padding-right: 10px;
 }
 
-@media(max-width:767px){
+.meetingsDate {
+	color:#8A0808;
+}
 
-	.meetingsMain{
-		padding-top: 20px;
-		padding-bottom: 20px;
-		padding-left: 20px;
-		padding-right: 20px;
-	}
+.meetingsMore {
+	color: #B45F04;
+	font-size: 11px;
+	font-style: italic;
+	font-weight: normal;
+	text-align: center;
 
-	.meetingsHeader{
-		font-size: 18px;
-	}
-
-	.meetingsDate {
-		font-size: 14px;
-	}
-
-	.meetingsName {
-		font-size: 18px;
-	}
+	padding-bottom: 20px;
 }
