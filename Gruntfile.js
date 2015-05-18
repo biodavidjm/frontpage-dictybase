@@ -313,10 +313,12 @@ module.exports = function (grunt) {
             'fonts/*',
             //DJM
             'scripts/dictyHF/*',
+            'scripts/frontConference/*',
             'scripts/frontImage/*',
+            'scripts/frontMeetings/*',
             'scripts/frontNews/*',
             'scripts/frontPapers/*',
-            'scripts/frontConference/*',
+            'scripts/frontPopulars/*',
             'scripts/frontStockCenter/*',
             'styles/mainFrontpage.css',
             'templates/*'
