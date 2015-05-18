@@ -35,8 +35,15 @@
   border-radius: 10px;
   margin-right: 0px;
   margin-left: 0px;
-
 }
+
+.meetingsSpace {
+  background-color: #F2F2F2;
+  border-radius: 10px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
 
 .newsSpace {
   background-color: #F8FBEF;
@@ -65,40 +72,7 @@
     font-size: 12px;
 /*    border-radius: 10px;
     padding: 5px 5px 5px 30px;*/
-
   }
-}
-
-.widgetSpace {
-  /*border: 1px dotted black;*/
-}
-
-.widgetHeader {
-  text-align: left;
-  font-weight: bold;
-
-  color:#BDBDBD;
-
-  font-size: 12px;
-  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-  /*font-family: Arial;*/
-  font-style: italic;
-
-  padding-bottom: 5px;
-
-}
-
-.widgetDiv {
-  padding-bottom: 15px;
-}
-
-.widgetDivHover img:last-child{display:none}
-.widgetDivHover:hover img:first-child{display:none}
-.widgetDivHover:hover img:last-child{display:inline-block}
-
-#widgetImages {
-  text-align:center;
-  border-radius:5px;
 }
 
 .variableSpace {

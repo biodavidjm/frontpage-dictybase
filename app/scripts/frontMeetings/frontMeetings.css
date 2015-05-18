@@ -1,45 +1,42 @@
-/*front-papers CSS*/
-
-.papersMain {
+.meetingsMain{
 	text-align: left;
 	padding-left: 0px;
 	padding-right: 0px;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
-.papersHeader{
-	color:#086A87;
+.meetingsHeader{
+	color:#B45F04;
 	font-size: 16px;
 	padding-top: 15px;
 	padding-bottom: 10px;
-	padding-left:30px;
+	padding-left: 30px;
 }
 
-.papersBox{
-	padding-left: 25px;
-	padding-right: 25px;
-	padding-bottom: 10px;
+.meetingBox{
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 20px;
 	font-size: 12px;
 }
 
-.papersAuthors {
-	color:#0B3861;
+.meetingsName {
+	color: #0B243B;
+	font-weight: bold;
 	padding-right: 10px;
 }
 
-.papersTitle{
-	color: grey;
-	font-style: italic;
+.meetingsLocation {
+	color: #848484;
 	padding-right: 10px;
 }
 
-.papersJournal {
-	color: #086A87;
+.meetingsDate {
+	color:#8A0808;
 }
 
-.papersMore {
-	color: #086A87;
-
+.meetingsMore {
+	color: #B45F04;
 	font-size: 11px;
 	font-style: italic;
 	font-weight: normal;

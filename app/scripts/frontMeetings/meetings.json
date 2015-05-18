@@ -1,0 +1,27 @@
+[
+    {
+        "name": "8th International Biocuration Conference",
+        "location": "Beijing (China)",
+        "date": "April 23-26, 2015"
+    }, 
+    {
+        "name": "Gordon Research Conference Cell Contact & Adhesion",
+        "location": "Proctor Academy, Andover, NH (USA)",
+        "date": "June 28 - July 3, 2015"
+    }, 
+    {
+        "name": "Dicty 2015",
+        "location": "Royal Holloway University, London (UK) ",
+        "date": "August 9-13, 2015"
+    },
+    {
+        "name": "GO Consortium Meeting",
+        "location": "Washington DC (USA)",
+        "date": "August 30 - September 2, 2015"
+    },
+    {
+        "name": "ASCB 2015 Annual Meeting",
+        "location": "San Diego, California (USA)",
+        "date": "August 30 - September 2, 2015"
+    }
+]

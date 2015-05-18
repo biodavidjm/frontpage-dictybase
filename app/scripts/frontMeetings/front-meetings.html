@@ -1,0 +1,22 @@
+<!-- front-news.html -->
+<link rel="stylesheet" href="scripts/frontMeetings/frontMeetings.css">
+
+<div class="meetingsMain">
+
+	<div class="row meetingsHeader">
+		<span class="glyphicon glyphicon-plane"></span> {{meetingsHeader}}
+	</div>
+
+	<div class="row meetingBox" ng-repeat="meeting in meetings">
+		<span class="meetingsName"> {{meeting.name}} </span>
+		<span class="meetingsLocation"> {{meeting.location}} </span>
+		<span class="meetingsDate"> [{{meeting.date}}]</span> 
+	</div>
+
+	<div class="row meetingsMore">
+		<span class="glyphicon glyphicon-plus"></span> more meetings
+	</div>
+
+</div>
+
+
