@@ -35,8 +35,15 @@
   border-radius: 10px;
   margin-right: 0px;
   margin-left: 0px;
-
 }
+
+.meetingsSpace {
+  background-color: #F2F2F2;
+  border-radius: 10px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
 
 .newsSpace {
   background-color: #F8FBEF;
