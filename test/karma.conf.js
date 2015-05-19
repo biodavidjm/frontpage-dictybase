@@ -48,7 +48,7 @@ module.exports = function(config) {
       'app/scripts/**/!(ui-bootstrap-tpls-0.12.0).js': ['coverage'], //Not including the ui-bootstrap library in the coverage
       'views/**/*.html': ['ng-html2js'],
       'app/scripts/**/*.html': ['ng-html2js'],
-      'app/scripts/frontNews/*.json': ['ng-json2js'],
+      'app/scripts/*/*.json': ['ng-json2js'],
       'app/templates/*.html': ['ng-html2js']
     },
     //DJM. Coverage reporter

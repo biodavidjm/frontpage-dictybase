@@ -1,19 +1,12 @@
-frontpage-dictybase
-===================
+frontpage-dictybase 
+===
+[![Travis Build Status](https://travis-ci.org/dictyBase/frontpage-dictybase.svg?branch=develop)](https://travis-ci.org/dictyBase/frontpage-dictybase.svg?branch=develop) [![Dependency Status](https://david-dm.org/dictyBase/frontpage-dictybase.svg)](https://david-dm.org/dictyBase/frontpage-dictybase) [![devDependency Status](https://david-dm.org/dictyBase/frontpage-dictybase/dev-status.svg)](https://david-dm.org/dictyBase/frontpage-dictybase#info=devDependencies)
 
 *The new dynamic FrontPage of dictyBase.*
 
 <img src="https://github.com/dictyBase/frontpage-dictybase/blob/develop/images/frontpageGrid/frontpageGridApp.jpg" width="600">
 
 ---
-
-# Build Status
-
-### Travis CI configuration
-[![Travis Build Status](https://travis-ci.org/dictyBase/frontpage-dictybase.svg?branch=develop)](https://travis-ci.org/dictyBase/frontpage-dictybase.svg?branch=develop)
-
-The configuration file `.travis.yml` contains the specifications for [Travis](https://travis-ci.org/), including the `node` versions to be tested, required installations, and specifications to run the browsers Firefox and Travis. 
-
 
 # Introduction
 
@@ -57,6 +50,17 @@ libpng-dev
 ```shell
 npm install 
 ```
+
+# Test & Coverage
+
+```shell
+grunt test
+```
+
+- It uses `Karma` to run the tests available at `test/`
+- It uses the plugin `karma-coverage` to generate code coverage using `Istanbul`. The report is available at `coverage/`
+
+To find out more, check the file `test/karma.conf.js`
 
 # Design principles
 
