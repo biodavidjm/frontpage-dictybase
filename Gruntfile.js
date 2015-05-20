@@ -10,7 +10,18 @@
 module.exports = function (grunt) {
 
   // Load grunt tasks automatically
-  require('load-grunt-tasks')(grunt);
+  // require('load-grunt-tasks')(grunt);
+  require('load-grunt-tasks')(grunt, 
+  { 
+    pattern: ['grunt-*', '!grunt-karma'], 
+    // config: '../package.json', 
+    scope: 'dependencies' 
+  }, 
+  { 
+    pattern: 'grunt-*', 
+    // config: '../package.json', 
+    scope: 'devDependencies'
+  });
 
   // Time how long tasks take. Can help when optimizing build times
   require('time-grunt')(grunt);
