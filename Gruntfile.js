@@ -57,6 +57,8 @@ module.exports = function (grunt) {
         },
         files: [
           '<%= yeoman.app %>/{,*/}*.html',
+          '<%= yeoman.app %>/scripts/{,*/}*.html',
+          '<%= yeoman.app %>/scripts/{,*/}*.css',
           '.tmp/styles/{,*/}*.css',
           '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
         ]
@@ -312,15 +314,9 @@ module.exports = function (grunt) {
             'images/*',
             'fonts/*',
             //DJM
-            'scripts/dictyHF/*',
-            'scripts/frontConference/*',
-            'scripts/frontImage/*',
-            'scripts/frontMeetings/*',
-            'scripts/frontNews/*',
-            'scripts/frontPapers/*',
-            'scripts/frontPopulars/*',
-            'scripts/frontStockCenter/*',
-            'styles/mainFrontpage.css',
+            'styles/*.css',
+            //djm: the directives
+            'scripts/*/*',
             'templates/*'
           ]
         }, {
