@@ -26,7 +26,8 @@
     "grunt-wiredep": "^1.7.0",
     "jshint-stylish": "^0.2.0",
     "load-grunt-tasks": "^0.4.0",
-    "time-grunt": "^0.3.1"
+    "time-grunt": "^0.3.1",
+    "grunt-log-headers": "^1.0.1"
   },
   "devDependencies": {
     "jasmine-core": "^2.1.2",

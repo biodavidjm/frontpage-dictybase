@@ -10,21 +10,25 @@
 module.exports = function (grunt) {
 
   // Load grunt tasks automatically
+  // 1. Load all of them:
   // require('load-grunt-tasks')(grunt);
+  
+  // 2. Customize it
   require('load-grunt-tasks')(grunt, 
   { 
     pattern: ['grunt-*', '!grunt-karma'], 
-    // config: '../package.json', 
     scope: 'dependencies' 
   }, 
   { 
     pattern: 'grunt-*', 
-    // config: '../package.json', 
     scope: 'devDependencies'
   });
 
   // Time how long tasks take. Can help when optimizing build times
   require('time-grunt')(grunt);
+
+  // Hide the running task name header in Grunt's logger.
+  require('grunt-log-headers')(grunt);
 
   // Configurable paths for the application
   var appConfig = {
@@ -145,6 +149,9 @@ module.exports = function (grunt) {
 
     // Empties folders to start fresh
     clean: {
+      options: {
+        gruntLogHeader: false
+      },
       dist: {
         files: [{
           dot: true,
@@ -161,6 +168,7 @@ module.exports = function (grunt) {
     // Add vendor prefixed styles
     autoprefixer: {
       options: {
+        gruntLogHeader: false,
         browsers: ['last 1 version']
       },
       dist: {
@@ -175,6 +183,9 @@ module.exports = function (grunt) {
 
     // Automatically inject Bower components into the app
     wiredep: {
+      options: {
+        gruntLogHeader: false
+      },
       app: {
         src: ['<%= yeoman.app %>/index.html'],
         ignorePath:  /\.\.\//
@@ -183,6 +194,9 @@ module.exports = function (grunt) {
 
     // Renames files for browser caching purposes
     filerev: {
+      options: {
+        gruntLogHeader: false
+      },
       dist: {
         src: [
           '<%= yeoman.dist %>/scripts/{,*/}*.js',
@@ -200,6 +214,7 @@ module.exports = function (grunt) {
     useminPrepare: {
       html: '<%= yeoman.app %>/index.html',
       options: {
+        gruntLogHeader: false,
         dest: '<%= yeoman.dist %>',
         flow: {
           html: {
@@ -218,6 +233,7 @@ module.exports = function (grunt) {
       html: ['<%= yeoman.dist %>/{,*/}*.html'],
       css: ['<%= yeoman.dist %>/styles/{,*/}*.css'],
       options: {
+        gruntLogHeader: false,
         assetsDirs: ['<%= yeoman.dist %>','<%= yeoman.dist %>/images']
       }
     },
@@ -271,6 +287,9 @@ module.exports = function (grunt) {
     },
 
     htmlmin: {
+      options: {
+        gruntLogHeader: false
+      },
       dist: {
         options: {
           collapseWhitespace: true,
@@ -291,6 +310,9 @@ module.exports = function (grunt) {
     // ng-annotate tries to make the code safe for minification automatically
     // by using the Angular long form for dependency injection.
     ngAnnotate: {
+      options: {
+        gruntLogHeader: false
+      },      
       dist: {
         files: [{
           expand: true,
@@ -303,6 +325,9 @@ module.exports = function (grunt) {
 
     // Replace Google CDN references
     cdnify: {
+      options: {
+        gruntLogHeader: false
+      },
       dist: {
         html: ['<%= yeoman.dist %>/*.html']
       }
@@ -310,6 +335,9 @@ module.exports = function (grunt) {
 
     // Copies remaining files to places other tasks can use
     copy: {
+      options: {
+        gruntLogHeader: false
+      },
       dist: {
         files: [{
           expand: true,
@@ -352,6 +380,9 @@ module.exports = function (grunt) {
 
     // Run some tasks in parallel to speed up the build process
     concurrent: {
+      options: {
+        gruntLogHeader: false
+      },
       server: [
         'copy:styles'
       ],
