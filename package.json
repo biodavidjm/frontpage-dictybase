@@ -1,6 +1,6 @@
 {
   "name": "dictyfrontpage",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "dependencies": {
     "bower": "~1.4.0",
     "grunt": "^0.4.1",
