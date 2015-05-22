@@ -30,12 +30,10 @@
     "grunt-wiredep": "^1.7.0",
     "jshint-stylish": "^0.2.0",
     "load-grunt-tasks": "^0.4.0",
-    "time-grunt": "^0.3.1",
-    "grunt-log-headers": "^1.0.1"
+    "time-grunt": "^0.3.1"
   },
   "devDependencies": {
     "grunt-karma": "^0.9.0",
-    "grunt-log-headers": "^1.0.1",
     "jasmine-core": "^2.1.2",
     "karma": "^0.12.25",
     "karma-coverage": "^0.2.7",
