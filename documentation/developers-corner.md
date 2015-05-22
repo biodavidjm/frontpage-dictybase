@@ -174,3 +174,15 @@ The configuration file `.travis.yml` contains the specifications for [Travis](ht
 ### Check node.js dependencies status using David:
 [![Dependency Status](https://david-dm.org/dictyBase/frontpage-dictybase.svg)](https://david-dm.org/dictyBase/frontpage-dictybase) 
 [![devDependency Status](https://david-dm.org/dictyBase/frontpage-dictybase/dev-status.svg)](https://david-dm.org/dictyBase/frontpage-dictybase#info=devDependencies)
+
+# NODE
+
+## Update npm dependencies
+
+```shell
+# Check for outdated dependencies:
+npm outdated
+# Update the package.json with the versions you want to update
+npm update --save
+```
+
