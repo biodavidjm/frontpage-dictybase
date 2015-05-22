@@ -9,11 +9,25 @@
 
 module.exports = function (grunt) {
 
-  // Load grunt tasks automatically
-  require('load-grunt-tasks')(grunt);
-
-  // Time how long tasks take. Can help when optimizing build times
-  require('time-grunt')(grunt);
+  // Load all grunt tasks automatically
+  // 1. Load all of them:
+  // require('load-grunt-tasks')(grunt);
+  
+  // 2. Load all of them, EXCEPT grunt-karma 
+  require('load-grunt-tasks')(grunt, { 
+    pattern: ['grunt-*', 'jshint-stylish', 
+    '!grunt-karma', 
+    '!grunt-autoprefixer',
+    '!grunt-concurrent',
+    '!grunt-contrib-connect',
+    '!grunt-contrib-imagemin',
+    '!grunt-contrib-watch',
+    '!grunt-google-cdn',
+    '!grunt-newer',
+    '!grunt-contrib-jshint',
+    '!grunt-svgmin'
+    ]
+  });
 
   // Configurable paths for the application
   var appConfig = {
@@ -57,6 +71,8 @@ module.exports = function (grunt) {
         },
         files: [
           '<%= yeoman.app %>/{,*/}*.html',
+          '<%= yeoman.app %>/scripts/{,*/}*.html',
+          '<%= yeoman.app %>/scripts/{,*/}*.css',
           '.tmp/styles/{,*/}*.css',
           '<%= yeoman.app %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}'
         ]
@@ -312,15 +328,9 @@ module.exports = function (grunt) {
             'images/*',
             'fonts/*',
             //DJM
-            'scripts/dictyHF/*',
-            'scripts/frontConference/*',
-            'scripts/frontImage/*',
-            'scripts/frontMeetings/*',
-            'scripts/frontNews/*',
-            'scripts/frontPapers/*',
-            'scripts/frontPopulars/*',
-            'scripts/frontStockCenter/*',
-            'styles/mainFrontpage.css',
+            'styles/*.css',
+            //djm: the directives
+            'scripts/*/*',
             'templates/*'
           ]
         }, {
@@ -369,6 +379,18 @@ module.exports = function (grunt) {
 
 
   grunt.registerTask('serve', 'Compile then start a connect web server', function (target) {
+
+    grunt.loadNpmTasks('grunt-autoprefixer');
+    grunt.loadNpmTasks('grunt-concurrent');
+    grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-google-cdn');
+    grunt.loadNpmTasks('grunt-newer');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-svgmin');
+    grunt.loadNpmTasks('jshint-stylish');
+
     if (target === 'dist') {
       return grunt.task.run(['build', 'connect:dist:keepalive']);
     }
@@ -388,34 +410,55 @@ module.exports = function (grunt) {
     grunt.task.run(['serve:' + target]);
   });
 
-  grunt.registerTask('test', [
-    'clean:server',
-    'concurrent:test',
-    'autoprefixer',
-    'connect:test',
-    'karma'
-  ]);
+  grunt.registerTask('test', [], function () {
+
+    // Time how long tasks take. Can help when optimizing build times
+    require('time-grunt')(grunt);
+
+    grunt.loadNpmTasks('grunt-karma');
+    grunt.loadNpmTasks('grunt-autoprefixer');
+    grunt.loadNpmTasks('grunt-concurrent');
+    grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-google-cdn');
+    grunt.loadNpmTasks('grunt-newer');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-svgmin');
+    grunt.loadNpmTasks('jshint-stylish');
+
+    grunt.task.run(
+      'clean:server',
+      'concurrent:test',
+      'autoprefixer',
+      'connect:test',
+      'karma');
+  });
 
   grunt.registerTask('build', [
     'clean:dist',
     'wiredep',
     'useminPrepare',
-    'concurrent:dist',
-    'autoprefixer',
     'concat',
     'ngAnnotate',
     'copy:dist',
-    'cdnify',
     'cssmin',
     'uglify',
     'filerev',
     'usemin',
-    'htmlmin'
+    'htmlmin',
+    'copy:styles'
+    // 'autoprefixer',
+    // 'cdnify',
+    // 'concurrent:dist',
+    // 'imagemin',
+    // 'svgmin'
   ]);
 
   grunt.registerTask('default', [
-    'newer:jshint',
+    // 'newer:jshint',
     'test',
-    'build'
+    'build',
+    'serve'
   ]);
 };

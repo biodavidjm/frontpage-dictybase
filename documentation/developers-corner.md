@@ -152,9 +152,6 @@ It is not definitely trivial.
 
 	npm install karma-ng-json2js-preprocessor --save-dev
 
-
-
-
 ## Tips
 
 * [JShint](http://www.jshint.com/) to detect errors in javascript code
@@ -166,4 +163,14 @@ It is not definitely trivial.
 	`<script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.12.0.js"></script>`
 
 
+# Build Status 
 
+### Travis CI configuration
+
+The configuration file `.travis.yml` contains the specifications for [Travis](https://travis-ci.org/), including the `node` versions to be tested, required installations, and specifications to run the browsers Firefox and Travis. 
+
+[![Travis Build Status](https://travis-ci.org/dictyBase/frontpage-dictybase.svg?branch=develop)](https://travis-ci.org/dictyBase/frontpage-dictybase.svg?branch=develop) 
+
+### Check node.js dependencies status using David:
+[![Dependency Status](https://david-dm.org/dictyBase/frontpage-dictybase.svg)](https://david-dm.org/dictyBase/frontpage-dictybase) 
+[![devDependency Status](https://david-dm.org/dictyBase/frontpage-dictybase/dev-status.svg)](https://david-dm.org/dictyBase/frontpage-dictybase#info=devDependencies)
