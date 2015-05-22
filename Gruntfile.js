@@ -15,7 +15,7 @@ module.exports = function (grunt) {
   
   // 2. Load all of them, EXCEPT grunt-karma 
   require('load-grunt-tasks')(grunt, { 
-    pattern: ['grunt-*', 
+    pattern: ['grunt-*', 'jshint-stylish', 
     '!grunt-karma', 
     '!grunt-autoprefixer',
     '!grunt-concurrent',
@@ -26,7 +26,6 @@ module.exports = function (grunt) {
     '!grunt-newer',
     '!grunt-contrib-jshint',
     '!grunt-svgmin'
-    // '!jshint-stylish'
     ]
   });
 
