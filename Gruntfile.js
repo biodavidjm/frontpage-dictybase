@@ -25,8 +25,8 @@ module.exports = function (grunt) {
     '!grunt-google-cdn',
     '!grunt-newer',
     '!grunt-contrib-jshint',
-    '!grunt-svgmin',
-    '!jshint-stylish'
+    '!grunt-svgmin'
+    // '!jshint-stylish'
     ]
   });
 
