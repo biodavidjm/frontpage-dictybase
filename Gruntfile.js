@@ -15,7 +15,19 @@ module.exports = function (grunt) {
   
   // 2. Load all of them, EXCEPT grunt-karma 
   require('load-grunt-tasks')(grunt, { 
-    pattern: ['grunt-*', '!grunt-karma']
+    pattern: ['grunt-*', 
+    '!grunt-karma', 
+    '!grunt-autoprefixer',
+    '!grunt-concurrent',
+    '!grunt-contrib-connect',
+    '!grunt-contrib-imagemin',
+    '!grunt-contrib-watch',
+    '!grunt-google-cdn',
+    '!grunt-newer',
+    '!grunt-contrib-jshint',
+    '!grunt-svgmin',
+    '!jshint-stylish'
+    ]
   });
 
   // Configurable paths for the application
@@ -368,6 +380,18 @@ module.exports = function (grunt) {
 
 
   grunt.registerTask('serve', 'Compile then start a connect web server', function (target) {
+
+    grunt.loadNpmTasks('grunt-autoprefixer');
+    grunt.loadNpmTasks('grunt-concurrent');
+    grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-google-cdn');
+    grunt.loadNpmTasks('grunt-newer');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-svgmin');
+    grunt.loadNpmTasks('jshint-stylish');
+
     if (target === 'dist') {
       return grunt.task.run(['build', 'connect:dist:keepalive']);
     }
@@ -393,6 +417,17 @@ module.exports = function (grunt) {
     require('time-grunt')(grunt);
 
     grunt.loadNpmTasks('grunt-karma');
+    grunt.loadNpmTasks('grunt-autoprefixer');
+    grunt.loadNpmTasks('grunt-concurrent');
+    grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-google-cdn');
+    grunt.loadNpmTasks('grunt-newer');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-svgmin');
+    grunt.loadNpmTasks('jshint-stylish');
+
     grunt.task.run(
       'clean:server',
       'concurrent:test',
@@ -422,7 +457,7 @@ module.exports = function (grunt) {
   ]);
 
   grunt.registerTask('default', [
-    'newer:jshint',
+    // 'newer:jshint',
     'test',
     'build',
     'serve'
