@@ -389,7 +389,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-newer');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-svgmin');
-    grunt.loadNpmTasks('jshint-stylish');
 
     if (target === 'dist') {
       return grunt.task.run(['build', 'connect:dist:keepalive']);
@@ -425,7 +424,6 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-newer');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-svgmin');
-    grunt.loadNpmTasks('jshint-stylish');
 
     grunt.task.run(
       'clean:server',
