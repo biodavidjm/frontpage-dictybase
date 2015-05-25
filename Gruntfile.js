@@ -1,4 +1,4 @@
-// Generated on 2014-11-19 using generator-angular 0.9.8
+// Generated on 2015-05-23 using generator-angular 0.9.8
 'use strict';
 
 // # Globbing
@@ -9,25 +9,11 @@
 
 module.exports = function (grunt) {
 
-  // Load all grunt tasks automatically
-  // 1. Load all of them:
+  // // Load grunt tasks automatically
   // require('load-grunt-tasks')(grunt);
-  
-  // 2. Load all of them, EXCEPT grunt-karma 
-  require('load-grunt-tasks')(grunt, { 
-    pattern: ['grunt-*', 
-    '!grunt-karma', 
-    '!grunt-autoprefixer',
-    '!grunt-concurrent',
-    '!grunt-contrib-connect',
-    '!grunt-contrib-imagemin',
-    '!grunt-contrib-watch',
-    '!grunt-google-cdn',
-    '!grunt-newer',
-    '!grunt-contrib-jshint',
-    '!grunt-svgmin'
-    ]
-  });
+
+  // // Time how long tasks take. Can help when optimizing build times
+  // require('time-grunt')(grunt);
 
   // Configurable paths for the application
   var appConfig = {
@@ -325,9 +311,9 @@ module.exports = function (grunt) {
             '*.html',
             'views/{,*/}*.html',
             'images/{,*/}*.{webp}',
-            'images/*',
             'fonts/*',
             //DJM
+            'images/*',
             'styles/*.css',
             //djm: the directives
             'scripts/*/*',
@@ -379,17 +365,6 @@ module.exports = function (grunt) {
 
 
   grunt.registerTask('serve', 'Compile then start a connect web server', function (target) {
-
-    grunt.loadNpmTasks('grunt-autoprefixer');
-    grunt.loadNpmTasks('grunt-concurrent');
-    grunt.loadNpmTasks('grunt-contrib-connect');
-    grunt.loadNpmTasks('grunt-contrib-imagemin');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-google-cdn');
-    grunt.loadNpmTasks('grunt-newer');
-    grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-svgmin');
-
     if (target === 'dist') {
       return grunt.task.run(['build', 'connect:dist:keepalive']);
     }
@@ -409,54 +384,86 @@ module.exports = function (grunt) {
     grunt.task.run(['serve:' + target]);
   });
 
-  grunt.registerTask('test', [], function () {
+  grunt.registerTask('test', function() {
+    
+    // Load grunt tasks automatically
+    grunt.loadNpmTasks('grunt-karma');
+    grunt.loadNpmTasks('grunt-autoprefixer');
+    grunt.loadNpmTasks('grunt-concurrent');
+
+    grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+
+    grunt.loadNpmTasks('grunt-google-cdn');
+    grunt.loadNpmTasks('grunt-newer');
 
     // Time how long tasks take. Can help when optimizing build times
     require('time-grunt')(grunt);
 
-    grunt.loadNpmTasks('grunt-karma');
-    grunt.loadNpmTasks('grunt-autoprefixer');
-    grunt.loadNpmTasks('grunt-concurrent');
-    grunt.loadNpmTasks('grunt-contrib-connect');
-    grunt.loadNpmTasks('grunt-contrib-imagemin');
-    grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-google-cdn');
-    grunt.loadNpmTasks('grunt-newer');
-    grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-svgmin');
-
-    grunt.task.run(
+    grunt.task.run([
       'clean:server',
-      'concurrent:test',
+      // 'concurrent:test',
       'autoprefixer',
       'connect:test',
-      'karma');
+      'jshint:test',
+      'karma'
+    ]);
   });
 
-  grunt.registerTask('build', [
-    'clean:dist',
-    'wiredep',
-    'useminPrepare',
-    'concat',
-    'ngAnnotate',
-    'copy:dist',
-    'cssmin',
-    'uglify',
-    'filerev',
-    'usemin',
-    'htmlmin',
-    'copy:styles'
-    // 'autoprefixer',
-    // 'cdnify',
-    // 'concurrent:dist',
-    // 'imagemin',
-    // 'svgmin'
-  ]);
+  grunt.registerTask('build', function() {
 
-  grunt.registerTask('default', [
-    // 'newer:jshint',
+    grunt.loadNpmTasks('grunt-contrib-clean');
+    grunt.loadNpmTasks('grunt-contrib-concat');
+    grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-contrib-cssmin');
+    grunt.loadNpmTasks('grunt-contrib-htmlmin');
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+
+    grunt.loadNpmTasks('grunt-filerev');
+    grunt.loadNpmTasks('grunt-ng-annotate');    
+    grunt.loadNpmTasks('grunt-usemin');
+    grunt.loadNpmTasks('grunt-wiredep');
+
+    // Time how long tasks take. Can help when optimizing build times
+    // Uncomment this if you wanna now the time for each task
+    // require('time-grunt')(grunt);
+
+    grunt.task.run([
+      'clean:dist',
+      'wiredep',
+      'useminPrepare',
+      // 'concurrent:dist',
+        'copy:styles',
+
+      // 'autoprefixer',
+      'concat',
+      'ngAnnotate',
+      'copy:dist',
+      // 'cdnify',
+      'cssmin',
+      'uglify',
+      'filerev',
+      'usemin',
+      'htmlmin'
+    ]);
+
+  });
+
+  grunt.registerTask('default', function(){
+
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-newer');
+
+    grunt.task.run([
+    'newer:jshint',
     'test',
-    'build',
-    'serve'
-  ]);
+    'build'
+    ]);
+  });
+
 };
+  
