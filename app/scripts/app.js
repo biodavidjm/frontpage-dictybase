@@ -13,6 +13,8 @@ angular
   .module('dictyFrontpageApp', [
     'ngRoute',
     'ngTouch',
+    'ngAnimate',
+    'resetFieldApp',
     'dictyHeaderFooterApp',
     'frontImageApp',
     'frontNewsApp',
