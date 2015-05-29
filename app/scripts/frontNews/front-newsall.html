@@ -1,0 +1,23 @@
+<!-- front-news.html -->
+<link rel="stylesheet" href="scripts/frontNews/frontNews.css">
+
+<div class="row newsMain">
+	<div class="jumbotron newsHeader all">
+		<h1><span class="glyphicon glyphicon-globe"></span> {{newsHeaderAll}}</h1>
+	</div>
+	<div class="row">
+		<div class="col-sm-3 col-xs-1"></div>
+		<div class="col-sm-6 col-xs-10 filterBox">
+			<input ng-model="q" id="search" class="form-control" reset-field type="text" placeholder="Filter text (or date)">
+		</div>
+		<div class="col-sm-3 col-xs-1"></div>
+	</div>
+	<div class="row newsBoxAll" ng-repeat="detail in detailsAll | orderBy:'-date' | filter:q">
+		<div class="col-md-3 newsDate all"> {{detail.date}}</div>
+		<div class="col-md-6 newsContent all"> {{detail.content}} </div>
+		<div class="col-md-3"> <span class="newsSource"><strong>Source</strong>: {{detail.source}} </span> </div>
+		<div class="col-md-12"><hr></div>
+	</div>
+</div>
+
+

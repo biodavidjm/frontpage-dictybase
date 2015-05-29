@@ -6,28 +6,48 @@
 	padding-right: 20px;
 }
 
-.newsHeader{
-	color:#0B6121;
-	font-size: 18px;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+.jumbotron {
+	background-color: #EFF5FB;
+}
+
+.filterSearch{
 	text-align: right;
-	padding-top: 15px;
-	padding-bottom: 10px;
-	padding-left:30px;
-	padding-right: 30px;
+}
+.filterBox {
+	text-align: left;
+	padding-bottom: 30px;
+}
+
+.newsHeader{
+	color:black;
+	font-size: 18px;
+	text-align: right;
+	padding: 15px 30px 10px 30px;
+}
+
+.newsHeader.all{
+	text-align: center;
+	padding: 60px 0px 60px 0px;	
 }
 
 .newsBox{
-	padding-left: 30px;
-	padding-right: 30px;
-	padding-bottom: 10px;
+	padding: 0px 30px 8px 30px;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.newsBoxAll{
+	padding: 0px 50px 20px 50px;
 }
 
 .newsDate {
 	font-size: 10px;
-	color: green;
+	color: #0B3861;
 	padding-right: 10px;
+}
+
+.newsDate.all{
+	font-size: 14px;
+	text-align: right;
 }
 
 .newsContent{
@@ -35,26 +55,37 @@
 	padding-right: 10px;
 }
 
-@media(max-width:767px){
-	.newsContent{
-		color: white;
-		font-size: 12px;
-		padding-right: 10px;
-	}
+.newsContent.all{
+	font-size: 16px;
+	padding-right: 10px;
 }
 
 .newsSource {
 	font-size: 10px;
-	color:grey;
-	color: green;
+	color: #0B3861;
 }
 
 .newsMore {
-	color: #0B610B;
+	color: #0B3861;
 	font-size: 11px;
 	font-style: italic;
 	font-weight: normal;
 	text-align: center;
 
 	padding-bottom: 20px;
+}
+
+@media(max-width:992px){
+	.newsDate.all{
+		text-align: left;
+	}
+	.newsBox.all{
+		padding-bottom: 5px;
+	}
+}
+
+@media(max-width:768px){
+	.newsHeader.all{
+		padding: 30px 0px 30px 0px;	
+	}
 }

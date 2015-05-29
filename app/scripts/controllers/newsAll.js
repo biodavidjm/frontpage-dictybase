@@ -2,13 +2,12 @@
 
 /**
  * @ngdoc function
- * @name dictyFrontpageApp.controller:MainFrontpage
+ * @name newsAllController
  * @description
- * # MainFrontpage
- * Controller of the dictyFrontpageApp
+ * # newsAllController
  */
 angular.module('dictyFrontpageApp')
-  .controller('MainFrontpageController', function ($scope) {
+  .controller('NewsAllController', function ($scope) {
     $scope.Stuff = [
       'HTML5 Boilerplate',
       'AngularJS',

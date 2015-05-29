@@ -13,6 +13,8 @@ angular
   .module('dictyFrontpageApp', [
     'ngRoute',
     'ngTouch',
+    'ngAnimate',
+    'resetFieldApp',
     'dictyHeaderFooterApp',
     'frontImageApp',
     'frontNewsApp',
@@ -22,7 +24,8 @@ angular
     'frontPopularsApp',
     'frontMeetingsApp'
   ])
-  .config(function ($routeProvider, $locationProvider) {
+  // .config(function ($routeProvider, $locationProvider) {
+  .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/mainFrontpage.html',
@@ -56,9 +59,13 @@ angular
         templateUrl: 'views/techniques.html',
         controller: 'TechniquesController'
       })
+      .when('/newsall', {
+        templateUrl: 'views/front-news-all.html',
+        controller: 'NewsAllController'        
+      })
       .otherwise ({
         templateUrl: 'views/notyet.html',
       });
 
-      $locationProvider.html5Mode(true);
+      // $locationProvider.html5Mode(true);
   });
