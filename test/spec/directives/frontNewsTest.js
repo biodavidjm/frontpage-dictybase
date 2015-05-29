@@ -35,19 +35,45 @@ describe('Unit testing the front-news directive', function() {
     expect(angular.isFunction(dictyNewsFactory.getJasonFile)).toBe(true);
   });
 
-
-  // it('TEST 2 Replaces the element with the appropriate content', function() {
-
-    
-
-  //   var element = $compile('<front-news></front-news>')($rootScope);
-
-  //   $rootScope.$digest();
-  //   // Check that the compiled element contains the templated content
-  //   $httpBackend.flush();
-  //   expect(element.html()).toContain('whatever');
-  // });
 });
+
+
+describe('Unit testing the front-newsall directive', function() {
+  var $compile,
+      $rootScope,
+      $httpBackend,
+      dictyNewsFactory;
+
+  beforeEach(module('frontNewsApp'));
+
+  beforeEach(module('scripts/frontNews/front-newsall.html'));
+
+  beforeEach(function(){
+    inject(function(_dictyNewsFactory_) {
+      dictyNewsFactory = _dictyNewsFactory_;
+    });
+  });
+
+  beforeEach(inject(function(_$compile_, _$rootScope_, _$httpBackend_) {
+    $compile = _$compile_;
+    $rootScope = _$rootScope_;
+    $httpBackend = _$httpBackend_;
+    // $httpBackend.whenGET('scripts/frontNews/news.json').passThrough();
+  }));
+
+  afterEach(function () {
+      $httpBackend.verifyNoOutstandingExpectation();
+      $httpBackend.verifyNoOutstandingRequest();
+  });
+
+
+  it ('TEST 2 should have a getJasonFile function', function() {
+    expect(angular.isFunction(dictyNewsFactory.getJasonFile)).toBe(true);
+  });
+
+});
+
+
 
 // describe('frontNewsApp', function () {
 //     var controller = null, $scope = null, $httpBackend = null;
