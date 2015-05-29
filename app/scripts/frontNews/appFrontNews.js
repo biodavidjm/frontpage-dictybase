@@ -35,4 +35,18 @@ angular
           });
         }
       };
+    })
+    .directive('frontNewsall', function() {
+      return{
+        restrict:'E',
+        templateUrl:'scripts/frontNews/front-newsall.html',
+        scope: true,
+        controller: function($scope, dictyNewsFactory) {
+          $scope.newsHeaderAll = 'DICTY NEWS';
+          $scope.detailsAll = {};
+          dictyNewsFactory.getJasonFile(function(data) {
+              $scope.detailsAll = data;
+          });
+        }
+      };
     });
