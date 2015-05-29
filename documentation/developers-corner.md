@@ -184,5 +184,19 @@ The configuration file `.travis.yml` contains the specifications for [Travis](ht
 npm outdated
 # Update the package.json with the versions you want to update
 npm update --save
+
+npm update <name of package>
 ```
 
+# BOWER
+```shell
+
+# Update bower:
+npm update -g bower
+
+# List of packages installed with bower:
+bower list
+
+```
+#### bower updates:
+* 2015.05.28. to 1.4.1 (from: 1.3.12)
