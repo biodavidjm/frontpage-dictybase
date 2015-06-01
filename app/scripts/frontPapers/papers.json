@@ -1,17 +1,44 @@
 [
     {
+        "authors": "Accari, Jessica & Barth, Christian (2015)",
+        "title": "Transcription and processing of mitochondrial RNA in the human pathogen Acanthamoeba castellanii",
+        "journal": "Mitochondrion",
+        "addedOn": "2015.05.31"
+    }, 
+        {
+        "authors": "Ho, Hsing-I & Shaulsky, Gad (2015)",
+        "title": "Temporal regulation of kin recognition maintains recognition-cue diversity and suppresses cheating",
+        "journal": "Nat Commun 6 7144",
+        "addedOn": "2015.05.01"
+    }, 
+    {
+        "authors": "Chen, Zhi-Hui & Schaap, Pauline (2015) ",
+        "title": "Secreted cyclic-di-GMP induces stalk cell differentiation in the eukaryote Dictyostelium discoideum",
+        "journal": "J. Bacteriol",
+        "addedOn": "2015.05.01"
+    }, 
+    {
+        "authors": "Gao, Runchi, Zhao, Siwei, Jiang, Xupin, Sun, Yaohui, Zhao, Sanjun, Gao, Jing, Borleis, Jane, Willard, Stacey, Tang, Ming, Cai, Huaqing, Kamimura, Yoichiro, Huang, Yuesheng, Jiang, Jianxin, Huang, Zunxi, Mogilner, Alex, Pan, Tingrui, Devreotes, PN Peter N, Zhao, Min, (2015)",
+        "title": "A large-scale screen reveals genes that mediate electrotaxis in Dictyostelium discoideum",
+        "journal": "Sci Signal 8 ra50",
+        "addedOn": "2015.01.01"
+    }, 
+    {
         "authors": "Vincent T Cunliffe*, Richard A Baines, Carlo NG Giachello, Wei-Hsiang Lin, Alan Morgan, Markus Reuber, Claire Russell, Matthew C Walker, Robin SB Williams",
         "title": "Epilepsy Research Methods Update: Understanding the causes of epileptic seizures and identifying new treatments using non-mammalian model organisms",
-        "journal": "Seizure , in press"
+        "journal": "Seizure , in press",
+        "addedOn": "2015.01.01"
     }, 
     {
         "authors": "Edward Roshan Miranda, Edward A. Nam, Adam Kuspa and Gad Shaulsky",
         "title": "The ABC Transporter, AbcB3, Mediates cAMP Export In D. discoideum Development",
-        "journal": "Developmental Biology, in press"
+        "journal": "Developmental Biology, in press",
+        "addedOn": "2014.12.31"
     }, 
     {
         "authors": "Du Q, Schaap P.",
         "title": "The Social Amoeba Polysphondylium pallidum Loses Encystation and Sporulation, but Can Still Erect Fruiting Bodies in the Absence of Cellulose",
-        "journal": "Protist. 2014 Jul 14;165(5):569-579."
+        "journal": "Protist. 2014 Jul 14;165(5):569-579.",
+        "addedOn": "2014.08.31"
     }
 ]

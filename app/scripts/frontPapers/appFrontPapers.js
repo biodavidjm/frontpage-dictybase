@@ -33,4 +33,23 @@ angular
             });
         }
       };
+    })
+
+    .directive('frontPapersall', function() {
+      return{
+        restrict:'E',
+        templateUrl:'scripts/frontPapers/front-papersall.html',
+        scope: true,
+        controller: function(dictyPapersFactory, $scope, $log) {
+          $scope.papersHeaderAll = 'Dicty Papers';
+          $scope.papersAll = {};
+          dictyPapersFactory.getJasonFile()
+            .success(function(data) {
+              $scope.papersAll = data;
+            })
+            .error(function() {
+              $log.error('Error connecting to the PAPERS!!');
+            });
+        }
+      };
     });
