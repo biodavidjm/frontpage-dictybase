@@ -9,10 +9,16 @@
 
 angular
   .module('frontPapersApp', [])
-    .factory('dictyPapersFactory', function ($http) {
+    .factory('dictyPapersFactory', function ($http, $log) {
       return {
-        getJasonFile: function() {
-          return $http.get('scripts/frontPapers/papers.json');
+        getJasonFile: function(done) {
+          $http.get('scripts/frontPapers/papers.json')
+            .success(function(data) {
+              done(data);
+            })
+            .error(function() {
+              $log.error('ERROR while trying to retrieve the PAPERS');
+            });
         }
       };
     })
@@ -21,16 +27,12 @@ angular
         restrict:'E',
         templateUrl:'scripts/frontPapers/front-papers.html',
         scope: true,
-        controller: function(dictyPapersFactory, $scope, $log) {
+        controller: function(dictyPapersFactory, $scope) {
           $scope.papersHeader = 'LATEST PAPERS';
           $scope.papers = {};
-          dictyPapersFactory.getJasonFile()
-            .success(function(data) {
-              $scope.papers = data;
-            })
-            .error(function() {
-              $log.error('Error connecting to the PAPERS!!');
-            });
+          dictyPapersFactory.getJasonFile(function(data) {
+            $scope.papers = data;
+          });
         }
       };
     })
@@ -40,16 +42,12 @@ angular
         restrict:'E',
         templateUrl:'scripts/frontPapers/front-papersall.html',
         scope: true,
-        controller: function(dictyPapersFactory, $scope, $log) {
+        controller: function(dictyPapersFactory, $scope) {
           $scope.papersHeaderAll = 'Dicty Papers';
           $scope.papersAll = {};
-          dictyPapersFactory.getJasonFile()
-            .success(function(data) {
-              $scope.papersAll = data;
-            })
-            .error(function() {
-              $log.error('Error connecting to the PAPERS!!');
-            });
+          dictyPapersFactory.getJasonFile( function(data) {
+            $scope.papersAll = data;
+          });
         }
       };
     });
