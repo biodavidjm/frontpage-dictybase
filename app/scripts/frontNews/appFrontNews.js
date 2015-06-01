@@ -42,7 +42,7 @@ angular
         templateUrl:'scripts/frontNews/front-newsall.html',
         scope: true,
         controller: function($scope, dictyNewsFactory) {
-          $scope.newsHeaderAll = 'DICTY NEWS';
+          $scope.newsHeaderAll = 'Dicty News';
           $scope.detailsAll = {};
           dictyNewsFactory.getJasonFile(function(data) {
               $scope.detailsAll = data;
