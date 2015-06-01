@@ -7,10 +7,4 @@
  * # newsAllController
  */
 angular.module('dictyFrontpageApp')
-  .controller('NewsAllController', function ($scope) {
-    $scope.Stuff = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+  .controller('NewsAllController', function(){});
