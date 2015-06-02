@@ -35,4 +35,18 @@ angular
           });
         }
       };
+    })
+    .directive('frontMeetingsall', function() {
+      return{
+        restrict:'E',
+        templateUrl:'scripts/frontMeetings/front-meetingsall.html',
+        scope: true,
+        controller: function(dictyMeetingsFactory, $scope) {
+          $scope.meetingsHeaderAll = 'Upcoming Meetings';
+          $scope.meetingsAll = {};
+          dictyMeetingsFactory.getJasonFile( function(data) { 
+            $scope.meetingsAll = data;
+          });
+        }
+      };
     });

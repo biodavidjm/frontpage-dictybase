@@ -1,0 +1,36 @@
+<!-- front-meetingsall directive template -->
+<link rel="stylesheet" href="scripts/frontMeetings/frontMeetings.css">
+
+<div class="row meetingsMain full">
+
+	<!-- Meetings Header -->
+
+	<div class="jumbotron">
+		<h1><span class="glyphicon glyphicon-plane"></span> {{meetingsHeaderAll}}</h1>
+	</div>
+
+
+
+	<!-- Search / Filter box -->
+	<div class="row">
+		<div class="col-sm-3 col-xs-1"></div>
+		<div class="col-sm-6 col-xs-10 filterBox">
+			<input ng-model="q" id="search" class="form-control" reset-field type="text" placeholder="Filter meeting">
+		</div>
+		<div class="col-sm-3 col-xs-1"></div>
+	</div>
+
+	<div class="row meetingBox full" ng-repeat="meeting in meetingsAll | orderBy:'-date'| filter:q ">
+
+		<div class="col-lg-3 col-md-2 col-sm-2 col-xs-1"></div>
+		<div class="col-lg-6 col-md-8 col-sm-8 col-xs-10">
+
+			<div class="meetingsName all"> {{meeting.name}} </div>
+			<div class="meetingsLocation all"> {{meeting.location}} </div>
+			<div class="meetingsDate all"> [{{meeting.date}}]</div> 
+			<hr>
+		</div>
+		<div class="col-lg-3 col-md-2 col-sm-2 col-xs-1"></div>
+
+	</div>
+</div>

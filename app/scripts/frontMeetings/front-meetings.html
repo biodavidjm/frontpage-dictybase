@@ -1,4 +1,5 @@
-<!-- front-news.html -->
+<!-- front-meetings directive template-->
+
 <link rel="stylesheet" href="scripts/frontMeetings/frontMeetings.css">
 
 <div class="meetingsMain">
@@ -7,14 +8,14 @@
 		<span class="glyphicon glyphicon-plane"></span> {{meetingsHeader}}
 	</div>
 
-	<div class="row meetingBox" ng-repeat="meeting in meetings">
+	<div class="row meetingBox" ng-repeat="meeting in meetings | orderBy:'-date' | limitTo:3 ">
 		<span class="meetingsName"> {{meeting.name}} </span>
 		<span class="meetingsLocation"> {{meeting.location}} </span>
 		<span class="meetingsDate"> [{{meeting.date}}]</span> 
 	</div>
 
 	<div class="row meetingsMore">
-		<span class="glyphicon glyphicon-plus"></span> more meetings
+		<span class="glyphicon glyphicon-plus"></span> <a ng-href="#/meetingsall">more meetings</a>
 	</div>
 
 </div>
