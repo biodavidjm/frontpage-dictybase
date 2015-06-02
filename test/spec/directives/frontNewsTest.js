@@ -30,12 +30,12 @@ describe('Unit testing the front-news directive', function() {
       $httpBackend.verifyNoOutstandingRequest();
   });
 
-
   it ('TEST 1 should have a getJasonFile function', function() {
     expect(angular.isFunction(dictyNewsFactory.getJasonFile)).toBe(true);
   });
 
 });
+
 
 
 describe('Unit testing the front-newsall directive', function() {
@@ -72,6 +72,15 @@ describe('Unit testing the front-newsall directive', function() {
   });
 
 });
+
+
+
+
+
+
+
+
+
 
 
 

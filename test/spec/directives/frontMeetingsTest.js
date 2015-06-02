@@ -18,3 +18,73 @@ describe('Directive: frontMeetings', function () {
   }));
 
 });
+
+
+describe('Unit testing the front-meetings directive', function() {
+  var $compile,
+      $rootScope,
+      $httpBackend,
+      dictyMeetingsFactory;
+
+  beforeEach(module('frontMeetingsApp'));
+
+  beforeEach(module('scripts/frontMeetings/front-meetings.html'));
+
+  beforeEach(function(){
+    inject(function(_dictyMeetingsFactory_) {
+      dictyMeetingsFactory = _dictyMeetingsFactory_;
+    });
+  });
+
+  beforeEach(inject(function(_$compile_, _$rootScope_, _$httpBackend_) {
+    $compile = _$compile_;
+    $rootScope = _$rootScope_;
+    $httpBackend = _$httpBackend_;
+  }));
+
+  afterEach(function () {
+      $httpBackend.verifyNoOutstandingExpectation();
+      $httpBackend.verifyNoOutstandingRequest();
+  });
+
+
+  it ('TEST 1 should have a getJasonFile function', function() {
+    expect(angular.isFunction(dictyMeetingsFactory.getJasonFile)).toBe(true);
+  });
+
+});
+
+
+describe('Unit testing the front-meetingsall directive', function() {
+  var $compile,
+      $rootScope,
+      $httpBackend,
+      dictyMeetingsFactory;
+
+  beforeEach(module('frontMeetingsApp'));
+
+  beforeEach(module('scripts/frontMeetings/front-meetingsall.html'));
+
+  beforeEach(function(){
+    inject(function(_dictyMeetingsFactory_) {
+      dictyMeetingsFactory = _dictyMeetingsFactory_;
+    });
+  });
+
+  beforeEach(inject(function(_$compile_, _$rootScope_, _$httpBackend_) {
+    $compile = _$compile_;
+    $rootScope = _$rootScope_;
+    $httpBackend = _$httpBackend_;
+  }));
+
+  afterEach(function () {
+      $httpBackend.verifyNoOutstandingExpectation();
+      $httpBackend.verifyNoOutstandingRequest();
+  });
+
+
+  it ('TEST 2 should have a getJasonFile function', function() {
+    expect(angular.isFunction(dictyMeetingsFactory.getJasonFile)).toBe(true);
+  });
+
+});

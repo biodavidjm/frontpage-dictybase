@@ -16,7 +16,12 @@ describe('Controller: MainFrontpageCtrl', function () {
     });
   }));
 
-  it('should attach a list of Stuff to the scope', function () {
-    expect(scope.Stuff.length).toBe(3);
+  // it('should attach a list of Stuff to the scope', function () {
+  //   expect(scope.Stuff.length).toBe(3);
+  // });
+  
+  it('should access the scope', function() {
+    expect(scope.mainViewName).toBeDefined();
+    expect(scope.mainViewName).toEqual('Main view');
   });
 });

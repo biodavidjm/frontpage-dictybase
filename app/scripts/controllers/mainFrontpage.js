@@ -9,9 +9,5 @@
  */
 angular.module('dictyFrontpageApp')
   .controller('MainFrontpageController', function ($scope) {
-    $scope.Stuff = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    $scope.mainViewName = 'Main view';
   });

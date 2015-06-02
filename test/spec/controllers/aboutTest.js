@@ -20,3 +20,21 @@ describe('Controller: AboutController', function () {
     expect(scope.Stuff.length).toBe(3);
   });
 });
+
+describe('Controller: AboutController', function () {
+
+  // load the controller's module
+  beforeEach(module('dictyFrontpageApp'));
+
+  var AboutController,
+    scope;
+
+  // Initialize the controller and a mock scope
+  beforeEach(inject(function ($controller, $rootScope) {
+    scope = $rootScope.$new();
+    AboutController = $controller('AboutCoasdgntroller', {
+      $scope: scope
+    });
+  }));
+});
+
