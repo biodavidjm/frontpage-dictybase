@@ -1,7 +1,8 @@
+/*FRONT MEETINGS DIRECTIVE*/
+
 .meetingsMain{
 	text-align: left;
-	padding-left: 0px;
-	padding-right: 0px;
+	padding: 10px 0px 10px 0px;
 }
 
 .meetingsMain.full {
@@ -64,5 +65,5 @@
 	font-weight: normal;
 	text-align: center;
 
-	padding-bottom: 20px;
+	padding: 5px 0px 10px 0px;
 }
