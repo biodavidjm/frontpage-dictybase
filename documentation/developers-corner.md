@@ -200,3 +200,12 @@ bower list
 ```
 #### bower updates:
 * 2015.05.28. to 1.4.1 (from: 1.3.12)
+
+
+# DICTY DIRECTIVES
+
+## frontImage
+The frontpage carousel requires ui-bootstrap. It is available at the own directory of the directive to facilitate its exportability.
+
+Problem: the carousal stopped loading images from the second slide. The problem was solved by updating from `ui-bootstrap-tpls-0.12.0.js` to `ui-bootstrap-tpls-0.13.0.js`
+

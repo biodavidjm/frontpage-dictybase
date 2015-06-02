@@ -11,7 +11,7 @@ angular
   .module('frontImageApp', ['ui.bootstrap'])
   .controller('FrontImageController', ['$scope', function FrontImageController($scope){
     $scope.name = 'Dicty Carousel Directive';
-    $scope.myInterval = 8000;
+    $scope.myInterval = 5000;
     $scope.slides = [
         {image: 'images/dictyPic.png', description: 'Whatever'},
         {image: 'images/dictyFront02.jpg', description: 'Whatever'},

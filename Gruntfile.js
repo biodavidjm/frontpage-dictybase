@@ -317,7 +317,7 @@ module.exports = function (grunt) {
             'images/*',
             'styles/*.css',
             //djm: the directives
-            'scripts/*/*',
+            'scripts/**/*',
             'templates/*'
           ]
         }, {
