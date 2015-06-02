@@ -2,22 +2,44 @@
 	text-align: left;
 	padding-left: 0px;
 	padding-right: 0px;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.meetingsMain.full {
+	min-height: 600px;
+}
+
+.jumbotron {
+	background-color: #EFFBEF;
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+.filterSearch{
+	text-align: right;
+}
+
+.filterBox {
+	text-align: left;
+	padding-bottom: 30px;
+}
+
+.all {
+	font-size: 16px;
 }
 
 .meetingsHeader{
 	color:#688A08;
 	font-size: 18px;
-	padding-top: 15px;
-	padding-bottom: 10px;
-	padding-left: 10px;
+	padding: 15px 0px 10px 10px;
 }
 
 .meetingBox{
-	padding-left: 15px;
-	padding-right: 15px;
-	padding-bottom: 20px;
+	padding: 0px 25px 10px 25px;
 	font-size: 12px;
+}
+
+.meetingBox.full{
+	padding: 0px 0px 0px 0px;
 }
 
 .meetingsName {
