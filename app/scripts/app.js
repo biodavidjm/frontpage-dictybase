@@ -67,6 +67,10 @@ angular
         templateUrl: 'views/front-papers-all.html',
         controller: 'PapersAllController'        
       })
+      .when('/meetingsall', {
+        templateUrl: 'views/front-meetings-all.html',
+        controller: 'MeetingsAllController'        
+      })
       .otherwise ({
         templateUrl: 'views/notyet.html',
       });
