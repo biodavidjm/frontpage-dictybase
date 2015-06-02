@@ -1,0 +1,35 @@
+<!-- Template for the front-papersall directive -->
+<link rel="stylesheet" href="scripts/frontPapers/frontPapers.css">
+
+<div class="row papersMain full">
+	
+	<!-- Papers header -->
+	<div class="jumbotron">
+		<h1><span class="glyphicon glyphicon-globe"></span> {{papersHeaderAll}}</h1>
+	</div>
+
+	<!-- Search / Filter box -->
+	<div class="row">
+		<div class="col-sm-3 col-xs-1"></div>
+		<div class="col-sm-6 col-xs-10 filterBox">
+			<input ng-model="q" id="search" class="form-control" reset-field type="text" placeholder="Filter by anything">
+		</div>
+		<div class="col-sm-3 col-xs-1"></div>
+	</div>
+
+	<div class="row papersBox full" ng-repeat="apaper in papersAll | orderBy:'-addedOn'| filter:q">
+
+		<div class="col-lg-3 col-md-2 col-sm-2 col-xs-1"></div>
+		<div class="col-lg-6 col-md-8 col-sm-8 col-xs-10">
+			<div class="papersAuthors all">{{apaper.authors}}</div> 
+			<div class="papersTitle all">{{apaper.title}} </div>
+			<div class="papersJournal all">{{apaper.journal}} </div>
+			<hr>
+		</div>
+		<div class="col-lg-3 col-md-2 col-sm-2 col-xs-1"></div>
+
+	</div> 
+
+</div>
+
+

@@ -6,6 +6,10 @@
 	padding-right: 20px;
 }
 
+.newsMain.full {
+	min-height: 600px;
+}
+
 .jumbotron {
 	background-color: #EFF5FB;
 }

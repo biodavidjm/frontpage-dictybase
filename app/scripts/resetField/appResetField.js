@@ -14,7 +14,7 @@ angular.module('resetFieldApp', [])
 	  return {
 	    require: 'ngModel', 
 	    scope: {},
-	    controller: function($scope){},
+	    controller: function(){},
 	    link: function(scope, el, attrs, ctrl) {
 	      // compiled reset icon template
 	      var template = $compile('<i ng-show=\"enabled\" ng-mousedown=\"reset()\" class=\"fa fa-times-circle\"></i>')(scope);

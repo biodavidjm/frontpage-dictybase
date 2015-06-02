@@ -7,14 +7,14 @@
 		<span class="glyphicon glyphicon-paperclip"></span> {{papersHeader}}
 	</div>
 
-	<div class="row papersBox" ng-repeat="paper in papers">
+	<div class="row papersBox" ng-repeat="paper in papers | orderBy:'-addedOn' | limitTo:3">
 		<span class="papersAuthors">{{paper.authors}}</span> 
 		<span class="papersTitle">{{paper.title}} </span>
 		<span class="papersJournal">{{paper.journal}} </span>
 	</div>
 
 	<div class="row papersMore">
-		<span class="glyphicon glyphicon-plus"></span> more papers
+		<span class="glyphicon glyphicon-plus"></span> <a ng-href="#/papersall">more papers</a>
 	</div>
 </div>
 
