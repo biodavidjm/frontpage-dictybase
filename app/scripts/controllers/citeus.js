@@ -9,10 +9,4 @@
  */
 
 angular.module('dictyFrontpageApp')
-  .controller('CiteusController', function ($scope) {
-    $scope.Stuff = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+  .controller('CiteusController', function () {});
