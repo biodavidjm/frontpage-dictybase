@@ -58,11 +58,11 @@ angular
     })
     //filter for the search filter box
     .filter('startFrom', function() {
-        return function(input, start) {
-            if (!input || !input.length) { return; }
-            start = +start; //parse to int
-            return input.slice(start);
-        }
+      return function(input, start) {
+          if (!input || !input.length) { return; }
+          start = +start; //parse to int
+          return input.slice(start);
+      };
     })
 
     // Controller to scroll up on ng-click action
