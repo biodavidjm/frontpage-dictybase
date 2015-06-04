@@ -26,6 +26,8 @@ module.exports = function(config) {
       'bower_components/angular-route/angular-route.js',
       'bower_components/angular-sanitize/angular-sanitize.js',
       'bower_components/angular-touch/angular-touch.js',
+      'bower_components/angular-bootstrap/ui-bootstrap.js',
+      'bower_components/angular-utils-pagination/dirPagination.js',
       'app/scripts/**/*.js',
       'test/spec/**/*.js',
       // include the directories where the directive templates are stored:
