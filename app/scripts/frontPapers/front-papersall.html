@@ -5,56 +5,60 @@
 
 	<div id="scrollArea" ng-controller="ScrollUpController">
 		<a id="goup"></a>
-	
+		
 		<!-- Papers header -->
 		<div class="jumbotron">
 			<h1><span class="glyphicon glyphicon-paperclip"></span> {{papersHeaderAll}}</h1>
+			<br>
+			<small>All the <em>Dictyostelium</em> papers for a quick search </small>
 		</div>
 
-		<!-- Search / Filter box -->
+
+		<!-- Search and items boxes -->
 		<div class="row">
-			<div class="col-sm-3 col-xs-1"></div>
-			<div class="col-sm-6 col-xs-10 filterBox">
-				<input ng-model="q" id="search" class="form-control" reset-field type="text" placeholder="Filter by anything">
+			<div class="col-sm-4 col-xs-1"></div>
+			<div class="col-sm-4 col-xs-10" >
+			  <!-- <label for="search">Search:</label> -->
+			  <input ng-model="q" id="search" class="form-control" placeholder="Search for exact matches">
 			</div>
-			<div class="col-sm-3 col-xs-1"></div>
+<!-- 			<div class="col-xs-3">
+			  <label for="search">items per page:</label>
+			  <input type="number" min="4" max="20" class="form-control" ng-model="pageSize">
+			</div> -->
+			<div class="col-sm-4 col-xs-1"></div>
 		</div>
 
 
-		<div class="col-xs-12 pagination">
-
-		    <button ng-disabled="currentPage == 0" ng-click="currentPage=currentPage-1" type="button" class="btn btn-success btn-sm"> Previous </button>
-		    	<span class="pagCurrentPage"> {{ currentPage+1 }}/{{ numberOfPages() }} </span>
-		    <button ng-disabled="currentPage >= data.length/pageSize - 1" ng-click="currentPage=currentPage+1" type="button" class="btn btn-success btn-sm">
-		        Next
-		    </button>
-
+		<!-- Pagination controls -->
+        <div ng-controller="BarController">
+          <div class="text-center">
+          	<dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber)" max-size="maxSize" template-url="scripts/frontPapers/dirPagination.tpl.html"></dir-pagination-controls>
+          </div>
 		</div>
+
 		<!-- Individual boxes of papers -->
-		<div class="row papersBox full" ng-repeat="apaper in papersAll | orderBy:'-addedOn'| filter:q | startFrom:currentPage*pageSize | limitTo:pageSize">
+		<div class="row papersBox full" dir-paginate="apaper in papersAll | filter:q | itemsPerPage: pageSize" current-page="currentPage">
 
 			<div class="col-lg-3 col-md-2 col-sm-2 col-xs-1"></div>
 			<div class="col-lg-6 col-md-8 col-sm-8 col-xs-10">
+				<hr>
 				<div class="papersAuthors all">{{apaper.authors}}</div> 
 				<div class="papersTitle all">{{apaper.title}} </div>
 				<div class="papersJournal all">{{apaper.Details}} <span class="papersLink"> <a href="http://www.ncbi.nlm.nih.gov{{apaper.URL}}" target="_blank" >Pubmed</a></span></div>
-				<hr>
+				
 			</div>
 			<div class="col-lg-3 col-md-2 col-sm-2 col-xs-1"></div>
 
 		</div> 
 
-	 	<!-- Button box -->
-	 	<div class="col-xs-12 pagination">
-		    <button ng-disabled="currentPage == 0" ng-click="currentPage=currentPage-1; gotoTop()" type="button" class="btn btn-success btn-sm"> Previous </button>
-		    	<span class="pagCurrentPage"> {{ currentPage+1 }}/{{ numberOfPages() }} </span>
-		    <button ng-disabled="currentPage >= data.length/pageSize - 1" ng-click="currentPage=currentPage+1; gotoTop()" type="button" class="btn btn-success btn-sm">
-		        Next
-		    </button>
-	 	</div>
+		<!-- Pagination controls -->
+        <div ng-controller="BarController" class="other-controller">
+          <div class="text-center">
+          	<dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber)" max-size="maxSize" template-url="scripts/frontPapers/dirPagination.tpl.html" ng-click="gotoTop()"></dir-pagination-controls>
+          </div>
+		</div>
 
 	</div> <!-- end the scrolling area -->
-
 </div>
 
 

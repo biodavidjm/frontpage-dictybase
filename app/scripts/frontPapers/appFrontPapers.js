@@ -8,7 +8,7 @@
  */
 
 angular
-  .module('frontPapersApp', [])
+  .module('frontPapersApp', ['angularUtils.directives.dirPagination'])
     .factory('dictyPapersFactory', function ($http, $log) {
       return {
         getJasonFile: function(done) {
@@ -36,7 +36,6 @@ angular
         }
       };
     })
-
     .directive('frontPapersall', function() {
       return{
         restrict:'E',
@@ -48,31 +47,27 @@ angular
           dictyPapersFactory.getJasonFile( function(data) {
             $scope.papersAll = data;
           });
-          $scope.currentPage = 0;
+          $scope.currentPage = 1;
           $scope.pageSize = 10;
+          $scope.maxSize = 5;
           $scope.numberOfPages=function(){
               return Math.ceil($scope.papersAll.length/$scope.pageSize);                
           };
+
         }
       };
     })
-    //filter for the search filter box
-    .filter('startFrom', function() {
-      return function(input, start) {
-          if (!input || !input.length) { return; }
-          start = +start; //parse to int
-          return input.slice(start);
+    // This controller handles updates in the navitation bar.
+    .controller('BarController', ['$scope', function ($scope) {
+      $scope.pageChangeHandler = function(num) {
+        console.log('going to page ' + num);
       };
-    })
-
+    }])
+    
     // Controller to scroll up on ng-click action
-    .controller('ScrollUpController', ['$scope', '$location', '$anchorScroll',
-      function ($scope, $location, $anchorScroll) {
-        $scope.gotoTop = function() {
-          $location.hash('goup');
-          $anchorScroll();
-        };
-    }]);  
-
-
-
+    .controller('ScrollUpController', ['$scope', '$location', '$anchorScroll', function ($scope, $location, $anchorScroll) {
+      $scope.gotoTop = function() {
+        $location.hash('goup');
+        $anchorScroll();
+      };
+    }]);
