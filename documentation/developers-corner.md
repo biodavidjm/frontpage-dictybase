@@ -198,9 +198,18 @@ npm update -g bower
 bower list
 
 ```
+
 #### bower updates:
 * 2015.05.28. to 1.4.1 (from: 1.3.12)
 
+## Bower package compatibilities
+
+A problem might appear when a bower package is not compatible with, for example, a particular angular version. In this case, check for the requirementes of the bower package by running:
+
+```shell
+bower info whatever#version-in-bower.json
+```
+...and see what it is required in the `dependencies` of the package
 
 # DICTY DIRECTIVES
 
