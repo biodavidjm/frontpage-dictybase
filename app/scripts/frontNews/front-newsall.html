@@ -13,9 +13,9 @@
 		<div class="col-sm-3 col-xs-1"></div>
 	</div>
 	<div class="row newsBoxAll" ng-repeat="detail in detailsAll | orderBy:'-date' | filter:q">
-		<div class="col-md-3 newsDate all"> {{detail.date}}</div>
-		<div class="col-md-6 newsContent all"> {{detail.content}} </div>
-		<div class="col-md-3"> <span class="newsSource"><strong>Source</strong>: {{detail.source}} </span> </div>
+		<div class="col-md-2 col-xs-12 newsDate all"> {{detail.date}}</div>
+		<div class="col-md-8 col-xs-12 newsContent all"> {{detail.content}} </div>
+		<div class="col-md-2 col-xs-12"> <span class="newsSource"><strong>Source</strong>: {{detail.source}} </span> </div>
 		<div class="col-md-12"><hr></div>
 	</div>
 </div>
