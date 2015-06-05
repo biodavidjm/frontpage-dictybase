@@ -21,49 +21,37 @@
 .imageSpace {
   color: white;
   background-color: black;
-  border: 10px solid white;
+  /*border: 10px solid white;*/
+  margin-top: 10px;
 }
 
-/*TO ALL*/
-.borderIt {
-  border: 3px solid white;
-  border-radius: 25px;
+.belowImage {
+  /*border: 3px solid black;*/
+  padding: 10px 5px 0px 0px;
 }
 
 .paperSpace {
   background-color: #EFF8FB;
-  border-radius: 10px;
-  margin-right: 0px;
-  margin-left: 0px;
-  /*border: 3px solid black;*/
-}
-
-.meetingsSpace {
-  background-color: #F2F2F2;
-  border-radius: 10px;
-  margin-right: 0px;
-  margin-left: 0px;
-}
-
-
-.newsSpace {
-  background-color: #EFF8FB;
-  border: 1px dotted #E6E6E6;
-  border-radius: 10px;
-  margin-top: 10px;
+  border-radius: 15px;
   margin-bottom: 10px;
 }
 
-@media(max-width:767px){
-/*  .newsSpace {
-    margin-top: 10px;
-    background-color: #0B243B;
-    border: 1px dotted #E6E6E6;
-    margin-bottom: 10px;
+.meetingsSpace {
+  background-color: #FBFBEF;
+  border-left: 5px solid white;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
 
-    margin-right: 0px;
-    margin-left: 0px;
-  }*/
+.newsSpace {
+  background-color: #F2F2F2;
+  border-radius: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 1px;                                   
+}
+
+@media(max-width:767px){
 
   .definition {
     text-align: center;
@@ -71,10 +59,17 @@
     padding-right: 0px;
     background-color: white;
     font-size: 12px;
-/*    border-radius: 10px;
-    padding: 5px 5px 5px 30px;*/
   }
-}
+
+  .belowImage{
+    padding: 10px 10px 5px 10px;
+  }
+
+  .newsSpace {
+    margin: 0px 0px 0px 0px;                              
+  }
+
+} /*End of @media(max-width:767px)*/
 
 .variableSpace {
   background-color: #0B4C5F;
