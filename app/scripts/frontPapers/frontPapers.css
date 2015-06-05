@@ -2,7 +2,7 @@
 
 .papersMain {
 	text-align: left;
-	padding: 10px 0px 10px 0px;
+	padding: 5px 0px 10px 0px;
 }
 
 .papersMain.full {
@@ -10,7 +10,7 @@
 }
 
 .jumbotron {
-	background-color: #FAFAFA;
+	background-color: #E0F2F7;
 	padding-right: 0px;
 	padding-left: 0px;
 }
@@ -31,12 +31,28 @@
 .papersHeader{
 	color:#086A87;
 	font-size: 18px;
-	padding: 15px 0px 10px 10px;
+	padding: 0px 0px 8px 0px;
+	text-align: center;
 }
 
 .papersBox{
-	padding: 0px 25px 10px 35px;
+	padding: 0px 20px 10px 25px;
 	font-size: 12px;
+}
+
+@media(max-width:992px) and (min-width:767px) {
+	.papersBox {
+		font-size: 10px;
+	}
+}
+
+@media(max-width:767px) {
+	.papersBox {
+		font-size: 16px;
+	}
+	.papersHeader{
+		font-size: 24px;
+	}
 }
 
 .papersBox.full{

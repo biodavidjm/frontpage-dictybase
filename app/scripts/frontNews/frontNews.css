@@ -11,12 +11,13 @@
 }
 
 .jumbotron {
-	background-color: #EFF5FB;
+	background-color: #F2F2F2;
 }
 
 .filterSearch{
 	text-align: right;
 }
+
 .filterBox {
 	text-align: left;
 	padding-bottom: 30px;
@@ -24,7 +25,7 @@
 
 .newsHeader{
 	color:black;
-	font-size: 18px;
+	font-size: 20px;
 	text-align: right;
 	padding: 15px 30px 10px 30px;
 }
@@ -35,16 +36,34 @@
 }
 
 .newsBox{
-	padding: 0px 30px 8px 30px;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	/*padding: 0px 30px 8px 30px;*/
+	padding: 0px 25px 10px 35px;
+	font-size: 12px;
+
 }
+
+@media(max-width:992px) and (min-width:767px) {
+	.newsBox {
+		font-size: 10px;
+	}
+}
+
+@media(max-width:767px) {
+	.newsBox {
+		font-size: 16px;
+	}
+	.newsHeader{
+		font-size: 24px;
+		text-align: center;
+	}
+}
+
 
 .newsBoxAll{
 	padding-bottom: 20px;
 }
 
 .newsDate {
-	font-size: 10px;
 	color: #0B3861;
 	padding-right: 10px;
 }
@@ -55,7 +74,6 @@
 }
 
 .newsContent{
-	font-size: 12px;
 	padding-right: 10px;
 }
 
@@ -65,7 +83,6 @@
 }
 
 .newsSource {
-	font-size: 10px;
 	color: #0B3861;
 }
 
@@ -76,7 +93,7 @@
 	font-weight: normal;
 	text-align: center;
 
-	padding-bottom: 20px;
+	padding-bottom: 10px;
 }
 
 @media(max-width:992px){

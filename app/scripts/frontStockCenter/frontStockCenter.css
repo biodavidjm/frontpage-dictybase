@@ -1,26 +1,25 @@
 /*Front Stock Center CSS*/
 
 .stockHouse{
-	padding: 8px 5px 5px 5px;
+	padding: 10px 5px 5px 5px;
 }
 
 .stockMain{
 	/*border: 1px solid #380B61;*/
 	border-bottom-left-radius:10px;
 	border-bottom-right-radius:10px;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	padding-bottom: 10px;
 }
 
 .stockHeader{
-	background-color: #380B61;
+	background-color: #084B8A;
 	color: #EFEFFB;
-	font-size: 15px;
+	font-size: 18px;
 	text-align: center;
-	padding: 10px 0px 10px 0px;
+	padding: 15px 0px 15px 0px;
 	border: 1px dotted #F5F6CE;
 	border-top-left-radius:10px;
 	border-top-right-radius:10px;
-
 }
 
 .stockSubheader{
@@ -28,17 +27,16 @@
 	color: black;
 	font-size: 10px;
 	letter-spacing: 5px;
-	border: 3px solid #380B61;
+	border: 3px solid black;
 	padding: 1px 0px 1px 0px;
 
 }
 
-
 .stockPlasmidsMain {
 	text-align: center;
-	padding-bottom: 10px;
+	padding-bottom: 15px;
 	/*padding-left: 10px;*/
-	background-color: #BCA9F5;
+	background-color: #81DAF5;
 	border-bottom-left-radius:30px;
 	border-bottom-right-radius:30px;
 /*	border: 1px solid hotpink;*/
@@ -49,6 +47,7 @@
 	padding-top: 7px;
 	
 }
+
 .stockPlasmidItems {
 	font-size: 11px;
 	padding-top: 5px;
@@ -57,8 +56,8 @@
 
 .stockStrainsMain {
 	text-align: center;
-	padding-bottom: 10px;
-	background-color: #9A2EFE;
+	padding-bottom: 20px;
+	background-color: #0489B1;
 	border-bottom-left-radius:30px;
 	border-bottom-right-radius:30px;
 	/*border: 1px solid mediumpurple*/;
@@ -101,6 +100,9 @@
 		padding-right: 20px;
 	}
 
+	.stockHeader{
+		font-size: 22px;
+	}
 
 	.stockPlasmidsMain {
 		border-bottom-left-radius:0px;

@@ -2,7 +2,7 @@
 
 .meetingsMain{
 	text-align: left;
-	padding: 10px 0px 10px 0px;
+	padding: 5px 0px 10px 0px;
 }
 
 .meetingsMain.full {
@@ -10,7 +10,7 @@
 }
 
 .jumbotron {
-	background-color: #EFFBEF;
+	background-color: #FBFBEF;
 	padding-right: 0px;
 	padding-left: 0px;
 }
@@ -31,13 +31,30 @@
 .meetingsHeader{
 	color:#688A08;
 	font-size: 18px;
-	padding: 15px 0px 10px 10px;
+	padding: 0px 0px 10px 0px;
+	text-align: center;
 }
 
 .meetingBox{
-	padding: 0px 25px 10px 25px;
+	padding: 0px 10px 10px 15px;
 	font-size: 12px;
 }
+
+@media(max-width:992px) and (min-width:767px) {
+	.meetingBox {
+		font-size: 10px;
+	}
+}
+
+@media(max-width:767px) {
+	.meetingBox {
+		font-size: 16px;
+	}
+	.meetingsHeader{
+		font-size: 24px;
+	}
+}
+
 
 .meetingBox.full{
 	padding: 0px 0px 0px 0px;
