@@ -51,14 +51,6 @@ angular
         templateUrl: 'views/citeus.html',
         controller: 'CiteusController'
       })
-      .when('/genomes', {
-        templateUrl: 'views/genomes.html',
-        controller: 'GenomesController'
-      })
-      .when('/techniques', {
-        templateUrl: 'views/techniques.html',
-        controller: 'TechniquesController'
-      })
       .when('/newsall', {
         templateUrl: 'views/front-news-all.html',
         controller: 'NewsAllController'        
