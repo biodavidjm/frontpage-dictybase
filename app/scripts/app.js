@@ -37,31 +37,22 @@ angular
       })
       .when('/about', {
         templateUrl: 'views/about.html',
-        controller: 'AboutController'
-      })
-      .when('/contact', {
-        templateUrl: 'views/contact.html',
-        controller: 'ContactController'
+        controller: 'TopAboutController'
       })
       .when('/download', {
-        templateUrl: 'views/download.html',
-        controller: 'DownloadController'
+        templateUrl: 'views/download.html'
       })
       .when('/citeus', {
-        templateUrl: 'views/citeus.html',
-        controller: 'CiteusController'
+        templateUrl: 'views/citeus.html'
       })
-      .when('/newsall', {
-        templateUrl: 'views/front-news-all.html',
-        controller: 'NewsAllController'        
+      .when('/news', {
+        templateUrl: 'views/front-news-all.html' 
       })
-      .when('/papersall', {
-        templateUrl: 'views/front-papers-all.html',
-        controller: 'PapersAllController'        
+      .when('/papers', {
+        templateUrl: 'views/front-papers-all.html'
       })
-      .when('/meetingsall', {
-        templateUrl: 'views/front-meetings-all.html',
-        controller: 'MeetingsAllController'        
+      .when('/meetings', {
+        templateUrl: 'views/front-meetings-all.html'      
       })
       .otherwise ({
         templateUrl: 'views/notyet.html',
