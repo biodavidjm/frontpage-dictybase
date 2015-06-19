@@ -2,82 +2,69 @@
     {
         "main": "Genomes",         
         "submain": {
-            "D. discoideum": "contact",
-            "D. fasciculatum": "about",
-            "D. purpureum": "purpureum",
-            "P. pallidum": "pallidum"
-        }
-    }, 
-    {
-        "main": "DictyAccess", 
-        "submain": {
-            "Genome Eye View": "Genome_Eye_View",
-            "Genomic statistics": "Genomic_statistics",
-            "Annotations": "Annotations",
-            "Ontology": "Ontology",
-            "Phylogeny": "Phylogeny"
+            "D. discoideum":            "explore/learn",
+            "D. fasciculatum":          "about",
+            "D. purpureum":             "purpureum",
+            "P. pallidum":              "pallidum"
         }
     }, 
     {
         "main": "Tools", 
         "submain": {
-            "DictyMine": "DictyMine",
-            "Signaling Pathways": "Signaling_Pathways",
-            "Genome Browser": "Genome_Browser",
-            "BLAST": "BLAST",
-            "ID Converter": "ID Converter",
-            "dictyMart": "dictyMart",
-            "Textpresso": "Textpresso",
-            "Biochemical Pathways": "Biochemical_Pathways",
-            "Third Party Tools": "Third_Party_Tools"
+            "New Genome Browser":       "tools/jbrowse"
         }
     }, 
     {
-        "main": "Stock Center", 
+        "main": "Explore", 
         "submain": {
-            "Home": "Home",
-            "About SC": "About_SC",
-            "Search SC": "Search SC",
-            "Order": "Order",
-            "Deposit": "Deposit",
-            "Strain Catalog": "Strain_Catalog",
-            "Plasmid Catalog": "Plasmid_Catalog",
-            "Additional Materials": "Additional_Materials",
-            "SC FAQ": "SC_FAQ",
-            "Other SC": "Other_SC"
-        }
-    }, 
-    {
-        "main": "Research", 
-        "submain": {
-            "Learn about Dicty": "Learn_about_Dicty",
-            "Teaching Protocols": "Teaching_Protocols",
-            "Techniques": "techniques",
-            "Anatomy Ontology": "Anatomy_Ontology",
-            "Mutant Phenotypes": "Mutant_Phenotypes",
-            "HTP Phenotyping at Princeton": "HTP_Phenotyping_at_Princeton",
-            "Codon Bias Table": "Codon_Bias_Table",
-            "Nomenclature Guidelines": "Nomenclature_Guidelines",
-            "Axenic Strains History": "Axenic_Strains_History",
-            "Franke Dicty Reference Library": "Franke_Dicty_Reference_Library",
-            "Genome Resources": "Genome_Resources"
+            "Learn About Dicty":        "explore/learn",
+            "Teaching Protocols":       "explore/teach/",
+            "Dicty Genome Resources":   "explore/resources",
+            "Pictures/Videos":          "explore/pictures",
+            "dictyArt":                 "explore/art",
+            "Useful Links":             "explore/links",
+            "Virtual Library":          "explore/library"
         }
     },
     {
+        "main": "Research", 
+        "submain": {
+            "Techniques":               "research/techniques",
+            "Anatomy Ontology":         "research/anatomyontology",
+            "Mutant Phenotypes":        "research/phenotypes",
+            "Phenotyping at Princeton": "research/princeton",
+            "Codon Bias Table":         "research/codonbias",
+            "Nomenclature Guidelines":  "research/nomenclature",
+            "Axenic Strains History":   "research/axenic",
+            "Franke Dicty Ref Library": "research/franke"
+        }
+    },
+    {
+        "main": "Stock Center", 
+        "submain": {
+            "Home":                     "dsc/home",
+            "About SC":                 "dsc/about",
+            "Search SC":                "dsc/search",
+            "Order":                    "dsc/order",
+            "Deposit":                  "dsc/deposit",
+            "Strain Catalog":           "dsc/strains",
+            "Plasmid Catalog":          "dsc/plasmids",
+            "Additional Materials":     "dsc/materials",
+            "SC FAQ":                   "dsc/faq",
+            "Other SC":                 "dsc/others"
+        }
+    }, 
+    {
         "main": "Community", 
         "submain": {
-            "Submit an Abstract": "Submit_an_Abstract",
-            "Dicty News": "Dicty_News",
-            "Listserv Archive": "Listserv_Archive",
-            "Colleagues profiles": "Colleagues_profiles",
-            "Dicty Anual Conference": "Dicty_Anual_Conference",
-            "Job Opportunities": "Job_Opportunities",
-            "History": "History",
-            "DictyLabs web": "DictyLabs_web",
-            "Pictures/Videos": "Pictures_Videos",
-            "dictyArt": "dictyArt",
-            "Useful Links": "Useful_Links",
-            "Virtual Library": "Virtual_Library"
+            "Submit an Abstract":       "community/submit",
+            "Dicty News":               "news",
+            "Listserv Archive":         "community/listserv",
+            "Colleagues profiles":      "community/colleagues",
+            "Dicty Anual Conference":   "meetings",
+            "Job Opportunities":        "community/jobs",
+            "History":                  "community/history",
+            "DictyLabs web":            "community/labs"
         }
     }
 ]

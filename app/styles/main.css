@@ -50,7 +50,10 @@
 }
 
 .notYet {
-	padding:50px 0px 300px 0px;
+	/*padding:20px 0px 100px 0px;*/
+	margin-bottom: 0px;
+	background-color: black;
+	color: white;
 }
 
 

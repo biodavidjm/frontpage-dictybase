@@ -31,7 +31,7 @@ angular
         templateUrl: 'views/mainFrontpage.html',
         controller: 'MainFrontpageController'
       })
-      .when('/main', {
+      .when('/front', {
         templateUrl: 'views/mainFrontpage.html',
         controller: 'MainFrontpageController'
       })
@@ -39,10 +39,10 @@ angular
         templateUrl: 'views/about.html',
         controller: 'TopAboutController'
       })
-      .when('/download', {
+      .when('/downloads', {
         templateUrl: 'views/download.html'
       })
-      .when('/citeus', {
+      .when('/citation', {
         templateUrl: 'views/citeus.html'
       })
       .when('/news', {
