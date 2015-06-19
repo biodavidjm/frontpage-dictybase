@@ -45,7 +45,7 @@ angular
       .when('/citation', {
         templateUrl: 'views/citeus.html'
       })
-      .when('/front\/news', {
+      .when('/news', {
         templateUrl: 'views/front-news-all.html' 
       })
       .when('/papers', {
