@@ -243,6 +243,11 @@ In this case, the
     text-align: left;
 }
 
+.footMenus a:link { color: #CCFFCC; }
+.footMenus a:active { color: #CCFFCC; }
+.footMenus a:visited { color: #CCFFCC; }
+.footMenus a:hover { color: white; text-decoration: underline;}
+
 .footMenuSupport {
     font: 14px arial,sans-serif;
     color: white;
