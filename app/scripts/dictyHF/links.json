@@ -1,6 +1,8 @@
 [
     {
-        "main": "Genomes",         
+        "main": {
+            "Genomes" : "genomes"
+        },         
         "submain": {
             "D. discoideum":            "explore/learn",
             "D. fasciculatum":          "about",
@@ -9,13 +11,17 @@
         }
     }, 
     {
-        "main": "Tools", 
+        "main": {
+            "Tools": "tools"
+        },
         "submain": {
             "New Genome Browser":       "tools/jbrowse"
         }
     }, 
     {
-        "main": "Explore", 
+        "main": {
+            "Explore": "explore"
+        }, 
         "submain": {
             "Learn About Dicty":        "explore/learn",
             "Teaching Protocols":       "explore/teach/",
@@ -27,7 +33,9 @@
         }
     },
     {
-        "main": "Research", 
+        "main": {
+            "Research": "research"
+        }, 
         "submain": {
             "Techniques":               "research/techniques",
             "Anatomy Ontology":         "research/anatomyontology",
@@ -40,9 +48,10 @@
         }
     },
     {
-        "main": "Stock Center", 
+        "main": {
+            "Stock Center": "dsc"
+        }, 
         "submain": {
-            "Home":                     "dsc/home",
             "About SC":                 "dsc/about",
             "Search SC":                "dsc/search",
             "Order":                    "dsc/order",
@@ -55,7 +64,9 @@
         }
     }, 
     {
-        "main": "Community", 
+        "main": {
+            "Community": "community"
+        }, 
         "submain": {
             "Submit an Abstract":       "community/submit",
             "Dicty News":               "news",

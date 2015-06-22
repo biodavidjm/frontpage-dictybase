@@ -8,7 +8,7 @@
                 <!-- DYNAMIC ZONE STARTS -->
                 <div class="col-sm-10 col-xs-12">
                     <div class="col-lg-2 col-md-2 col-sm-4 col-xs-12" ng-repeat="menu in sections.menus">
-                        <div class="footMenus"> {{menu.main}} </div>
+                        <div class="footMenus" ng-repeat="(section, enlace) in menu.main"> <a ng-href="#/{{enlace}}">{{section}}</a></div>
                         <div class="footLinks" ng-repeat="(submenu, link) in menu.submain"><a ng-href="#/{{link}}">{{submenu}}</a></div>
                     </div>
                 </div>
@@ -21,9 +21,9 @@
                     
                     <div>
                         <div class="footMenuSupport"> Supported by </div>
-                        <div class="footLinks"><a href="#"> NIH </a></div>
-                        <div class="footLinks"><a href="#"> GMOD </a></div>
-                        <div class="footLinks"><a href="#"> Gene Ontology </a></div>
+                        <div class="footLinks"><a href="http://www.nih.gov/" target="_blank"> NIH </a></div>
+                        <div class="footLinks"><a href="http://gmod.org/wiki/Main_Page" target="_blank"> GMOD </a></div>
+                        <div class="footLinks"><a href="http://geneontology.org/" target="_blank"> Gene Ontology </a></div>
                     </div>
                 </div>
 
