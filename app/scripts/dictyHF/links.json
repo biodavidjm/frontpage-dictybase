@@ -4,10 +4,7 @@
             "Genomes" : "genomes"
         },         
         "submain": {
-            "D. discoideum":            "explore/learn",
-            "D. fasciculatum":          "about",
-            "D. purpureum":             "purpureum",
-            "P. pallidum":              "pallidum"
+
         }
     }, 
     {
@@ -23,13 +20,6 @@
             "Explore": "explore"
         }, 
         "submain": {
-            "Learn About Dicty":        "explore/learn",
-            "Teaching Protocols":       "explore/teach/",
-            "Dicty Genome Resources":   "explore/resources",
-            "Pictures/Videos":          "explore/pictures",
-            "dictyArt":                 "explore/art",
-            "Useful Links":             "explore/links",
-            "Virtual Library":          "explore/library"
         }
     },
     {
@@ -37,14 +27,7 @@
             "Research": "research"
         }, 
         "submain": {
-            "Techniques":               "research/techniques",
-            "Anatomy Ontology":         "research/anatomyontology",
-            "Mutant Phenotypes":        "research/phenotypes",
-            "Phenotyping at Princeton": "research/princeton",
-            "Codon Bias Table":         "research/codonbias",
-            "Nomenclature Guidelines":  "research/nomenclature",
-            "Axenic Strains History":   "research/axenic",
-            "Franke Dicty Ref Library": "research/franke"
+            "Techniques":               "research/techniques"
         }
     },
     {
@@ -52,15 +35,6 @@
             "Stock Center": "dsc"
         }, 
         "submain": {
-            "About SC":                 "dsc/about",
-            "Search SC":                "dsc/search",
-            "Order":                    "dsc/order",
-            "Deposit":                  "dsc/deposit",
-            "Strain Catalog":           "dsc/strains",
-            "Plasmid Catalog":          "dsc/plasmids",
-            "Additional Materials":     "dsc/materials",
-            "SC FAQ":                   "dsc/faq",
-            "Other SC":                 "dsc/others"
         }
     }, 
     {
@@ -68,14 +42,6 @@
             "Community": "community"
         }, 
         "submain": {
-            "Submit an Abstract":       "community/submit",
-            "Dicty News":               "news",
-            "Listserv Archive":         "community/listserv",
-            "Colleagues profiles":      "community/colleagues",
-            "Dicty Anual Conference":   "meetings",
-            "Job Opportunities":        "community/jobs",
-            "History":                  "community/history",
-            "DictyLabs web":            "community/labs"
         }
     }
 ]
