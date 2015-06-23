@@ -7,12 +7,14 @@
 .jumbotron {
 /*  text-align: center;
   border-bottom: 1px solid #e5e5e5;*/
+  padding: 10px 0px 10px 0px;
+  min-height: 150px
 }
 
 /*RESEARCH*/
 
 .jumbotron.research {
-	margin-top: 10px;
+	margin-top: 5px;
 	background-color: #EFF8FB;
 }
 

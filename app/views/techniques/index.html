@@ -1,14 +1,16 @@
+<definition-bar text="Techniques  <  Research  <  home" look="definitionLink"></definition-bar>
+
+<div class="jumbotron research">
+    <h1>Techniques</h1>
+</div>
+<a name="top" id="top"></a>
 <div class="container" ng-controller="headerCtrl">
     <div class="row">
         <div class="col-sm-2 col-xs-12"></div>
         <div class="col-sm-8 col-xs-12">
-
-            <p> <a name="top" id="top"></a> </p>
-            <h1> Dictyostelium Techniques </h1>
-            <hr>
-            <p>
+            <div>
                 <a ng-click="gotoAnchor('medbuf')" href="">Media and buffers</a>&nbsp;| <a ng-click="gotoAnchor('growth')" href="">Growth and Development</a>&nbsp;| <a ng-click="gotoAnchor('molbio')" href="">Molecular Biology</a>&nbsp;| <a ng-click="gotoAnchor('trafo')" href="">Transformation</a>&nbsp;| <a ng-click="gotoAnchor('muta')" href="">Mutagenesis</a>&nbsp;| <a ng-click="gotoAnchor('express')" href="">Gene Expression</a>&nbsp;| <a ng-click="gotoAnchor('micro')" href="">Microscopy</a>&nbsp;| <a ng-click="gotoAnchor('biochem')" href="">Biochemistry</a>&nbsp;| <a ng-click="gotoAnchor('cytoskel')" href="">Cytoskeleton</a>&nbsp;| <a ng-click="gotoAnchor('teach')" href="">Teaching Tools</a>
-            </p>
+            </div>
             <hr>
             <p>
                 <a name="medbuf" id="medbuf"></a>
@@ -29,7 +31,7 @@
                 </li>
             </ul>
             <p align="right">
-                <a href="#top">[TOP]</a>
+                <a ng-click="gotoAnchor('top')" href="">Back to top</a>
             </p>
             <hr>
             <p>
@@ -59,7 +61,7 @@
                 </li>
             </ul>
             <p align="right">
-                <a href="#top">[TOP]</a>
+                <a ng-click="gotoAnchor('top')" href="">Back to top</a>
             </p>
             <hr>
             <!--
@@ -75,7 +77,7 @@
             </ul>
             </p>
 
-            <p align="right"><a href="#top">[TOP]</a></p>
+            <p align="right"><a ng-click="gotoAnchor('top')" href="">Back to top</a></p>
             <hr>
             -->
             <p>
@@ -99,7 +101,7 @@
                 </li>
             </ul>
             <p align="right">
-                <a href="#top">[TOP]</a>
+                <a ng-click="gotoAnchor('top')" href="">Back to top</a>
             </p>
             <hr>
             <p>
@@ -138,7 +140,7 @@
                 </li>
             </ul>
             <p align="right">
-                <a href="#top">[TOP]</a>
+                <a ng-click="gotoAnchor('top')" href="">Back to top</a>
             </p>
             <hr>
             <p>
@@ -159,7 +161,7 @@
                 </li>
             </ul>
             <p align="right">
-                <a href="#top">[TOP]</a>
+                <a ng-click="gotoAnchor('top')" href="">Back to top</a>
             </p>
             <hr>
             <!--
@@ -170,7 +172,7 @@
             </ul>
             </p>
 
-            <p align="right"><a href="#top">[TOP]</a></p>
+            <p align="right"><a ng-click="gotoAnchor('top')" href="">Back to top</a></p>
             <hr>
             -->
             <p>
@@ -194,7 +196,7 @@
                 </li>
             </ul>
             <p align="right">
-                <a href="#top">[TOP]</a>
+                <a ng-click="gotoAnchor('top')" href="">Back to top</a>
             </p>
             <hr>
             <p>
@@ -212,7 +214,7 @@
                 </li>
             </ul>
             <p align="right">
-                <a href="#top">[TOP]</a>
+                <a ng-click="gotoAnchor('top')" href="">Back to top</a>
             </p>
             <hr>
             <p>
@@ -230,7 +232,7 @@
                 </li>
             </ul>
             <p align="right">
-                <a href="#top">[TOP]</a>
+                <a ng-click="gotoAnchor('top')" href="">Back to top</a>
             </p>
             <hr>
             <p>
@@ -300,7 +302,7 @@
                 </li>
             </ul>
             <p align="right">
-                <a href="#top">[TOP]</a>
+                <a ng-click="gotoAnchor('top')" href="">Back to top</a>
             </p>
             <hr>
             <p>
@@ -309,6 +311,11 @@
             <h3>
                 <a href="/teaching_tools/index.html">Teaching Tools</a>
             </h3>
+            <p align="right">
+                <a ng-click="gotoAnchor('top')" href="">Back to top</a>
+            </p>
+            <hr>
+
             <!--<ul>
                 <li>
                     <a href="/techniques/chemotaxis/">Practical on chemotaxis</a> <i>(contributed by Thierry Soldati)</i>
