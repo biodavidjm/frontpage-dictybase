@@ -22,7 +22,8 @@ angular
     'frontPapersApp',
     'frontStockCenterApp',
     'frontPopularsApp',
-    'frontMeetingsApp'
+    'frontMeetingsApp',
+    'definitionBarApp'
   ])
   // .config(function ($routeProvider, $locationProvider) {
   .config(function ($routeProvider) {
@@ -53,6 +54,12 @@ angular
       })
       .when('/meetings', {
         templateUrl: 'views/front-meetings-all.html'      
+      })
+      .when('/research', {
+        templateUrl: 'views/research.html'      
+      })
+      .when('/research\/techniques', {
+        templateUrl: 'views/techniques/index.html'
       })
       .otherwise ({
         templateUrl: 'views/notyet.html',
