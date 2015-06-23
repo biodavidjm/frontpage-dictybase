@@ -1,0 +1,27 @@
+/*STYLE FOR THE VIEWS*/
+
+.viewHouse{
+	min-height: 500px;
+}
+
+.jumbotron {
+/*  text-align: center;
+  border-bottom: 1px solid #e5e5e5;*/
+}
+
+/*RESEARCH*/
+
+.jumbotron.research {
+	margin-top: 10px;
+	background-color: #EFF8FB;
+}
+
+.researchBox {
+	background-color: #F2F2F2;
+	border: 3px solid black;
+  	border-radius: 15px;
+  	padding: 20px 0px 20px 0px;
+  	text-align: center;
+}
+
+

@@ -16,6 +16,7 @@
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/views.css">
     <!-- endbuild -->
     
     <!-- Removing hashtag from URL requires to specify the base URL for the application -->
@@ -31,7 +32,7 @@
     <dicty-header></dicty-header>
 
     
-    <div ng-view="" autoscroll="true"></div>
+    <div ng-view autoscroll="true"></div>
 
 
     <dicty-footer></dicty-footer>
@@ -74,8 +75,11 @@
 
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
+        <!-- Controllers -->
         <script src="scripts/controllers/controllerMainFrontpage.js"></script>
         <script src="scripts/controllers/controllersTopShortcut.js"></script>
+        <script src="scripts/controllers/controllerViewsSections.js"></script>
+        <!-- Directives -->
         <script src="scripts/dictyHF/appHeaderFooter.js"></script>
         <script src="scripts/frontImage/appFrontImage.js"></script>
         <script src="scripts/frontNews/appFrontNews.js"></script>
@@ -85,6 +89,7 @@
         <script src="scripts/frontPopulars/appFrontPopulars.js"></script>
         <script src="scripts/frontMeetings/appFrontMeetings.js"></script>
         <script src="scripts/resetField/appResetField.js"></script>
+        <script src="scripts/definitionBar/appDefinitionBar.js"></script>
         <!-- endbuild -->
 </body>
 </html>
