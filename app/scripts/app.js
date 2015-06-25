@@ -25,6 +25,7 @@ angular
     'frontMeetingsApp',
     'definitionBarApp'
   ])
+  // Makes anchorScroll available everywhere
   .run(['$anchorScroll', function($anchorScroll) {
     $anchorScroll.yOffset = 50;   // always scroll by 50 extra pixels
   }])
@@ -32,13 +33,11 @@ angular
   {
     $scope.gotoAnchor = function(x) 
     {
-        // var newHash = 'anchor' + x;
         var newHash = x;
         if ($location.hash() !== newHash) 
         {
           // set the $location.hash to `newHash` and
           // $anchorScroll will automatically scroll to it
-          // $location.hash('anchor' + x);
           $location.hash(x);
         } 
         else 
@@ -84,6 +83,9 @@ angular
       })
       .when('/research\/techniques', {
         templateUrl: 'views/techniques/index.html'
+      })
+      .when('/research\/techniques\/1', {
+        templateUrl: 'views/techniques/media/media.html'
       })
       .otherwise ({
         templateUrl: 'views/notyet.html',
