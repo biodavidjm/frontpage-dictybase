@@ -8,6 +8,6 @@
  * Controller of the dictyFrontpageApp
  */
 angular.module('dictyFrontpageApp')
-  .controller('researchViewCtrl', function ($scope) {
-    $scope.mainResearch = 'Research';
-  });
+	.controller('researchViewCtrl', function ($scope) {
+    	$scope.mainResearch = 'Research';
+  	});

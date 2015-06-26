@@ -7,13 +7,16 @@
 .jumbotron {
 /*  text-align: center;
   border-bottom: 1px solid #e5e5e5;*/
+  padding: 10px 0px 10px 0px;
+  min-height: 150px;
+  border-bottom: 0px;
 }
 
 /*RESEARCH*/
 
 .jumbotron.research {
-	margin-top: 10px;
-	background-color: #EFF8FB;
+	margin-top: 5px;
+	background-color: white;
 }
 
 .researchBox {
@@ -22,6 +25,10 @@
   	border-radius: 15px;
   	padding: 20px 0px 20px 0px;
   	text-align: center;
+}
+
+.justRight{
+	padding-left: 20px;
 }
 
 
