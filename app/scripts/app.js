@@ -81,6 +81,15 @@ angular
       .when('/research', {
         templateUrl: 'views/research.html'      
       })
+      .when('/explore', {
+        templateUrl: 'views/explore/explore.html'      
+      })
+      .when('/explore/teach/:name*', { 
+        templateUrl:  function(address) {
+          return '/views/explore/teach/'+address.name;
+          },
+          controller: 'MediaController' 
+      })
       .when('/tools/jbrowse', {
         templateUrl: 'views/jbrowse.html'      
       })
@@ -120,6 +129,12 @@ angular
       .when('/research/techniques/biochem/:name*', { 
         templateUrl:  function(address) {
           return '/views/techniques/biochem/'+address.name;
+          },
+          controller: 'MediaController' 
+      })
+      .when('/research/techniques/cytoskeleton/:name*', { 
+        templateUrl:  function(address) {
+          return '/views/techniques/cytoskeleton/'+address.name;
           },
           controller: 'MediaController' 
       })
