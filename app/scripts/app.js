@@ -99,6 +99,12 @@ angular
           },
           controller: 'MediaController' 
       })
+      .when('/research/techniques/transformation/:name*', { 
+        templateUrl:  function(address) {
+          return '/views/techniques/transformation/'+address.name;
+          },
+          controller: 'MediaController' 
+      })
       .otherwise ({
         templateUrl: 'views/notyet.html',
       });
