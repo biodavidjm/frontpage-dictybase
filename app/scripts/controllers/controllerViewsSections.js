@@ -10,4 +10,8 @@
 angular.module('dictyFrontpageApp')
 	.controller('researchViewCtrl', function ($scope) {
     	$scope.mainResearch = 'Research';
-  	});
+  	})
+  	.controller('MediaController', function($scope, $routeParams) {
+	  $scope.address = $routeParams.address;
+	  console.log('address' + $scope.address);
+	});
