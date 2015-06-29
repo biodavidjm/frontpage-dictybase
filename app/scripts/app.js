@@ -81,11 +81,23 @@ angular
       .when('/research', {
         templateUrl: 'views/research.html'      
       })
-      .when('/research\/techniques', {
+      .when('/tools/jbrowse', {
+        templateUrl: 'views/jbrowse.html'      
+      })
+      .when('/research/techniques', {
         templateUrl: 'views/techniques/index.html'
       })
-      .when('/research\/techniques\/1', {
-        templateUrl: 'views/techniques/media/media.html'
+      .when('/research/techniques/media/:name', { 
+        templateUrl:  function(address) {
+          return '/views/techniques/media/'+address.name;
+          },
+          controller: 'MediaController' 
+      })
+      .when('/research/techniques/molbio/:name', { 
+        templateUrl:  function(address) {
+          return '/views/techniques/molbio/'+address.name;
+          },
+          controller: 'MediaController' 
       })
       .otherwise ({
         templateUrl: 'views/notyet.html',
