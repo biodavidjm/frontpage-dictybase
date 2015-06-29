@@ -111,6 +111,18 @@ angular
           },
           controller: 'MediaController' 
       })
+      .when('/research/techniques/microscopy/:name*', { 
+        templateUrl:  function(address) {
+          return '/views/techniques/microscopy/'+address.name;
+          },
+          controller: 'MediaController' 
+      })
+      .when('/research/techniques/biochem/:name*', { 
+        templateUrl:  function(address) {
+          return '/views/techniques/biochem/'+address.name;
+          },
+          controller: 'MediaController' 
+      })
       .otherwise ({
         templateUrl: 'views/notyet.html',
       });
