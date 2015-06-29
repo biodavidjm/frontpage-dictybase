@@ -105,6 +105,12 @@ angular
           },
           controller: 'MediaController' 
       })
+      .when('/research/techniques/geneex/:name*', { 
+        templateUrl:  function(address) {
+          return '/views/techniques/geneex/'+address.name;
+          },
+          controller: 'MediaController' 
+      })
       .otherwise ({
         templateUrl: 'views/notyet.html',
       });
