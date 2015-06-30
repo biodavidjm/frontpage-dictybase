@@ -31,4 +31,13 @@
 	padding-left: 20px;
 }
 
+.jbrowse {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+iframe {
+  border: none;
+}
+
 
