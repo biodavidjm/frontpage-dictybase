@@ -10,3 +10,4 @@
 - Identify external links: `<a href="http://www.nature.com/nprot/journal/v2/n6/full/nprot.2007.178.html">`
 - Identify internal links.
 - Assign new <URLs class=""></URLs>
+- Remove `CVS` folders
