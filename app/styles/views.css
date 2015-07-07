@@ -25,6 +25,11 @@ iframe {
   margin: 0px 0px 0px 0px;
 }
 
+.techniquesHead {
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+}
+
 .researchBox {
 	background-color: #F2F2F2;
 	border: 3px solid black;
@@ -43,8 +48,9 @@ iframe {
 }
 
 .note {
-  padding: 0px 20px 10px 20px;
+  padding: 5px 20px 10px 20px;
   font-size: small;
+  color: grey;
 }
 
 
