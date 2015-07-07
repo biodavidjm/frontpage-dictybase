@@ -39,14 +39,6 @@
 
 @media(max-width:767px){
 
-  .definition {
-    text-align: center;
-    padding-left: 0px;
-    padding-right: 0px;
-    background-color: white;
-    font-size: 12px;
-  }
-
   .belowImage{
     padding: 10px 10px 5px 10px;
   }
