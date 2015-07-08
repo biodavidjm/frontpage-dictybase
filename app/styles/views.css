@@ -63,4 +63,19 @@ iframe {
   color: #8A0808;
 }
 
+.blue {
+  color: #086A87;
+  font-weight: bold;
+}
+
+.gold {
+  color:#886A08;
+  /*font-weight: bold;*/
+}
+
+.yellow {
+  /*color:#D7DF01;*/
+  color: grey;
+  text-shadow: -1px 0 #AEB404, 0 1px #AEB404, 1px 0 #AEB404, 0 -1px #AEB404;
+}
 
