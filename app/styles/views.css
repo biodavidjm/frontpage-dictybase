@@ -30,6 +30,10 @@ iframe {
   text-align: center;
 }
 
+.techSubHeader {
+  color:grey;
+}
+
 .researchBox {
 	background-color: #F2F2F2;
 	border: 3px solid black;
@@ -51,6 +55,12 @@ iframe {
   padding: 5px 20px 10px 20px;
   font-size: small;
   color: grey;
+}
+
+/*Note Word*/
+.nw {
+  font-weight: bold;
+  color: #8A0808;
 }
 
 
