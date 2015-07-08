@@ -1,11 +1,3 @@
-<!--#include virtual="/inc/page-header.html"-->
-<!--#include virtual="/inc/page-layout-top-wide.html"-->
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html>
-    <head>
-        <title>Parasexual Genetics</title>
-    </head>
-    <body>
         <h1>
             <a name="top" id="top">Parasexual Genetics in <i>Dictyostelium</i></a>
         </h1>
@@ -17,18 +9,18 @@
             <b>Contents</b>
         </h3>
         <div style="margin-left: 2em">
-            <a href="#isolation">Isolation of diploid strains</a><br>
-            <a href="#parental_strains">Parental strains</a><br>
-            <a href="#maintenance">Stability and maintenance of diploid strains</a><br>
-            <a href="#segregation1">Segregation</a><br>
-            <a href="#double">Making double mutants</a><br>
-            <a href="#protocols">Protocols</a><br>
-            <a href="#fusion">Fusion of haploid cells &amp; selection of diploids</a><br>
-            <a href="#segregation2">Segregation of haploid cells from diploids</a><br>
-            <a href="#cyto_stain">Cytological staining of chromosomes to check ploidy</a><br>
+            <a href="" ng-click="scrollTo('isolation')">Isolation of diploid strains</a><br>
+            <a href="" ng-click="scrollTo('parental_strains')">Parental strains</a><br>
+            <a href="" ng-click="scrollTo('maintenance')">Stability and maintenance of diploid strains</a><br>
+            <a href="" ng-click="scrollTo('segregation1')">Segregation</a><br>
+            <a href="" ng-click="scrollTo('double')">Making double mutants</a><br>
+            <a href="" ng-click="scrollTo('protocols')">Protocols</a><br>
+            <a href="" ng-click="scrollTo('fusion')">Fusion of haploid cells &amp; selection of diploids</a><br>
+            <a href="" ng-click="scrollTo('segregation2')">Segregation of haploid cells from diploids</a><br>
+            <a href="" ng-click="scrollTo('cyto_stain')">Cytological staining of chromosomes to check ploidy</a><br>
         </div>
         <p>
-            <b>Download <a href="/techniques/word_docs/diploid_manual_RHI_1_9.doc">word file</a>.</b>
+            <b>Download <a ng-href="#/research/techniques/word_docs/diploid_manual_RHI_1_9.doc">word file</a>.</b>
         </p>
         <h2>
             Introduction
@@ -138,7 +130,7 @@
             <a name="maintenance" id="maintenance">Scheme</a>
         </h2>
         <p>
-            <a name="maintenance" id="maintenance"><img src="/techniques/images/selection_scheme.png"></a> <a name="protocols" id="protocols"></a>
+            <a name="maintenance" id="maintenance"><img src="views/techniques/images/selection_scheme.png"></a> <a name="protocols" id="protocols"></a>
         </p>
         <h1>
             <a name="maintenance" id="maintenance">Protocols</a>
@@ -285,8 +277,5 @@
             </li>
         </ol>
         <p align="right">
-            <a href="#top">[TOP]</a>&nbsp;<a href="/techniques/">[INDEX]</a>
-        </p><!--#include virtual="/inc/page-layout-bottom.html"-->
-        <!--#include virtual="/inc/page-footer.html"-->
-    </body>
-</html>
+            <a href="" ng-click="scrollTo('top')">[TOP]</a>&nbsp;<a ng-href="#/research/techniques/">[INDEX]</a>
+        </p>

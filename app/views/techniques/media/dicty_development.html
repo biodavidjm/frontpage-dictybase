@@ -1,11 +1,3 @@
-<!--#include virtual="/inc/page-header.html"-->
-<!--#include virtual="/inc/page-layout-top-wide.html"-->
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html>
-    <head>
-        <title>Dictyostelium Development</title>
-    </head>
-    <body>
         <h1>
             Protocols for <i>Dictyostelium discoideum</i> development
         </h1>
@@ -13,24 +5,24 @@
             <b>Please cite: Fey, P., Kowal, A. S., Gaudet, P., Pilcher, K. E., Chisholm, R. L. (2007) 'Protocols for growth and development of Dictyostelium discoideum.' <a href="http://www.nature.com/nprot/journal/v2/n6/full/nprot.2007.178.html">Nat Protoc 2:1307-16</a></b>
         </p>
         <p>
-            Here we describe conditions for successfully developing Dictyostelium cells. Other protocols that used to be combined as 'General Dictyostelium Techniques' are methods for <a href="/techniques/media/dicty_growth.html">Dictyostelium growth</a> and for <a href="/techniques/media/dicty_storage.html">long-term storage</a> of cells and spores.
+            Here we describe conditions for successfully developing Dictyostelium cells. Other protocols that used to be combined as 'General Dictyostelium Techniques' are methods for <a ng-href="#/research/techniques/media/dicty_growth.html">Dictyostelium growth</a> and for <a href="/techniques/media/dicty_storage.html">long-term storage</a> of cells and spores.
         </p>
         <hr>
         <h3>
             Contents
         </h3>
         <div style="margin-left: 2em">
-            <a href="#general">General considerations for Dictyostelium development</a><br>
-            <a href="#induce">Inducing development of Dictyostelium</a><br>
-            <a href="#prepare">Preparation of cells for development</a><br>
-            <a href="#filter">Developing cells on, and harvesting them from, filter paper</a><br>
-            <a href="#KK2">Developing cells on KK2 agar plates</a><br>
-            <a href="#susp">Development in suspension</a><br>
-            <a href="#slug">Slug formation and phototaxis</a><br>
+            <a href="" ng-click="scrollTo('general')">General considerations for Dictyostelium development</a><br>
+            <a href="" ng-click="scrollTo('induce')">Inducing development of Dictyostelium</a><br>
+            <a href="" ng-click="scrollTo('prepare')">Preparation of cells for development</a><br>
+            <a href="" ng-click="scrollTo('filter')">Developing cells on, and harvesting them from, filter paper</a><br>
+            <a href="" ng-click="scrollTo('KK2')">Developing cells on KK2 agar plates</a><br>
+            <a href="" ng-click="scrollTo('susp')">Development in suspension</a><br>
+            <a href="" ng-click="scrollTo('slug')">Slug formation and phototaxis</a><br>
             <br>
             <br>
-            <a href="#materials">Materials</a><br>
-            <a href="#references">References</a><br>
+            <a href="" ng-click="scrollTo('materials')">Materials</a><br>
+            <a href="" ng-click="scrollTo('references')">References</a><br>
         </div>
         <hr>
         <p>
@@ -47,13 +39,13 @@
                 <td width="559">
                     It is important to harvest cells in mid-log phase for development (1-4 x 10<sup>6</sup> cells ml<sup>-1</sup>). This will favor synchronous development. At high cell density, many of the cells in a culture will have initiated development, thus yielding inconsistent results.<br>
                     Try to maintain sterility throughout this process. Since development is induced by starvation, and Dictyostelium cells feed on bacteria, contamination of the buffer with bacteria or leftover medium interferes with development.<br>
-                    Gene expression in Dictyostelium cells changes as soon as nutrients are removed (1,2). Therefore, to analyze vegetative cells, it is important to use the cells immediately after the three washes as described in the 'Preparation of cells for development' section. It is also important to use cold buffer to rapidly inhibit all metabolic processes, including changes in gene expression and protein synthesis and degradation. Refer to the life cycle (left) for the timing of specific developmental stages. For example, expect to see aggregation after approximately 4-6 h, and fingers or <a href="#slug">slugs</a> after approximately 16 h.<br>
+                    Gene expression in Dictyostelium cells changes as soon as nutrients are removed (1,2). Therefore, to analyze vegetative cells, it is important to use the cells immediately after the three washes as described in the 'Preparation of cells for development' section. It is also important to use cold buffer to rapidly inhibit all metabolic processes, including changes in gene expression and protein synthesis and degradation. Refer to the life cycle (left) for the timing of specific developmental stages. For example, expect to see aggregation after approximately 4-6 h, and fingers or <a href="" ng-click="scrollTo('slug')">slugs</a> after approximately 16 h.<br>
                     <small><b>The <i>D. discoideum</i> life cycle.</b> Developmental morphogenesis starting from single, vegetative amoebae to the formation of the mature fruiting body, which contains a sorus of spores on top of a stalk. Aggregation is mediated by the chemotaxis of cells toward cAMP to form a multicellular aggregate. During this process, cells can be seen streaming toward a central domain or aggregation center. Aggregation results in the formation of a multicellular organism, a mound, which then forms a tipped mound. As development proceeds, the tip extends and forms a finger. The extended finger might fall over to form a phototactic migrating slug. Eventually, the finger or slug contracts and the anterior tip begins to rise to form a fruiting body. During culmination, the cells differentiate into vacuolated stalk cells that support a spore head containing spore cells. The spores tolerate a wider range of environmental conditions than the amoebae and germinate following dispersal, renewing the cycle. The entire process from starvation of vegetative cells to the formation of a mature fruiting body takes 24 h.</small>
                 </td>
             </tr>
         </table>
         <p align="right">
-            <a href="#top">[TOP]</a>&nbsp;<a href="/techniques/">[INDEX]</a>
+            <a href="" ng-click="scrollTo('top')">[TOP]</a>&nbsp;<a ng-href="#/research/techniques/">[INDEX]</a>
         </p>
         <hr>
         <p>
@@ -66,7 +58,7 @@
             Dictyostelium cells can be developed on solid media; they are plated on filter paper for best synchronicity and if developmental stages need to be harvested for further procedures, such as protein or RNA preparations. Cells can also be developed on KK2 plates for examination of morphology or to allow agar blocks to be cut out and reoriented for better visualization. Alternatively, cells may be developed in suspension, for example, to prepare aggregation-competent cells for cell migration studies; under these conditions, cells will only progress through the first 6-8 h of development. Addition of cAMP pulses to the starved suspension culture will allow development to progress up to the 12-h stage. Lastly there is the option for developmental conditions that favor slug formation and phototaxis.
         </p>
         <p align="right">
-            <a href="#top">[TOP]</a>&nbsp;<a href="/techniques/">[INDEX]</a>
+            <a href="" ng-click="scrollTo('top')">[TOP]</a>&nbsp;<a ng-href="#/research/techniques/">[INDEX]</a>
         </p>
         <hr>
         <p>
@@ -77,15 +69,15 @@
         </h3>
         <ol>
             <li>Collect 5 x 10<sup>8</sup> cells (at a concentration of 2 x 10<sup>6</sup> cells ml<sup>-1</sup>, use 250 ml of cells) and centrifuge at 500<i>g</i> for 4 min at room temperature. Pour off the supernatant.<br>
-                <b>Note</b>: Grow cells as described in the <a href="/techniques/media/dicty_growth.html">growth protocols</a>.
+                <b>Note</b>: Grow cells as described in the <a ng-href="#/research/techniques/media/dicty_growth.html">growth protocols</a>.
             </li>
-            <li>Wash cells by resuspending the pellet in 0.5 volume (125 ml) of cold, sterile <a href="/techniques/media/media.html#DB">DB</a> and centrifuge again. Remove the supernatant.
+            <li>Wash cells by resuspending the pellet in 0.5 volume (125 ml) of cold, sterile <a ng-href="#/research/techniques/media/media.html#DB">DB</a> and centrifuge again. Remove the supernatant.
             </li>
             <li>Repeat the wash twice for a total of three washes.
             </li>
         </ol>
         <p align="right">
-            <a href="#top">[TOP]</a>&nbsp;<a href="/techniques/">[INDEX]</a>
+            <a href="" ng-click="scrollTo('top')">[TOP]</a>&nbsp;<a ng-href="#/research/techniques/">[INDEX]</a>
         </p>
         <hr>
         <h3>
@@ -98,7 +90,7 @@
                 </td>
                 <td width="603">
                     <ol>
-                        <li>Resuspend the final pellet of 5 x 10<sup>8</sup> cells in 5 ml <a href="/techniques/media/media.html#DB">DB</a>.
+                        <li>Resuspend the final pellet of 5 x 10<sup>8</sup> cells in 5 ml <a ng-href="#/research/techniques/media/media.html#DB">DB</a>.
                         </li>
                         <li>Prepare a 150 mm Petri dish with one Whatman #50 filter placed on four Whatman #3 filters soaked in DB.
                         </li>
@@ -123,7 +115,7 @@
             </tr>
         </table>
         <ol start="10">
-            <li>Incubate at 21-23°C and let cells develop for the desired time period (refer to the <a href="#general">life cycle figure</a> for approximate timing of developmental stages).<br>
+            <li>Incubate at 21-23°C and let cells develop for the desired time period (refer to the <a href="" ng-click="scrollTo('general')">life cycle figure</a> for approximate timing of developmental stages).<br>
                 <b>Note</b>: When plating on filters, do not invert the plates, as filters do not stick to the Petri dish.
             </li>
             <li>Harvest cells from filter: lift the top (Whatman #50) filter from the Petri dish and, holding it with two forceps, tear it in half.
@@ -143,13 +135,13 @@
             <a name="KK2" id="KK2">Developing cells on KK2 agar plates</a>
         </h3>
         <ol>
-            <li>After the final wash (see 'Preparation of cells for development'), resuspend cells in <a href="/techniques/media/media.html#DB">DB</a> to a concentration of 1 x 10<sup>9</sup> ml<sup>-1</sup>.
+            <li>After the final wash (see 'Preparation of cells for development'), resuspend cells in <a ng-href="#/research/techniques/media/media.html#DB">DB</a> to a concentration of 1 x 10<sup>9</sup> ml<sup>-1</sup>.
             </li>
-            <li>Use 200 ml of the cell suspension (2 x 10<sup>8</sup> cells) per 100 mm <a href="/techniques/media/media.html#KK2">KK2 plate</a> and spread the cells evenly over the surface of the plate using a sterile glass spreader.
+            <li>Use 200 ml of the cell suspension (2 x 10<sup>8</sup> cells) per 100 mm <a ng-href="#/research/techniques/media/media.html#KK2">KK2 plate</a> and spread the cells evenly over the surface of the plate using a sterile glass spreader.
             </li>
-            <li>Wrap plates with plastic wrap, including a wet paper towel as <a href="#filter">described above</a>.
+            <li>Wrap plates with plastic wrap, including a wet paper towel as <a href="" ng-click="scrollTo('filter')">described above</a>.
             </li>
-            <li>Invert the plates and incubate cells at 22°C for the desired time period (refer to the <a href="#general">life cycle figure</a> for approximate timing of developmental stages). Cells developing on agar plates are suitable for microscopic observations, for example, for recording development.<br>
+            <li>Invert the plates and incubate cells at 22°C for the desired time period (refer to the <a href="" ng-click="scrollTo('general')">life cycle figure</a> for approximate timing of developmental stages). Cells developing on agar plates are suitable for microscopic observations, for example, for recording development.<br>
                 <b>Note</b>: Make sure to use fresh KK2 plates. For good, uniform development, plates should be neither too dry nor wet when inverted and incubated.
             </li>
         </ol>
@@ -162,7 +154,7 @@
             </li>
             <li>Harvesting cells and three wash cycles takes approximately 30 min.
             </li>
-            <li>Plating washed cells on filters takes approximately 30 min; development time varies, see <a href="#general">life cycle figure</a>; harvesting cells takes approximately 20 min. The procedure takes longer when many plates are prepared at the same time.
+            <li>Plating washed cells on filters takes approximately 30 min; development time varies, see <a href="" ng-click="scrollTo('general')">life cycle figure</a>; harvesting cells takes approximately 20 min. The procedure takes longer when many plates are prepared at the same time.
             </li>
             <li>Plating cells to develop on agar plates takes 15-30 min, depending on the number of plates used.
             </li>
@@ -170,7 +162,7 @@
             </li>
         </ul>
         <p align="right">
-            <a href="#top">[TOP]</a>&nbsp;<a href="/techniques/">[INDEX]</a>
+            <a href="" ng-click="scrollTo('top')">[TOP]</a>&nbsp;<a ng-href="#/research/techniques/">[INDEX]</a>
         </p>
         <hr>
         <p>
@@ -180,13 +172,13 @@
             Development in suspension
         </h3>
         <ol>
-            <li>After the final wash (see 'Preparation of cells for development'), resuspend the cells at a density of 1 x 10<sup>7</sup> cells ml<sup>-1</sup> in <a href="/techniques/media/media.html#DB">DB</a>.
+            <li>After the final wash (see 'Preparation of cells for development'), resuspend the cells at a density of 1 x 10<sup>7</sup> cells ml<sup>-1</sup> in <a ng-href="#/research/techniques/media/media.html#DB">DB</a>.
             </li>
             <li>Place the cell suspension in a sterile flask and shake at 22°C .
             </li>
             <li>Start cAMP pulsing 60-120 min after the initiation of starvation. cAMP pulses are added using a timer to control a peristaltic pump that delivers cAMP to the cell suspension through tubing, which goes into the flask. Note that because Dictyostelium cells express a phosphodiesterase enzyme, the added cAMP degrades and does not accumulate.
             </li>
-            <li>Program the pump to deliver a 5 s pulse every 6 min. During this 5-s period, cAMP is added to a final concentration of 50 nM in the cell suspension. Use a volume of added cAMP corresponding to less than 0.01% of the cell suspension. For example, for 1 liter cell suspension, 50 ml of a <a href="/techniques/media/media.html#cAMP">1 mM cAMP solution</a> may be added at each pulse.
+            <li>Program the pump to deliver a 5 s pulse every 6 min. During this 5-s period, cAMP is added to a final concentration of 50 nM in the cell suspension. Use a volume of added cAMP corresponding to less than 0.01% of the cell suspension. For example, for 1 liter cell suspension, 50 ml of a <a ng-href="#/research/techniques/media/media.html#cAMP">1 mM cAMP solution</a> may be added at each pulse.
             </li>
             <li>Pulse cells for approximately 5 h, after which cells are aggregation competent and can be used for migration studies.
             </li>
@@ -196,7 +188,7 @@
             <br>
         </p>
         <p align="right">
-            <a href="#top">[TOP]</a>&nbsp;<a href="/techniques/">[INDEX]</a>
+            <a href="" ng-click="scrollTo('top')">[TOP]</a>&nbsp;<a ng-href="#/research/techniques/">[INDEX]</a>
         </p>
         <hr>
         <p>
@@ -209,13 +201,13 @@
             During mid-development, Dictyostelium discoideum can choose between two different pathways. The finger stage can either proceed directly to culmination, or it can fall over to form a migratory, phototactic slug. This migratory stage is thought to enable Dictyostelium to find an appropriate site for fruiting body formation (4). Slugs form preferably in low ionic strength and in the dark, approximately 16 h after onset of starvation (5). Note that non-axenic strains such as NC-4 formslugs more efficiently than axenic strains. Here, we describe a simple way to prepare and plate cells to form phototactic slugs.
         </p>
         <ol>
-            <li>Grow cells <a href="/techniques/media/dicty_growth.html#liveSMP">on bacteria on an SM plate</a>. After cells consume the bacteria (2-3 days), wash cells off by pipetting 2 ml <a href="/techniques/media/media.html#DB">DB</a> on the plate and scraping cells off with a glass spreader. Decant cells into a 50 ml conical plastic tube and repeat this step to wash off all the cells.
+            <li>Grow cells <a ng-href="#/research/techniques/media/dicty_growth.html#liveSMP">on bacteria on an SM plate</a>. After cells consume the bacteria (2-3 days), wash cells off by pipetting 2 ml <a href="/techniques/media/media.html#DB">DB</a> on the plate and scraping cells off with a glass spreader. Decant cells into a 50 ml conical plastic tube and repeat this step to wash off all the cells.
             </li>
             <li>Top off the tube with DB, mix by briefly vortexing and centrifuge at 500<i>g</i> for 4 min at room temperature. Repeat this wash 3–4 times until the supernatant is relatively clear.
             </li>
             <li>Pellet the cells one more time and resuspend in 2 ml DB. From one bacterial plate, you can expect approximately 1 x 10<sup>9</sup> cells; count cells after the last wash, as the yield will be significantly lower if cells are washed off too early, that is, before they cleared the bacterial lawn. Adjust the volume if necessary.
             </li>
-            <li>Using a P200 micropipette, use 50 µl Dictostelium cells (approximately 2.5 x 10<sup>7</sup> cells) and make a straight streak, 4-5 cm long, on one side of a <a href="/techniques/media/media.html#2%">2% non-nutrient agar plate</a>.
+            <li>Using a P200 micropipette, use 50 µl Dictostelium cells (approximately 2.5 x 10<sup>7</sup> cells) and make a straight streak, 4-5 cm long, on one side of a <a ng-href="#/research/techniques/media/media.html#2%">2% non-nutrient agar plate</a>.
             </li>
             <li>Let cells settle for approximately 30 min and then carefully blot excess liquid off the side of the streak using small snippets of filter paper.
             </li>
@@ -228,7 +220,7 @@
             <b>Timing</b>: 1 h to set up a cellular streak for slug development; From 16 to 48 h to observe slug migration toward the light source.
         </p>
         <p align="right">
-            <a href="#top">[TOP]</a>&nbsp;<a href="/techniques/">[INDEX]</a>
+            <a href="" ng-click="scrollTo('top')">[TOP]</a>&nbsp;<a ng-href="#/research/techniques/">[INDEX]</a>
         </p>
         <hr>
         <p>
@@ -239,7 +231,7 @@
         </h3>
         <hr>
         <p>
-            <a href="/techniques/media/media.html">All media and buffers for Dictyostelium can be found here</a>
+            <a ng-href="#/research/techniques/media/media.html">All media and buffers for Dictyostelium can be found here</a>
         </p>
         <h4>
             Equipment
@@ -269,7 +261,7 @@
             </li>
         </ul>
         <p align="right">
-            <a href="#top">[TOP]</a>&nbsp;<a href="/techniques/">[INDEX]</a>
+            <a href="" ng-click="scrollTo('top')">[TOP]</a>&nbsp;<a ng-href="#/research/techniques/">[INDEX]</a>
         </p>
         <hr>
         <p>
@@ -292,8 +284,5 @@
             </li>
         </ol>
         <p align="right">
-            <a href="#top">[TOP]</a>&nbsp;<a href="/techniques/">[INDEX]</a>
-        </p><!--#include virtual="/inc/page-layout-bottom.html"-->
-        <!--#include virtual="/inc/page-footer.html"-->
-    </body>
-</html>
+            <a href="" ng-click="scrollTo('top')">[TOP]</a>&nbsp;<a ng-href="#/research/techniques/">[INDEX]</a>
+        </p>
