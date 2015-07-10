@@ -1,11 +1,3 @@
-<!--#include virtual="/inc/page-header.html"-->
-<!--#include virtual="/inc/page-layout-top-wide.html"-->
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html>
-    <head>
-        <title>RNAi Procedure</title>
-    </head>
-    <body>
         <p>
             <a name="top" id="top"></a>
         </p>
@@ -20,7 +12,7 @@
             Designing the long hairpin RNAi (lhRNAi) construct
         </h2>
         <p>
-            The general structure of the long-hairpin (lhRNA) consists of a dsRNA with a hairpin loop, [a la` <a target="new" href="/db/cgi-bin/dictyBase/reference/reference.pl?refNo=4050">Martens et al 2002</a>]. For example, we cloned ~1100&nbsp;bp of cDNA in the antisense orientation into the BglII/AatII sites of the TET off MB38 response plasmid [<a target="new" href="/db/cgi-bin/dictyBase/reference/reference.pl?refNo=387">Blaauw et al 2000</a>]. Behind this (i.e. downstream, 3') was cloned (into AatII/MluI) 750&nbsp;bp of the 5'&nbsp;end of that 1100&nbsp;bp antisense cDNA, but this time in the sense orientation. Thus, downstream of the TET-off promoter is a total of 1850&nbsp;nt of sequence. The first 1100&nbsp;nt is AntiSense sequence fused to 750&nbsp;nt of Sense sequence. This generates a 750&nbsp;dsRNA region with an unpaired 350&nbsp;nt loop. In the COP9 paper [<a target="new" href="/db/cgi-bin/dictyBase/reference/reference.pl?refNo=11368">Rosel and Kimmel 2006</a>]. The COP9 signalosome regulates cell proliferation of Dictyostelium discoideum. Eur. J. Cell Biol. 85, 1023-1034.], we used full length cDNA to generate the construct, because the gene of interest was small, but in our other attempts with conditional RNAi we have targeted unique (with respect to protein sequence) regions of the gene in the central part of the cDNA. The sequential cloning directly into the MB38 plasmid might be critical, because recloning of the hairpin construct from other plasmids has caused recombination problems. The MB38 plasmid contains 4 unique restriction sites. We have had knock-down success with several other genes, but the targeting sequences appear to be critical, and unfortunately, also, empirical. For example, targeted KD of an individual gene has worked well for certain sequences chosen, but not for others.
+            The general structure of the long-hairpin (lhRNA) consists of a dsRNA with a hairpin loop, [a la` <a target="new" href="http://www.dictybase.org/db/cgi-bin/dictyBase/reference/reference.pl?refNo=4050">Martens et al 2002</a>]. For example, we cloned ~1100&nbsp;bp of cDNA in the antisense orientation into the BglII/AatII sites of the TET off MB38 response plasmid [<a target="new" href="/db/cgi-bin/dictyBase/reference/reference.pl?refNo=387">Blaauw et al 2000</a>]. Behind this (i.e. downstream, 3') was cloned (into AatII/MluI) 750&nbsp;bp of the 5'&nbsp;end of that 1100&nbsp;bp antisense cDNA, but this time in the sense orientation. Thus, downstream of the TET-off promoter is a total of 1850&nbsp;nt of sequence. The first 1100&nbsp;nt is AntiSense sequence fused to 750&nbsp;nt of Sense sequence. This generates a 750&nbsp;dsRNA region with an unpaired 350&nbsp;nt loop. In the COP9 paper [<a target="new" href="/db/cgi-bin/dictyBase/reference/reference.pl?refNo=11368">Rosel and Kimmel 2006</a>]. The COP9 signalosome regulates cell proliferation of Dictyostelium discoideum. Eur. J. Cell Biol. 85, 1023-1034.], we used full length cDNA to generate the construct, because the gene of interest was small, but in our other attempts with conditional RNAi we have targeted unique (with respect to protein sequence) regions of the gene in the central part of the cDNA. The sequential cloning directly into the MB38 plasmid might be critical, because recloning of the hairpin construct from other plasmids has caused recombination problems. The MB38 plasmid contains 4 unique restriction sites. We have had knock-down success with several other genes, but the targeting sequences appear to be critical, and unfortunately, also, empirical. For example, targeted KD of an individual gene has worked well for certain sequences chosen, but not for others.
         </p>
         <h2>
             Transformation and cell handling
@@ -29,8 +21,5 @@
             We used the general electroporation protocol. The cells were co-transformed with the RNAi-construct in MB38 plasmid and the transactivator plasmid MB35 (Blaauw et al., 2000) and grown in presence of 10&nbsp;μg/ml blasticidineS, 20&nbsp;μg/ml of G418 and 30&nbsp;μg/ml of Tetracycline (to silence the expression). To test induced overexpression, exponentially growing cultures were washed twice with medium and resuspended to 5x10<sup>5</sup>&nbsp;cells/ml in fresh medium supplemented by 10&nbsp;μg/ml blasticidineS and 20&nbsp;μg/ml of G418, but lacking the tetracycline. The decrease of mRNA expression after removal of tetracycline was confirmed by northern blots, or ideally with immunoblots. For "essential" genes, cell growth is slowed and largely repressed after 24-30 hrs in media without tetracycline. With time (after 2-4 additional days), we see that the cultures are no longer responsive to Tet-minus, growth repression. The data suggest that with time a population of cells begins to grow normally, is no longer sensitive to tet-off induced lhRNAi expression (ie. tet-off repression), and takes over the culture by out-growing the functionally-repressed cells.
         </p>
         <p align="right">
-            <a href="#top">[TOP]</a>&nbsp;<a href="/techniques/">[INDEX]</a>
-        </p><!--#include virtual="/inc/page-layout-bottom.html"-->
-        <!--#include virtual="/inc/page-footer.html"-->
-    </body>
-</html>
+            <a href="" ng-click="scrollTo('top')">[TOP]</a>&nbsp;<a ng-href="#/research/techniques/">[INDEX]</a>
+        </p>

@@ -1,570 +1,611 @@
-<!--#include virtual="/inc/page-header.html"-->
-<!--#include virtual="/inc/page-layout-top-wide.html"-->
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html>
-    <head>
-        <title>Dictyostelium Transformation Procedures</title>
-    </head>
-    <body>
-        <h1>
-            Transformation of Dictyostelium discoideum with plasmid DNA
-        </h1>
-        <p>
-            <b>Please cite Gaudet, P., Pilcher, K. E., Fey, P., Chisholm, R. L. (2007) 'Transformation of Dictyostelium discoideum with plasmid DNA.' <a href="http://www.nature.com/nprot/journal/v2/n6/full/nprot.2007.179.html">Nat Protoc 2:1317-24</a></b>
-        </p>
-        <p>
-            We review here two commonly used methods for transformation of Dictyostelium cells: calcium phosphate precipitation and electroporation. These methods are adapted from <a href="/cgi-bin/dictyBase/reference/reference.pl?refNo=4406">Nellen <i>et al</i>.</a> (6), <a href="/db/cgi-bin/dictyBase/reference/reference.pl?refNo=2737">Howard <i>et al</i>.</a> (7) and <a href="/db/cgi-bin/dictyBase/reference/reference.pl?refNo=4776">Pang <i>et al</i>.</a> (8).
-        </p>
-        <hr>
-        <h3>
-            Contents
-        </h3>
-        <p>
-            <a href="#protocols">Protocols</a>
-        </p>
-        <div style="margin-left: 2em">
-            <a href="#electroporation">Electroporation</a><br>
-            <a href="#capo4">Calcium phosphate precipitation</a><br>
-            <a href="#selection">Selection of transformants</a><br>
+<a name="top" id="top"></a>
+
+<div class="container">
+    <div class="row techniquesHead">
+        <span class="techSubHeader"><h3>Tecniques</h3></span>
+        <h2>
+            Transformation of <i>Dictyostelium discoideum</i> <br>with plasmid DNA
+        </h2>
+        <h6>Please cite: <br>Gaudet, P., Pilcher, K. E., Fey, P., Chisholm, R. L. (2007) <br> 'Transformation of Dictyostelium discoideum with plasmid DNA.' <a href="http://www.nature.com/nprot/journal/v2/n6/full/nprot.2007.179.html">Nat Protoc 2:1317-24</a></h6>
+    </div>
+
+    <div class="row">
+
+        <div class="col-sm-2 col-xs-1"></div>
+
+        <div class="col-sm-8 col-xs-10">
+            
+            <hr>
+            <h5>
+                We review here two commonly used methods for transformation of Dictyostelium cells: calcium phosphate precipitation and electroporation. These methods are adapted from <a href="http://www.dictybase.org/db/cgi-bin/dictyBase/reference/reference.pl?refNo=4406">Nellen <i>et al</i>.</a> (6), <a href="http://www.dictybase.org/db/cgi-bin/dictyBase/reference/reference.pl?refNo=2737">Howard <i>et al</i>.</a> (7) and <a href="http://www.dictybase.org/db/cgi-bin/dictyBase/reference/reference.pl?refNo=4776">Pang <i>et al</i>.</a> (8).
+            </h5>
+            <hr>
+
         </div>
-        <p>
-            <a href="#considerations">Considerations</a>
-        </p>
-        <div style="margin-left: 2em">
-            <a href="#markers">Selectable markers</a><br>
-            <a href="#copy_number">Effect of selection marker on copy number</a><br>
-            <a href="#method">Transformation method</a><br>
-            <a href="#strain">Choice of strain</a><br>
-            <a href="#multiple">Multiple gene disruptions</a><br>
+
+        <div class="col-sm-2 col-xs-1"></div>
+        
+    </div> <!-- row -->
+
+    <div class="row">
+        <div class="col-sm-2 col-xs-1"></div>
+
+        <div class="col-sm-8 col-xs-1">
+
+            <div class="blue" align="left"><h4>Contents</h4></div>
+            <div class="panel panel-primary">
+                <div class="list-group">
+
+                    <a href="" class="list-group-item"  ng-click="scrollTo('protocols')"><h4>Protocols</h4></a>
+    
+                    <a href="" class="list-group-item list-group-item-success"  ng-click="scrollTo('electroporation')">Electroporation</a>
+                    <a href="" class="list-group-item list-group-item-success"  ng-click="scrollTo('capo4')">Calcium phosphate precipitation</a>
+                    <a href="" class="list-group-item list-group-item-success"  ng-click="scrollTo('selection')">Selection of transformants</a>
+
+                    
+                    <a href="" class="list-group-item"  ng-click="scrollTo('considerations')"><h4>Considerations</h4></a>
+                    <a href="" class="list-group-item list-group-item-warning"  ng-click="scrollTo('markers')">Selectable markers</a>
+                    <a href="" class="list-group-item list-group-item-warning"  ng-click="scrollTo('copy_number')">Effect of selection marker on copy number</a>
+                    <a href="" class="list-group-item list-group-item-warning"  ng-click="scrollTo('method')">Transformation method</a>
+                    <a href="" class="list-group-item list-group-item-warning"  ng-click="scrollTo('strain')">Choice of strain</a>
+                    <a href="" class="list-group-item list-group-item-warning"  ng-click="scrollTo('multiple')">Multiple gene disruptions</a>
+                    <a href="" class="list-group-item"  ng-click="scrollTo('materials')"><h4>Materials</h4></a>
+                    <a href="" class="list-group-item"  ng-click="scrollTo('references')"><h4>References</h4></a>
+                </div>
+            </div>
         </div>
-        <p>
-            <a href="#materials">Materials</a><br>
-            <a href="#references">References</a><br>
-        </p>
-        <hr>
-        <p>
-            <a name="protocols" id="protocols"></a> <a name="electroporation" id="electroporation"></a>
-        </p>
-        <h3>
-            Electroporation
-        </h3>
-        <hr>
-        <ol>
-            <li>For ten transformations: pellet approx 1x10<sup>8</sup>&nbsp;cells (50&nbsp;ml of a 2x 10<sup>6</sup> cells&nbsp;/ml culture) by centrifugation at 500<i>g</i> for 5&nbsp;min at 4°C.
-            </li>
-            <li style="list-style: none">
-                <br>
-            </li>
-            <li>Wash the cells twice with a half volume (25&nbsp;ml) of ice-cold H-50 buffer. Pellet the cells by centrifugation at 500<i>g</i> for 5&nbsp;min at 4°C. The cells must be treated gently: resuspend with a sterile pipette rather than using a vortex.
-            </li>
-            <li style="list-style: none">
-                <br>
-            </li>
-            <li>Resuspend the pellet in H-50 buffer at 1x&nbsp;10<sup>8</sup>&nbsp;cells&nbsp;/ml (1&nbsp;ml).
-            </li>
-            <li style="list-style: none">
-                <br>
-            </li>
-            <li>Transfer 100&nbsp;µl of the cell suspension to a cold 0.1&nbsp;cm electroporation cuvette containing 10&nbsp;µg DNA in a volume of approximately 10&nbsp;µl. Pipette up and down to mix the DNA and the cells.<br>
-                <b>Note:</b> The volume of DNA should be less than 10% of the total volume. However, if the volume of DNA is too small, the mixing might not be effective.<br>
-                <b>Note:</b> Remember to transform a sample lacking DNA (negative control) as well as an empty vector positive control.
-            </li>
-            <li style="list-style: none">
-                <br>
-            </li>
-            <li>Electroporate the cells at 0.85&nbsp;kV and 25&nbsp;µF twice, waiting for about 5&nbsp;sec between pulses. The time constant should be approx&nbsp;0.6&nbsp;msec. There is no need for a resistor.
-            </li>
-            <li style="list-style: none">
-                <br>
-            </li>
-            <li>Incubate the cuvette on ice for 5&nbsp;min.<br>
-                <b>Note:</b> Some researchers add 1/100th of a volume of a solution of 100 mM CaCl<sub>2</sub> and 100 mM MgCl<sub>2</sub> to a final concentration of 1&nbsp;mM each and incubate for 15&nbsp;mins to allow the cells to heal after incubation on ice (7, 34).
-            </li>
-            <li style="list-style: none">
-                <br>
-            </li>
-            <li>Transfer the cells out of the cuvette by adding a few hundred microliters of HL5 from the dish to the cuvette, pipette up and down to mix and then withdraw the medium and cells and add to a Petri dish containing 12.5&nbsp;ml&nbsp;HL5. Repeat once if you want to be sure to collect all cells. Swirl dish gently to distribute the cells evenly. Note that cell death might be expected upon electroporation. However, the cell survival rate should be above 25%. Continue to Selection of transformants below.
-            </li>
-            <li style="list-style: none">
-                <br>
-            </li>
-        </ol>
-        <hr>
-        <p>
-            <a name="capo4" id="capo4"></a>
-        </p>
-        <h3>
-            Calcium phosphate precipitation
-        </h3>
-        <hr>
-        <ol>
-            <li>Grow Dictyostelium cells in HL5 medium at 21&nbsp;to&nbsp;23°C (20) to a density of 1-2x 10<sup>6</sup> cells&nbsp;/ml.<br>
-                <b>Note:</b> Cultures used for transformations should be fresh; ideally, that have been maintained for less than 2 weeks. If the culture is older, start a new one from silica or frozen stocks. Also, do not let cultures reach high densities (&lt;5 times 10<sup>6</sup> cells&nbsp;/ml). If this happens, start a new culture. Healthy cells produce better transformation efficiencies.
-            </li>
-            <li style="list-style: none">
-                <br>
-            </li>
-            <li>For each transformation: Place 10&nbsp;ml of log phase cells in a 10&nbsp;cm Petri dish. Let cells attach for 15-30&nbsp;min.
-            </li>
-            <li style="list-style: none">
-                <br>
-            </li>
-            <li>Replace the HL5 medium with 12.5&nbsp;ml Bis-Tris HL5. Leave cells in Bis-Tris HL5 for 30&nbsp;min.
-            </li>
-            <li style="list-style: none">
-                <br>
-            </li>
-            <li>During incubation, prepare the DNA solution in a plastic test tube by combining the components shown in the table below, in order, to a final volume of 540&nbsp;µl.
-                <ul>
-                    <li>10&nbsp;µg DNA
-                    </li>
-                    <li>300&nbsp;µl 2x HBS
-                    </li>
-                    <li>Sterile water to 540&nbsp;µl.
-                    </li>
-                </ul>
-            </li>
-            <li style="list-style: none">
-                <br>
-            </li>
-            <li>Add dropwise 60 mul of 1.25 M CaCl<sub>2</sub> to the DNA/HBS mixture while vortexing (the final volume is now 600&nbsp;µl). Incubate the DNA solution for 15-30&nbsp;min at room temperature.
-            </li>
-            <li style="list-style: none">
-                <b>Note:</b> Remember to transform a sample lacking DNA (negative control) as well as an empty vector (positive control).<br>
-                <b>Note:</b> The pipettor might touch the side of the tube while vortexing. If the pipette shaft is contaminated, this could result in contamination of the cells being transformed. To reduce the possibility of contamination, wipe the whole pipette with a tissue moistened with ethanol. Removing the tip ejector facilitates the cleaning of the pipette.<br>
-                <br>
-            </li>
-            <li>Remove the medium from the plate and gradually add the DNA solution to the cells from Step 4. The DNA must be added to the center of the plate to ensure that the small volume used (0.6&nbsp;ml) will cover the entire plate. It is important to add the solution slowly so as not to disturb the cells. Swirl the plate gently to distribute the DNA solution across the plate. Cover the plate and let stand for 30&nbsp;min while the cells take up the vector.<br>
-                <b>Note:</b> It is important to incubate not longer than 30&nbsp;min, as there is a very small volume of liquid and the cells can dry out if it is allowed to evaporate.
-            </li>
-            <li style="list-style: none">
-                <br>
-            </li>
-            <li>Without removing the DNA, add 12.5&nbsp;ml Bis-Tris HL5 and let stand a&nbsp;minimum of 4 h to allow the cells to uptake the DNA.
-            </li>
-            <li style="list-style: none">
-                <br>
-            </li>
-            <li>Glycerol shock<br>
-                <ul>
-                    <li>(i) Carefully aspirate off the medium and gently add 4&nbsp;ml of 18% glycerol in HBS by letting it run down the side of the dish.
-                    </li>
-                    <li style="list-style: none">
-                        <br>
-                    </li>
-                    <li>(ii) Let stand for exactly 5&nbsp;min.<br>
-                        <b>Critical step:</b> The glycerol concentration and the length of the osmotic shock are both highly critical for transformation success. If it is prolonged or stronger, the glycerol shock will lyse and kill the cells. If transformation efficiencies are unacceptably low, it may be helpful to titrate the glycerol concentration between 10% and 20%, with 1-2%
-                    </li>
-                    <li style="list-style: none">
-                        <br>
-                    </li>
-                    <li>(iii) Gently aspirate off the glycerol solution and replace with 12.5&nbsp;ml HL5.<br>
-                        <b>Critical step:</b> This step must be taken into account for the length of the glycerol shock: until the HL5 is added, the cells are still under osmotic shock, even if there are only a few microliters of glycerol remaining. It is advisable to remove the glycerol solution 10-30 s before the end of the 5&nbsp;min, at which point the medium can be added. This ensures that the incubation is exactly 5&nbsp;min. Also, if multiple transformations are done at the same time, the time it takes to process all of the plates must be taken into account so that glycerol shock does not exceed 5&nbsp;min.
-                    </li>
-                    <li style="list-style: none">
-                        <br>
-                    </li>
-                </ul>
-            </li>
-            <li>Incubate overnight at 22 °C to allow expression of the selection marker. Selective pressure (drugs or the transfer to FM (defined medium20) without uracil and/or thymidine) should be done between 12 and 24 h following the transformation, as outlined below.<br>
-                <b>Note:</b> The efficiency of the glycerol shock can be assessed the day after transformation (before adding the selection drug) by looking at the appearance of the cells under an inverted microscope: ideally, between 30% and 50% of the cells should look sick (i.e., rounded up). If all the cells appear to be sick, it means that the glycerol shock was too harsh. It is still possible to get transformants, but the efficiency will be low.
-            </li>
-        </ol>
-        <hr>
-        <p>
-            <a name="selection" id="selection"></a>
-        </p>
-        <h3>
-            Selection of transformants
-        </h3>
-        <hr>
-        <p>
-            Transformants may be selected for in liquid media (option A) or on bacterial plates (option B); the procedure outlined in option B is adapted from Wetterauer et al. (23) (see <a href="/techniques/transformation/transformant_selection_on_bacteria.html">http://dictybase.org/techniques/transformation/transformant_selection_on_bacteria.html</a> and <a href="/techniques/transformation/NC4.html">http://dictybase.org/techniques/transformation/NC4.html</a>). The latter reduces the chances of contaminating the culture as the cells are grown in buffered agar containing live or dead bacteria, rather than in rich medium. It also facilitates the isolation of clones from transformations, as each transformant produces a single colony on the plate, in comparison to pools of transformants obtained in liquid culture. This may be especially important in cases where a desired genetic manipulation produces a growth deficiency. To obtain clones from liquid cultures, cells must be transferred to microtiter plates.<br>
-            <b>Note:</b> For gene ablation experiments, it is important to obtain a&nbsp;minimum of two independent clones with the same phenotype to exclude the possibility that the phenotype is due to a nonspecific mutation.
-        </p>
-        <h4>
-            A. Selection of transformants in liquid media
-        </h4>
-        <ol>
-            <li>Aspirate off the medium and replace with 12.5&nbsp;ml fresh HL5 containing the selection drug. Add 300&nbsp;µg&nbsp;/ml streptomycin sulfate and 100&nbsp;µg&nbsp;/ml ampicillin to avoid bacterial contamination (20).
-            </li>
-            <li>To select stable transformants, replace the medium after 12-24&nbsp;h with HL5 plus the selection drug (see Table 1). If desired, add 20&nbsp;µl&nbsp;HKB per plate.<br>
-                <b>Optional:</b> To isolate clones, pipette the medium up and down to remove cells from the plate and distribute into microtiter plates. The original plate may be saved until the clones are stably growing as a back up in case of contamination. Critical step The cells must be diluted enough to yield one cell per well. For a normal transformation, one may expect between 100 and 1,000 transformants; thus use 100-1,000&nbsp;wells if the entire cell population is to be plated.
-            </li>
-            <li>Replace medium two to three times a week until transformants are visible. If desired, add 20µl&nbsp;HKB per plate
-            </li>
-        </ol>
-        <hr>
-        <h4>
-            B. Selection of transformants on solid bacterial plates
-        </h4>
-        <ol>
-            <li>The day after transformation, collect all cells from the transformation plate in 5-10&nbsp;ml&nbsp;1x&nbsp;KK2.
-            </li>
-            <li style="list-style: none">
-                <br>
-            </li>
-            <li>Wash the cells with 5&nbsp;ml&nbsp;1x&nbsp;KK2.
-            </li>
-            <li style="list-style: none">
-                <br>
-            </li>
-            <li>Plate approximately 3 times 10<sup>5</sup> Dictyostelium cells per G100 plate with 0.5&nbsp;ml of HKB. Add 300&nbsp;µg&nbsp;/ml streptomycin sulfate and 100&nbsp;µg&nbsp;/ml ampicillin to avoid bacterial contamination (20). Live bacteria can be used rather than HKB. Avoid using nutrient plates such as SM, as this requires a lot more G418 than KK2 plates and thus it is harder to block the growth of untransformed cells (23).
-            </li>
-            <li style="list-style: none">
-                <br>
-            </li>
-            <li>Incubate at 22°C in a moist chamber until transformants appear. Separate plaques visible on the bacterial lawn are clones of single transformed cells. Colonies can be isolated as described by Fey et al. (20).
-            </li>
-            <li style="list-style: none">
-                <br>
-            </li>
-        </ol>
-        <hr>
-        <p>
-            <a name="considerations" id="considerations"></a>
-        </p>
-        <h3>
-            Considerations
-        </h3>
-        <hr>
-        <p>
-            <a name="markers" id="markers"></a>
-        </p>
-        <h4>
-            Selectable markers
-        </h4>
-        <p>
-            Most Dictyostelium vectors for transformation contain a selectable marker, usually an antibiotic resistance gene, expressed under the control of a strong promoter, typically the promoter of the act15 or the act6 gene. This ensures that only cells transformed with the marker-containing vector will grow on selective media. Several drugs can be used for selection: G418 or geneticin (6), blasticidin S (11), hygromycin (12) and bleomycin (13). The bleomycin resistance gene also confers resistance to the related drug phleomycin (14). Mutants auxotrophic for thymidine15 or uracil16 are also available; these strains are unable to grow in medium lacking thymidine or uracil, respectively, and can be transformed with vectors carrying genes that complement these defects. Table 1 gives an overview of the different selection markers used for Dictyostelium transformation.
-        </p>
-        <p>
-            <b>Table 1. Characteristics of selection drugs.</b>
-        </p>
-        <table class="download" font="" size="8">
-            <col width="25%">
-            <col width="25%">
-            <col width="25%">
-            <col width="25%">
-            <tr>
-                <th>
-                    Drug
-                </th>
-                <th>
-                    Recommended concentration
-                </th>
-                <th>
-                    False positives
-                </th>
-                <th>
-                    Average copy number
-                </th>
-            </tr>
-            <tr>
-                <td>
-                    Blasticidin
-                </td>
-                <td>
-                    10-20&nbsp;µg&nbsp;/ml (11)
-                </td>
-                <td>
-                    None on 10&nbsp;µg&nbsp;/ml (9)
-                </td>
-                <td>
-                    1-10 (8,18)
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Bleomycin
-                </td>
-                <td>
-                    Days 1-5: 50&nbsp;µg&nbsp;/ml; After: 15&nbsp;µg&nbsp;/ml (13)
-                </td>
-                <td>
-                    None on 50&nbsp;µg&nbsp;/ml (13)
-                </td>
-                <td>
-                    Not applicable
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    G418
-                </td>
-                <td>
-                    5-30&nbsp;µg&nbsp;/ml (refs. 8,9)
-                </td>
-                <td>
-                    &lt;1% (15)
-                </td>
-                <td>
-                    1500 (8,17)
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Hygromycin
-                </td>
-                <td>
-                    25-35&nbsp;µg&nbsp;/ml (12)
-                </td>
-                <td>
-                    less than or equal to 5% (12)
-                </td>
-                <td>
-                    Up to 200 (12)
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Thymidine prototrophy
-                </td>
-                <td>
-                    Not applicable
-                </td>
-                <td>
-                    None (15)
-                </td>
-                <td>
-                    40 (15)
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    Uracil prototrophy
-                </td>
-                <td>
-                    Resistant to 50&nbsp;µg&nbsp;/ml 5-FOA (16)
-                </td>
-                <td>
-                    None in defined medium (FM) (16)
-                </td>
-                <td>
-                    1 (16)
-                </td>
-            </tr>
-        </table>
-        <hr>
-        <p>
-            <a name="copy_number" id="copy_number"></a>
-        </p>
-        <h4>
-            Effect of selection marker on copy number
-        </h4>
-        <p>
-            Different drugs have different effects on the number of plasmid copies integrated into the genome. Blasticidin is a very effective selection marker in Dictyostelium, and typically one copy is sufficient to produce resistance (8, 17). Therefore, it is the selection marker most often used for gene knockout and knock-in experiments. Vectors containing the hygromycin resistance gene also provide good success rates for targeted gene disruption. On the other hand, plasmids containing the neomycin phosphotransferase gene, which confers G418 resistance, must be present in multiple copies to confer drug resistance. Moreover, for vectors conferring resistance to G418, the concentration of the drug during selection is positively correlated with the number of copies present in the transformed cells. Plasmid copy number is also positively correlated with the expression level of a marker. Therefore, vectors conferring resistance to G418 are preferable for overexpression experiments (8, 18, 19).
-        </p>
-        <hr>
-        <p>
-            <a name="method" id="method"></a>
-        </p>
-        <h4>
-            Transformation method
-        </h4>
-        <p>
-            Depending on the purpose of the experiment, calcium phosphate precipitation or electroporation might be appropriate. Electroporation favors single integration events in the genomic DNA, and is recommended for experiments requiring homologous recombination. Calcium phosphate precipitation results in a higher copy number of integrative vectors and therefore may produce increased expression in overexpression experiments (8). It is therefore recommended to use electroporation combined with vectors conferring resistance to blasticidin or hygromycin for homologous recombination. For overexpression experiments, electroporation also gives satisfactory results, although calcium phosphate precipitation with G418 resistance vectors usually provides higher expression levels (8, 18).
-        </p>
-        <hr>
-        <p>
-            <a name="strain" id="strain"></a>
-        </p>
-        <h4>
-            Choice of strain
-        </h4>
-        <p>
-            As described by Fey et al. (20), wild-type strains of Dictyostelium feed on bacteria and are unable to grow in axenic conditions, that is, free of other organisms. Derivatives of the wild-type strain NC-4 that can grow axenically, termed axenic or AX strains, are available (21, 22). Most researchers use the axenic strains AX2, AX3 and AX4 for molecular genetics experiments. An effective method to transform non-axenic strains became available only in 1996 (see ref. 23) and therefore the use of non-axenic strains is rare. The original procedure for transformation of non-axenic strains (9) resulted in transformants with high frequencies of vector rearrangement. Wetterauer et al. (23) have modified the drug selection cassette of the neomycin phosphotransferase gene, conferring resistance to G418, such that the drug resistance marker is under the control of the V18 (rpl11) promoter, a gene encoding a ribosomal protein that is strongly expressed during the vegetative stage. As this gene is expressed at a higher level than the actin genes during growth on bacteria, this method allows the transformation of non-axenic strains. This selection method is very effective and facilitates transformation of both axenic and non-axenic strains.<br>
+
+        <div class="col-sm-2 col-xs-1"></div>
+
+    </div>
+
+    <div class="row">
+
+        <div class="col-sm-2 col-xs-1"></div>
+
+        <div class="col-sm-8 col-xs-10">
+
+            <p>
+                <a name="protocols" id="protocols"></a> 
+            </p>
+            <hr>
+            <h2>Protocols</h2>
+            <hr>
+            <p>
+                <a name="electroporation" id="electroporation"></a>
+            </p>
+            
+            <h4>
+                Electroporation
+            </h4>
+            <ol>
+                <li>For ten transformations: pellet approx 1x10<sup>8</sup>&nbsp;cells (50&nbsp;ml of a 2x 10<sup>6</sup> cells&nbsp;/ml culture) by centrifugation at 500<i>g</i> for 5&nbsp;min at 4°C.
+                </li>
+
+                <li>Wash the cells twice with a half volume (25&nbsp;ml) of ice-cold H-50 buffer. Pellet the cells by centrifugation at 500<i>g</i> for 5&nbsp;min at 4°C. The cells must be treated gently: resuspend with a sterile pipette rather than using a vortex.
+                </li>
+
+                <li>Resuspend the pellet in H-50 buffer at 1x&nbsp;10<sup>8</sup>&nbsp;cells&nbsp;/ml (1&nbsp;ml).
+                </li>
+
+                <li>Transfer 100&nbsp;µl of the cell suspension to a cold 0.1&nbsp;cm electroporation cuvette containing 10&nbsp;µg DNA in a volume of approximately 10&nbsp;µl. Pipette up and down to mix the DNA and the cells.<br>
+                    <b>Note:</b> The volume of DNA should be less than 10% of the total volume. However, if the volume of DNA is too small, the mixing might not be effective.<br>
+                    <b>Note:</b> Remember to transform a sample lacking DNA (negative control) as well as an empty vector positive control.
+                </li>
+
+                <li>Electroporate the cells at 0.85&nbsp;kV and 25&nbsp;µF twice, waiting for about 5&nbsp;sec between pulses. The time constant should be approx&nbsp;0.6&nbsp;msec. There is no need for a resistor.
+                </li>
+
+                <li>Incubate the cuvette on ice for 5&nbsp;min.<br>
+                    <b>Note:</b> Some researchers add 1/100th of a volume of a solution of 100 mM CaCl<sub>2</sub> and 100 mM MgCl<sub>2</sub> to a final concentration of 1&nbsp;mM each and incubate for 15&nbsp;mins to allow the cells to heal after incubation on ice (7, 34).
+                </li>
+
+                <li>Transfer the cells out of the cuvette by adding a few hundred microliters of HL5 from the dish to the cuvette, pipette up and down to mix and then withdraw the medium and cells and add to a Petri dish containing 12.5&nbsp;ml&nbsp;HL5. Repeat once if you want to be sure to collect all cells. Swirl dish gently to distribute the cells evenly. Note that cell death might be expected upon electroporation. However, the cell survival rate should be above 25%. Continue to Selection of transformants below.
+                </li>
+
+            </ol>
+
+                <p align="center">
+                    <small><a href="" ng-click="scrollTo('top')">Top</a> | <a ng-href="#/research/techniques/">Techniques</a></small>
+                </p>       
+
+            <hr>            
+            <p>
+                <a name="capo4" id="capo4"></a>
+            </p>
+            <h4>
+                Calcium phosphate precipitation
+            </h4>
+            <ol>
+                <li>Grow Dictyostelium cells in HL5 medium at 21&nbsp;to&nbsp;23°C (20) to a density of 1-2x 10<sup>6</sup> cells&nbsp;/ml.<br>
+                    <b>Note:</b> Cultures used for transformations should be fresh; ideally, that have been maintained for less than 2 weeks. If the culture is older, start a new one from silica or frozen stocks. Also, do not let cultures reach high densities (&lt;5 times 10<sup>6</sup> cells&nbsp;/ml). If this happens, start a new culture. Healthy cells produce better transformation efficiencies.
+                </li>
+
+                <li>For each transformation: Place 10&nbsp;ml of log phase cells in a 10&nbsp;cm Petri dish. Let cells attach for 15-30&nbsp;min.
+                </li>
+
+                <li>Replace the HL5 medium with 12.5&nbsp;ml Bis-Tris HL5. Leave cells in Bis-Tris HL5 for 30&nbsp;min.
+                </li>
+
+                <li>During incubation, prepare the DNA solution in a plastic test tube by combining the components shown in the table below, in order, to a final volume of 540&nbsp;µl.
+                    <ul>
+                        <li>10&nbsp;µg DNA
+                        </li>
+                        <li>300&nbsp;µl 2x HBS
+                        </li>
+                        <li>Sterile water to 540&nbsp;µl.
+                        </li>
+                    </ul>
+                </li>
+
+                <li>Add dropwise 60 mul of 1.25 M CaCl<sub>2</sub> to the DNA/HBS mixture while vortexing (the final volume is now 600&nbsp;µl). Incubate the DNA solution for 15-30&nbsp;min at room temperature.
+                </li>
+                <li style="list-style: none">
+                    <b>Note:</b> Remember to transform a sample lacking DNA (negative control) as well as an empty vector (positive control).<br>
+                    <b>Note:</b> The pipettor might touch the side of the tube while vortexing. If the pipette shaft is contaminated, this could result in contamination of the cells being transformed. To reduce the possibility of contamination, wipe the whole pipette with a tissue moistened with ethanol. Removing the tip ejector facilitates the cleaning of the pipette.<br>
+                    <br>
+                </li>
+                <li>Remove the medium from the plate and gradually add the DNA solution to the cells from Step 4. The DNA must be added to the center of the plate to ensure that the small volume used (0.6&nbsp;ml) will cover the entire plate. It is important to add the solution slowly so as not to disturb the cells. Swirl the plate gently to distribute the DNA solution across the plate. Cover the plate and let stand for 30&nbsp;min while the cells take up the vector.<br>
+                    <b>Note:</b> It is important to incubate not longer than 30&nbsp;min, as there is a very small volume of liquid and the cells can dry out if it is allowed to evaporate.
+                </li>
+
+                <li>Without removing the DNA, add 12.5&nbsp;ml Bis-Tris HL5 and let stand a&nbsp;minimum of 4 h to allow the cells to uptake the DNA.
+                </li>
+
+                <li>Glycerol shock<br>
+                    <ul>
+                        <li>(i) Carefully aspirate off the medium and gently add 4&nbsp;ml of 18% glycerol in HBS by letting it run down the side of the dish.
+                        </li>
+                        <li style="list-style: none">
+                            <br>
+                        </li>
+                        <li>(ii) Let stand for exactly 5&nbsp;min.<br>
+                            <b>Critical step:</b> The glycerol concentration and the length of the osmotic shock are both highly critical for transformation success. If it is prolonged or stronger, the glycerol shock will lyse and kill the cells. If transformation efficiencies are unacceptably low, it may be helpful to titrate the glycerol concentration between 10% and 20%, with 1-2%
+                        </li>
+                        <li style="list-style: none">
+                            <br>
+                        </li>
+                        <li>(iii) Gently aspirate off the glycerol solution and replace with 12.5&nbsp;ml HL5.<br>
+                            <b>Critical step:</b> This step must be taken into account for the length of the glycerol shock: until the HL5 is added, the cells are still under osmotic shock, even if there are only a few microliters of glycerol remaining. It is advisable to remove the glycerol solution 10-30 s before the end of the 5&nbsp;min, at which point the medium can be added. This ensures that the incubation is exactly 5&nbsp;min. Also, if multiple transformations are done at the same time, the time it takes to process all of the plates must be taken into account so that glycerol shock does not exceed 5&nbsp;min.
+                        </li>
+                        <li style="list-style: none">
+                            <br>
+                        </li>
+                    </ul>
+                </li>
+                <li>Incubate overnight at 22 °C to allow expression of the selection marker. Selective pressure (drugs or the transfer to FM (defined medium20) without uracil and/or thymidine) should be done between 12 and 24 h following the transformation, as outlined below.<br>
+                    <b>Note:</b> The efficiency of the glycerol shock can be assessed the day after transformation (before adding the selection drug) by looking at the appearance of the cells under an inverted microscope: ideally, between 30% and 50% of the cells should look sick (i.e., rounded up). If all the cells appear to be sick, it means that the glycerol shock was too harsh. It is still possible to get transformants, but the efficiency will be low.
+                </li>
+            </ol>
+
+                <p align="center">
+                    <small><a href="" ng-click="scrollTo('top')">Top</a> | <a ng-href="#/research/techniques/">Techniques</a></small>
+                </p>
+
+            <hr>
+            <p>
+                <a name="selection" id="selection"></a>
+            </p>
+            <h4>
+                Selection of transformants
+            </h4>
+            <p>
+                Transformants may be selected for in liquid media (option A) or on bacterial plates (option B); the procedure outlined in option B is adapted from Wetterauer et al. (23) (see <a ng-href="#/research/techniques/transformation/transformant_selection_on_bacteria.html">http://dictybase.org/techniques/transformation/transformant_selection_on_bacteria.html</a> and <a href="/techniques/transformation/NC4.html">http://dictybase.org/techniques/transformation/NC4.html</a>). The latter reduces the chances of contaminating the culture as the cells are grown in buffered agar containing live or dead bacteria, rather than in rich medium. It also facilitates the isolation of clones from transformations, as each transformant produces a single colony on the plate, in comparison to pools of transformants obtained in liquid culture. This may be especially important in cases where a desired genetic manipulation produces a growth deficiency. To obtain clones from liquid cultures, cells must be transferred to microtiter plates.<br>
+                <b>Note:</b> For gene ablation experiments, it is important to obtain a&nbsp;minimum of two independent clones with the same phenotype to exclude the possibility that the phenotype is due to a nonspecific mutation.
+            </p>
+            <h5>
+                A. Selection of transformants in liquid media
+            </h5>
+            <ol>
+                <li>Aspirate off the medium and replace with 12.5&nbsp;ml fresh HL5 containing the selection drug. Add 300&nbsp;µg&nbsp;/ml streptomycin sulfate and 100&nbsp;µg&nbsp;/ml ampicillin to avoid bacterial contamination (20).
+                </li>
+                <li>To select stable transformants, replace the medium after 12-24&nbsp;h with HL5 plus the selection drug (see Table 1). If desired, add 20&nbsp;µl&nbsp;HKB per plate.<br>
+                    <b>Optional:</b> To isolate clones, pipette the medium up and down to remove cells from the plate and distribute into microtiter plates. The original plate may be saved until the clones are stably growing as a back up in case of contamination. Critical step The cells must be diluted enough to yield one cell per well. For a normal transformation, one may expect between 100 and 1,000 transformants; thus use 100-1,000&nbsp;wells if the entire cell population is to be plated.
+                </li>
+                <li>Replace medium two to three times a week until transformants are visible. If desired, add 20µl&nbsp;HKB per plate
+                </li>
+            </ol>    
+
+
+            <h5>
+                B. Selection of transformants on solid bacterial plates
+            </h5>
+            <ol>
+                <li>The day after transformation, collect all cells from the transformation plate in 5-10&nbsp;ml&nbsp;1x&nbsp;KK2.
+                </li>
+
+                <li>Wash the cells with 5&nbsp;ml&nbsp;1x&nbsp;KK2.
+                </li>
+
+                <li>Plate approximately 3 times 10<sup>5</sup> Dictyostelium cells per G100 plate with 0.5&nbsp;ml of HKB. Add 300&nbsp;µg&nbsp;/ml streptomycin sulfate and 100&nbsp;µg&nbsp;/ml ampicillin to avoid bacterial contamination (20). Live bacteria can be used rather than HKB. Avoid using nutrient plates such as SM, as this requires a lot more G418 than KK2 plates and thus it is harder to block the growth of untransformed cells (23).
+                </li>
+
+                <li>Incubate at 22°C in a moist chamber until transformants appear. Separate plaques visible on the bacterial lawn are clones of single transformed cells. Colonies can be isolated as described by Fey et al. (20).
+                </li>
+            </ol>
+                
+                <p align="center">
+                    <small><a href="" ng-click="scrollTo('top')">Top</a> | <a ng-href="#/research/techniques/">Techniques</a></small>
+                </p>
+
+            <p>
+                <a name="considerations" id="considerations"></a>
+            </p>
+            <hr>
+            <h2>
+                Considerations
+            </h2>
+            <hr>
+            <p>
+                <a name="markers" id="markers"></a>
+            </p>
+            <h4>
+                Selectable markers
+            </h4>
+            <p>
+                Most Dictyostelium vectors for transformation contain a selectable marker, usually an antibiotic resistance gene, expressed under the control of a strong promoter, typically the promoter of the act15 or the act6 gene. This ensures that only cells transformed with the marker-containing vector will grow on selective media. Several drugs can be used for selection: G418 or geneticin (6), blasticidin S (11), hygromycin (12) and bleomycin (13). The bleomycin resistance gene also confers resistance to the related drug phleomycin (14). Mutants auxotrophic for thymidine15 or uracil16 are also available; these strains are unable to grow in medium lacking thymidine or uracil, respectively, and can be transformed with vectors carrying genes that complement these defects. Table 1 gives an overview of the different selection markers used for Dictyostelium transformation.
+            </p>
+        </div>
+        <div class="col-sm-2 col-xs-1"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
             <br>
-            For transformations using auxotrophic markers, commonly used strains are DH1 (uracil auxotroph) (24) and JH10 (thymidine auxotroph) (25). It should be noted that these auxotrophic strains have compromised nucleotide synthesis and therefore tend to accumulate mutations. Also, the growth rate of uracil auxotrophs is significantly lower compared to axenic cells, which can result in impure transformant populations if the selection pressure is not maintained (26). For these reasons, it is especially important to make control cell lines complemented with the vector used for the experiment.
-        </p>
-        <hr>
-        <p>
-            <a name="multiple" id="multiple"></a>
-        </p>
-        <h4>
-            Multiple gene disruptions
-        </h4>
-        <p>
-            The recent adaptation of the cre-lox system for use in Dictyostelium has proven to be an easy, reliable method of producing multiple gene disruptions (27). The vector for cre-lox recombination, pLPBLP, contains the blasticidin resistance cassette flanked by two loxP sites. Sequences from the gene to be disrupted are cloned on either side of the blasticidin resistance cassette. When cells are transformed with pLPBLP, the vector integrates in the target gene by homologous recombination. In a subsequent step, the cells are transformed with the pDEX-NLS-cre vector, which contains the cre recombinase gene. Expression of the cre recombinase excises the blasticidin resistance cassette while leaving the gene disrupted. By removing the drug selection marker from the genome, the cre-lox system can be used to sequentially disrupt different genes using the same selectable marker, usually blasticidin. The advantage of using the cre-lox system is that the number of gene disruptions is, in theory, unlimited, with the use of a single selection marker. Other methods to make multiple targeted gene disruptions are also available but are less effective or more cumbersome than the cre-lox system. One possibility is to make use of the different selectable markers available for Dictyostelium transformation; however, this limits the number of independent gene disruptions to three or four. The disruption of two independent genes within the same transformation has been reported, but with a rather low efficiency (28). Also, it is possible to use 5-fluoro-orotic-acid (5-FOA) to select for loss of the uracil resistance marker in uracil phototrophic strains, thus allowing multiple rounds of transformation by first using positive selection for growth in the absence of uracil, followed by 5-FOA selection to remove the ura marker (26, 29). In practice, this method is unreliable as the loss of the uracil resistance gene occurs spontaneously, which may be accompanied by other undesirable genomic changes. <a name="materials" id="materials"></a>
-        </p>
-        <hr>
-        <h3>
-            Materials
-        </h3>
-        <hr>
-        <p>
-            <b>Antibiotic solutions are made in water, filter-sterilized and stored at 4°C, unless otherwise indicated.</b>
-        </p>
-        <ul>
-            <li>
-                <u>Blasticidin S hydrochloride:</u> 10 mg&nbsp;/ml pre-prepared solution (InvivoGen, cat. no. ant-bl-1; Invitrogen, cat. no. R21001; Calbiochem, cat. no. 203350): use at 10&nbsp;µg&nbsp;/ml final concentration
-            </li>
-            <li style="list-style: none">
+            <hr>
+            <p>
+                <b><small>Table 1. Characteristics of selection drugs.</small></b>
+            </p>
+            <img src="views/techniques/images/tableSelectionDrugs.png" class="img-responsive">
+            <br>
+
+  <!--           
+            <table class="download" font="" size="8">
+                <col width="25%">
+                <col width="25%">
+                <col width="25%">
+                <col width="25%">
+                <tr>
+                    <th>
+                        Drug
+                    </th>
+                    <th>
+                        Recommended concentration
+                    </th>
+                    <th>
+                        False positives
+                    </th>
+                    <th>
+                        Average copy number
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        Blasticidin
+                    </td>
+                    <td>
+                        10-20&nbsp;µg&nbsp;/ml (11)
+                    </td>
+                    <td>
+                        None on 10&nbsp;µg&nbsp;/ml (9)
+                    </td>
+                    <td>
+                        1-10 (8,18)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Bleomycin
+                    </td>
+                    <td>
+                        Days 1-5: 50&nbsp;µg&nbsp;/ml; After: 15&nbsp;µg&nbsp;/ml (13)
+                    </td>
+                    <td>
+                        None on 50&nbsp;µg&nbsp;/ml (13)
+                    </td>
+                    <td>
+                        Not applicable
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        G418
+                    </td>
+                    <td>
+                        5-30&nbsp;µg&nbsp;/ml (refs. 8,9)
+                    </td>
+                    <td>
+                        &lt;1% (15)
+                    </td>
+                    <td>
+                        1500 (8,17)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Hygromycin
+                    </td>
+                    <td>
+                        25-35&nbsp;µg&nbsp;/ml (12)
+                    </td>
+                    <td>
+                        less than or equal to 5% (12)
+                    </td>
+                    <td>
+                        Up to 200 (12)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Thymidine prototrophy
+                    </td>
+                    <td>
+                        Not applicable
+                    </td>
+                    <td>
+                        None (15)
+                    </td>
+                    <td>
+                        40 (15)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        Uracil prototrophy
+                    </td>
+                    <td>
+                        Resistant to 50&nbsp;µg&nbsp;/ml 5-FOA (16)
+                    </td>
+                    <td>
+                        None in defined medium (FM) (16)
+                    </td>
+                    <td>
+                        1 (16)
+                    </td>
+                </tr>
+            </table> -->
+
+                <p align="center">
+                    <small><a href="" ng-click="scrollTo('top')">Top</a> | <a ng-href="#/research/techniques/">Techniques</a></small>
+                </p>
+
+        </div> <!-- col-sm -->
+        <div class="col-sm-1"></div>
+    </div> <!-- row -->
+
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+  
+            <hr>
+            <p>
+                <a name="copy_number" id="copy_number"></a>
+            </p>
+            <h4>
+                Effect of selection marker on copy number
+            </h4>
+            <p>
+                Different drugs have different effects on the number of plasmid copies integrated into the genome. Blasticidin is a very effective selection marker in Dictyostelium, and typically one copy is sufficient to produce resistance (8, 17). Therefore, it is the selection marker most often used for gene knockout and knock-in experiments. Vectors containing the hygromycin resistance gene also provide good success rates for targeted gene disruption. On the other hand, plasmids containing the neomycin phosphotransferase gene, which confers G418 resistance, must be present in multiple copies to confer drug resistance. Moreover, for vectors conferring resistance to G418, the concentration of the drug during selection is positively correlated with the number of copies present in the transformed cells. Plasmid copy number is also positively correlated with the expression level of a marker. Therefore, vectors conferring resistance to G418 are preferable for overexpression experiments (8, 18, 19).
+            </p>
+
+                <p align="center">
+                    <small><a href="" ng-click="scrollTo('top')">Top</a> | <a ng-href="#/research/techniques/">Techniques</a></small>
+                </p>
+            <hr>
+            <p>
+                <a name="method" id="method"></a>
+            </p>
+            <h4>
+                Transformation method
+            </h4>
+            <p>
+                Depending on the purpose of the experiment, calcium phosphate precipitation or electroporation might be appropriate. Electroporation favors single integration events in the genomic DNA, and is recommended for experiments requiring homologous recombination. Calcium phosphate precipitation results in a higher copy number of integrative vectors and therefore may produce increased expression in overexpression experiments (8). It is therefore recommended to use electroporation combined with vectors conferring resistance to blasticidin or hygromycin for homologous recombination. For overexpression experiments, electroporation also gives satisfactory results, although calcium phosphate precipitation with G418 resistance vectors usually provides higher expression levels (8, 18).
+            </p>
+
+                <p align="center">
+                    <small><a href="" ng-click="scrollTo('top')">Top</a> | <a ng-href="#/research/techniques/">Techniques</a></small>
+                </p>
+            <hr>
+            <p>
+                <a name="strain" id="strain"></a>
+            </p>
+            <h4>
+                Choice of strain
+            </h4>
+            <p>
+                As described by Fey et al. (20), wild-type strains of Dictyostelium feed on bacteria and are unable to grow in axenic conditions, that is, free of other organisms. Derivatives of the wild-type strain NC-4 that can grow axenically, termed axenic or AX strains, are available (21, 22). Most researchers use the axenic strains AX2, AX3 and AX4 for molecular genetics experiments. An effective method to transform non-axenic strains became available only in 1996 (see ref. 23) and therefore the use of non-axenic strains is rare. The original procedure for transformation of non-axenic strains (9) resulted in transformants with high frequencies of vector rearrangement. Wetterauer et al. (23) have modified the drug selection cassette of the neomycin phosphotransferase gene, conferring resistance to G418, such that the drug resistance marker is under the control of the V18 (rpl11) promoter, a gene encoding a ribosomal protein that is strongly expressed during the vegetative stage. As this gene is expressed at a higher level than the actin genes during growth on bacteria, this method allows the transformation of non-axenic strains. This selection method is very effective and facilitates transformation of both axenic and non-axenic strains.<br>
                 <br>
-            </li>
-            <li>
-                <u>Hygromycin B:</u> 25&nbsp;mg&nbsp;/ml in 10&nbsp;mM HEPES12 (InvivoGen, cat. no. ant-hm-1 (prepared solution); Calbiochem, cat. no. 400049; Sigma-Aldrich, cat. no. 56685): use at 25&nbsp;µg&nbsp;/ml final concentration
-            </li>
-            <li style="list-style: none">
-                <br>
-            </li>
-            <li>
-                <u>G418 sulfate:</u> 10 mg&nbsp;/ml (Calbiochem, cat. no. 345810; Invitrogen, cat. no. 11811023; Strategene, cat. no. 200399): use at 10 mug&nbsp;/ml final concentration
-            </li>
-            <li style="list-style: none">
-                <br>
-            </li>
-            <li>
-                <u>Bleomycin sulfate:</u> 20 mg&nbsp;/ml in normal saline (Calbiochem, cat. no. 203401; Sigma-Aldrich, cat. no. 15361): use at 50 mug&nbsp;/ml for the first 5 days, and 15 mug&nbsp;/ml thereafter<br>
-                <b>Note:</b> The solution is more stable when stored in a glass container in normal saline. Solutions made in distilled water only stable are for a few days.<br>
-                <b>Caution: Bleomycin causes double-stranded DNA breaks and is a suspected carcinogen.</b>
-            </li>
-            <li style="list-style: none">
-                <br>
-            </li>
-            <li>
-                <u>Phleomycin:</u> 15 mg&nbsp;/ml (InvivoGen, cat. no. ant-ph-1; Sigma-Aldrich, cat. no. P9564): use at 15 mug&nbsp;/ml final concentration. Store at -20°C <b>Caution: Phleomycin may cause DNA damage and is a suspected carcinogen.</b>
-            </li>
-            <li style="list-style: none">
-                <br>
-            </li>
-            <li>
-                <u>Bis-Tris HL5:</u> (for 1&nbsp;liter) Dissolve 2.1&nbsp;g&nbsp;Bis-Tris, 10&nbsp;g&nbsp;proteose peptone (Oxoid), 5&nbsp;g&nbsp;yeast&nbsp;extract and 10&nbsp;g&nbsp;D-glucose in distilled water; adjust pH&nbsp;to&nbsp;7.1 with HCl. Autoclave to fully solubilize, readjust pH&nbsp;to&nbsp;7.1 (it will have gone down to about pH&nbsp;6.8). Filter-sterilize; store at room temperature (22°C).
-            </li>
-            <li>
-                <u>1.25 M CaCl<sub>2</sub>:</u> Dissolve 1.84&nbsp;g&nbsp;CaCl<sub>2</sub> in 10&nbsp;ml distilled water. Filter-sterilize and store at room temperature.
-            </li>
-            <li style="list-style: none">
-                <br>
-            </li>
-            <li>
-                <u>18% glycerol:</u> (for 4&nbsp;ml) Pipette 1.44&nbsp;ml of autoclaved 50% (v/v) glycerol in water, 0.56&nbsp;ml sterile distilled water and 2.0&nbsp;ml 2x&nbsp;HBS. Scale this solution according to the number of transformations.
-            </li>
-            <li style="list-style: none">
-                <br>
-            </li>
-            <li>
-                <u>2x HBS:</u> (for 250&nbsp;ml) Dissolve 4.0&nbsp;g&nbsp;NaCl, 0.18&nbsp;g&nbsp;KCl, 0.05&nbsp;g&nbsp;Na<sub>2</sub>HPO<sub>4</sub>, 2.5&nbsp;g&nbsp;HEPES and 0.5&nbsp;g&nbsp;D-glucose in distilled water. Adjust pH&nbsp;to 7.1 with NaOH. Filter-sterilize and store at -20°C.
-            </li>
-            <li style="list-style: none">
-                <br>
-            </li>
-            <li>
-                <u>HL5:</u> (for 1&nbsp;liter) 5&nbsp;g protease peptone 2 (Difco; cat. no. 212120), 5 g thiotone E peptone (BBL; cat. no. 212302), 10 g glucose, 5&nbsp;g&nbsp;yeast&nbsp;extract (Oxoid; cat. no. LP0021), 0.35 g Na<sub>2</sub>HPO<sub>4</sub>·7H2O and 0.35 g KH<sub>2</sub>PO<sub>4</sub> in 1&nbsp;liter distilled water (20). Dissolve reagents in a volume just under 1&nbsp;liter distilled water and adjust pH&nbsp;with HCl to pH&nbsp;6.4-6.7 if necessary, then bring volume to 1&nbsp;liter and autoclave.
-            </li>
-            <li style="list-style: none">
-                <br>
-            </li>
-            <li>
-                <u>H-50 buffer:</u> (for 1&nbsp;liter) 4.76&nbsp;g&nbsp;HEPES, 3.73&nbsp;g&nbsp;KCl, 0.58&nbsp;g&nbsp;NaCl, 0.12&nbsp;g&nbsp;MgSO<sub>4</sub>, 0.42&nbsp;g&nbsp;NaHCO<sub>3</sub> and 0.156&nbsp;g&nbsp;NaH<sub>2</sub>PO<sub>4</sub>. Adjust pH&nbsp;to 7.0 with HCl or NaOH as appropriate (8). Autoclave and store cold or frozen; this can be used as an alternative to E buffer below.
-            </li>
-            <li style="list-style: none">
-                <br>
-            </li>
-            <li>
-                <u>Electroporation buffer (E buffer):</u> 10&nbsp;mM&nbsp;NaPO<sub>4</sub> pH&nbsp;6.1 and 50&nbsp;mM&nbsp;sucrose, autoclaved; this can be used as an alternative to H-50 buffer above (7).
-            </li>
-            <li style="list-style: none">
-                <br>
-            </li>
-            <li>
-                <u>10x KK2 buffer:</u> (for 1&nbsp;liter) 22&nbsp;g&nbsp;KH<sub>2</sub>PO<sub>4</sub> and 7.0&nbsp;g&nbsp;K<sub>2</sub>HPO<sub>4</sub>; dilute 1:10 in sterile distilled water for routine laboratory use; autoclave the stock solution for long-term storage.
-            </li>
-            <li style="list-style: none">
-                <br>
-            </li>
-            <li>
-                <u>G100 plates:</u> Add 100&nbsp;µg/ml G418 (final concentration) to KK2 agar plates (1.5%&nbsp;(w/v) agar in 1x&nbsp;KK2, autoclaved) after the agar has cooled to 60°C. Use 20&nbsp;ml of agar per 10-cm plate.,br&gt; <b>Note:</b> The accuracy is important as it determines the stringency of the selection; so it is recommended to use a pipette to prepare G100 plates.
-            </li>
-            <li style="list-style: none">
-                <br>
-            </li>
-        </ul>
-        <hr>
-        <p>
-            <a name="references" id="references"></a>
-        </p>
-        <h3>
-            References
-        </h3>
-        <hr>
-        <ol>
-            <li>Manstein, D.J., Titus, M.A., De Lozanne, A. &amp; Spudich, J.A. Gene replacement in Dictyostelium: generation of myosin null mutants. EMBO J. 8, 923-932 (1989).
-            </li>
-            <li>Simon, M.N., Driscoll, D., Mutzel, R., Part, D., Williams, J. &amp; Veron, M. Overproduction of the regulatory subunit of the cAMP-dependent protein kinase blocks the differentiation of Dictyostelium discoideum. EMBO J. 8, 2039-2043 (1989).
-            </li>
-            <li>Crowley, T.E., Nellen, W., Gomer, R.H. &amp; Firtel, R.A. Phenocopy of discoidin I-minus mutants by antisense transformation in Dictyostelium. Cell 43, 633-641 (1985).
-            </li>
-            <li>Martens, H., Novotny, J., Oberstrass, J., Steck, T.L., Postlethwait, P. &amp; Nellen, W. RNAi in Dictyostelium: the role of RNA-directed RNA polymerases and double-stranded RNase. Mol. Biol. Cell 13, 445-453 (2002).
-            </li>
-            <li>Kuspa, A. Restriction enzyme-mediated integration (REMI) mutagenesis. Methods Mol. Biol. 346, 201-209 (2006).
-            </li>
-            <li>Nellen, W., Silan, C. &amp; Firtel, R.A. DNA-mediated transformation in Dictyostelium discoideum: regulated expression of an actin gene fusion. Mol. Cell. Biol. 4, 2890-2898 (1984).
-            </li>
-            <li>Howard, P.K., Ahern, K.G. &amp; Firtel, R.A. Establishment of a transient expression system for Dictyostelium discoideum. Nucleic Acids Res. 16, 2613-2623 (1988).
-            </li>
-            <li>Pang, K.M., Lynes, M.A. &amp; Knecht, D.A. Variables controlling the expression level of exogenous genes in Dictyostelium. Plasmid 41, 187-197 (1999).
-            </li>
-            <li>Lloyd, M.M., Ceccarelli, A. &amp; Williams, J.G. Establishment of conditions for the transformation of nonaxenic Dictyostelium strains. Dev. Genet. 11, 391-395 (1990).
-            </li>
-            <li>Wetterauer, B., Salger, K., Demel, P. &amp; Koop, H. Efficient transformation of Dictyostelium discoideum with a particle inflow gun. Biochim. Biophys. Acta 1499, 139-143 (2000).
-            </li>
-            <li>Sutoh, K. A transformation vector for Dictyostelium discoideum with a new selectable marker bsr. Plasmid 30, 150-154 (1993).
-            </li>
-            <li>Egelhoff, T.T., Brown, S.S., Manstein, D.J. &amp; Spudich, J.A. Hygromycin resistance as a selectable marker in Dictyostelium discoideum. Mol. Cell. Biol. 9, 1965-1968 (1989).
-            </li>
-            <li>Chang, A.C., Hall, R.M. &amp; Williams, K.L. Bleomycin resistance as a selectable marker for transformation of the eukaryote, Dictyostelium discoideum. Gene 107, 165-170 (1991).
-            </li>
-            <li>Leiting, B. &amp; Noegel, A.A. The ble gene of Streptoalloteichus hindustanus as a new selectable marker for Dictyostelium discoideum confers resistance to phleomycin. Biochem. Biophys. Res. Commun. 180, 1403-1407 (1991).
-            </li>
-            <li>Chang, A.C., Williams, K.L., Williams, J.G. &amp; Ceccarelli, A. Complementation of a Dictyostelium discoideum thymidylate synthase mutation with the mouse gene provides a new selectable marker for transformation. Nucleic Acids Res. 17, 3655-3661 (1989).
-            </li>
-            <li>Kalpaxis, D., Werner, H., Boy-Marcotte, E., Jacquet, M. &amp; Dingermann, T. Positive selection for Dictyostelium mutants lacking uridine monophosphate synthase activity based on resistance to 5-fluoro-orotic acid. Dev. Genet. 11, 396-402 (1990).
-            </li>
-            <li>Morio, T., Adachi, H., Sutoh, K., Yanagisawa, K. &amp; Tanaka, Y. Bsr-REMI: an improved method for gene tagging using a new vector in Dictyostelium. J. Plant Res. 108, 111-114 (1995).
-            </li>
-            <li>Barth, C., Fraser, D.J. &amp; Fisher, P.R. Co-insertional replication is responsible for tandem multimer formation during plasmid integration into the Dictyostelium genome. Plasmid 39, 141-153 (1998).
-            </li>
-            <li>Early, A.E. &amp; Williams, J.G. Two vectors which facilitate gene manipulation and a simplified transformation procedure for Dictyostelium discoideum. Gene 59, 99-106 (1987).
-            </li>
-            <li>Fey, P., Kowal, A.S., Gaudet, P., Pilcher, K.E. &amp; Chisholm, R.L. Protocols for growth and development of Dictyostelium discoideum. Nat. Protoc. 2, 1307-1316 (2007).
-            </li>
-            <li>Sussman, R. &amp; Sussman, M. Cultivation of Dictyostelium discoideum in axenic medium. Biochem. Biophys. Res. Commun. 29, 53-55 (1967).
-            </li>
-            <li>Watts, D.J. &amp; Ashworth, J.M. Growth of myxameobae of the cellular slime mould Dictyostelium discoideum in axenic culture. Biochem. J. 119, 171-174 (1970).
-            </li>
-            <li>Wetterauer, B. et al. Wild-type strains of Dictyostelium discoideum can be transformed using a novel selection cassette driven by the promoter of the ribosomal V18 gene. Plasmid 36, 169-181 (1996).
-            </li>
-            <li>Caterina, M.J., Milne, J.L. &amp; Devreotes, P.N. Mutation of the third intracellular loop of the cAMP receptor, cAR1, of Dictyostelium yields mutants impaired in multiple signaling pathways. J. Biol. Chem. 269, 1523-1532 (1994).
-            </li>
-            <li>Hadwiger, J.A. &amp; Firtel, R.A. Analysis of G alpha 4, a G-protein subunit required for multicellular development in Dictyostelium. Genes Dev. 6, 38-49 (1992).
-            </li>
-            <li>Kalpaxis, D. et al. Positive selection for Dictyostelium discoideum mutants lacking UMP synthase activity based on resistance to 5-fluoroorotic acid. Mol. Gen. Genet. 225, 492-500 (1991).
-            </li>
-            <li>Faix, J., Kreppel, L., Shaulsky, G., Schleicher, M. &amp; Kimmel, A.R. A rapid and efficient method to generate multiple gene disruptions in Dictyostelium discoideum using a single selectable marker and the Cre-loxP system. Nucleic Acids Res. 32, e143 (2004).
-            </li>
-            <li>Betapudi, V., Shoebotham, K. &amp; Egelhoff, T.T. Generation of double gene disruptions in Dictyostelium discoideum using a single antibiotic marker selection. Biotechniques 36, 106-112 (2004).
-            </li>
-            <li>Insall, R.H., Soede, R.D., Schaap, P. &amp; Devreotes, P.N. Two cAMP receptors activate common signaling pathways in Dictyostelium. Mol. Biol. Cell 5, 703-711 (1994).
-            </li>
-            <li>Alibaud, L., Cosson, P. &amp; Benghezal, M. Dictyostelium discoideum transformation by oscillating electric field electroporation. Biotechniques 35, 78-80, 82-83 (2003).
-            </li>
-            <li>Shah-Mahoney, N., Hampton, T., Vidaver, R. &amp; Ratner, D. Blocking the ends of transforming DNA enhances gene targeting in Dictyostelium. Gene 203, 33-41 (1997).
-            </li>
-            <li>Morrison, A., Marschalek, R., Dingermann, T. &amp; Harwood, A.J. A novel, negative selectable marker for gene disruption in Dictyostelium. Gene 202, 171-176 (1997).
-            </li>
-            <li>Sambrook, J., Fritsch, E.F. &amp; Maniatis, T. (eds.) Molecular Cloning: A Laboratory Manual (Cold Spring Harbor Laboratory, Cold Spring Harbor, NY, 1989).
-            </li>
-            <li>Tuxworth, R.I., Cheetham, J.L., Machesky, L.M., Spiegelmann, G.B., Weeks, G. &amp; Insall, R.H. Dictyostelium RasG is required for normal motility and cytokinesis, but not growth. J. Cell Biol. 138, 605-614 (1997).
-            </li>
-            <li>Jordan, M., Schallhorn, A. &amp; Wurm, F.M. Free in PMC transfecting mammalian cells: optimization of critical parameters affecting calcium-phosphate precipitate formation. Nucleic Acids Res. 24, 596-601 (1996).
-            </li>
-            <li>Loyter, A., Scangos, G.A. &amp; Ruddle, F.H. Mechanisms of DNA uptake by mammalian cells: fate of exogenously added DNA monitored by the use of fluorescent dyes. Proc. Natl. Acad. Sci. USA 79, 422-426 (1982).
-            </li>
-            <li style="list-style: none">
-                <br>
-                <!--#include virtual="/inc/page-layout-bottom.html"-->
-                <!--#include virtual="/inc/page-footer.html"-->
-            </li>
-        </ol>
-    </body>
-</html>
+                For transformations using auxotrophic markers, commonly used strains are DH1 (uracil auxotroph) (24) and JH10 (thymidine auxotroph) (25). It should be noted that these auxotrophic strains have compromised nucleotide synthesis and therefore tend to accumulate mutations. Also, the growth rate of uracil auxotrophs is significantly lower compared to axenic cells, which can result in impure transformant populations if the selection pressure is not maintained (26). For these reasons, it is especially important to make control cell lines complemented with the vector used for the experiment.
+            </p>
+
+                <p align="center">
+                    <small><a href="" ng-click="scrollTo('top')">Top</a> | <a ng-href="#/research/techniques/">Techniques</a></small>
+                </p>
+            <hr>
+            <p>
+                <a name="multiple" id="multiple"></a>
+            </p>
+            <h4>
+                Multiple gene disruptions
+            </h4>
+            <p>
+                The recent adaptation of the cre-lox system for use in Dictyostelium has proven to be an easy, reliable method of producing multiple gene disruptions (27). The vector for cre-lox recombination, pLPBLP, contains the blasticidin resistance cassette flanked by two loxP sites. Sequences from the gene to be disrupted are cloned on either side of the blasticidin resistance cassette. When cells are transformed with pLPBLP, the vector integrates in the target gene by homologous recombination. In a subsequent step, the cells are transformed with the pDEX-NLS-cre vector, which contains the cre recombinase gene. Expression of the cre recombinase excises the blasticidin resistance cassette while leaving the gene disrupted. By removing the drug selection marker from the genome, the cre-lox system can be used to sequentially disrupt different genes using the same selectable marker, usually blasticidin. The advantage of using the cre-lox system is that the number of gene disruptions is, in theory, unlimited, with the use of a single selection marker. Other methods to make multiple targeted gene disruptions are also available but are less effective or more cumbersome than the cre-lox system. One possibility is to make use of the different selectable markers available for Dictyostelium transformation; however, this limits the number of independent gene disruptions to three or four. The disruption of two independent genes within the same transformation has been reported, but with a rather low efficiency (28). Also, it is possible to use 5-fluoro-orotic-acid (5-FOA) to select for loss of the uracil resistance marker in uracil phototrophic strains, thus allowing multiple rounds of transformation by first using positive selection for growth in the absence of uracil, followed by 5-FOA selection to remove the ura marker (26, 29). In practice, this method is unreliable as the loss of the uracil resistance gene occurs spontaneously, which may be accompanied by other undesirable genomic changes. 
+            </p>
+
+                <p align="center">
+                    <small><a href="" ng-click="scrollTo('top')">Top</a> | <a ng-href="#/research/techniques/">Techniques</a></small>
+                </p>
+
+            <hr>
+            <p>
+                <a name="materials" id="materials"></a>
+            </p>
+            <h2>
+                Materials
+            </h2>
+            <hr>
+            <p>
+                <b>Antibiotic solutions are made in water, filter-sterilized and stored at 4°C, unless otherwise indicated.</b>
+            </p>
+            <ul>
+                <li>
+                    <u>Blasticidin S hydrochloride:</u> 10 mg&nbsp;/ml pre-prepared solution (InvivoGen, cat. no. ant-bl-1; Invitrogen, cat. no. R21001; Calbiochem, cat. no. 203350): use at 10&nbsp;µg&nbsp;/ml final concentration
+                </li>
+
+                <li>
+                    <u>Hygromycin B:</u> 25&nbsp;mg&nbsp;/ml in 10&nbsp;mM HEPES12 (InvivoGen, cat. no. ant-hm-1 (prepared solution); Calbiochem, cat. no. 400049; Sigma-Aldrich, cat. no. 56685): use at 25&nbsp;µg&nbsp;/ml final concentration
+                </li>
+
+                <li>
+                    <u>G418 sulfate:</u> 10 mg&nbsp;/ml (Calbiochem, cat. no. 345810; Invitrogen, cat. no. 11811023; Strategene, cat. no. 200399): use at 10 mug&nbsp;/ml final concentration
+                </li>
+
+                <li>
+                    <u>Bleomycin sulfate:</u> 20 mg&nbsp;/ml in normal saline (Calbiochem, cat. no. 203401; Sigma-Aldrich, cat. no. 15361): use at 50 mug&nbsp;/ml for the first 5 days, and 15 mug&nbsp;/ml thereafter<br>
+                    <b>Note:</b> The solution is more stable when stored in a glass container in normal saline. Solutions made in distilled water only stable are for a few days.<br>
+                    <b>Caution: Bleomycin causes double-stranded DNA breaks and is a suspected carcinogen.</b>
+                </li>
+
+                <li>
+                    <u>Phleomycin:</u> 15 mg&nbsp;/ml (InvivoGen, cat. no. ant-ph-1; Sigma-Aldrich, cat. no. P9564): use at 15 mug&nbsp;/ml final concentration. Store at -20°C <b>Caution: Phleomycin may cause DNA damage and is a suspected carcinogen.</b>
+                </li>
+
+                <li>
+                    <u>Bis-Tris HL5:</u> (for 1&nbsp;liter) Dissolve 2.1&nbsp;g&nbsp;Bis-Tris, 10&nbsp;g&nbsp;proteose peptone (Oxoid), 5&nbsp;g&nbsp;yeast&nbsp;extract and 10&nbsp;g&nbsp;D-glucose in distilled water; adjust pH&nbsp;to&nbsp;7.1 with HCl. Autoclave to fully solubilize, readjust pH&nbsp;to&nbsp;7.1 (it will have gone down to about pH&nbsp;6.8). Filter-sterilize; store at room temperature (22°C).
+                </li>
+                <li>
+                    <u>1.25 M CaCl<sub>2</sub>:</u> Dissolve 1.84&nbsp;g&nbsp;CaCl<sub>2</sub> in 10&nbsp;ml distilled water. Filter-sterilize and store at room temperature.
+                </li>
+
+                <li>
+                    <u>18% glycerol:</u> (for 4&nbsp;ml) Pipette 1.44&nbsp;ml of autoclaved 50% (v/v) glycerol in water, 0.56&nbsp;ml sterile distilled water and 2.0&nbsp;ml 2x&nbsp;HBS. Scale this solution according to the number of transformations.
+                </li>
+
+                <li>
+                    <u>2x HBS:</u> (for 250&nbsp;ml) Dissolve 4.0&nbsp;g&nbsp;NaCl, 0.18&nbsp;g&nbsp;KCl, 0.05&nbsp;g&nbsp;Na<sub>2</sub>HPO<sub>4</sub>, 2.5&nbsp;g&nbsp;HEPES and 0.5&nbsp;g&nbsp;D-glucose in distilled water. Adjust pH&nbsp;to 7.1 with NaOH. Filter-sterilize and store at -20°C.
+                </li>
+
+                <li>
+                    <u>HL5:</u> (for 1&nbsp;liter) 5&nbsp;g protease peptone 2 (Difco; cat. no. 212120), 5 g thiotone E peptone (BBL; cat. no. 212302), 10 g glucose, 5&nbsp;g&nbsp;yeast&nbsp;extract (Oxoid; cat. no. LP0021), 0.35 g Na<sub>2</sub>HPO<sub>4</sub>·7H2O and 0.35 g KH<sub>2</sub>PO<sub>4</sub> in 1&nbsp;liter distilled water (20). Dissolve reagents in a volume just under 1&nbsp;liter distilled water and adjust pH&nbsp;with HCl to pH&nbsp;6.4-6.7 if necessary, then bring volume to 1&nbsp;liter and autoclave.
+                </li>
+
+                <li>
+                    <u>H-50 buffer:</u> (for 1&nbsp;liter) 4.76&nbsp;g&nbsp;HEPES, 3.73&nbsp;g&nbsp;KCl, 0.58&nbsp;g&nbsp;NaCl, 0.12&nbsp;g&nbsp;MgSO<sub>4</sub>, 0.42&nbsp;g&nbsp;NaHCO<sub>3</sub> and 0.156&nbsp;g&nbsp;NaH<sub>2</sub>PO<sub>4</sub>. Adjust pH&nbsp;to 7.0 with HCl or NaOH as appropriate (8). Autoclave and store cold or frozen; this can be used as an alternative to E buffer below.
+                </li>
+
+                <li>
+                    <u>Electroporation buffer (E buffer):</u> 10&nbsp;mM&nbsp;NaPO<sub>4</sub> pH&nbsp;6.1 and 50&nbsp;mM&nbsp;sucrose, autoclaved; this can be used as an alternative to H-50 buffer above (7).
+                </li>
+
+                <li>
+                    <u>10x KK2 buffer:</u> (for 1&nbsp;liter) 22&nbsp;g&nbsp;KH<sub>2</sub>PO<sub>4</sub> and 7.0&nbsp;g&nbsp;K<sub>2</sub>HPO<sub>4</sub>; dilute 1:10 in sterile distilled water for routine laboratory use; autoclave the stock solution for long-term storage.
+                </li>
+
+                <li>
+                    <u>G100 plates:</u> Add 100&nbsp;µg/ml G418 (final concentration) to KK2 agar plates (1.5%&nbsp;(w/v) agar in 1x&nbsp;KK2, autoclaved) after the agar has cooled to 60°C. Use 20&nbsp;ml of agar per 10-cm plate.,br&gt; <b>Note:</b> The accuracy is important as it determines the stringency of the selection; so it is recommended to use a pipette to prepare G100 plates.
+                </li>
+            </ul>
+
+                <p align="center">
+                    <small><a href="" ng-click="scrollTo('top')">Top</a> | <a ng-href="#/research/techniques/">Techniques</a></small>
+                </p>
+
+            <hr>
+            <p>
+                <a name="references" id="references"></a>
+            </p>
+            <h2>
+                References
+            </h2>
+            <hr>
+
+            <small>
+            <ol>
+                <li>Manstein, D.J., Titus, M.A., De Lozanne, A. &amp; Spudich, J.A. Gene replacement in Dictyostelium: generation of myosin null mutants. EMBO J. 8, 923-932 (1989).
+                </li>
+                <li>Simon, M.N., Driscoll, D., Mutzel, R., Part, D., Williams, J. &amp; Veron, M. Overproduction of the regulatory subunit of the cAMP-dependent protein kinase blocks the differentiation of Dictyostelium discoideum. EMBO J. 8, 2039-2043 (1989).
+                </li>
+                <li>Crowley, T.E., Nellen, W., Gomer, R.H. &amp; Firtel, R.A. Phenocopy of discoidin I-minus mutants by antisense transformation in Dictyostelium. Cell 43, 633-641 (1985).
+                </li>
+                <li>Martens, H., Novotny, J., Oberstrass, J., Steck, T.L., Postlethwait, P. &amp; Nellen, W. RNAi in Dictyostelium: the role of RNA-directed RNA polymerases and double-stranded RNase. Mol. Biol. Cell 13, 445-453 (2002).
+                </li>
+                <li>Kuspa, A. Restriction enzyme-mediated integration (REMI) mutagenesis. Methods Mol. Biol. 346, 201-209 (2006).
+                </li>
+                <li>Nellen, W., Silan, C. &amp; Firtel, R.A. DNA-mediated transformation in Dictyostelium discoideum: regulated expression of an actin gene fusion. Mol. Cell. Biol. 4, 2890-2898 (1984).
+                </li>
+                <li>Howard, P.K., Ahern, K.G. &amp; Firtel, R.A. Establishment of a transient expression system for Dictyostelium discoideum. Nucleic Acids Res. 16, 2613-2623 (1988).
+                </li>
+                <li>Pang, K.M., Lynes, M.A. &amp; Knecht, D.A. Variables controlling the expression level of exogenous genes in Dictyostelium. Plasmid 41, 187-197 (1999).
+                </li>
+                <li>Lloyd, M.M., Ceccarelli, A. &amp; Williams, J.G. Establishment of conditions for the transformation of nonaxenic Dictyostelium strains. Dev. Genet. 11, 391-395 (1990).
+                </li>
+                <li>Wetterauer, B., Salger, K., Demel, P. &amp; Koop, H. Efficient transformation of Dictyostelium discoideum with a particle inflow gun. Biochim. Biophys. Acta 1499, 139-143 (2000).
+                </li>
+                <li>Sutoh, K. A transformation vector for Dictyostelium discoideum with a new selectable marker bsr. Plasmid 30, 150-154 (1993).
+                </li>
+                <li>Egelhoff, T.T., Brown, S.S., Manstein, D.J. &amp; Spudich, J.A. Hygromycin resistance as a selectable marker in Dictyostelium discoideum. Mol. Cell. Biol. 9, 1965-1968 (1989).
+                </li>
+                <li>Chang, A.C., Hall, R.M. &amp; Williams, K.L. Bleomycin resistance as a selectable marker for transformation of the eukaryote, Dictyostelium discoideum. Gene 107, 165-170 (1991).
+                </li>
+                <li>Leiting, B. &amp; Noegel, A.A. The ble gene of Streptoalloteichus hindustanus as a new selectable marker for Dictyostelium discoideum confers resistance to phleomycin. Biochem. Biophys. Res. Commun. 180, 1403-1407 (1991).
+                </li>
+                <li>Chang, A.C., Williams, K.L., Williams, J.G. &amp; Ceccarelli, A. Complementation of a Dictyostelium discoideum thymidylate synthase mutation with the mouse gene provides a new selectable marker for transformation. Nucleic Acids Res. 17, 3655-3661 (1989).
+                </li>
+                <li>Kalpaxis, D., Werner, H., Boy-Marcotte, E., Jacquet, M. &amp; Dingermann, T. Positive selection for Dictyostelium mutants lacking uridine monophosphate synthase activity based on resistance to 5-fluoro-orotic acid. Dev. Genet. 11, 396-402 (1990).
+                </li>
+                <li>Morio, T., Adachi, H., Sutoh, K., Yanagisawa, K. &amp; Tanaka, Y. Bsr-REMI: an improved method for gene tagging using a new vector in Dictyostelium. J. Plant Res. 108, 111-114 (1995).
+                </li>
+                <li>Barth, C., Fraser, D.J. &amp; Fisher, P.R. Co-insertional replication is responsible for tandem multimer formation during plasmid integration into the Dictyostelium genome. Plasmid 39, 141-153 (1998).
+                </li>
+                <li>Early, A.E. &amp; Williams, J.G. Two vectors which facilitate gene manipulation and a simplified transformation procedure for Dictyostelium discoideum. Gene 59, 99-106 (1987).
+                </li>
+                <li>Fey, P., Kowal, A.S., Gaudet, P., Pilcher, K.E. &amp; Chisholm, R.L. Protocols for growth and development of Dictyostelium discoideum. Nat. Protoc. 2, 1307-1316 (2007).
+                </li>
+                <li>Sussman, R. &amp; Sussman, M. Cultivation of Dictyostelium discoideum in axenic medium. Biochem. Biophys. Res. Commun. 29, 53-55 (1967).
+                </li>
+                <li>Watts, D.J. &amp; Ashworth, J.M. Growth of myxameobae of the cellular slime mould Dictyostelium discoideum in axenic culture. Biochem. J. 119, 171-174 (1970).
+                </li>
+                <li>Wetterauer, B. et al. Wild-type strains of Dictyostelium discoideum can be transformed using a novel selection cassette driven by the promoter of the ribosomal V18 gene. Plasmid 36, 169-181 (1996).
+                </li>
+                <li>Caterina, M.J., Milne, J.L. &amp; Devreotes, P.N. Mutation of the third intracellular loop of the cAMP receptor, cAR1, of Dictyostelium yields mutants impaired in multiple signaling pathways. J. Biol. Chem. 269, 1523-1532 (1994).
+                </li>
+                <li>Hadwiger, J.A. &amp; Firtel, R.A. Analysis of G alpha 4, a G-protein subunit required for multicellular development in Dictyostelium. Genes Dev. 6, 38-49 (1992).
+                </li>
+                <li>Kalpaxis, D. et al. Positive selection for Dictyostelium discoideum mutants lacking UMP synthase activity based on resistance to 5-fluoroorotic acid. Mol. Gen. Genet. 225, 492-500 (1991).
+                </li>
+                <li>Faix, J., Kreppel, L., Shaulsky, G., Schleicher, M. &amp; Kimmel, A.R. A rapid and efficient method to generate multiple gene disruptions in Dictyostelium discoideum using a single selectable marker and the Cre-loxP system. Nucleic Acids Res. 32, e143 (2004).
+                </li>
+                <li>Betapudi, V., Shoebotham, K. &amp; Egelhoff, T.T. Generation of double gene disruptions in Dictyostelium discoideum using a single antibiotic marker selection. Biotechniques 36, 106-112 (2004).
+                </li>
+                <li>Insall, R.H., Soede, R.D., Schaap, P. &amp; Devreotes, P.N. Two cAMP receptors activate common signaling pathways in Dictyostelium. Mol. Biol. Cell 5, 703-711 (1994).
+                </li>
+                <li>Alibaud, L., Cosson, P. &amp; Benghezal, M. Dictyostelium discoideum transformation by oscillating electric field electroporation. Biotechniques 35, 78-80, 82-83 (2003).
+                </li>
+                <li>Shah-Mahoney, N., Hampton, T., Vidaver, R. &amp; Ratner, D. Blocking the ends of transforming DNA enhances gene targeting in Dictyostelium. Gene 203, 33-41 (1997).
+                </li>
+                <li>Morrison, A., Marschalek, R., Dingermann, T. &amp; Harwood, A.J. A novel, negative selectable marker for gene disruption in Dictyostelium. Gene 202, 171-176 (1997).
+                </li>
+                <li>Sambrook, J., Fritsch, E.F. &amp; Maniatis, T. (eds.) Molecular Cloning: A Laboratory Manual (Cold Spring Harbor Laboratory, Cold Spring Harbor, NY, 1989).
+                </li>
+                <li>Tuxworth, R.I., Cheetham, J.L., Machesky, L.M., Spiegelmann, G.B., Weeks, G. &amp; Insall, R.H. Dictyostelium RasG is required for normal motility and cytokinesis, but not growth. J. Cell Biol. 138, 605-614 (1997).
+                </li>
+                <li>Jordan, M., Schallhorn, A. &amp; Wurm, F.M. Free in PMC transfecting mammalian cells: optimization of critical parameters affecting calcium-phosphate precipitate formation. Nucleic Acids Res. 24, 596-601 (1996).
+                </li>
+                <li>Loyter, A., Scangos, G.A. &amp; Ruddle, F.H. Mechanisms of DNA uptake by mammalian cells: fate of exogenously added DNA monitored by the use of fluorescent dyes. Proc. Natl. Acad. Sci. USA 79, 422-426 (1982).
+                </li>
+                <li style="list-style: none">
+                    <br>
+                    
+                </li>
+            </ol>
+            </small>
+
+            <br>
+                <p align="center">
+                    <small><a href="" ng-click="scrollTo('top')">Top</a> | <a ng-href="#/research/techniques/">Techniques</a></small>
+                </p>
+
+        </div> <!-- End of col -->
+        <div class="col-sm-2 col-xs-1"></div>
+    </div> <!-- row -->
+</div> <!-- container -->

@@ -1,118 +1,105 @@
-<!--#include virtual="/inc/page-header.html"-->
-<!--#include virtual="/inc/page-layout-top-wide.html"-->
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html>
-    <head>
-        <title>Electroporation protocol</title>
-    </head>
-    <body>
-        <p>
-            <a name="top" id="top"></a>
-        </p>
-        <h1>
+<a name="top" id="top"></a>
+
+<div class="container">
+
+    <div class="row techniquesHead">
+        <span class="techSubHeader"><h3>Tecniques</h3></span>
+        <h2>
             Transformation of Dicty by electroporation
-        </h1>
-        <p>
-            <b>Modified from <a href="/db/cgi-bin/dictyBase/reference/reference.pl?refNo=5549">Schlatterer, Knoll, and Malchow 1992</a>, published in: <i><a href="/db/cgi-bin/dictyBase/reference/reference.pl?refNo=4776">Pang, Lynes and Knecht (1999)</a>, <a href="/db/cgi-bin/dictyBase/reference/reference.pl?refNo=8708">Knecht and Pang (1995)</a>.<br></i></b>
-        </p>
-        <hr>
-        <p align="right">
-            <a href="#mat">[MATERIALS]</a> - <a href="/techniques/">[INDEX]</a> <a name="proc" id="proc"></a>
-        </p>
-        <h2>
-            Procedure
         </h2>
-        <ol>
-            <li>Pellet ~5 x 10<sup>6</sup> cells by centrifugation at 1,500&nbsp;rpm for 5&nbsp;min at cold room.
-            </li>
-            <li style="list-style: none">
+        <h6>
+            Modified from <a href="http://www.dictybase.org/db/cgi-bin/dictyBase/reference/reference.pl?refNo=5549">Schlatterer, Knoll, and Malchow 1992</a>, <br>
+            published in: <a href="http://www.dictybase.org/db/cgi-bin/dictyBase/reference/reference.pl?refNo=4776">Pang, Lynes and Knecht (1999)</a>, <a href="http://www.dictybase.org/db/cgi-bin/dictyBase/reference/reference.pl?refNo=8708">Knecht and Pang (1995)</a>.<br>
+        </h6>
+    </div>
+
+    <div class="row">
+
+        <div class="col-sm-3 col-xs-1"></div>
+
+        <div class="col-sm-6 col-xs-10">
+
+            <h3>
+                Procedure
+            </h3>
+            <ol>
+                <li>Pellet ~5 x 10<sup>6</sup> cells by centrifugation at 1,500&nbsp;rpm for 5&nbsp;min at cold room.
+                </li>
+
+                <li>Wash the cells twice with ice-cold H-50 buffer.
+                </li>
+
+                <li>Resuspend the pellet in 100&nbsp;µl H-50 buffer. Add 1-10&nbsp;µg of DNA (we haven't tested a minimum amount).
+                </li>
+
+                <li>Transfer the cell suspension to a cold 0.1&nbsp;cm electroporation cuvette.
+                </li>
+
+                <li>Electroporate the cells in the cold at 0.85&nbsp;kV/25&nbsp;µF (There is no need for a parallel resistor /time constant is ~0.6&nbsp;msec) twice with about 5&nbsp;seconds between pulses.<br>
+                    Incubate the cuvette on ice for 5&nbsp;min.
+                </li>
+
+                <li>Set up 10&nbsp;cm Petri dishes for selection with 10&nbsp;ml HL5 per dish. In some cases, I set up multiple for each cuvette so that I can do dilution plating to clone directly.
+                </li>
+
+                <li>To transfer the cells out of the cuvette, I add a few hundred microliters of HL-5 from the dish to the cuvette, pipette up and down to mix and then withdraw the medium and cells and add to the dish. Repeat once if you want to be sure to get all cells.
+                </li>
+
+                <li>Add the drug next day.
+                </li>
+
+            </ol>
+                    <p align="center">
+                        <a href="" ng-click="scrollTo('top')">Top</a> | <a ng-href="#/research/techniques/">Techniques</a>
+                    </p>
+            <hr>
+            <p>
+                <a name="mat" id="mat"></a>
+            </p>
+            <h3>
+                Materials
+            </h3>
+            <ul>
+                <li>
+                    <u>H-50 buffer (pH 7.0):</u>
+                    <ul>
+                        <li>20&nbsp;mM&nbsp;HEPES
+                        </li>
+                        <li>50&nbsp;mM&nbsp;KCl
+                        </li>
+                        <li>10&nbsp;mM&nbsp;NaCl
+                        </li>
+                        <li>1&nbsp;mM&nbsp;MgSO<sub>4</sub>
+                        </li>
+                        <li>5&nbsp;mM&nbsp;NaHCO<sub>3</sub>
+                        </li>
+                        <li>1&nbsp;mM&nbsp;NaH<sub>2</sub>PO<sub>4</sub>
+                        </li>
+                    </ul>Autoclave and store cold or frozen.
+                </li>
+
                 <br>
-            </li>
-            <li>Wash the cells twice with ice-cold H-50 buffer.
-            </li>
-            <li style="list-style: none">
+
+                <li>
+                    <u>Antibiotics</u>
+                    <ul>
+                        <li>Blastocidin: 10&nbsp;µg/ml final concentration from 10&nbsp;mg/ml stock
+                        </li>
+                        <li>Hygromycin: 25&nbsp;µg/ml final concentration
+                        </li>
+                        <li>G418: 10&nbsp;µg/ml final concentration
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
                 <br>
-            </li>
-            <li>Resuspend the pellet in 100&nbsp;µl H-50 buffer. Add 1-10&nbsp;µg of DNA (we haven't tested a minimum amount).
-            </li>
-            <li style="list-style: none">
+                <p align="center">
+                    <a href="" ng-click="scrollTo('top')">Top</a> | <a ng-href="#/research/techniques/">Techniques</a>
+                </p>
                 <br>
-            </li>
-            <li>Transfer the cell suspension to a cold 0.1&nbsp;cm electroporation cuvette.
-            </li>
-            <li style="list-style: none">
-                <br>
-            </li>
-            <li>Electroporate the cells in the cold at 0.85&nbsp;kV/25&nbsp;µF (There is no need for a parallel resistor /time constant is ~0.6&nbsp;msec) twice with about 5&nbsp;seconds between pulses.<br>
-                Incubate the cuvette on ice for 5&nbsp;min.
-            </li>
-            <li style="list-style: none">
-                <br>
-            </li>
-            <li>Set up 10&nbsp;cm Petri dishes for selection with 10&nbsp;ml HL5 per dish. In some cases, I set up multiple for each cuvette so that I can do dilution plating to clone directly.
-            </li>
-            <li style="list-style: none">
-                <br>
-            </li>
-            <li>To transfer the cells out of the cuvette, I add a few hundred microliters of HL-5 from the dish to the cuvette, pipette up and down to mix and then withdraw the medium and cells and add to the dish. Repeat once if you want to be sure to get all cells.
-            </li>
-            <li style="list-style: none">
-                <br>
-            </li>
-            <li>Add the drug next day.
-            </li>
-            <li style="list-style: none">
-                <br>
-            </li>
-        </ol>
-        <p align="right">
-            <a href="#top">[TOP]</a>&nbsp;<a href="/techniques/">[INDEX]</a>
-        </p>
-        <hr>
-        <p>
-            <a name="mat" id="mat"></a>
-        </p>
-        <h2>
-            Materials
-        </h2>
-        <ul>
-            <li>
-                <u>H-50 buffer (pH 7.0):</u>
-                <ul>
-                    <li>20&nbsp;mM&nbsp;HEPES
-                    </li>
-                    <li>50&nbsp;mM&nbsp;KCl
-                    </li>
-                    <li>10&nbsp;mM&nbsp;NaCl
-                    </li>
-                    <li>1&nbsp;mM&nbsp;MgSO<sub>4</sub>
-                    </li>
-                    <li>5&nbsp;mM&nbsp;NaHCO<sub>3</sub>
-                    </li>
-                    <li>1&nbsp;mM&nbsp;NaH<sub>2</sub>PO<sub>4</sub>
-                    </li>
-                </ul>Autoclave and store cold or frozen.
-            </li>
-            <li style="list-style: none">
-                <br>
-            </li>
-            <li>
-                <u>Antibiotics</u>
-                <ul>
-                    <li>Blastocidin: 10&nbsp;µg/ml final concentration from 10&nbsp;mg/ml stock
-                    </li>
-                    <li>Hygromycin: 25&nbsp;µg/ml final concentration
-                    </li>
-                    <li>G418: 10&nbsp;µg/ml final concentration
-                    </li>
-                </ul>
-            </li>
-            <li style="list-style: none">
-                <p align="right">
-                    <a href="#top">[TOP]</a>&nbsp;<a href="/techniques/">[INDEX]</a>
-                </p><!--#include virtual="/inc/page-layout-bottom.html"-->
-                <!--#include virtual="/inc/page-footer.html"-->
-            </li>
-        </ul>
-    </body>
-</html>
+
+        </div> <!-- col-sm-8 -->
+        <div class="col-sm-3 col-xs-1"></div>
+    </div> <!-- row -->
+</div> <!-- container -->
