@@ -97,3 +97,8 @@ iframe {
   padding-left: 10px;
   line-height: 90%;
 }
+
+/*Increase indent*/
+.space1 {
+  padding-left: 20px;
+}
