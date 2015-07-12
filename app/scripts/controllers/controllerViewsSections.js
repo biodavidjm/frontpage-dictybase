@@ -13,5 +13,4 @@ angular.module('dictyFrontpageApp')
   	})
   	.controller('MediaController', function($scope, $routeParams) {
 	  $scope.address = $routeParams.address;
-	  console.log('address' + $scope.address);
 	});

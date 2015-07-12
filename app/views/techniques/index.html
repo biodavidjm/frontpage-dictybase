@@ -10,9 +10,8 @@
 </div>
 
 
-<div class="container" ng-controller="headerCtrl">
+<div class="container" ng-controller="AnchorController">
     <div class="row" align="center">
-
         <a ng-click="gotoAnchor('medbuf')" href="" class="label label-primary">Media and buffers</a> 
         <a ng-click="gotoAnchor('growth')" href="" class="label label-primary">Growth and Development</a> 
         <a ng-click="gotoAnchor('molbio')" href="" class="label label-primary">Molecular Biology</a> 
@@ -24,10 +23,10 @@
         <a ng-click="gotoAnchor('cytoskel')" href="" class="label label-primary">Cytoskeleton</a> 
         <a ng-click="gotoAnchor('teach')" href="" class="label label-primary">Teaching Tools</a>
     </div>
-
+<br>
     <div class="row">
-        <div class="col-sm-2 col-xs-12"></div>
-        <div class="col-sm-8 col-xs-12">
+        <div class="col-sm-3 col-xs-12"></div>
+        <div class="col-sm-6 col-xs-12">
             <div>
 <!--                 <a ng-click="gotoAnchor('medbuf')" href="">Media and buffers</a>&nbsp;| <a ng-click="gotoAnchor('growth')" href="">Growth and Development</a>&nbsp;| <a ng-click="gotoAnchor('molbio')" href="">Molecular Biology</a>&nbsp;| <a ng-click="gotoAnchor('trafo')" href="">Transformation</a>&nbsp;| <a ng-click="gotoAnchor('muta')" href="">Mutagenesis</a>&nbsp;| <a ng-click="gotoAnchor('express')" href="">Gene Expression</a>&nbsp;| <a ng-click="gotoAnchor('micro')" href="">Microscopy</a>&nbsp;| <a ng-click="gotoAnchor('biochem')" href="">Biochemistry</a>&nbsp;| <a ng-click="gotoAnchor('cytoskel')" href="">Cytoskeleton</a>&nbsp;| <a ng-click="gotoAnchor('teach')" href="">Teaching Tools</a> -->
             </div>
@@ -47,11 +46,12 @@
                     <a ng-href="#/research/techniques/media/lowflo_medium.html">Recipe for low fluorescence axenic medium</a> <i>(contributed by Harry MacWilliams)</i>
                 </li>
                 <li>
-                    <a ng-href="#/research/techniques/pdf_docs/synthetic_medium.pdf">Recipe for synthetic medium</a> (pdf) <i>(contributed by Erwin Flaschel)</i>
+                    Recipe for synthetic medium</a> (pdf) <i>(contributed by Erwin Flaschel)</i>
+<!--                     <a ng-href="#/research/techniques/pdf_docs/synthetic_medium.pdf">Recipe for synthetic medium</a> (pdf) <i>(contributed by Erwin Flaschel)</i> -->
                 </li>
             </ul>
             <p align="right">
-                <a ng-click="gotoAnchor('top')" href=""><small>Back to top</small></a>
+                <a ng-click="gotoAnchor('top')" href=""><small>Top</small></a>
             </p>
             <hr>
             <p>
@@ -65,7 +65,7 @@
                     <a href="#/research/techniques/media/dicty_growth.html">Methods for growing <i>Dictyostelium</i></a>
                 </li>
                 <li>
-                    <a href="#/research/techniques/media/dicty_development.html">Methods for<i>Dictyostelium</i> development</a>
+                    <a href="#/research/techniques/media/dicty_development.html">Methods for <i>Dictyostelium</i> development</a>
                 </li>
                 <li>
                     <a href="#/research/techniques/media/dicty_storage.html"><i>Dictyostelium</i> cell storage procedures</a>
@@ -81,7 +81,7 @@
                 </li>
             </ul>
             <p align="right">
-                <a ng-click="gotoAnchor('top')" href=""><small>Back to top</small></a>
+                <a ng-click="gotoAnchor('top')" href=""><small>Top</small></a>
             </p>
             <hr>
             <!--
@@ -97,7 +97,7 @@
             </ul>
             </p>
 
-            <p align="right"><a ng-click="gotoAnchor('top')" href=""><small>Back to top</small></a></p>
+            <p align="right"><a ng-click="gotoAnchor('top')" href=""><small>Top</small></a></p>
             <hr>
             -->
             <p>
@@ -121,7 +121,7 @@
                 </li>
             </ul>
             <p align="right">
-                <a ng-click="gotoAnchor('top')" href=""><small>Back to top</small></a>
+                <a ng-click="gotoAnchor('top')" href=""><small>Top</small></a>
             </p>
             <hr>
             <p>
@@ -132,7 +132,7 @@
             </h3>
             <ul>
                 <li>
-                    <a href="#/research/techniques/transformation/gaudet_2007_transformation.html">Transformation protocols</a> <i>(<a href="/db/cgi-bin/dictyBase/reference/reference.pl?refNo=11596">Gaudet et al. 2007</a>)</i>
+                    <a href="#/research/techniques/transformation/gaudet_2007_transformation.html">Transformation protocols</a> (<i>Gaudet et al. 2007</i>)
                 </li>
                 <li>
                     <a href="#/research/techniques/transformation/calcium_phosphate.html">Calcium phosphate precipitation</a> <sup>*</sup>
@@ -144,10 +144,10 @@
                     <a href="#/research/techniques/transformation/NC4.html">Transformation of NC4 or <i>D. mucoroides</i></a> (contributed by Harry MacWilliams)
                 </li>
                 <li>
-                    <a href="#/research/techniques/transformation/microinjection.htm">Microinjection</a> <i>(contributed by Yoshio Fukui)</i>
+                    <a href="#/research/techniques/transformation/microinjection.html">Microinjection</a> <i>(contributed by Yoshio Fukui)</i>
                 </li>
                 <li>
-                    <a href="#/research/techniques/transformation/particle/particle_gun.htm">Transformation by particle gun</a> <i>(contributed by Birgit Wetterauer and Hans-Ulrich Koop)</i>
+                    <a href="#/research/techniques/transformation/particle_gun.html">Transformation by particle gun</a> <i>(contributed by Birgit Wetterauer and Hans-Ulrich Koop)</i>
                 </li>
                 <li>
                     <a href="#/research/techniques/transformation/heat_killed_bacteria.html">Addition of heat-killed bacteria to transformants</a> <sup>*</sup>
@@ -160,7 +160,7 @@
                 </li>
             </ul>
             <p align="right">
-                <a ng-click="gotoAnchor('top')" href=""><small>Back to top</small></a>
+                <a ng-click="gotoAnchor('top')" href=""><small>Top</small></a>
             </p>
             <hr>
             <p>
@@ -181,7 +181,7 @@
                 </li>
             </ul>
             <p align="right">
-                <a ng-click="gotoAnchor('top')" href=""><small>Back to top</small></a>
+                <a ng-click="gotoAnchor('top')" href=""><small>Top</small></a>
             </p>
             <hr>
             <!--
@@ -192,7 +192,7 @@
             </ul>
             </p>
 
-            <p align="right"><a ng-click="gotoAnchor('top')" href=""><small>Back to top</small></a></p>
+            <p align="right"><a ng-click="gotoAnchor('top')" href=""><small>Top</small></a></p>
             <hr>
             -->
             <p>
@@ -209,14 +209,14 @@
                     <a href="#/research/techniques/geneex/insitu.html">Whole mount <i>in situ</i> hybridization</a> <i>(contributed by Ricardo Escalante and Bill Loomis)</i>
                 </li>
                 <li>
-                    <a href="#/research/techniques/geneex/agaroverlay.htm">Agar overlay technique</a> <i>(contributed by Yoshio Fukui)</i>
+                    <a href="#/research/techniques/geneex/agaroverlay.html">Agar overlay technique</a> <i>(contributed by Yoshio Fukui)</i>
                 </li>
                 <li>
                     <a href="#/research/techniques/geneex/indirect_immunofluo.html">Indirect immunofluorescence</a> <sup>*</sup>
                 </li>
             </ul>
             <p align="right">
-                <a ng-click="gotoAnchor('top')" href=""><small>Back to top</small></a>
+                <a ng-click="gotoAnchor('top')" href=""><small>Top</small></a>
             </p>
             <hr>
             <p>
@@ -234,7 +234,7 @@
                 </li>
             </ul>
             <p align="right">
-                <a ng-click="gotoAnchor('top')" href=""><small>Back to top</small></a>
+                <a ng-click="gotoAnchor('top')" href=""><small>Top</small></a>
             </p>
             <hr>
             <p>
@@ -245,14 +245,14 @@
             </h3>
             <ul>
                 <li>
-                    <a href="#/research/techniques/biochem/metabolic_labeling.html">S-methionine labelling of <i>Dictyostelium</i></a> <sup>*</sup>
+                    <a href="#/research/techniques/biochem/metabolic_labeling.html">S-methionine labelling of <i>Dictyostelium</i></a><sup>*</sup>
                 </li>
                 <li>
-                    <a href="#/research/techniques/biochem/32-P_labeling_in_FM.html">phosphate labelling of <i>Dictyostelium</i></a> <sup>*</sup>
+                    <a href="#/research/techniques/biochem/32-P_labeling_in_FM.html">phosphate labelling of <i>Dictyostelium</i></a><sup>*</sup>
                 </li>
             </ul>
             <p align="right">
-                <a ng-click="gotoAnchor('top')" href=""><small>Back to top</small></a>
+                <a ng-click="gotoAnchor('top')" href=""><small>Top</small></a>
             </p>
             <hr>
             <p>
@@ -326,7 +326,7 @@
             </div>
 
             <p align="right">
-                <a ng-click="gotoAnchor('top')" href=""><small>Back to top</small></a>
+                <a ng-click="gotoAnchor('top')" href=""><small>Top</small></a>
             </p>
             <hr>
             <p>
@@ -336,7 +336,7 @@
                 <a href="#/explore/teach/index.html">Teaching Tools</a>
             </h3>
             <p align="right">
-                <a ng-click="gotoAnchor('top')" href=""><small>Back to top</small></a>
+                <a ng-click="gotoAnchor('top')" href=""><small>Top</small></a>
             </p>
             <hr>
 
@@ -362,6 +362,6 @@
             </p>
 
         </div> <!-- End of col-sm-8, i.e., the central column -->
-        <div class="col-sm-2 col-xs-12"></div>
+        <div class="col-sm-3 col-xs-12"></div>
     </div>
 </div>

@@ -1,13 +1,15 @@
 /*STYLE FOR THE VIEWS*/
 
+iframe {
+  border: none;
+}
+
 .viewHouse{
 	min-height: 600px;
 }
 
 .jumbotron {
-/*  text-align: center;
-  border-bottom: 1px solid #e5e5e5;*/
-  padding: 10px 0px 10px 0px;
+  padding: 10px 0px 0px 0px;
   min-height: 150px;
   border-bottom: 0px;
 }
@@ -17,14 +19,25 @@
 .jumbotron.research {
 	margin-top: 5px;
 	background-color: white;
+  padding: 10px 5px 20px 5px;
+  margin: 0px 0px 0px 0px;
+}
+
+.techniquesHead {
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+}
+
+.techSubHeader {
+  color:grey;
 }
 
 .researchBox {
 	background-color: #F2F2F2;
 	border: 3px solid black;
-  	border-radius: 15px;
-  	padding: 20px 0px 20px 0px;
-  	text-align: center;
+  border-radius: 15px;
+  padding: 20px 0px 20px 0px;
+  text-align: center;
 }
 
 .justRight{
@@ -36,8 +49,53 @@
   padding-bottom: 10px;
 }
 
-iframe {
-  border: none;
+.note {
+  padding: 5px 20px 10px 20px;
+  font-size: small;
+  color: grey;
 }
 
+/*Note Word*/
+.nw {
+  font-weight: bold;
+  color: #8A0808;
+}
 
+.blue {
+  color: #086A87;
+  font-weight: bold;
+}
+
+.gold {
+  color:#886A08;
+  /*font-weight: bold;*/
+}
+
+.yellow {
+  /*color:#D7DF01;*/
+  color: grey;
+  text-shadow: -1px 0 #AEB404, 0 1px #AEB404, 1px 0 #AEB404, 0 -1px #AEB404;
+}
+
+.justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/*For images*/
+.imgBox {
+  /*border: 1px solid #e5e5e5; */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.imgCaption {
+  padding-left: 10px;
+  line-height: 90%;
+}
+
+/*Increase indent*/
+.space1 {
+  padding-left: 20px;
+  padding-right: 20px;
+}

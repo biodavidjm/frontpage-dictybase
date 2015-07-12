@@ -25,11 +25,11 @@ angular
     'frontMeetingsApp',
     'definitionBarApp'
   ])
-  // Makes anchorScroll available everywhere
+  // anchor scroll option 1
   .run(['$anchorScroll', function($anchorScroll) {
     $anchorScroll.yOffset = 50;   // always scroll by 50 extra pixels
   }])
-  .controller('headerCtrl', ['$anchorScroll', '$location', '$scope', function ($anchorScroll, $location, $scope) 
+  .controller('AnchorController', ['$anchorScroll', '$location', '$scope', function ($anchorScroll, $location, $scope) 
   {
     $scope.gotoAnchor = function(x) 
     {
@@ -48,6 +48,13 @@ angular
         }
     };
   }])
+  // Anchor Scroll option 2
+  .controller('MainAnchorController', function($scope, $location, $anchorScroll) {
+    $scope.scrollTo = function(id) {
+       $location.hash(id);
+       $anchorScroll.yOffset = 50;
+    };
+  })
   // .config(function ($routeProvider, $locationProvider) {
   .config(function ($routeProvider) {
     $routeProvider
@@ -129,8 +136,8 @@ angular
       .when('/research/techniques/biochem/:name*', { 
         templateUrl:  function(address) {
           return 'views/techniques/biochem/'+address.name;
-          },
-          controller: 'MediaController' 
+          }
+          // controller: 'MediaController' 
       })
       .when('/research/techniques/cytoskeleton/:name*', { 
         templateUrl:  function(address) {

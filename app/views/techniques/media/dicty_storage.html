@@ -1,36 +1,68 @@
-<!--#include virtual="/inc/page-header.html"-->
-<!--#include virtual="/inc/page-layout-top-wide.html"-->
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html>
-    <head>
-        <title>Dictyostelium Permanent Stocks</title>
-    </head>
-    <body>
-        <h1>
-            Protocols for long-term storage of <i>Dictyostelium discoideum</i>
-        </h1>
-        <p>
-            <b>Please cite: Fey, P., Kowal, A. S., Gaudet, P., Pilcher, K. E., Chisholm, R. L. (2007) 'Protocols for growth and development of Dictyostelium discoideum.' <a href="http://www.nature.com/nprot/journal/v2/n6/full/nprot.2007.178.html">Nat Protoc 2:1307-16</a></b>
-        </p>
-        <p>
-            Here we describe conditions for the preparation and use of permanent Dictyostelium stocks. Other protocols that used to be combined as 'General Dictyostelium Techniques' are methods for <a href="/techniques/media/dicty_growth.html">Dictyostelium growth</a> and for <a href="/techniques/media/dicty_development.html">Dictyostelium development</a>.
-        </p>
-        <hr>
-        <h3>
-            Contents
-        </h3>
-        <div style="margin-left: 2em">
-            <a href="#intro">General considerations for long-term storage of Dictyostelium</a><br>
-            <a href="#silicas">Long-term storage of Dictyostelium on silica gel</a><br>
-            <a href="#silicar">Starting cultures from silica stocks</a><br>
-            <a href="#freeze">Freezing Dictyostelium cells for long-term storage</a><br>
-            <a href="#thaw">Thawing Dictyostelium cells</a><br>
-            <a href="#nonax">Freezing and recovery of non-axenic cells</a><br>
-            <a href="#spores">Freezing spores</a><br>
-            <a href="#notes">Stock Center Notes</a><br>
-            <br>
-            <a href="#materials">Materials</a><br>
+<a name="top" id="top"></a>
+
+<div class="container">
+    <div class="row techniquesHead">
+        <span class="techSubHeader"><h3>Tecniques</h3></span>
+        <h2>
+            Protocols for long-term storage <br>of <i>Dictyostelium discoideum</i>
+        </h2>
+        <h6>Please cite: Fey, P., Kowal, A. S., Gaudet, P., Pilcher, K. E., Chisholm, R. L. (2007) <br> 'Protocols for growth and development of Dictyostelium discoideum.' <br><a href="http://www.nature.com/nprot/journal/v2/n6/full/nprot.2007.178.html">Nat Protoc 2:1307-16</a></h6>
+    </div>
+
+    <div class="row">
+
+        <div class="col-sm-2 col-xs-1"></div>
+
+        <div class="col-sm-8 col-xs-10">
+            
+            <hr>
+            <p>
+                <h5>
+                    Here we describe conditions for the preparation and use of permanent Dictyostelium stocks. Other protocols that used to be combined as 'General Dictyostelium Techniques' are methods for <a ng-href="#/research/techniques/media/dicty_growth.html">Dictyostelium growth</a> and for <a href="/techniques/media/dicty_development.html">Dictyostelium development</a>.
+                </h5>
+            </p>
+            <hr>
+
+        </div> <!-- col -->
+
+        <div class="col-sm-2 col-xs-1"></div>
+        
+    </div> <!-- row -->
+
+        <div class="row">
+        <div class="col-sm-3 col-xs-1"></div>
+
+        <div class="col-sm-6 col-xs-10">
+
+            <div class="blue" align="left"><h3>Contents</h3></div>
+            <div class="panel panel-primary">
+                <div class="list-group">
+
+                    <a href="" class="list-group-item list-group-item-info" ng-click="scrollTo('intro')">General considerations for long-term storage of Dictyostelium</a>
+                    <a href="" class="list-group-item list-group-item-info" ng-click="scrollTo('silicas')">Long-term storage of Dictyostelium on silica gel</a>
+                    <a href="" class="list-group-item list-group-item-info" ng-click="scrollTo('silicar')">Starting cultures from silica stocks</a>
+                    <a href="" class="list-group-item list-group-item-info" ng-click="scrollTo('freeze')">Freezing Dictyostelium cells for long-term storage</a>
+                    <a href="" class="list-group-item list-group-item-info" ng-click="scrollTo('thaw')">Thawing Dictyostelium cells</a>
+                    <a href="" class="list-group-item list-group-item-info" ng-click="scrollTo('nonax')">Freezing and recovery of non-axenic cells</a>
+                    <a href="" class="list-group-item list-group-item-info" ng-click="scrollTo('spores')">Freezing spores</a>
+                    <a href="" class="list-group-item list-group-item-info" ng-click="scrollTo('notes')">Stock Center Notes</a>
+                    <a href="" class="list-group-item list-group-item-info" ng-click="scrollTo('materials')">Materials</a>
+                    <a href="" class="list-group-item list-group-item-info" ng-click="scrollTo('equipment')">Equipment</a>
+
+                </div>
+            </div>
         </div>
+
+        <div class="col-sm-3 col-xs-1"></div>
+
+    </div> <!-- row -->
+
+    <div class="row">
+
+        <div class="col-sm-2 col-xs-1"></div>
+
+        <div class="col-sm-8 col-xs-10">
+
         <hr>
         <p>
             <a name="intro" id="intro"></a>
@@ -39,11 +71,14 @@
             General considerations for long-term storage of Dictyostelium
         </h3>
         <p>
-            To prevent strains from accumulating random mutations, fresh cultures must be initiated from a permanent stock every 2-4 weeks. When making permanent stocks, use fresh, healthy cells. When receiving new cells it is good practice to check morphogenesis by <a href="/techniques/media/dicty_growth.html#liveSMP">plating cells on bacterial plates</a> to form fruiting bodies (and leave cells on plates to develop). Once mature fruiting bodies have formed, such plates can be directly used for storage of spores on silica gel, which acts as a desiccant. Alternatively, <a href="/techniques/media/dicty_growth.html#clone">isolate clones</a> and <a href="/techniques/media/dicty_growth.html#axesus">grow axenic cells</a> for storage of frozen amoebae. Non-axenic strains and spores can also be frozen.
+            To prevent strains from accumulating random mutations, fresh cultures must be initiated from a permanent stock every 2-4 weeks. When making permanent stocks, use fresh, healthy cells. When receiving new cells it is good practice to check morphogenesis by <a ng-href="#/research/techniques/media/dicty_growth.html#liveSMP">plating cells on bacterial plates</a> to form fruiting bodies (and leave cells on plates to develop). Once mature fruiting bodies have formed, such plates can be directly used for storage of spores on silica gel, which acts as a desiccant. Alternatively, <a href="/techniques/media/dicty_growth.html#clone">isolate clones</a> and <a href="/techniques/media/dicty_growth.html#axesus">grow axenic cells</a> for storage of frozen amoebae. Non-axenic strains and spores can also be frozen.
         </p>
-        <p align="right">
-            <a href="#top">[TOP]</a>&nbsp;<a href="/techniques/">[INDEX]</a>
-        </p>
+
+                <br>
+                <p align="center">
+                    <a href="" ng-click="scrollTo('top')">Top</a> | <a ng-href="#/research/techniques/">Techniques</a>
+                </p>
+
         <hr>
         <p>
             <a name="silicas" id="silicas"></a>
@@ -52,17 +87,23 @@
             Long-term storage of Dictyostelium on silica gel
         </h3>
         <ol>
-            <li>Fill 2-3 ml screw-cap glass vials to approximately one-half with <a href="#milk">silica gel</a>. Bake at 180°C for 90 min (remove the caps beforehand and place in a sterile container if caps cannot be baked; cover vials with aluminum foil).
+            <li>Fill 2-3 ml screw-cap glass vials to approximately one-half with <a href="" ng-click="scrollTo('milk')">silica gel</a>. Bake at 180°C for 90 min (remove the caps beforehand and place in a sterile container if caps cannot be baked; cover vials with aluminum foil).
             </li>
             <li>Cool the vials containing silica gel on ice for 30 min. Considerable heat, which can kill spores, is produced when the gel is hydrated; the heat can be minimized by this precooling.
             </li>
-            <li>Use <a href="/techniques/media/media.html#SMP">SM plates</a> with mature fruiting bodies. The plates should not be older than 1 week, after which the viability of spores decreases rapidly. Harvest the spores by gently banging the inverted plates on the bench (several plates into the same lid). Resuspend the spores of three plates (all in the same lid) in 0.4 ml cold <a href="#milk">non-fat dry milk</a> solution. Use 0.4 ml (with spores from three plates) per silica gel tube.
+            <li>Use <a ng-href="#/research/techniques/media/media.html#SMP">SM plates</a> with mature fruiting bodies. The plates should not be older than 1 week, after which the viability of spores decreases rapidly. Harvest the spores by gently banging the inverted plates on the bench (several plates into the same lid). Resuspend the spores of three plates (all in the same lid) in 0.4 ml cold <a href="" ng-click="scrollTo('milk')">non-fat dry milk</a> solution. Use 0.4 ml (with spores from three plates) per silica gel tube.
             </li>
             <li>Pipette the spore-milk suspension into the cold silica gel. Immediately cap the vial and shake vigorously for 5-10 s. Place the vial back on ice for an additional 5 min.
             </li>
             <li>Store vials in desiccant at -20°C or, if freezer is unavailable, at 4°C.
             </li>
         </ol>
+
+                <br>
+                <p align="center">
+                    <a href="" ng-click="scrollTo('top')">Top</a> | <a ng-href="#/research/techniques/">Techniques</a>
+                </p>
+        <hr>
         <p>
             <a name="silicar" id="silicar"></a>
         </p>
@@ -84,7 +125,7 @@
             <b>Trouble shooting:</b> No cell growth after recovery from silica. There might have been too few viable spores in the silica crystals. Try a safer method:
         </p>
         <ul>
-            <li>Transfer a few granules of silica stock to 1 ml of cold sterile <a href="/techniques/media/media.html#SM">SM broth</a>
+            <li>Transfer a few granules of silica stock to 1 ml of cold sterile <a ng-href="#/research/techniques/media/media.html#SM">SM broth</a>
             </li>
             <li>Mix 0.1–0.2 ml aliquots of this solution with 0.4 ml diluted bacteria (made by mixing a loop full of bacterial cells with 5 ml SM broth)
             </li>
@@ -95,9 +136,12 @@
             <li>If this also fails, the strain might not produce viable spores. Use the method to freeze cells.
             </li>
         </ul>
-        <p align="right">
-            <a href="#top">[TOP]</a>&nbsp;<a href="/techniques/">[INDEX]</a>
-        </p>
+
+                <br>
+                <p align="center">
+                    <a href="" ng-click="scrollTo('top')">Top</a> | <a ng-href="#/research/techniques/">Techniques</a>
+                </p>
+
         <hr>
         <p>
             <a name="freeze" id="freeze"></a>
@@ -110,7 +154,7 @@
             </li>
             <li>Chill cell pellet on ice for 5 min.
             </li>
-            <li>Add 1 ml of cold <a href="/techniques/media/media.html#HL5">HL5</a> medium supplemented with <a href="#milk">DMSO</a> to a final concentration of 10%.
+            <li>Add 1 ml of cold <a ng-href="#/research/techniques/media/media.html#HL5">HL5</a> medium supplemented with <a href="" ng-click="scrollTo('milk')">DMSO</a> to a final concentration of 10%.
             </li>
             <li>Resuspend the cells, transfer to liquid nitrogen storage vials and place vials on ice for 5-10 min.
             </li>
@@ -119,6 +163,13 @@
             <li>Transfer vials to liquid nitrogen for long-term storage. If liquid nitrogen is unavailable, storage in a -80°C freezer is an acceptable alternative.
             </li>
         </ol>
+
+                <br>
+                <p align="center">
+                    <a href="" ng-click="scrollTo('top')">Top</a> | <a ng-href="#/research/techniques/">Techniques</a>
+                </p>
+
+        <hr>
         <p>
             <a name="thaw" id="thaw"></a>
         </p>
@@ -139,9 +190,11 @@
                 <b>Note:</b> It is important for the survival of the cells that the temperature never rises above 4°C while the cells are in 10% DMSO.
             </li>
         </ol>
-        <p align="right">
-            <a href="#top">[TOP]</a>&nbsp;<a href="/techniques/">[INDEX]</a>
-        </p>
+
+                <br>
+                <p align="center">
+                    <a href="" ng-click="scrollTo('top')">Top</a> | <a ng-href="#/research/techniques/">Techniques</a>
+                </p>
         <hr>
         <p>
             <a name="nonax" id="nonax"></a>
@@ -150,9 +203,9 @@
             Freezing and recovery of non-axenic cells
         </h3>
         <ol>
-            <li>Grow and wash cells from a bacterial plate as <a href="/techniques/media/dicty_growth.html#init">described here in steps 1-4</a>.
+            <li>Grow and wash cells from a bacterial plate as <a ng-href="#/research/techniques/media/dicty_growth.html#init">described here in steps 1-4</a>.
             </li>
-            <li>Freeze cells as <a href="#freeze">described above</a>.
+            <li>Freeze cells as <a href="" ng-click="scrollTo('freeze')">described above</a>.
             </li>
             <li>For recovery, it is best to scrape frozen cells from the vial with a 16G needle and add the cells quickly to an SM plate previously spread with bacteria.
             </li>
@@ -162,9 +215,13 @@
         <p>
             <b>Timing</b>: Approximately 2.5 h until the cells are frozen at -80°C; 40-60 min until cells are thawed and placed in DMSO-free medium; 10 min to spread an agar plate with bacteria and place frozen cells that are scraped from the top of a tube in the center of the plate.
         </p>
-        <p align="right">
-            <a href="#top">[TOP]</a>&nbsp;<a href="/techniques/">[INDEX]</a>
-        </p>
+
+
+                <br>
+                <p align="center">
+                    <a href="" ng-click="scrollTo('top')">Top</a> | <a ng-href="#/research/techniques/">Techniques</a>
+                </p>
+
         <hr>
         <p>
             <a name="spores" id="spores"></a>
@@ -175,7 +232,7 @@
         <ol>
             <li>Pre-cool 1.5-ml screw-cap storage vials on ice.
             </li>
-            <li>Harvest spores from 2 SM plates or 5 <a href="/techniques/media/media.html#SM5">SM/5 plates</a> by scraping fruiting bodies from plates and transferring them to beaker 20 ml with cold <a href="/techniques/media/media.html#HL5">HL5</a>.
+            <li>Harvest spores from 2 SM plates or 5 <a ng-href="#/research/techniques/media/media.html#SM5">SM/5 plates</a> by scraping fruiting bodies from plates and transferring them to beaker 20 ml with cold <a href="/techniques/media/media.html#HL5">HL5</a>.
             </li>
             <li>Pour fruiting bodies in medium from the beaker into a 50-ml conical tube.
             </li>
@@ -196,9 +253,12 @@
             <li>Transfer vials to liquid nitrogen for long-term storage. If liquid nitrogen is unavailable, storage in a -80°C freezer is an acceptable alternative.
             </li>
         </ol>
-        <p align="right">
-            <a href="#top">[TOP]</a>&nbsp;<a href="/techniques/">[INDEX]</a>
-        </p>
+
+                <br>
+                <p align="center">
+                    <a href="" ng-click="scrollTo('top')">Top</a> | <a ng-href="#/research/techniques/">Techniques</a>
+                </p>
+
         <hr>
         <p>
             <a name="notes" id="notes"></a>
@@ -238,9 +298,12 @@
 that gives much better plating results and no tube damage is Craftsman Professional No. 0 x 4 inch microtech Phillips head
 screwdriver, Sears # 00941527000 Mfr. Model # 41527.  Heat the tip of the screwdriver and then cool in sterile water before
 using to scrape frozen cells from tube.  Gently use tip of screwdriver to plate cells as usual.</p>-->
-        <p align="right">
-            <a href="#top">[TOP]</a>&nbsp;<a href="/techniques/">[INDEX]</a>
-        </p>
+
+                <br>
+                <p align="center">
+                    <a href="" ng-click="scrollTo('top')">Top</a> | <a ng-href="#/research/techniques/">Techniques</a>
+                </p>
+
         <hr>
         <p>
             <a name="materials" id="materials"></a>
@@ -248,7 +311,6 @@ using to scrape frozen cells from tube.  Gently use tip of screwdriver to plate 
         <h3>
             Materials
         </h3>
-        <hr>
         <ul>
             <li>
                 <a name="milk" id="milk"></a>Non-fat dry milk solution: Prepare a 5% solution (wt/vol) in distilled water. Autoclave for 15 min. This solution can be stored at 4°C for several weeks.
@@ -257,13 +319,22 @@ using to scrape frozen cells from tube.  Gently use tip of screwdriver to plate 
             </li>
             <li>Dimethyl sulfoxide (DMSO) <i>!Caution!</i> Always wear protective laboratory gloves when handling DMSO, which easily penetrates the skin. While DMSO itself is not very toxic, anything dissolved or mixed with DMSO will be absorbed as well.
             </li>
+            <li>
+                <a ng-href="#/research/techniques/media/media.html">Other media and solutions for <i>Dictyostelium</i> can be found here</a>
+            </li>
         </ul>
+                <br>
+                <p align="center">
+                    <a href="" ng-click="scrollTo('top')">Top</a> | <a ng-href="#/research/techniques/">Techniques</a>
+                </p>
+        <hr>
         <p>
-            <a href="/techniques/media/media.html">Other media and solutions for <i>Dictyostelium</i> can be found here</a>
+            <a name="equipment" id="equipment"></a>
         </p>
-        <h4>
+
+        <h3>
             Equipment
-        </h4>
+        </h3>
         <ul>
             <li>Sterile culture flasks
             </li>
@@ -302,14 +373,16 @@ using to scrape frozen cells from tube.  Gently use tip of screwdriver to plate 
             <li>-180°C oven
             </li>
         </ul>
-        <p align="right">
-            <a href="#top">[TOP]</a>&nbsp;<a href="/techniques/">[INDEX]</a>
-        </p>
-        <hr>
-        <p>
-            <br>
-            <!--#include virtual="/inc/page-layout-bottom.html"-->
-            <!--#include virtual="/inc/page-footer.html"-->
-        </p>
-    </body>
-</html>
+
+                <br>
+                <p align="center">
+                    <a href="" ng-click="scrollTo('top')">Top</a> | <a ng-href="#/research/techniques/">Techniques</a>
+                </p>
+        <br>
+
+        </div> <!-- End of col -->
+
+        <div class="col-sm-2 col-xs-1"></div>
+    </div> <!-- row -->
+
+</div> <!-- container -->

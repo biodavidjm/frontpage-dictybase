@@ -28,3 +28,16 @@
   padding: 5px 30px 5px 30px;
 
 }
+
+@media(max-width:767px){
+
+  .definitionFront {
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    background-color: white;
+    font-size: 12px;
+  }
+
+}
+  

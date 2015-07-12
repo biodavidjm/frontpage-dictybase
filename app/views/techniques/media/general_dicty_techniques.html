@@ -1,11 +1,3 @@
-<!--#include virtual="/inc/page-header.html"-->
-<!--#include virtual="/inc/page-layout-top-wide.html"-->
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html>
-    <head>
-        <title>General Dictyostelium Techniques</title>
-    </head>
-    <body>
         <h1>
             <a name="top" id="top">General Dicty Techniques</a>
         </h1>
@@ -14,28 +6,28 @@
         </p>
         <ul>
             <li>
-                <a href="/techniques/media/dicty_growth.html">Dictyostelium growth protocols</a>
+                <a ng-href="#/research/techniques/media/dicty_growth.html">Dictyostelium growth protocols</a>
             </li>
             <li>
-                <a href="/techniques/media/dicty_development.html">Dictyostelium development protocols</a>
+                <a ng-href="#/research/techniques/media/dicty_development.html">Dictyostelium development protocols</a>
             </li>
             <li>
-                <a href="/techniques/media/dicty_storage.html">Cell storage procedures</a>
+                <a ng-href="#/research/techniques/media/dicty_storage.html">Cell storage procedures</a>
             </li>
         </ul><!--
 <p><b><h3>Contents</h3></b></p>
 <ul>
-<a href="#growth">General Considerations for Growing <i>Dictyostelium discoideum</i></a><br>
-<a href="#density">Determination of Cell Density</a><br>
-<a href="#rate">Estimation of Growth Rates of Exponential Cultures</a><br>
-<a href="#axenic">Axenic Growth</a><br>
-<a href="#bacteria">Growth on Bacteria</a><br>
-<a href="#devel">Development of <i>Dictyostelium</i></a><br>
-<a href="#perm_stocks">Preparation and Use of Permanent <i>Dictyostelium</i> Stocks</a><br>
-<a href="#recipes">Recipes</a> <br>
+<a href="" ng-click="scrollTo('growth')">General Considerations for Growing <i>Dictyostelium discoideum</i></a><br>
+<a href="" ng-click="scrollTo('density')">Determination of Cell Density</a><br>
+<a href="" ng-click="scrollTo('rate')">Estimation of Growth Rates of Exponential Cultures</a><br>
+<a href="" ng-click="scrollTo('axenic')">Axenic Growth</a><br>
+<a href="" ng-click="scrollTo('bacteria')">Growth on Bacteria</a><br>
+<a href="" ng-click="scrollTo('devel')">Development of <i>Dictyostelium</i></a><br>
+<a href="" ng-click="scrollTo('perm_stocks')">Preparation and Use of Permanent <i>Dictyostelium</i> Stocks</a><br>
+<a href="" ng-click="scrollTo('recipes')">Recipes</a> <br>
 </ul>
-<p><b>Download <a href="/techniques/word_docs/general_dicty_techniques.doc">word file</a>.</b></p>
-<p align="right"><a href="#top">[TOP]</a>&nbsp;<a href="/techniques/">[INDEX]</a></p>
+<p><b>Download <a ng-href="#/research/techniques/word_docs/general_dicty_techniques.doc">word file</a>.</b></p>
+<p align="right"><a href="" ng-click="scrollTo('top')">[TOP]</a>&nbsp;<a ng-href="#/research/techniques/">[INDEX]</a></p>
 <hr>
 <p>
 <a name="growth"><b><h3>General Considerations for Growing <i>Dictyostelium discoideum</i></h3></b></a>
@@ -62,7 +54,7 @@ to split the cells so that the cell density is less than 1x10<sup>4</sup> cells/
 Cultures of lower cell densities lag for a period that
   can be difficult to estimate (see <a href="/db/cgi-bin/dictyBase/reference/reference.pl?refNo=11816">Franck et al 2008</a>). Optimal growth of <i>Dictyostelium</i> is observed at a temperature of 22&deg;C.<br></p>
 </ul>
-<p align="right"><a href="#top">[TOP]</a>&nbsp;<a href="/techniques/">[INDEX]</a></p>
+<p align="right"><a href="" ng-click="scrollTo('top')">[TOP]</a>&nbsp;<a ng-href="#/research/techniques/">[INDEX]</a></p>
 <hr>
 <p><a name="density"><b><h3>Determination of Cell Density</b></h3></a></p>
 <ul>
@@ -73,9 +65,9 @@ surface of the hemocytometer, the volume of the counting chamber is actually 0.1
 cell density in cells per&nbsp;ml, the number of cells counted must be multiplied by 1x10<sup>4</sup>.
 When the cells approach densities of greater than 1-5x10<sup>6</sup>
 it is usually a good idea to do a 1:10 dilution of the culture sample prior to putting it in the hemocytometer. </p>
-  <img src="/techniques/images/hemacytometer.png">
+  <img src="views/techniques/images/hemacytometer.png">
 </ul>
-<p align="right"><a href="#top">[TOP]</a>&nbsp;<a href="/techniques/">[INDEX]</a></p>
+<p align="right"><a href="" ng-click="scrollTo('top')">[TOP]</a>&nbsp;<a ng-href="#/research/techniques/">[INDEX]</a></p>
 <hr>
 <p><a name="rate"><b><h3>Estimation of Growth Rates of Exponential Cultures</b></h3></a></p>
 <ul><p>Use the following formula to determine either the doubling time, the final
@@ -87,19 +79,19 @@ cell density given a certain inoculum or the inoculum necessary for a given
   N<sub>o</sub>= initial cell density <br>
   n= number of generations</p><br>
 </ul>
-<p align="right"><a href="#top">[TOP]</a>&nbsp;<a href="/techniques/">[INDEX]</a></p>
+<p align="right"><a href="" ng-click="scrollTo('top')">[TOP]</a>&nbsp;<a ng-href="#/research/techniques/">[INDEX]</a></p>
 <hr>
 <a name="axenic"><h3>Axenic Growth</h3></a>
 <ul>
-Cells can be axenically grown in <a href="#HL-5">HL-5</a> or in <a href="#FM">FM</a> media at 22&deg;C, shaking at 180 rpm. Maximum yield is about 2x10<sup>7</sup> cells/ml.
+Cells can be axenically grown in <a href="" ng-click="scrollTo('HL-5')">HL-5</a> or in <a href="#FM">FM</a> media at 22&deg;C, shaking at 180 rpm. Maximum yield is about 2x10<sup>7</sup> cells/ml.
 </ul>
-<p align="right"><a href="#top">[TOP]</a>&nbsp;<a href="/techniques/">[INDEX]</a></p>
+<p align="right"><a href="" ng-click="scrollTo('top')">[TOP]</a>&nbsp;<a ng-href="#/research/techniques/">[INDEX]</a></p>
 <hr>
 <a name="bacteria"><h3>Growth on Bacteria</h3></a>
 The two most commonly used bacterial species to grow <i>Dictyostelium</i> are <i>Aerobacter aerogenes</i>
 (also known as <i>Klebsiella aerogenes</i>) and <i>Escherichia coli</i> B/R. <br><br>
 <h4>Growth in suspension in association with bacteria in SM broth</h4>
-<ol><li>Grow bacteria to stationary phase in <a href="#SM">SM</a> broth.</li><br>
+<ol><li>Grow bacteria to stationary phase in <a href="" ng-click="scrollTo('SM')">SM</a> broth.</li><br>
 <li>Autoclave the culture. </li><br>
 <li>Inoculate <i>Dictyostelium</i> cells at 1x10<sup>4</sup> cells/ml. </li><br>
 </ol><i>Dictyostelium</i> can be washed relatively free of bacterial cells by three sequential centrifugations of
@@ -108,13 +100,13 @@ Yield is 1-2 x 10<sup>7</sup> cells/ml.</li>
 <br><br>
 <h4>Growth in suspension in association with bacteria in phosphate buffer</h4>
 <ol><li>Grow a bacterial culture of in 1 l of LB.</li><br>
-<li>Wash twice in <a href="#DB">DB</a>.</li><br>
+<li>Wash twice in <a href="" ng-click="scrollTo('DB')">DB</a>.</li><br>
 <li>Suspend the bacteria in DB at an O.D. of 8.0.</li><br>
 <li>Seed <i>Dictyostelium</i> cells at 3x10<sup>3</sup> to 1x10<sup>4</sup> at 22&deg;C, shaking at 180 rpm. </li><br>
 </ol>Yield is 1-2 x 10<sup>7</sup> cells/ml.</li>
 <br><br>
 <h4>Growth on plates</h4>
-<i>Dictyostelium</i> can be grown in association with bacteria on <a href="#SMP">SM plates</a>.
+<i>Dictyostelium</i> can be grown in association with bacteria on <a href="" ng-click="scrollTo('SMP')">SM plates</a>.
 The bacteria initially produce a confluent lawn of cells.
 Subsequently the amoebae clear the plate of the bacteria and, after reaching stationary phase, enter development
 and form fruiting bodies. <br>
@@ -134,11 +126,11 @@ Mix <i>Dictyostelium</i> cells with 0.2&nbsp;ml of overnight culture of bacteria
   <li>Spores from the fruiting bodies produced by an individual clone can be used to inoculate a culture.</li><br>
 </ul>
 <h4>Initiating axenic cultures from bacterially grown cells</h4>
-<ol><li>Use a loop to remove amoebae from a single colony on a bacterial plate and suspend in <a href="#SM">SM</a> broth.
+<ol><li>Use a loop to remove amoebae from a single colony on a bacterial plate and suspend in <a href="" ng-click="scrollTo('SM')">SM</a> broth.
 </li><br>
 <li>Add bacteria and spread onto an SM agar plate.</li><br>
 <li>When the plates have been cleared of bacteria, but before many fruiting bodies have formed,
-harvest the Dictyostelium cells by flooding the plate with 3 to 4&nbsp;ml of <a href="#HL-5">HL-5</a> containing streptomycin sulfate (500 mg/ml).</li><br>
+harvest the Dictyostelium cells by flooding the plate with 3 to 4&nbsp;ml of <a href="" ng-click="scrollTo('HL-5')">HL-5</a> containing streptomycin sulfate (500 mg/ml).</li><br>
 <li>Recover the cells and transfer to 15&nbsp;ml falcon tube. Pellet and resuspend the cells about 4 times to remove
  as many bacterial cells as possible.</li><br>
 <li>Resuspend the final pellet in 25&nbsp;ml HL-5 containing streptomycin in a 125&nbsp;ml Erlenmeyer flask.
@@ -146,7 +138,7 @@ Incubate 2 to 3 days at 22&deg;C.</li><br>
 <li>Transfer a small volume (1-2&nbsp;ml) into a flask containing fresh HL-5 lacking streptomycin.
 Be sure to retain the bacterial plates until it is clear that the axenic cultures are not contaminated.</li><br>
 </ol>
-<p align="right"><a href="#top">[TOP]</a>&nbsp;<a href="/techniques/">[INDEX]</a></p>
+<p align="right"><a href="" ng-click="scrollTo('top')">[TOP]</a>&nbsp;<a ng-href="#/research/techniques/">[INDEX]</a></p>
 <hr>
 <a name="devel"><h3>Development of <i>Dictyostelium</i></a></h3>
 <b>Note:</b> It is best to harvest cells in mid-log phase for development (1-2x10<sup>6</sup> cells/ml). <br><br>
@@ -155,12 +147,12 @@ Be sure to retain the bacterial plates until it is clear that the axenic culture
 <li>Take an aliquot of cells and determine cell density by counting them on a hemocytometer.</li><br>
 <li>Collect 5x10<sup>8</sup> cells by centrifugation at 1500 rpm (50&nbsp;x&nbsp;g) for 4&nbsp;minutes. For a
   culture at 2x10<sup>6</sup> cells/ml this is 250&nbsp;ml of cells.</li><br>
-<li>Resuspend the pellet in 0.5 volumes of sterile <a href="#DB">DB</a> or <a href="#PDF">PDF</a>, and pellet again.
+<li>Resuspend the pellet in 0.5 volumes of sterile <a href="" ng-click="scrollTo('DB')">DB</a> or <a href="#PDF">PDF</a>, and pellet again.
   Try to maintain sterility throughout this process. Since development is induced
   by starvation, and <i>Dictyostelium</i> eats bacteria, it should be obvious that contamination
   of the development buffer with bacteria could interfere with development. </li><br>
 <li>Repeat the washes twice more == for a total of 3 washes.</li><br>
-<li>Resuspend the pellet following the final wash in 5&nbsp;ml of <a href="#DB">DB</a> or <a href="#PDF">PDF</a> and
+<li>Resuspend the pellet following the final wash in 5&nbsp;ml of <a href="" ng-click="scrollTo('DB')">DB</a> or <a href="#PDF">PDF</a> and
   deposit them onto a Whatman #50 filter resting on 4 Whatman #3 filters which
   have been soaked in PDF and resting in a 150&nbsp;ml Petri dish. Be sure to remove
   all air bubbles trapped between the filters. Otherwise the filter is not a flat
@@ -192,7 +184,7 @@ Cells can also be developed in suspension. Under these conditions, however, cell
 through the first 6 to 8 hours of development. Addition of cAMP pulses to the
 suspension starved culture will allow development to progress up to about the 12 hour stage.<br><br>
 <ol><li>To starve cells in suspension, count the cells, harvest as above and wash three times in PDF. </li><br>
-<li>After the final wash resuspend them at a density of 1x10<sup>7</sup> cells/ml in <a href="#DB">DB</a> or <a href="#PDF">PDF</a> and place them
+<li>After the final wash resuspend them at a density of 1x10<sup>7</sup> cells/ml in <a href="" ng-click="scrollTo('DB')">DB</a> or <a href="#PDF">PDF</a> and place them
 in a sterile flask on the shaker at 22&deg;C.</li><br>
 <li>Cyclic AMP pulses are added using a timer to control a peristaltic pump that delivers cAMP to the cell suspension
 through tubing which goes into the flask. The pulsing is started 90 to 120&nbsp;minutes
@@ -201,13 +193,13 @@ During this 5 second period cAMP is added to a final concentration of 50 nM in a
 of the volume of the cell suspension. For example, for a 1.0 liter cell suspension, 0.1-0.2&nbsp;ml of cAMP may be added at each pulse.
 </li><br>
 </ol>
-<p align="right"><a href="#top">[TOP]</a>&nbsp;<a href="/techniques/">[INDEX]</a></p>
+<p align="right"><a href="" ng-click="scrollTo('top')">[TOP]</a>&nbsp;<a ng-href="#/research/techniques/">[INDEX]</a></p>
 <hr>
 <a name="perm_stocks"><b><h3>Preparation and Use of Permanent <i>Dictyostelium</i> Stocks</h3></b></a></p>
 <h4>Freezing <i>Dictyostelium</i> cells</h4>
 <ol><li>Pellet about 5x10<sup>7</sup> cells  harvested during exponential growth (about 2 confluent plates or axenically growing cells
  at a cell density of about 2x10<sup>6</sup> cells/ml) and chill on ice.</li><br>
-<li>Add 1&nbsp;ml of cold <a href="#HL-5">HL-5</a> medium supplemented with DMSO to a final concentration of 10%.
+<li>Add 1&nbsp;ml of cold <a href="" ng-click="scrollTo('HL-5')">HL-5</a> medium supplemented with DMSO to a final concentration of 10%.
 Resuspend the cells and transfer to liquid nitrogen storage vials.</li><br>
 <li>Freeze slowly (incubate on ice for 5-10&nbsp;min., then at -20&deg;C, and transfer to -80&dege;C)</li><br>
 <li>Close vials and place in -70&deg;C freezer for 12 to 24 hours.</li><br>
@@ -244,7 +236,7 @@ Immediately cap the vial and shake vigorously for 5-10 seconds. Put the vial bac
 </ol>
 <br>
 <h4>Starting cultures from silica stocks</h4>
-<ol><li>Transfer a few granules of silica stock to 1&nbsp;ml of cold sterile <a href="#SM">SM</a> broth. </li><br>
+<ol><li>Transfer a few granules of silica stock to 1&nbsp;ml of cold sterile <a href="" ng-click="scrollTo('SM')">SM</a> broth. </li><br>
 <li>Mix 0.1-0.2&nbsp;ml aliquots of this solution with 0.4&nbsp;ml diluted bacteria (made by mixing a loopful of cells with 5&nbsp;ml SM broth).</li><br>
 <li>A full lawn should appear on the next day and plaques in 2-4 days.</li><br>
 </ol>
@@ -252,7 +244,7 @@ Immediately cap the vial and shake vigorously for 5-10 seconds. Put the vial bac
 </li>
 </li>
 </ul>
-<p align="right"><a href="#top">[TOP]</a>&nbsp;<a href="/techniques/">[INDEX]</a></p>
+<p align="right"><a href="" ng-click="scrollTo('top')">[TOP]</a>&nbsp;<a ng-href="#/research/techniques/">[INDEX]</a></p>
 <hr>
 <p><b><h3>10<sup>8</sup> <i>Dictyostelium</i> cells contain...</h3></b>
 <ul>  -3 &micro;g genomic DNA (3.33 x10<sup>7</sup> bp per genome) <br>
@@ -260,7 +252,7 @@ Immediately cap the vial and shake vigorously for 5-10 seconds. Put the vial bac
   -3-6 mg total cellular protein<br>
   -100 &micro;g nuclear proteins<br>
   -1 mg cytosolic proteins; remaining 2-5 mg is membrane proteins </ul></p>
-<p align="right"><a href="#top">[TOP]</a>&nbsp;<a href="/techniques/">[INDEX]</a></p>
+<p align="right"><a href="" ng-click="scrollTo('top')">[TOP]</a>&nbsp;<a ng-href="#/research/techniques/">[INDEX]</a></p>
 <hr>
 <a name="recipes"><b><h3>Recipes</h3></b></a>
 <a name="Bonnersalts"></a>
@@ -276,7 +268,7 @@ Immediately cap the vial and shake vigorously for 5-10 seconds. Put the vial bac
 <hr>
 <a name="DB"></a>
 <ul><li><u>DB (Development Buffer)</u><br><br>
-<b>Note:</b> This buffer is lower in ionic strength than <a href="#PDF">PDF</a>.
+<b>Note:</b> This buffer is lower in ionic strength than <a href="" ng-click="scrollTo('PDF')">PDF</a>.
 The high ionic strength of PDF seems to retard development. <i>Dictyostelium</i> grows essentially in fresh water in dirt.
 Therefore this buffer may be more physiological. <br><br>
 <ul><li>5&nbsp;mM&nbsp;Na<sub>2</sub>HPO<sub>4</sub></li>
@@ -507,7 +499,4 @@ For best results, let plates dry overnight at room temperature and then store
   <a name="5">5.</a> Watts and Ashworth (1970) Biochem J. 119: 171-174. <br>
   <a name="6">6.</a>  Williams & Newell (1976) Genetics 82, 287-307.
 -->
-        <!--#include virtual="/inc/page-layout-bottom.html"-->
-        <!--#include virtual="/inc/page-footer.html"-->
-    </body>
-</html>
+        

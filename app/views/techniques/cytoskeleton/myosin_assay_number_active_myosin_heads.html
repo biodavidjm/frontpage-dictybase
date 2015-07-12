@@ -1,21 +1,24 @@
-<!--#include virtual="/inc/page-header.html"-->
-<!--#include virtual="/inc/page-layout-top.html"-->
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html>
-    <head>
-        <title>Estimation of the number of active myosin heads in isolated myosin</title>
-    </head>
-    <body>
-        <p>
-            <a name="top" id="top"></a>
-        </p>
-        <h1>
+<a name="top" id="top"></a>
+
+<div class="container">
+    <div class="row techniquesHead">
+        <span class="techSubHeader"><h3>Tecniques</h3></span>
+        <h2>
             Estimation of the number of active myosin heads in isolated myosin
-        </h1>
-        <p>
-            <b>The protocol is adopted from J. Sellers at the NIH.<br>
-            Download <a href="/techniques/word_docs/active_myosin_heads.doc">word file</a>.</b>
-        </p>
+        </h2>        
+        <h6><b>The protocol is adopted from J. Sellers at the NIH.</b></h6>
+    </div>
+
+    <div class="row">
+
+        <div class="col-sm-2 col-xs-1"></div>
+
+        <div class="col-sm-8 col-xs-10">
+
+<!--         <p>
+            Download <a ng-href="#/research/techniques/word_docs/active_myosin_heads.doc">word file</a>.</b>
+        </p> -->
+
         <hr>
         <p>
             Active myosin heads bind to and hydrolyze ATP. When ATP and myosin molar concentrations are close, each myosin head may cycle ATP only once. Thus, the number of ATP hydrolyzed provides an estimation of the number of active heads in the myosin polulation.<br>
@@ -23,44 +26,40 @@
             5&nbsp;µg Dicty myosin = 10 pomoles = 20 pmoles myosin heads. Smaller amount of myosin in the assay conditions described below may give inconsistent results. ATP is used at two fold stoichiometry with myosin heads.
         </p>
         <hr>
-        <h2>
+        <h3>
             Procedure
-        </h2>
+        </h3>
         <ol>
             <li>Sample: 5&nbsp;µg myosin is added to 100 µl buffer A containing 40 pmoles labeled-ATP.<br>
                 Background control: 100 µ Buffer A + 40 pmoles labeled ATP<br>
             </li>
-            <li style="list-style: none">
-                <br>
-            </li>
+
             <li>Incubate at room temperature for *20 seconds, and immediately add 1&nbsp;mM cold ATP.<br>
-                <b>*Note:</b> There is an increase of the amount of Pi hydrolyzed with respect to incubation time. Use a time interval that gives a number within the linear range.
+                <div class="note">
+                    <span class="nw">Note:</span>
+                    There is an increase of the amount of Pi hydrolyzed with respect to incubation time. Use a time interval that gives a number within the linear range.
+                </div>
             </li>
-            <li style="list-style: none">
-                <br>
-            </li>
+
             <li>Stand for 5-10&nbsp;min.
             </li>
-            <li style="list-style: none">
-                <br>
-            </li>
+
             <li>Extract Pi released with the organic partition method and count<!-- as described in the Manual-->.
             </li>
-            <li style="list-style: none">
-                <br>
-            </li>
+
         </ol>
         <hr>
-        <h2>
+        <h3>
             Calculation
-        </h2>
+        </h3>
         <p>
             % active heads = [sample (cpm) - control (cpm)] x 4 / total cpm<sup>1</sup><br>
-            <sup>1</sup> Radioactive counts of 40 pmoles labeled ATP
+            
+            <small><sup>1</sup> Radioactive counts of 40 pmoles labeled ATP</small>
         </p>
-        <h2>
+        <h3>
             Materials
-        </h2>
+        </h3>
         <ul>
             <li>
                 <u>Buffer A</u>
@@ -78,11 +77,14 @@
             <li>0.01% NaN<sub>3</sub>
             </li>
         </ul>
-        <p>
-            <br>
-        </p>
-        <p align="right">
-            <a href="#top">[TOP]</a>&nbsp;<a href="/techniques/">[INDEX]</a>
-        </p><!--#include virtual="/inc/footer_withSide.html"-->
-    </body>
-</html>
+        
+                <br>
+                <p align="center">
+                    <a href="" ng-click="scrollTo('top')">Top</a> | <a ng-href="#/research/techniques/">Techniques</a>
+                </p>
+                <br>
+
+        </div> <!-- col-sm-8 -->
+        <div class="col-sm-2 col-xs-1"></div>
+    </div>
+</div>
