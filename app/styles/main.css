@@ -1,5 +1,10 @@
 /*MAIN STYLE*/
 
+.no-padding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
 .jumbotron {
   text-align: center;
   border-bottom: 1px solid #e5e5e5;
