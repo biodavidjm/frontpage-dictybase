@@ -145,6 +145,12 @@ angular
           },
           controller: 'MediaController' 
       })
+      .when('/research/techniques/chemotaxis/:name*', { 
+        templateUrl:  function(address) {
+          return 'views/techniques/chemotaxis/'+address.name;
+          },
+          controller: 'MediaController' 
+      })
       .otherwise ({
         templateUrl: 'views/notyet.html',
       });
