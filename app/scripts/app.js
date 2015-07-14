@@ -85,17 +85,28 @@ angular
       .when('/meetings', {
         templateUrl: 'views/front-meetings-all.html'      
       })
-      .when('/research', {
-        templateUrl: 'views/research.html'      
-      })
+      // EXPLORE
       .when('/explore', {
         templateUrl: 'views/explore/explore.html'      
+      })
+      .when('/explore/teach', {
+        templateUrl: 'views/explore/teach/index.html'     
       })
       .when('/explore/teach/:name*', { 
         templateUrl:  function(address) {
           return 'views/explore/teach/'+address.name;
           },
-          controller: 'MediaController' 
+          controller: 'MediaController'
+      })
+      .when('/explore/learn', {
+        templateUrl: 'views/explore/tutorial/index.html'     
+      })
+      .when('/explore/gallery', {
+        templateUrl: 'views/explore/Multimedia/index.html'     
+      })
+      // RESEARCH
+      .when('/research', {
+        templateUrl: 'views/research.html'      
       })
       .when('/tools/jbrowse', {
         templateUrl: 'views/jbrowse.html'      
@@ -109,7 +120,7 @@ angular
           },
           controller: 'MediaController' 
       })
-      .when('/research/techniques/molbio/:name', { 
+      .when('/research/techniques/molbio/:name', {
         templateUrl:  function(address) {
           return 'views/techniques/molbio/'+address.name;
           },

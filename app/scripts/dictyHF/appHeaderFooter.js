@@ -32,7 +32,7 @@ angular
                 $scope.sections.menus = data;
             })
             .error(function() {
-                $log.error('EEERRRRROOOOORRRR!!');
+                $log.error('EEERRRRROOOOORRRR parsing the link.json file!!! Take a look');
             });
       }
     };
@@ -52,7 +52,7 @@ angular
                 $scope.sections.menus = data;
             })
             .error(function() {
-                $log.error('EEERRRRROOOOORRRR!!');
+                $log.error('EEERRRRROOOOORRRR parsing the link.json file!!! Take a look!!');
             });
       }
     };

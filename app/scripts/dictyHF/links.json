@@ -20,7 +20,9 @@
             "Explore": "explore"
         }, 
         "submain": {
-            "Teaching Protocols":       "explore/teach/index.html"
+            "Learn About Dicty":          "explore/learn",
+            "Teaching Protocols":         "explore/teach",
+            "Gallery of Pictures/Videos": "explore/gallery"
         }
     },
     {
