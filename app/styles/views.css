@@ -41,6 +41,10 @@ h3 {
 
 /*RESEARCH*/
 
+.fontlarger {
+  font-size: 16px;
+}
+
 .jumbotron.research {
 	margin-top: 5px;
 	background-color: white;
@@ -55,6 +59,7 @@ h3 {
 
 .techSubHeader {
   color:grey;
+  margin-bottom: 10px;
 }
 
 .researchBox {

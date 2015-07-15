@@ -83,20 +83,20 @@ angular
         templateUrl: 'views/front-papers-all.html'
       })
       .when('/meetings', {
-        templateUrl: 'views/front-meetings-all.html'      
+        templateUrl: 'views/front-meetings-all.html'
       })
       .when('/tools', {
-        templateUrl: 'views/tools.html'      
+        templateUrl: 'views/tools.html'
       })
       .when('/genomes', {
-        templateUrl: 'templates/genome-card.html'      
+        templateUrl: 'templates/genome-card.html'
       })
       // EXPLORE
       .when('/explore', {
-        templateUrl: 'views/explore/explore.html'      
+        templateUrl: 'views/explore/explore.html'
       })
       .when('/explore/teach', {
-        templateUrl: 'views/explore/teach/index.html'     
+        templateUrl: 'views/explore/teach/index.html'
       })
       .when('/explore/teach/:name*', { 
         templateUrl:  function(address) {
@@ -116,12 +116,15 @@ angular
       .when('/explore/statistics', {
         templateUrl: 'views/explore/genome_statistics.html'
       })
+      .when('/explore/links', {
+        templateUrl: 'views/explore/other_links.html'
+      })
       // RESEARCH
       .when('/research', {
-        templateUrl: 'views/research.html'      
+        templateUrl: 'views/research.html'
       })
       .when('/tools/jbrowse', {
-        templateUrl: 'views/jbrowse.html'      
+        templateUrl: 'views/jbrowse.html'
       })
       .when('/research/techniques', {
         templateUrl: 'views/techniques/index.html'

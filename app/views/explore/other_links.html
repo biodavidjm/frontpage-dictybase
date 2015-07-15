@@ -1,0 +1,507 @@
+<a name="top" id="top"></a>
+
+<div class="jumbotron research">
+    <div class="row">
+        <div class="techSubHeader"><h3>Explore</h3></div>
+        <h1>
+            <span class="glyphicon glyphicon-new-window" aria-hidden="true"></span><br>
+            Useful Links
+        </h1>
+        
+    </div>
+</div>
+
+<!-- <a href="" class="list-group-item list-group-item-info"  -->
+
+<div class="container" ng-controller="AnchorController">
+
+
+
+    <div class="row no-padding" align="center">
+        <h6>
+            <div class="col-lg-2 col-md-2 col-sm-1 col-xs-0 no-padding"></div>
+            <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12 list-group no-padding">
+                <a href=""  class="list-group-item" ng-click="gotoAnchor('blast')">BLAST Servers</a>
+                <a href=""  class="list-group-item" ng-click="gotoAnchor('resource1')">Gene and Protein Analysis</a>
+                <a href=""  class="list-group-item" ng-click="gotoAnchor('bioinform')">Bioinformatics Resources</a>
+                <a href=""  class="list-group-item" ng-click="gotoAnchor('pathways')">Molecular Pathways</a>
+                <a href=""  class="list-group-item" ng-click="gotoAnchor('protein')">Protein Family Information</a>
+            </div> <!-- col-lg-3 col-xs -->
+            <div class="col-lg-4 col-md-4 col-sm-5 col-xs-12 list-group no-padding">
+                <a href=""  class="list-group-item" ng-click="gotoAnchor('other')">Other Model Organism Databases</a>
+                <a href=""  class="list-group-item" ng-click="gotoAnchor('seq')">Sequencing Center / Bioinformatics Institutes</a>
+                <a href=""  class="list-group-item" ng-click="gotoAnchor('lit')">Scientific Literature Resourcess</a>
+                <a href=""  class="list-group-item" ng-click="gotoAnchor('deliv')">Services, Article Research and Delivery</a>
+                <a href=""  class="list-group-item" ng-click="gotoAnchor('vendors')">Vendors, Commercial</a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-1 col-xs-0 no-padding"></div>
+        </h6>
+    </div> <!-- row -->
+
+
+    <br>
+
+    <div class="row">
+        <div class="col-sm-3 col-xs-1"></div>
+            <div class="col-sm-6 col-xs-10 class="fontlarger"">
+                
+                <p>
+                    <a name="blast" id="blast"></a><h2>BLAST Servers</h2>
+                </p>
+                <ul>
+                    <li> <a href="http://www.dictybase.org/tools/blast">dictyBase BLAST server</a>
+                    </li>
+
+                    <li> <a target="new" href="http://www.ncbi.nlm.nih.gov/BLAST/Blast.cgi">NCBI BLAST server</a>
+                    </li>
+
+                    <li> <a target="new" href="http://www.uniprot.org/?tab=blast">UniProt BLAST server</a> <!--<li><a target="new" href="http://www.sdsc.edu/mpr/dicty/">San Diego Supercomputer BLAST server</a></li>-->
+                    </li>
+                </ul>
+                
+                    <p align="center">
+                        <a ng-click="gotoAnchor('top')" href=""><small>Top</small></a>
+                    </p>
+                <hr>
+                <br>
+
+                <p>
+                    <h2><a name="resource1" id="resource1"></a>Gene and Protein Analysis</h2>
+                </p>
+                <ul>
+                    <!--
+                <li><a target="new" href="http://yakko.bme.virginia.edu/cm/cell_mov.html">Cell Movement WWW Page</a> A Web resource for people interested in cell motility</li>
+                -->
+                    <li> <a target="new" href="http://www.cbs.dtu.dk/services/">CBS Prediction Servers</a>: Various prediction programs at the Center for Biological Sequence Analysis
+
+                    <li> <a target="new" href="http://www.ailab.si/dictyexpress/">dictyExpress</a>: Gene expression data visualization in Dictyostelium
+
+                    </li>
+                    <li> <a target="new" href="http://www.cbs.dtu.dk/services/DictyOGlyc/">DictyOGlyc 1.1 Server</a>: Predictions for GlcNAc O-glycosylation sites in Dictyostelium discoideum proteins
+                    </li>
+
+                    <li> <a target="new" href="http://slimemold.uark.edu/index.htm">The Eumycetozoan Project</a>: Ecology, systematics and evolution of Myxomycetes, Dictyostelids and Protostelids
+                    </li>
+
+                    <li> <a target="new" href="http://genepath.org/">Gene Path</a>: A web-enabled intelligent assistant for the analysis of genetic data and for discovery of genetic networks
+                    </li>
+
+                    <li> <a target="new" href="http://genome.crg.es/geneid.html">Geneid Web Server</a>: Gene prediction server that includes a <i>Dictyostelium</i> trained algorithm
+                    </li>
+
+                    <li> <a target="new" href="http://kinase.com/dictyostelium/">Kinase.com</a>: The <i>Dictyostelium</i> Kinome
+                    </li>
+                    <li> <a target="new" href="http://www.ncbi.nlm.nih.gov/genome/guide/dicty/">NCBI's Dictyostelium Genome Resources</a>
+        			</li>
+
+                    <li> <a target="new" href="http://www.nih.gov/science/models/d_discoideum/">NIH Model Organisms for Biomedical Research: Dictyostelium discoideum</a>
+                    </li>
+
+                    <li>
+                        <a target="new" href="http://stke.sciencemag.org/cgi/collection/pw_mycetozoa">STKE Connections Map</a> (Science) - <a href="/STKE.htm">STKE summary</a> (dictyBase)
+                    </li>
+
+                    <li>
+                        <a target="new" href="http://www.expasy.ch/cgi-bin/lists?dicty.txt">Swiss-Prot: annotated Dictyostelium proteins</a>
+        			<li>
+        			  <a target="new" href="/Virtual_Library/VLdicty.html">WWW Virtual Library: Dictyostelium discoideum</a>, a part of the <a target="new" href="http://vlib.org/Biosciences">WWW Virtual Library: Biosciences</a>
+
+        			</li>
+
+
+                </ul>
+                    <p align="center">
+                        <a ng-click="gotoAnchor('top')" href=""><small>Top</small></a>
+                    </p>
+
+                <hr>
+                <br>
+
+
+                <p>
+                    <a name="bioinform" id="bioinform"></a><h2>Bioinformatics Resources</h2>
+                </p>
+                <ul>
+                    <li>
+                        <a target="new" href="http://amigo.geneontology.org/cgi-bin/amigo/go.cgi">AmiGO</a>: Web-based browser for The Gene Ontology
+                    </li>
+                    <li>
+                        <a target="new" href="http://www.dhgp.org/current/index.html">Apollo</a>: A Java-based application for annotating genomic sequences
+                    </li>
+                    <li>
+                      <a target="new" href="http://www.bioinformatics.ca/">Bioinformatics.ca</a>: Canadian Bioinformatics Resources
+        			</li>
+                    <li>
+                        <a target="new" href="http://www.brenda.uni-koeln.de/">BRENDA</a>: The Comprehensive Enzyme Information System
+                    </li>
+                    <li>
+                        <a target="new" href="http://www.expasy.ch/">ExPASy</a>: The Expert Protein Analysis System proteomics server of the <a target="new" href="http://www.isb-sib.ch/">Swiss Institute of Bioinformatics</a> dedicated to the analysis of protein sequences and structures as well as 2-D PAGE
+                    </li>
+
+                    <li>
+                        <a target="new" href="http://biocurator.org/">International Society for Biocuration (ISB)</a>: Information and meetings relating to curation of biological data
+                    </li>
+                    <li>
+                        <a target="new" href="http://gmod.org/wiki/chado">Chado</a>: The GMOD database schema
+                    </li>
+                    <li>
+                        <a target="new" href="http://www.geneontology.org/">Gene Ontology (GO) Consortium</a>: The GO project provides a controlled vocabulary to describe gene and gene product attributes in any organism
+                    </li>
+                    <li>
+                        <a target="new" href="http://gmod.org/wiki/GBrowse">GBrowse: The Generic Genome Browser</a>: A combination of database and interactive web page for manipulating and displaying annotations on genomes
+                    </li>
+                    <li>
+                        <a target="new" href="http://www.gmod.org/home">GMOD</a>: Generic software components for model organism databases
+                    </li>
+                    <li>
+        			  <a target="new" href="http://www.genome.jp/">KEGG: Links to Pathway and Other Databases</a>
+        			</li>
+
+                    <li>
+        			    <a target="new" href="http://inparanoid.sbc.su.se/cgi-bin/index.cgi">InParanoid</a>: Database of eukaryotic ortholog groups
+        			</li>
+
+                    <li>
+                        <a target="new" href="http://www.obofoundry.org/">Open Biomedical Ontologies</a>: Umbrella web address for well-structured controlled vocabularies for shared use across different biological and medical domains, includes the Dictyostelium anatomy ontology
+                    </li>
+                    <li>
+                        <a target="new" href="http://www.bioontology.org/">National Center for Biomedical Ontology</a>: Advancing biomedicine with tools and methodologies for the structured organization of knowledge
+                    </li>
+
+        			<li>
+        			  <a target="new" href="http://www.uniprot.org/">UniProt</a>: Universal Protein Resource
+        			</li>
+
+                </ul>
+
+                    <p align="center">
+                        <a ng-click="gotoAnchor('top')" href=""><small>Top</small></a>
+                    </p>
+                <hr>
+                <br>
+
+                <p>
+                    <h2><a name="pathways" id="pathways"></a>Molecular Pathways</h2>
+                </p>
+                <ul>
+                    <li>
+                        <a target="new" href="http://www.expasy.org/cgi-bin/search-biochem-index">ExPASy Biochemical Pathways</a>: Digitized version of the Roche Applied Science "Biochemical Pathways" wall chart
+                    </li>
+                    <li>
+                        <a target="new" href="http://genepath.org/">Gene Path</a>: A web-enabled intelligent assistant for the analysis of genetic data and for discovery of genetic networks
+                    </li>
+                    <li>
+                        <a target="new" href="http://www.genome.jp/kegg/pathway.html">KEGG</a>: Kyoto Encyclopedia of Genes and Genomes pathway database
+                    </li>
+                    <li>
+                        <a target="new" href="http://metacyc.org/">MetaCyc</a>: A database of nonredundant, experimentally elucidated metabolic pathways
+                    </li>
+                    <li>
+                        <a target="new" href="http://www.genomeknowledge.org">Reactome</a>: A knowledgebase of biological processes
+                    </li>
+                    <li>
+                        <a target="new" href="http://stke.sciencemag.org">Science's Signal Transduction Knowledge Environment (STKE)</a>: (free registration required)
+                    </li>
+                </ul>
+
+                    <p align="center">
+                        <a ng-click="gotoAnchor('top')" href=""><small>Top</small></a>
+                    </p>
+                <hr>
+                <br>
+
+                <p>
+                    <h2><a name="protein" id="protein"></a>Protein Family Information</h2>
+                </p>
+                <ul>
+                    <li>
+                        <a target="new" href="http://www.cazy.org/">CAZY</a>: Carbohydrate-Active enZYmes
+                    </li>
+                    <li>
+                        <a target="new" href="http://chromdb.org/">ChromDB</a>: The Plant Chromatin Database
+                    </li>
+                    <li>
+                        <a target="new" href="http://drnelson.utmem.edu/CytochromeP450.html">Cytochrome P450 Homepage</a>
+                    </li>
+                    <li>
+                        <a target="new" href="http://www.gpcr.org/">GPCRDB</a>: Information system for G protein-coupled receptors (GPCRs)
+                    </li>
+                    <li>
+                        <a target="new" href="http://kinase.com/">Kinase.com</a>: Global analysis of protein kinase genes in sequenced genomes
+                    </li>
+                    <li>
+                        <a target="new" href="http://www.proweb.org/kinesin/index.html">Kinesins</a>
+                    </li>
+                    <li>
+                    <!-- kinasenet link not working 3-4-2010-->
+                        <a target="new" href="http://www.kinasenet.org/pkr/Welcome.do">The Protein Kinase Resource</a>
+                    </li>
+                    <li>
+                        <a target="new" href="http://www.plantgdb.org/SRGD/">Splicing Related Gene Database</a>
+                    </li>
+                </ul>
+
+                    <p align="center">
+                        <a ng-click="gotoAnchor('top')" href=""><small>Top</small></a>
+                    </p>
+
+                <hr>
+                <br>
+
+                <p>
+                    <a name="other" id="other"></a><h2>Other Model Organism Databases</h2>
+                </p>
+                <ul>
+                    <li>
+                        <a target="new" href="http://www.agbase.msstate.edu/">AgBase</a>: Resource for functional analysis of agricultural plant and animal gene products
+                    </li>
+                    <li>
+                        <a target="new" href="http://www.fgsc.net/aspergenome.htm">Aspergillus genome resources</a>
+                    </li>
+                    <li>
+                        <a target="new" href="http://www.fruitfly.org/">Berkeley Drosophila Genome Project</a>
+                    </li>
+                    <li>
+                        <a target="new" href="http://www.candidagenome.org/">CGD</a>: Candida Genome Database
+                    </li>
+                    <li>
+                        <a target="new" href="http://ecocyc.org/">EcoCyc:</a> Encyclopedia of <i>Escherichia coli</i> K-12 Genes and Metabolism
+                    </li>
+                    <li>
+                        <a target="new" href="http://www.tigr.org/tdb/e2k1/eha1/">Entamoeba histolytica Genome Project</a>
+                    </li>
+                    <li>
+                        <a target="new" href="http://flybase.bio.indiana.edu/">FlyBase</a>: A database of the <i>Drosophila</i> genome
+                    </li>
+                    <li>
+                        <a target="new" href="http://www.gramene.org/index.html">Gramene</a>: A resource for comparative grass genomics
+                    </li>
+                    <li>
+                        <a target="new" href="http://www.pathogenportal.org/">Pathogen Portal</a>
+                    </li>
+                    <li>
+                       Human Genome:
+                       <a target="new" href="http://en.wikipedia.org/wiki/Human_Genome_Project">Summary on wikipedia</a>&nbsp;|
+                        <a target="new" href="http://www.genome.gov/">NIH National Human Genome Research Institute</a>&nbsp;|
+                       <a target="new" href="http://www.ensembl.org/Homo_sapiens/Info/Index">ensembl Genome Browser for Human</a>&nbsp;|
+                        <a target="new" href="http://www.ornl.gov/sci/techresources/Human_Genome/home.shtml">Human Genome Project Information</a>
+                    </li>
+                    <li>
+                        <a target="new" href="http://www.fgsc.net/Neurospora/neuros.htm">Neurospora genome resources</a>
+                    </li>
+                    <li>
+                        <a target="new" href="http://www.maizegdb.org/">MaizeGDB</a>: Maize genetics and genomics database
+                    </li>
+                    <li>
+                        <a target="new" href="http://www.informatics.jax.org/">MGI</a>: Mouse Genome Informatics
+                    </li>
+                    <li>
+                        <a target="new" href="http://plasmodb.org/plasmo/">PlasmoDB</a>: The <i>Plasmodium</i> genome resource
+                    </li>
+                    <li>
+                        <a target="new" href="http://rgd.mcw.edu/">RGD</a>: Rat Genome Database
+                    </li>
+                    <li>
+                        <a target="new" href="http://www.yeastgenome.org/">SGD</a>: Saccharomyces Genome Database
+                    </li>
+                    <li>
+                        <a target="new" href="http://old.genedb.org/genedb/pombe/">S. pombe</a>: <i>Schizosaccharomyces pombe</i> GeneDB
+                    </li>
+                    <li>
+                        <a target="new" href="http://www.arabidopsis.org/">TAIR</a>: The Arabidopsis Information Resource
+                    </li>
+                    <li>
+                        <a target="new" href="http://www.ciliate.org/">TGD</a>: Tetrahymena Genome Database
+                    </li>
+                    <li>
+                        <a target="new" href="http://www.wormbase.org/">WormBase</a>: The biology and genome of <i>C. elegans</i> and some related nematodes
+                    </li>
+                    <li>
+                        <a target="new" href="http://www.xenbase.org/">Xenbase</a>: A Xenopus laevis and tropicalis web resource
+                    </li>
+                    <li>
+                        <a target="new" href="http://zfin.org/cgi-bin/webdriver?MIval=aa-ZDB_home.apg">ZFIN</a>: The Zebrafish Information Network
+                    </li>
+                    <li style="list-style: none">
+                        <br>
+                    </li>
+
+                </ul>
+
+                    <p align="center">
+                        <a ng-click="gotoAnchor('top')" href=""><small>Top</small></a>
+                    </p>
+                
+                <hr>
+                <br>
+
+                <p>
+                    <a name="seq" id="seq"></a><h2>Sequencing Center and Bioinformatics Institutes</h2>
+                </p>
+                <ul>
+                     <li>
+        			  <a target="new" href="http://www.ebi.ac.uk/">European Bioinformatics Institute</a>
+        			 </li>
+
+
+                     <li>
+        			  <a target="new" href="http://www.embl.org/">European Molecular Biology Laboratory (EMBL)</a> which also has an extensive <a target="new" href="ftp://ftp.embl-heidelberg.de/">ftp site</a>
+        			 </li>
+
+                    <li>
+        		      <a target="new" href="http://www.jcvi.org/cms/research/groups/">J. Craig Venter Institute (formerly TIGR) Genome Projects</a>
+        		    </li>
+
+                    <li>
+        			  <a target="new" href="http://www.jgi.doe.gov/">Joint Genome Institute</a>
+        			</li>
+                    <li>
+        			   <a target="new" href="http://www.ncbi.nlm.nih.gov/">National Center for Biotechnology Information</a>
+        			</li>
+
+                      <li> <a target="new" href="http://genome.wustl.edu/">Washington University Genome Sequencing Center</a>
+                      </li>
+
+                    <li>
+                        <a target="new" href="http://www.sanger.ac.uk/Projects/">The Wellcome Trust Sanger Institute Sequencing Genomics Projects</a>
+                    </li>
+                </ul>
+
+                    <p align="center">
+                        <a ng-click="gotoAnchor('top')" href=""><small>Top</small></a>
+                    </p>
+                
+                <hr>
+                <br>
+
+
+                <p>
+                    <a name ="lit" id = "lit"></a><h2></a>Scientific Literature Resources</h2>
+                </p>
+                <ul>
+                    <li>
+                        <a target="new" href="http://agricola.nal.usda.gov/">Agricola</a>: Provides citations to agricultural literature
+                    </li>
+                    <li>
+                        <a target="new" href="http://www.nature.com/omics">Nature's genome gateway</a>: A comprehensive web resource devoted to genomics
+                    </li>
+                    <li>
+                        <a target="new" href="http://www.ncbi.nlm.nih.gov/sites/entrez?db=pubmed">PubMed</a>: Provides access to MEDLINE citations back to the mid-1960's
+                    </li>
+                    <li>
+                        <a target="new" href="http://stke.sciencemag.org">Science's Signal Transduction Knowledge Environment (STKE)</a>: (free registration required)
+                    </li>
+                </ul>
+
+                    <p align="center">
+                        <a ng-click="gotoAnchor('top')" href=""><small>Top</small></a>
+                    </p>
+                
+                <hr>
+                <br>
+
+
+                <p>
+                    <a name="deliv" id="deliv"></a><h2>Services, Article Research and Delivery</h2>
+                </p>
+                <ul>
+                    <li>
+                        <a target="new" href="http://www.biomedcentral.com/">BioMed Central</a>
+                    </li><!--
+                <li><a target="new" href="http://www.bmn.com/">BioMedNet</a></li>
+                -->
+                    <li>
+                        <a target="new" href="http://www.csiro.au/">CSIRO</a>
+                    </li>
+                    <li>
+                        <a target="new" href="http://www.ebscohost.com/">EBSCO Information services</a>
+                    </li>
+                    <li>
+                        <a target="new" href="http://highwire.stanford.edu/librarians/">HighWire</a>
+                    </li>
+                    <li>
+                        <a target="new" href="http://www4.infotrieve.com/">Infotrieve</a>
+                    </li>
+                    <li>
+                        <a target="new" href="http://www.ingentaselect.com/">IngentaSelect</a>
+                    </li>
+                    <li>
+                        <a target="new" href="http://www.ovid.com/site/index.jsp">Ovid</a>
+                    </li>
+                     <li>
+        			   <a target="new" href="http://www.plos.org/">Public Library of Science (PLoS)</a>
+                    </li>
+                    <li>
+                        <a target="new" href="http://www.proquest.com/">ProQuest</a>
+                    </li>
+                    <li>
+                        <a target="new" href="http://www.sciencedirect.com/">ScienceDirect</a>
+                    </li>
+                </ul>
+
+                    <p align="center">
+                        <a ng-click="gotoAnchor('top')" href=""><small>Top</small></a>
+                    </p>
+                
+                <hr>
+                <br>
+
+
+                <p>
+                    <a name="vendors" id="vendors"></a><h2>Vendors, Commercial</h2>
+                </p>
+                <ul>
+                    <li>
+                        <a href="http://www.bdbiosciences.com" target="new">Becton Dickinson</a>
+                    </li>
+                    <li>
+                        <a href="http://www.fishersci.com" target="new">Fisher Scientific</a>
+                    </li>
+                    <li>
+                        <a href="http://www.formedium.com" target="new">Formedium</a>
+                    </li>
+                    <li>
+                        <a href="http://www.neb.com/nebecomm/default.asp" target="new">New England Biolabs</a>
+                    </li>
+                    <li>
+                        <a href="http://www.roche.com/products/product-list.htm?type=divres&amp;id=Researchers" target="new">Roche</a>
+                    </li>
+                    <li>
+                        <a href="http://www.stratagene.com" target="new">Stratagene</a>
+                    </li>
+                </ul>
+                <p>
+                    <small><i>(*) These links are solely for the convenience of the user community and the list is not exhaustive or exclusive.</i></small>
+                </p>
+
+
+                    <p align="center">
+                        <a ng-click="gotoAnchor('top')" href=""><small>Top</small></a>
+                    </p>
+                
+                <hr>
+                <br>
+
+        <!--
+                <p>
+                    <h2><a name="links" id="links"></a>Other Links</h2>
+                </p>
+                <ul>
+                    <li>
+                        <a target="new" href="http://xylian.igh.cnrs.fr/fast-search.html">Biologists Control Panel</a>
+                    </li>
+                <li><a target="new" href="http://compbio.ornl.gov/gac/links.shtml">Computational Biology at ORNL: Analysis and Annotation Tools, Services, and Resources</a></li>
+
+                         <a target="new" href="http://zlab.bu.edu/zlab/links.shtml">Zlab Bioinformatics Resources</a>
+                    </li>
+                </ul>
+                 -->
+                <p align="center">
+                    <i>Last updated: March 4, 2010</i><br>
+                </p>
+
+        </div> <!-- End of col-sm-8, i.e., the central column -->
+        <div class="col-sm-3 col-xs-1"></div>
+    </div> <!-- row  -->
+</div> <!-- container -->
+                    
