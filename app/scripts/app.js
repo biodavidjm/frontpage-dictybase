@@ -108,10 +108,13 @@ angular
         templateUrl: 'views/explore/tutorial/index.html'     
       })
       .when('/explore/gallery', {
-        templateUrl: 'views/explore/Multimedia/index.html'     
+        templateUrl: 'views/explore/Multimedia/index.html'
       })
       .when('/explore/resources', {
-        templateUrl: 'views/explore/genome_resources.html'     
+        templateUrl: 'views/explore/genome_resources.html'    
+      })
+      .when('/explore/statistics', {
+        templateUrl: 'views/explore/genome_statistics.html'
       })
       // RESEARCH
       .when('/research', {

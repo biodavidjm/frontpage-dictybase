@@ -20,10 +20,11 @@
             "Explore": "explore"
         }, 
         "submain": {
-            "Learn About Dicty":          "explore/learn",
-            "Teaching Protocols":         "explore/teach",
-            "Gallery of Pictures/Videos": "explore/gallery",
-            "Genome Resources":     "explore/resources"
+            "Learn About Dicty":            "explore/learn",
+            "Teaching Protocols":           "explore/teach",
+            "Gallery of Pictures/Videos":   "explore/gallery",
+            "Genome Resources":             "explore/resources",
+            "Genome Statistics":            "explore/statistics"
         }
     },
     {
