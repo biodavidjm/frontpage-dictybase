@@ -31,7 +31,7 @@ angular
   }])
   .controller('AnchorController', ['$anchorScroll', '$location', '$scope', function ($anchorScroll, $location, $scope) 
   {
-    $scope.gotoAnchor = function(x) 
+    $scope.gotoAnchor = function(x)
     {
         var newHash = x;
         if ($location.hash() !== newHash) 
@@ -85,6 +85,12 @@ angular
       .when('/meetings', {
         templateUrl: 'views/front-meetings-all.html'      
       })
+      .when('/tools', {
+        templateUrl: 'views/tools.html'      
+      })
+      .when('/genomes', {
+        templateUrl: 'templates/genome-card.html'      
+      })
       // EXPLORE
       .when('/explore', {
         templateUrl: 'views/explore/explore.html'      
@@ -103,6 +109,9 @@ angular
       })
       .when('/explore/gallery', {
         templateUrl: 'views/explore/Multimedia/index.html'     
+      })
+      .when('/explore/resources', {
+        templateUrl: 'views/explore/genome_resources.html'     
       })
       // RESEARCH
       .when('/research', {

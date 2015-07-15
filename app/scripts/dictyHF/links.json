@@ -22,7 +22,8 @@
         "submain": {
             "Learn About Dicty":          "explore/learn",
             "Teaching Protocols":         "explore/teach",
-            "Gallery of Pictures/Videos": "explore/gallery"
+            "Gallery of Pictures/Videos": "explore/gallery",
+            "Genome Resources":     "explore/resources"
         }
     },
     {
