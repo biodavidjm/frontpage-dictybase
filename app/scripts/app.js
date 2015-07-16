@@ -110,6 +110,12 @@ angular
       .when('/explore/gallery', {
         templateUrl: 'views/explore/Multimedia/index.html'
       })
+      .when('/explore/gallery/:name*', { 
+        templateUrl:  function(address) {
+          return 'views/explore/Multimedia/'+address.name;
+          },
+          controller: 'MediaController'
+      })
       .when('/explore/resources', {
         templateUrl: 'views/explore/genome_resources.html'    
       })
