@@ -1,0 +1,418 @@
+<a name="top" id="top"></a>
+
+<div class="jumbotron research">
+    <div class="row">
+        <div class="techSubHeader"><h3>Explore</h3></div>
+        <h1>Multimedia</h1>
+        <img src="images/logoMultimedia1.png" width="15%">
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-2 col-xs-1"></div>
+        <div class="col-sm-8 col-xs-10">
+            <p><h4>
+                Collection of pictures and videos of different aspects of <i>Dictyostelium's</i> life cycle. 
+                If you have pictures or movies you would like to share, please send them to <a href="mailto:dictybase@northwestern.edu">dictyBase</a>.
+            </h4></p>
+        </div> <!-- col -->
+        <div class="col-sm-2 col-xs-1"></div>
+    </div> <!-- row -->
+
+    <br>
+
+    <div class="row">
+        <div class="col-sm-1 col-xs-1"></div>
+        <div class="col-sm-10 col-xs-10">
+
+            <!-- tab menu --> 
+            <section>
+                <div class="row" ng-init="tab = 1" align="center" >
+                    <!-- <div class="col-xs-1"></div> -->
+                    <div class="col-sm-4 col-xs-12" ng-class="{active:tab===1}">
+                        <a class="list-group-item list-group-item-info" href ng-click="tab = 1">Pictures</a>
+                    </div>
+                        
+                    <div class="col-sm-4 col-xs-12" ng-class="{active:tab===2}">
+                        <a class="list-group-item list-group-item-danger" href ng-click="tab = 2">Youtube</a>
+                    </div>
+                        
+                    <div class="col-sm-4 col-xs-12" ng-class="{active:tab===3}">
+                        <a class="list-group-item list-group-item-success" href ng-click="tab = 3">Videos</a>
+                    </div>
+                    <!-- <div class="col-xs-1"></div> -->
+                </div> <!-- internal row -->
+
+
+                <!-- tab content -->
+                <!-- TAB 1: pictures -->
+                <div ng-show="tab === 1">
+                    <div class="row">
+
+                        <div id="blueInfo" class="multiHeader">
+                            Pictures
+                        </div>
+
+                        <div class="multiSubheader">
+                            The pictures on the following pages were obtained with various techniques and of different stages in the <i>Dictyostelium</i> life cycle. A picture of the <i>D. discoideum</i> life cycles is also included. Click on each picture or title to go to its specific page with several fullsized images or movies.
+                        </div>
+
+                    </div> <!-- row -->
+
+                    <div class="row holdPictures">
+
+                        <!-- Thumbnail Unit -->
+                        <div class="col-lg-3 col-md-4 col-sm-4">
+                            <a href="" class="captionLink"> <!-- #/explore/gallery/LarryBlanton/index.html -->
+                                <div class="captionBox">
+                                    <div class="imgOnThumbnail">
+                                        <img class="imgThumb" src="views/explore/Multimedia/LarryBlanton/2culmBWtt.jpg">
+                                    </div>
+                                    <div class="captionName">
+                                        <h5>
+                                            Mark Grimson 
+                                            <br>
+                                            and 
+                                            <br>
+                                            Larry Blanton
+                                        </h5>
+                                    </div>
+                                    <!-- <p>Comment to the picture</p> -->
+                                </div>
+                            </a>
+                        </div> <!-- Thumbnail Unit -->
+
+                        <!-- Thumbnail Unit -->
+                        <div class="col-lg-3 col-md-4 col-sm-4">
+                            <a href="" class="captionLink"> <!-- #/explore/gallery/Bickford/Image.html -->
+                                <div class="captionBox">
+                                    <div class="imgOnThumbnail">
+                                        <img class="imgThumb" src="views/explore/Multimedia/Bickford/Image2tb.jpg">
+                                    </div>
+                                    <div class="captionName">
+                                        <h5>
+                                            Ross Bickford 
+                                            <br>
+                                            and 
+                                            <br>
+                                            Dave Knecht
+                                        </h5>
+                                    </div>
+                                    <!-- <p>Comment to the picture</p> -->
+                                </div>
+                            </a>
+                        </div> <!-- Thumbnail Unit -->
+
+                        <!-- Thumbnail Unit -->
+                        <div class="col-lg-3 col-md-4 col-sm-4">
+                            <a href="" class="captionLink"> <!-- #/explore/gallery/Graef/index.html -->
+                                <div class="captionBox">
+                                    <div class="imgOnThumbnail">
+                                        <img class="imgThumb" src="views/explore/Multimedia/Graef/Dicty_tubulin_centrosomS2.jpg">
+                                    </div>
+                                    <div class="captionName">
+                                        <h5>
+                                            Ralph Gräf
+                                            <br>
+                                            <br>
+                                        </h5>
+                                    </div>
+                                    <!-- <p>Comment to the picture</p> -->
+                                </div>
+                            </a>
+                        </div> <!-- Thumbnail Unit -->
+
+                        <div class="col-lg-3 col-md-4 col-sm-4">
+                            <a href="" class="captionLink"> <!-- #/explore/gallery/MacWilliams/index.html -->
+                                <div class="captionBox">
+                                    <div class="imgOnThumbnail">
+                                        <img class="imgThumb" src="views/explore/Multimedia/MacWilliams/young-culminateS1.jpg">
+                                    </div>
+                                    <div class="captionName">
+                                        <h5>
+                                            Harry MacWilliams
+                                            <br>
+                                            <br>
+                                        </h5>
+                                    </div>
+                                    <!-- <p>Comment to the picture</p> -->
+                                </div>
+                            </a>
+                        </div> <!-- Thumbnail Unit -->
+
+                        <!-- Thumbnail Unit -->
+                        <div class="col-lg-3 col-md-4 col-sm-4">
+                            <a href="" class="captionLink"> <!-- #/explore/gallery/DdLifeCycles/index.html -->
+                                <div class="captionBox">
+                                    <div class="imgOnThumbnail">
+                                        <img class="imgThumb" src="views/explore/Multimedia/DdLifeCycles/Dd-life-cycleT.jpg">
+                                    </div>
+                                    <div class="captionName">
+                                        <h5>
+                                            David Brown
+                                            <br>
+                                            &amp;
+                                            <br>
+                                            Joan Strassmann
+                                        </h5>
+                                    </div>
+                                    <!-- <p>Comment to the picture</p> -->
+                                </div>
+                            </a>
+                        </div> <!-- Thumbnail Unit -->
+                    
+                    </div> <!-- row   -->
+
+                    <br>
+
+
+                </div> <!-- tab 1 -->
+
+                <!-- TAB 2: YOUTUBE -->
+                <div ng-show="tab === 2">
+
+                    <div class="row">
+                        <div id="redDanger" class="multiHeader">
+                            DictyTube
+                        </div>
+                        
+                        <div class="multiSubheader">
+                            Collection of videos and interviews about <i>Dictyostelium</i> found on YouTube.
+                        </div>
+                    </div> <!-- row -->
+
+
+                    <div class="row holdPictures">
+
+                        <!-- Thumbnail Unit -->
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <a href="http://www.youtube.com/watch?v=bkVhLJLG7ug" class="captionLink" target="_blank">
+                                <div class="captionBox">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe src="https://www.youtube.com/embed/bkVhLJLG7ug" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="captionName">
+                                        <h5>
+                                            John Bonner
+                                        </h5>
+                                        <p>
+                                            slime mold movies
+                                        </p>
+                                    </div>
+                                    <!-- <p>Comment to the picture</p> -->
+                                </div>
+                            </a>
+                        </div> <!-- Thumbnail Unit -->
+
+
+                        <!-- Thumbnail Unit -->
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <a href="https://www.youtube.com/embed/5h8WOWEqP6o" class="captionLink" target="_blank">
+                                <div class="captionBox">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe src="https://www.youtube.com/embed/5h8WOWEqP6o" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="captionName">
+                                        <h5>
+                                            Jeremy Pickett-Heaps
+                                        </h5>
+                                        <p>
+                                            A Cellular Slime Mold
+                                        </p>
+                                    </div>
+                                    <!-- <p>Comment to the picture</p> -->
+                                </div>
+                            </a>
+                        </div> <!-- Thumbnail Unit -->
+
+                        <!-- Thumbnail Unit -->
+                        <div class="col-lg-4 col-md-4 col-sm-4">
+                            <a href="https://www.youtube.com/embed/duLTekqtkmk" class="captionLink" target="_blank">
+                                <div class="captionBox">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe src="https://www.youtube.com/embed/duLTekqtkmk" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="captionName">
+                                        <h5>
+                                            Gadi Shaulsky interview
+                                        </h5>
+                                        <p>
+                                            Cheater-resistance is not futile
+                                        </p>
+                                    </div>
+                                    <!-- <p>Comment to the picture</p> -->
+                                </div>
+                            </a>
+                        </div> <!-- Thumbnail Unit -->
+
+                    </div> <!-- row -->
+
+                    <br>
+
+                </div> <!-- tab 2 -->
+
+
+                <!-- TAB 3: VIDEOS -->
+                <div ng-show="tab === 3">
+
+                    <div class="row">
+                        <div id="greenSuccess" class="multiHeader">
+                            Videos
+                        </div>
+                        <div class="multiSubheader">
+                            The videos on the following pages show a variety of biological processes occuring in <i>Dictyostelium</i>.
+                        </div>
+                    </div> <!-- row -->
+
+
+                   <div class="row holdPictures">
+
+                        <!-- Thumbnail Unit -->
+                        <div class="col-lg-3 col-md-4 col-sm-4">
+                            <a href="" class="captionLink"> <!-- #/explore/gallery/cytokinesis/cytokinesis.htm -->
+                                <div class="captionBox">
+                                    <div class="imgOnThumbnail">
+                                        <img class="imgThumb" src="views/explore/Multimedia/cytokinesis/nullatt.png">
+                                    </div>
+                                    <div class="captionName">
+                                        <h5>
+                                            Cytokinesis
+                                        </h5>
+                                    </div>
+                                    <!-- <p>Comment to the picture</p> -->
+                                </div>
+                            </a>
+                        </div> <!-- Thumbnail Unit -->
+
+                        <!-- Thumbnail Unit -->
+                        <div class="col-lg-3 col-md-4 col-sm-4">
+                            <a href="" class="captionLink"> <!-- #/explore/gallery/cytokinesis_defects/cytokinesis_defects.htm -->
+                                <div class="captionBox">
+                                    <div class="imgOnThumbnail">
+                                        <img class="imgThumb" src="views/explore/Multimedia/cytokinesis_defects/neujahr2.png">
+                                    </div>
+                                    <div class="captionName">
+                                        <h5>
+                                            Cytokinesis Defects
+                                        </h5>
+                                    </div>
+                                    <!-- <p>Comment to the picture</p> -->
+                                </div>
+                            </a>
+                        </div> <!-- Thumbnail Unit -->
+
+
+                        <!-- Thumbnail Unit -->
+                        <div class="col-lg-3 col-md-4 col-sm-4">
+                            <a href="" class="captionLink"> <!-- #/explore/gallery/chemotaxis/Chemotaxis.htm -->
+                                <div class="captionBox">
+                                    <div class="imgOnThumbnail">
+                                        <img class="imgThumb" src="views/explore/Multimedia/chemotaxis/ColorBeta2.png">
+                                    </div>
+                                    <div class="captionName">
+                                        <h5>
+                                            Chemotaxis
+                                        </h5>
+                                    </div>
+                                    <!-- <p>Comment to the picture</p> -->
+                                </div>
+                            </a>
+                        </div> <!-- Thumbnail Unit -->
+
+                        <!-- Thumbnail Unit -->
+                        <div class="col-lg-3 col-md-4 col-sm-4">
+                            <a href="" class="captionLink"> <!-- #/explore/gallery/development/development.html -->
+                                <div class="captionBox">
+                                    <div class="imgOnThumbnail">
+                                        <img class="imgThumb" src="views/explore/Multimedia/development/culm.png">
+                                    </div>
+                                    <div class="captionName">
+                                        <h5>
+                                            Development
+                                        </h5>
+                                    </div>
+                                    <!-- <p>Comment to the picture</p> -->
+                                </div>
+                            </a>
+                        </div> <!-- Thumbnail Unit -->
+
+                        <!-- Thumbnail Unit -->
+                        <div class="col-lg-3 col-md-4 col-sm-4">
+                            <a href="" class="captionLink"> <!-- #/explore/gallery/morphogenesis/morphogenetic_movements.htm -->
+                                <div class="captionBox">
+                                    <div class="imgOnThumbnail">
+                                        <img class="imgThumb" src="views/explore/Multimedia/morphogenesis/weijer2.png">
+                                    </div>
+                                    <div class="captionName">
+                                        <h5>
+                                            Morphogenesis
+                                        </h5>
+                                    </div>
+                                    <!-- <p>Comment to the picture</p> -->
+                                </div>
+                            </a>
+                        </div> <!-- Thumbnail Unit -->
+
+                        <!-- Thumbnail Unit -->
+                        <div class="col-lg-3 col-md-4 col-sm-4">
+                            <a href="" class="captionLink"> <!-- #/explore/gallery/motility/motility.htm -->
+                                <div class="captionBox">
+                                    <div class="imgOnThumbnail">
+                                        <img class="imgThumb" src="views/explore/Multimedia/motility/gerisch1.png">
+                                    </div>
+                                    <div class="captionName">
+                                        <h5>
+                                            Motility
+                                        </h5>
+                                    </div>
+                                    <!-- <p>Comment to the picture</p> -->
+                                </div>
+                            </a>
+                        </div> <!-- Thumbnail Unit -->
+
+                        <!-- Thumbnail Unit -->
+                        <div class="col-lg-3 col-md-4 col-sm-4">
+                            <a href="" class="captionLink"> <!-- #/explore/gallery/phagocytosis/phagocytosis.htm -->
+                                <div class="captionBox">
+                                    <div class="imgOnThumbnail">
+                                        <img class="imgThumb" src="views/explore/Multimedia/phagocytosis/new_pa4.jpg">
+                                    </div>
+                                    <div class="captionName">
+                                        <h5>
+                                            Phagocytosis
+                                        </h5>
+                                    </div>
+                                    <!-- <p>Comment to the picture</p> -->
+                                </div>
+                            </a>
+                        </div> <!-- Thumbnail Unit -->
+
+                        <!-- Thumbnail Unit -->
+                        <div class="col-lg-3 col-md-4 col-sm-4">
+                            <a href="" class="captionLink"> <!-- http://dictybase.org/phenotype/movies/ -->
+                                <div class="captionBox">
+                                    <div class="imgOnThumbnail">
+                                        <img class="imgThumb" src="views/explore/Multimedia/HTP_princeton.png">
+                                    </div>
+                                    <div class="captionName">
+                                        <h5>
+                                            Database, Princeton
+                                        </h5>
+                                    </div>
+                                    <!-- <p>Comment to the picture</p> -->
+                                </div>
+                            </a>
+                        </div> <!-- Thumbnail Unit -->
+
+                    </div> <!-- row -->
+
+
+                </div> <!-- tab 3 -->
+
+            </section>    
+
+        </div> <!-- end of column -->
+        <div class="col-sm-1 col-xs-1"></div>
+    </div>  <!-- row -->
+</div> <!-- container -->

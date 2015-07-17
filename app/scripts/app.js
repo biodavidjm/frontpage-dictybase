@@ -31,7 +31,7 @@ angular
   }])
   .controller('AnchorController', ['$anchorScroll', '$location', '$scope', function ($anchorScroll, $location, $scope) 
   {
-    $scope.gotoAnchor = function(x) 
+    $scope.gotoAnchor = function(x)
     {
         var newHash = x;
         if ($location.hash() !== newHash) 
@@ -83,22 +83,60 @@ angular
         templateUrl: 'views/front-papers-all.html'
       })
       .when('/meetings', {
-        templateUrl: 'views/front-meetings-all.html'      
+        templateUrl: 'views/front-meetings-all.html'
       })
-      .when('/research', {
-        templateUrl: 'views/research.html'      
+      .when('/tools', {
+        templateUrl: 'views/tools.html'
       })
+      .when('/genomes', {
+        templateUrl: 'views/genomes.html'
+      })
+      .when('/community', {
+        templateUrl: 'views/community.html'
+      })
+      .when('/dsc', {
+        templateUrl: 'views/dsc.html'
+      })
+      // EXPLORE
       .when('/explore', {
-        templateUrl: 'views/explore/explore.html'      
+        templateUrl: 'views/explore/explore.html'
+      })
+      .when('/explore/teach', {
+        templateUrl: 'views/explore/teach/index.html'
       })
       .when('/explore/teach/:name*', { 
         templateUrl:  function(address) {
           return 'views/explore/teach/'+address.name;
           },
-          controller: 'MediaController' 
+          controller: 'MediaController'
+      })
+      .when('/explore/learn', {
+        templateUrl: 'views/explore/tutorial/index.html'     
+      })
+      .when('/explore/gallery', {
+        templateUrl: 'views/explore/Multimedia/index.html'
+      })
+      .when('/explore/gallery/:name*', { 
+        templateUrl:  function(address) {
+          return 'views/explore/Multimedia/'+address.name;
+          },
+          controller: 'MediaController'
+      })
+      .when('/explore/resources', {
+        templateUrl: 'views/explore/genome_resources.html'    
+      })
+      .when('/explore/statistics', {
+        templateUrl: 'views/explore/genome_statistics.html'
+      })
+      .when('/explore/links', {
+        templateUrl: 'views/explore/other_links.html'
+      })
+      // RESEARCH
+      .when('/research', {
+        templateUrl: 'views/research.html'
       })
       .when('/tools/jbrowse', {
-        templateUrl: 'views/jbrowse.html'      
+        templateUrl: 'views/jbrowse.html'
       })
       .when('/research/techniques', {
         templateUrl: 'views/techniques/index.html'
@@ -109,7 +147,7 @@ angular
           },
           controller: 'MediaController' 
       })
-      .when('/research/techniques/molbio/:name', { 
+      .when('/research/techniques/molbio/:name', {
         templateUrl:  function(address) {
           return 'views/techniques/molbio/'+address.name;
           },
