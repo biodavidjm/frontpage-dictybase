@@ -89,7 +89,13 @@ angular
         templateUrl: 'views/tools.html'
       })
       .when('/genomes', {
-        templateUrl: 'templates/genome-card.html'
+        templateUrl: 'views/genomes.html'
+      })
+      .when('/community', {
+        templateUrl: 'views/community.html'
+      })
+      .when('/dsc', {
+        templateUrl: 'views/dsc.html'
       })
       // EXPLORE
       .when('/explore', {
