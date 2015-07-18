@@ -125,6 +125,9 @@ angular
       .when('/explore/resources', {
         templateUrl: 'views/explore/genome_resources.html'    
       })
+      .when('/explore/resources/1', {
+        templateUrl: 'views/explore/genomeseq.html'    
+      })
       .when('/explore/statistics', {
         templateUrl: 'views/explore/genome_statistics.html'
       })
