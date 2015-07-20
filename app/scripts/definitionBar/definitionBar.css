@@ -1,5 +1,9 @@
 /*STYLES FOR THE <definition-bar> directive*/
 
+.definitionBox {
+  margin-top: 5px;
+}
+
 .definitionLink {
   text-align: right;
   
