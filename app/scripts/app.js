@@ -139,59 +139,59 @@ angular
       })
       // RESEARCH
       .when('/research', {
-        templateUrl: 'views/research.html'
+        templateUrl: 'views/research/research.html'
       })
       .when('/tools/jbrowse', {
         templateUrl: 'views/jbrowse.html'
       })
       .when('/research/techniques', {
-        templateUrl: 'views/techniques/index.html'
+        templateUrl: 'views/research/techniques/index.html'
       })
       .when('/research/techniques/media/:name', { 
         templateUrl:  function(address) {
-          return 'views/techniques/media/'+address.name;
+          return 'views/research/techniques/media/'+address.name;
           },
           controller: 'MediaController' 
       })
       .when('/research/techniques/molbio/:name', {
         templateUrl:  function(address) {
-          return 'views/techniques/molbio/'+address.name;
+          return 'views/research/techniques/molbio/'+address.name;
           },
           controller: 'MediaController' 
       })
       .when('/research/techniques/transformation/:name*', { 
         templateUrl:  function(address) {
-          return 'views/techniques/transformation/'+address.name;
+          return 'views/research/techniques/transformation/'+address.name;
           },
           controller: 'MediaController' 
       })
       .when('/research/techniques/geneex/:name*', { 
         templateUrl:  function(address) {
-          return 'views/techniques/geneex/'+address.name;
+          return 'views/research/techniques/geneex/'+address.name;
           },
           controller: 'MediaController' 
       })
       .when('/research/techniques/microscopy/:name*', { 
         templateUrl:  function(address) {
-          return 'views/techniques/microscopy/'+address.name;
+          return 'views/research/techniques/microscopy/'+address.name;
           },
           controller: 'MediaController' 
       })
       .when('/research/techniques/biochem/:name*', { 
         templateUrl:  function(address) {
-          return 'views/techniques/biochem/'+address.name;
+          return 'views/research/techniques/biochem/'+address.name;
           }
           // controller: 'MediaController' 
       })
       .when('/research/techniques/cytoskeleton/:name*', { 
         templateUrl:  function(address) {
-          return 'views/techniques/cytoskeleton/'+address.name;
+          return 'views/research/techniques/cytoskeleton/'+address.name;
           },
           controller: 'MediaController' 
       })
       .when('/research/techniques/chemotaxis/:name*', { 
         templateUrl:  function(address) {
-          return 'views/techniques/chemotaxis/'+address.name;
+          return 'views/research/techniques/chemotaxis/'+address.name;
           },
           controller: 'MediaController' 
       })
