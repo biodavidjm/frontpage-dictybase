@@ -77,7 +77,7 @@ angular
         templateUrl: 'views/citeus.html'
       })
       .when('/news', {
-        templateUrl: 'views/front-news-all.html' 
+        templateUrl: 'views/front-news-all.html'
       })
       .when('/papers', {
         templateUrl: 'views/front-papers-all.html'
@@ -104,14 +104,14 @@ angular
       .when('/explore/teach', {
         templateUrl: 'views/explore/teach/index.html'
       })
-      .when('/explore/teach/:name*', { 
+      .when('/explore/teach/:name*', {
         templateUrl:  function(address) {
           return 'views/explore/teach/'+address.name;
           },
           controller: 'MediaController'
       })
       .when('/explore/learn', {
-        templateUrl: 'views/explore/tutorial/index.html'     
+        templateUrl: 'views/explore/tutorial/index.html'
       })
       .when('/explore/gallery', {
         templateUrl: 'views/explore/Multimedia/index.html'
@@ -121,6 +121,9 @@ angular
           return 'views/explore/Multimedia/'+address.name;
           },
           controller: 'MediaController'
+      })
+      .when('/explore/art', {
+        templateUrl: 'views/explore/art/index.html'
       })
       .when('/explore/resources', {
         templateUrl: 'views/explore/genome_resources.html'    

@@ -58,8 +58,7 @@ module.exports = function (grunt) {
         files: [
           '<%= yeoman.app %>/**/*.html',
           '<%= yeoman.app %>/**/*.json',
-          '<%= yeoman.app %>/scripts/**/*.html',
-          '<%= yeoman.app %>/scripts/**/*.css',
+          '<%= yeoman.app %>/scripts/**/*.*',
           '.tmp/styles/**/*.css',
           '<%= yeoman.app %>/images/**/*.{png,jpg,jpeg,gif,webp,svg}'
         ]
@@ -176,6 +175,7 @@ module.exports = function (grunt) {
       dist: {
         src: [
           '<%= yeoman.dist %>/scripts/**/*.js',
+          '<%= yeoman.dist %>/scripts/**/*.css',
           '<%= yeoman.dist %>/styles/**/*.css',
           // DJM: preventing to rename the images:
           // '<%= yeoman.dist %>/images/{,*/}*.{png,jpg,jpeg,gif,webp,svg}',

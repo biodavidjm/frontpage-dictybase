@@ -64,6 +64,11 @@ h3 {
   margin-bottom: 10px;
 }
 
+.techSubHeaderArt {
+  color: white;
+}
+
+
 .researchBox {
 	background-color: #F2F2F2;
 	border: 3px solid black;
@@ -232,6 +237,93 @@ a.captionLink:visited {
 a.captionLink:hover {
   color:inherit;
   text-decoration:none;
+}
+
+.artHeaderHouse {
+  background-color: #0489B1;
+  color:white;
+  text-align: center;
+}
+
+.jumbotron.artJumbo {
+  margin-bottom: 0px;
+  background-color: #0489B1;
+  color:white;
+}
+
+.artTitle {
+  
+}
+
+.artLogo {
+  padding: 0px 0px 20px 0px;
+}
+
+.artSubheader {
+  padding: 10px 0px 50px 0px;
+  color: white;
+  text-align: center;
+}
+
+.artMenu {
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+  background-color: black;
+  font-size: 12px;
+  color: white;
+}
+
+.artHomo {
+  padding: 30px 0px 30px 0px;
+  text-align: center;
+  background-color: #C63D0F;
+  color: #3B3738;
+}
+
+.artHomoText {
+  text-align: left;
+  padding: 30px 0px 30px 0px;
+  font-size: 16px;
+}
+
+.artPoem {
+  padding: 30px 0px 30px 0px;
+  text-align: center;
+  background-color: #886A08;
+  color: #E1F5A9;
+}
+
+.artWork {
+  padding: 20px 0px 30px 0px;
+  text-align: center;
+  background-color: #4B610B;
+  color: #FFF056;
+}
+
+.artWorkText {
+  color:#DFE2DB;
+  padding: 10px 0px 30px 0px;
+}
+
+.artWorkGallery {
+  padding: 20px 0px 30px 0px;
+}
+
+.geographic {
+  padding: 30px 0px 50px 0px;
+  text-align: center;
+  background-color: #DF3D82;
+  color: #191919;  
+}
+
+#imgGeographic {
+  border: 10px solid black;
+}
+
+.artAltruistic {
+  padding: 20px 0px 50px 0px;
+  background-color: #D0A9F5;
+  text-align: center;
 }
 
 
