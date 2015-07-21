@@ -36,7 +36,8 @@
         "submain": {
             "Techniques":               "research/techniques",
             "Anatomy Ontology":         "research/ontology",
-            "Codon Bias Table":         "research/codon"
+            "Codon Bias Table":         "research/codon",
+            "Nomenclature Guidelines":  "research/nomenclature"
         }
     },
     {

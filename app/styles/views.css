@@ -134,6 +134,8 @@ h3 {
   color: white;
   padding: 10px 20px 10px 20px;
   border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .blackBack {
@@ -146,6 +148,10 @@ h3 {
 
 #blueInfo {
   color: #CEECF5;
+}
+
+#red{
+  color:red;
 }
 
 #redDanger {
