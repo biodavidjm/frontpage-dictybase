@@ -126,10 +126,10 @@ angular
         templateUrl: 'views/explore/art/index.html'
       })
       .when('/explore/resources', {
-        templateUrl: 'views/explore/genome_resources.html'    
+        templateUrl: 'views/explore/genome_resources.html'
       })
       .when('/explore/resources/1', {
-        templateUrl: 'views/explore/genomeseq.html'    
+        templateUrl: 'views/explore/genomeseq.html'
       })
       .when('/explore/statistics', {
         templateUrl: 'views/explore/genome_statistics.html'
@@ -144,22 +144,25 @@ angular
       .when('/tools/jbrowse', {
         templateUrl: 'views/jbrowse.html'
       })
+      .when('/research/ontology', {
+        templateUrl: 'views/research/dicty_anatomy_ontology.html'
+      })
       .when('/research/techniques', {
         templateUrl: 'views/research/techniques/index.html'
       })
-      .when('/research/techniques/media/:name', { 
+      .when('/research/techniques/media/:name', {
         templateUrl:  function(address) {
           return 'views/research/techniques/media/'+address.name;
           },
-          controller: 'MediaController' 
+          controller: 'MediaController'
       })
       .when('/research/techniques/molbio/:name', {
         templateUrl:  function(address) {
           return 'views/research/techniques/molbio/'+address.name;
           },
-          controller: 'MediaController' 
+          controller: 'MediaController'
       })
-      .when('/research/techniques/transformation/:name*', { 
+      .when('/research/techniques/transformation/:name*', {
         templateUrl:  function(address) {
           return 'views/research/techniques/transformation/'+address.name;
           },

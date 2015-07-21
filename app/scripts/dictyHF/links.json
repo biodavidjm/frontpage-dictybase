@@ -34,7 +34,8 @@
             "Research": "research"
         }, 
         "submain": {
-            "Techniques":               "research/techniques"
+            "Techniques":               "research/techniques",
+            "Anatomy Ontology":         "research/ontology"
         }
     },
     {

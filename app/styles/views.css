@@ -14,8 +14,6 @@ h3 {
   margin: 2px 2px 2px 2px;
 }
 
-
-
 .viewHouse{
 	min-height: 600px;
 }
@@ -43,6 +41,14 @@ h3 {
 
 /*RESEARCH*/
 
+.shortcuts {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  padding:10px 5px 10px 5px;
+  margin: 30px 0px 30px 0px;
+  text-align: right;
+}
+
 .fontlarger {
   font-size: 16px;
 }
@@ -50,8 +56,9 @@ h3 {
 .jumbotron.research {
 	margin-top: 5px;
 	background-color: white;
-  padding: 10px 5px 20px 5px;
+  padding: 10px 5px 10px 5px;
   margin: 0px 0px 0px 0px;
+  text-align: center;
 }
 
 .techniquesHead {
@@ -101,6 +108,13 @@ h3 {
 .blue {
   color: #086A87;
   font-weight: bold;
+}
+
+.blueBox {
+  background-color: #15317E;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
 }
 
 .blackBack {
