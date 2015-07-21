@@ -147,6 +147,9 @@ angular
       .when('/research/ontology', {
         templateUrl: 'views/research/dicty_anatomy_ontology.html'
       })
+      .when('/research/codon', {
+        templateUrl: 'views/research/codon.html'
+      })
       .when('/research/techniques', {
         templateUrl: 'views/research/techniques/index.html'
       })

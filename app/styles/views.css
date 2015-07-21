@@ -38,6 +38,25 @@ h3 {
   padding-bottom: 10px;
 }
 
+.courier {
+  font-family: courier;
+  font-size: 14px;
+}
+
+@media(max-width:767px){
+
+  .courier {
+    font-size: 10px;
+  }
+
+} /*End of @media(max-width:767px)*/
+
+.table-nonfluid {
+   width: auto;
+   table-layout: fixed;
+}
+
+
 
 /*RESEARCH*/
 
