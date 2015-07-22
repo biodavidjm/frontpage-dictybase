@@ -150,6 +150,9 @@ angular
       .when('/research/codon', {
         templateUrl: 'views/research/codon.html'
       })
+      .when('/research/phenotyping', {
+        templateUrl: 'views/research/phenotyping.html'
+      })
       .when('/research/nomenclature', {
         templateUrl: 'views/research/nomenclature_guidelines.html'
       })
