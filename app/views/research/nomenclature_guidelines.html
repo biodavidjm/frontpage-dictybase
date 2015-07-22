@@ -4,7 +4,7 @@
     <div class="jumbotron research">
         <div class="row">
             <div class="techSubHeader"><h3>Research</h3></div>
-            <h1><strong>Nomenclature <br>Guidelines</strong></h1>
+            <h1>Nomenclature <br>Guidelines</h1>
         </div>
     </div>
 
@@ -265,6 +265,7 @@
                 <li style="list-style: none">Strains must have an unambiguous name, consisting of 2 or 3 capital letters plus a unique serial number (e.g. HM1 or HTY217). Labs or workers should always use the same capital prefixes or small group of prefixes. The prefixes are assigned by a clearinghouse upon request. See <a href="" ng-click="scrollTo('appen1')">Appendix 1</a> for a current list of assigned strain prefixes. In the past all lab designations started with either H (for haploid) or D (for diploid) and many of these strains prefixes are still in use.In cases where no systematic name is provided, dictyBase will automatically assign a systematic strain name consisting of the letters DBS (<b>d</b>icty<b>B</b>ase <b>S</b>train) followed by seven digits.
                 </li>
             </ul>
+            <br>
             <ul>
                 <li>
                     <a name="strain_desc" id="strain_desc"></a>
@@ -281,28 +282,58 @@
                             </td>
                         </tr>
                     </table>
+                    <br>
                     <h5>
-                        where
+                        where the symbols represent:
                     </h5>
 
-                    <b>-</b> &nbsp;&nbsp;&nbsp;represents an endogenous mutant allele, typically a null or a functional null mutant<br>
-                    <b>/</b> &nbsp;&nbsp;&nbsp;represents a compound mutant<br>
-                    <b>[ ]</b> &nbsp;represents the promoter gene<br>
-                    <b>( )</b> &nbsp;indicates a substitution and/or a truncation<br>
-                    <b>:</b> &nbsp;&nbsp;&nbsp;represents a fusion between two genes<br>
+                    <table class="table table-condensed table-bordered">
+                        <col width="10%">
+                        <col width="90%">
+                        
+                        <tr>
+                             <td> <b> - </b>   </td> 
+                             <td> endogenous mutant allele (<small>typically a null or a functional null mutant</small>) </td>
+                        </tr>
+                        <tr>
+                             <td> /   </td>
+                             <td>compound mutant </td>
+                        </tr>
+                        <tr>
+                             <td> [ ] </td>
+                             <td>promoter gene </td>
+                        </tr>
+                        <tr>
+                             <td> ( ) </td>
+                             <td>indicates a substitution and/or a truncation </td>
+                        </tr>
+                        <tr>
+                             <td> :   </td>
+                             <td>represents a fusion between two genes </td>
+                        </tr>
+
+                    </table>
+
 
                     <h5>
                         Additional annotations may appear in brackets as follows:
                     </h5>
 
-                    <b>[unk]</b> represents a gene fusion to an unknown promoter<br>
-                    <b>[OE]</b> designates an overexpressor under the control of an unspecified promoter<br>
-                    <b>[KD]</b> designates an knockdown strain when the method is unknown<br>
-                    <b>[AS]</b> designates an antisense strain<br>
-                    <b>[RNAi]</b> designates an interference RNA strain<br>
-                    <b>[inviable]</b> precedes strains described as inviable<br>
+                    <table class="table table-condensed table-bordered">
+                        <col width="10%">
+                        <col width="90%">
+                        <tr><td><b>[unk]</b></td><td> gene fusion to an unknown promoter</td></tr>
+                        <tr><td><b>[OE]</b></td><td> overexpressor under the control of an unspecified promoter</td></tr>
+                        <tr><td><b>[KD]</b></td><td> knockdown strain when the method is unknown</td></tr>
+                        <tr><td><b>[AS]</b></td><td> antisense strain</td></tr>
+                        <tr><td><b>[RNAi]</b></td><td> interference RNA strain</td></tr>
+                        <tr><td><b>[inviable]</b></td><td> precedes strains described as inviable</td></tr>
+                    </table>
                 </li>
             </ul>
+
+            <br>
+
             <ul>
                 <li>
                     <h4>
