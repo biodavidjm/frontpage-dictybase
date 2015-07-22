@@ -14,8 +14,6 @@ h3 {
   margin: 2px 2px 2px 2px;
 }
 
-
-
 .viewHouse{
 	min-height: 600px;
 }
@@ -40,8 +38,35 @@ h3 {
   padding-bottom: 10px;
 }
 
+.courier {
+  font-family: courier;
+  font-size: 14px;
+}
+
+@media(max-width:767px){
+
+  .courier {
+    font-size: 10px;
+  }
+
+} /*End of @media(max-width:767px)*/
+
+.table-nonfluid {
+   width: auto;
+   table-layout: fixed;
+}
+
+
 
 /*RESEARCH*/
+
+.shortcuts {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+  padding:10px 5px 10px 5px;
+  margin: 30px 0px 30px 0px;
+  text-align: right;
+}
 
 .fontlarger {
   font-size: 16px;
@@ -50,8 +75,9 @@ h3 {
 .jumbotron.research {
 	margin-top: 5px;
 	background-color: white;
-  padding: 10px 5px 20px 5px;
+  padding: 10px 5px 10px 5px;
   margin: 0px 0px 0px 0px;
+  text-align: center;
 }
 
 .techniquesHead {
@@ -103,6 +129,15 @@ h3 {
   font-weight: bold;
 }
 
+.blueBox {
+  background-color: #15317E;
+  color: white;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .blackBack {
   background-color: black;
 }
@@ -113,6 +148,10 @@ h3 {
 
 #blueInfo {
   color: #CEECF5;
+}
+
+#red{
+  color:red;
 }
 
 #redDanger {
@@ -202,6 +241,7 @@ h3 {
   color: #A4A4A4;
   background-color: black;
   padding: 0px 40px 0px 40px;
+  text-align: center;
 }
 
 .captionBox {
@@ -260,7 +300,7 @@ a.captionLink:hover {
 }
 
 .artSubheader {
-  padding: 10px 0px 50px 0px;
+  padding: 10px 0px 30px 0px;
   color: white;
   text-align: center;
 }
@@ -277,12 +317,12 @@ a.captionLink:hover {
   padding: 30px 0px 30px 0px;
   text-align: center;
   background-color: #C63D0F;
-  color: #3B3738;
+  color: black;
 }
 
 .artHomoText {
   text-align: left;
-  padding: 30px 0px 30px 0px;
+  padding: 30px 0px 0px 0px;
   font-size: 16px;
 }
 
@@ -302,7 +342,7 @@ a.captionLink:hover {
 
 .artWorkText {
   color:#DFE2DB;
-  padding: 10px 0px 30px 0px;
+  padding: 10px 0px 0px 0px;
 }
 
 .artWorkGallery {
@@ -310,10 +350,14 @@ a.captionLink:hover {
 }
 
 .geographic {
-  padding: 30px 0px 50px 0px;
+  padding: 30px 0px 30px 0px;
   text-align: center;
   background-color: #DF3D82;
   color: #191919;  
+}
+
+.geoText {
+  margin: 30px 30px 0px 30px;
 }
 
 #imgGeographic {
