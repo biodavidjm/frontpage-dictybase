@@ -14,6 +14,8 @@ angular
     'ngRoute',
     'ngTouch',
     'ngAnimate',
+    'angulartics',
+    'angulartics.google.analytics',
     'resetFieldApp',
     'dictyHeaderFooterApp',
     'frontImageApp',
@@ -54,6 +56,10 @@ angular
        $location.hash(id);
        $anchorScroll.yOffset = 50;
     };
+  })
+  .config(function ($analyticsProvider) {
+    $analyticsProvider.firstPageview(true); /* Records pages that don't use $state or $route */
+    $analyticsProvider.withAutoBase(true);  /* Records full path */
   })
   // .config(function ($routeProvider, $locationProvider) {
   .config(function ($routeProvider) {
