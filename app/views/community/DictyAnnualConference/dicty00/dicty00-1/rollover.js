@@ -1,3 +1,0 @@
-prev = new Image();prev.src = "theme/prev_off.gif";prev_on = new Image();prev_on.src = "theme/prev_on.gif"; 
- index = new Image();index.src = "theme/index_off.gif";index_on = new Image();index_on.src = "theme/index_on.gif"; nextx = new Image();nextx.src = "theme/next_off.gif";nextx_on = new Image();nextx_on.src = "theme/next_on.gif";
- function Bildwechsel(Bildnr,Bildobjekt){ window.document.images[Bildnr].src = Bildobjekt.src;} 
