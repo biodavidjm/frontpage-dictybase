@@ -226,7 +226,16 @@ angular
           },
           controller: 'MediaController'
       })
-
+      // CONFERENCES
+      .when('/community/conference', {
+        templateUrl: 'views/community/DictyAnnualConference/index.html'
+      })
+      .when('/community/conference/:name*', { 
+        templateUrl:  function(address) {
+          return 'views/community/DictyAnnualConference/'+address.name;
+          },
+          controller: 'MediaController'
+      })
       .otherwise ({
         templateUrl: 'views/notyet.html',
       });

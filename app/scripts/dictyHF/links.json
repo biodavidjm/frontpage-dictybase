@@ -53,7 +53,8 @@
             "Community": "community"
         }, 
         "submain": {
-            "Dicty E-mail Forum":        "community/listserv"
+            "Dicty E-mail Forum":        "community/listserv",
+            "Dicty Conferences":        "community/conference"
         }
     }
 ]
