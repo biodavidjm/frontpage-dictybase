@@ -54,7 +54,8 @@
         }, 
         "submain": {
             "Dicty E-mail Forum":        "community/listserv",
-            "Dicty Conferences":        "community/conference"
+            "Dicty Conferences":        "community/conference",
+            "Dicty Labs":               "community/labs"    
         }
     }
 ]

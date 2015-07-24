@@ -236,9 +236,14 @@ angular
           },
           controller: 'MediaController'
       })
+      //HISTORY
+      .when('/community/labs', {
+        templateUrl: 'views/community/dicty_labs.html'
+      })
       .otherwise ({
         templateUrl: 'views/notyet.html',
       });
+      // 
 
       // $locationProvider.html5Mode(true);
   });
