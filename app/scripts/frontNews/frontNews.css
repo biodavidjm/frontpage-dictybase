@@ -26,8 +26,8 @@
 .newsHeader{
 	color:black;
 	font-size: 20px;
-	text-align: right;
 	padding: 15px 30px 10px 30px;
+	vertical-align:top;
 }
 
 .newsHeader.all{
