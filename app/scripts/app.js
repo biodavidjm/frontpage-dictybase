@@ -236,9 +236,11 @@ angular
           },
           controller: 'MediaController'
       })
-      //HISTORY
       .when('/community/labs', {
         templateUrl: 'views/community/dicty_labs.html'
+      })
+      .when('/community/jobs', {
+        templateUrl: 'views/community/jobs.html'
       })
       .otherwise ({
         templateUrl: 'views/notyet.html',

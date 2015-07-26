@@ -53,9 +53,11 @@
             "Community": "community"
         }, 
         "submain": {
-            "Dicty E-mail Forum":        "community/listserv",
-            "Dicty Conferences":        "community/conference",
-            "Dicty Labs":               "community/labs"    
+            "Dicty E-mail Forum":       "community/listserv",
+            "Dicty Annual Conferences": "community/conference",
+            "Dicty Labs":               "community/labs",
+            "Jobs":                     "community/jobs",
+            "Cite us":                  "citation"
         }
     }
 ]
