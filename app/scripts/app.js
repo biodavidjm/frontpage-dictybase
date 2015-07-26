@@ -97,9 +97,6 @@ angular
       .when('/genomes', {
         templateUrl: 'views/genomes.html'
       })
-      .when('/dsc', {
-        templateUrl: 'views/dsc.html'
-      })
       // EXPLORE
       .when('/explore', {
         templateUrl: 'views/explore/explore.html'
@@ -241,6 +238,22 @@ angular
       })
       .when('/community/jobs', {
         templateUrl: 'views/community/jobs.html'
+      })
+      .when('/community/history', {
+        templateUrl: 'views/community/history/index.html'
+      })
+      .when('/community/history/:name*', { 
+        templateUrl:  function(address) {
+          return 'views/community/history/'+address.name;
+          },
+          controller: 'MediaController'
+      })
+      // DICTY STOCK CENTER (DSC)
+      .when('/dsc', {
+        templateUrl: 'views/dsc/dsc.html'
+      })
+      .when('/dsc/history', {
+        templateUrl: 'views/dsc/StockCenterHistory.html'
       })
       .otherwise ({
         templateUrl: 'views/notyet.html',

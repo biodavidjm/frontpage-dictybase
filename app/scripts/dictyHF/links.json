@@ -57,7 +57,8 @@
             "Dicty Annual Conferences": "community/conference",
             "Dicty Labs":               "community/labs",
             "Jobs":                     "community/jobs",
-            "Cite us":                  "citation"
+            "Cite us":                  "citation",
+            "History":                  "community/history"
         }
     }
 ]

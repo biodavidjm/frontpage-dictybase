@@ -21,6 +21,7 @@ h4 {
 
 .viewHouse{
 	min-height: 600px;
+  font-size: 16px;
 }
 
 .jumbotron {
@@ -207,6 +208,11 @@ h4 {
 
 
 /*TO IMAGES*/
+
+.img-circle {
+  border-radius: 50%;
+}
+
 .imgBox {
   /*border: 1px solid #e5e5e5; */
   margin-top: 10px;
