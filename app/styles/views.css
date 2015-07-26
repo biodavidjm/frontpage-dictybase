@@ -10,13 +10,13 @@ h1 {
   margin: 2px 2px 2px 2px;
 }
 h3 {
-/*  padding: 0px 0px 0px 0px;
-  margin: 2px 0px 2px 2px;*/
+  padding: 2px 0px 5px 0px;
+  margin: 2px 0px 2px 2px;
 }
 
 h4 {
   padding: 0px 0px 0px 0px;
-  margin: 0px 0px 0px 0px;
+  margin: 2px 0px 2px 0px;
 }
 
 .viewHouse{
@@ -24,7 +24,7 @@ h4 {
 }
 
 .jumbotron {
-  padding: 10px 0px 10px 0px;
+  /*padding: 10px 0px 10px 0px;*/
   min-height: 150px;
   border-bottom: 0px;
 }
@@ -159,6 +159,10 @@ h4 {
   border-radius: 5px;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+#orange {
+  color:#DF7401;
 }
 
 .blackBack {
