@@ -97,12 +97,6 @@ angular
       .when('/genomes', {
         templateUrl: 'views/genomes.html'
       })
-      .when('/community', {
-        templateUrl: 'views/community.html'
-      })
-      .when('/dsc', {
-        templateUrl: 'views/dsc.html'
-      })
       // EXPLORE
       .when('/explore', {
         templateUrl: 'views/explore/explore.html'
@@ -184,41 +178,87 @@ angular
         templateUrl:  function(address) {
           return 'views/research/techniques/transformation/'+address.name;
           },
-          controller: 'MediaController' 
+          controller: 'MediaController'
       })
       .when('/research/techniques/geneex/:name*', { 
         templateUrl:  function(address) {
           return 'views/research/techniques/geneex/'+address.name;
           },
-          controller: 'MediaController' 
+          controller: 'MediaController'
       })
       .when('/research/techniques/microscopy/:name*', { 
         templateUrl:  function(address) {
           return 'views/research/techniques/microscopy/'+address.name;
           },
-          controller: 'MediaController' 
+          controller: 'MediaController'
       })
       .when('/research/techniques/biochem/:name*', { 
         templateUrl:  function(address) {
           return 'views/research/techniques/biochem/'+address.name;
           }
-          // controller: 'MediaController' 
+          // controller: 'MediaController'
       })
       .when('/research/techniques/cytoskeleton/:name*', { 
         templateUrl:  function(address) {
           return 'views/research/techniques/cytoskeleton/'+address.name;
           },
-          controller: 'MediaController' 
+          controller: 'MediaController'
       })
       .when('/research/techniques/chemotaxis/:name*', { 
         templateUrl:  function(address) {
           return 'views/research/techniques/chemotaxis/'+address.name;
           },
-          controller: 'MediaController' 
+          controller: 'MediaController'
+      })
+      // COMMUNITY
+      .when('/community', {
+        templateUrl: 'views/community/community.html'
+      })
+      .when('/community/listserv', {
+        templateUrl: 'views/community/listserv/index.html'
+      })
+      .when('/community/listserv/:name*', { 
+        templateUrl:  function(address) {
+          return 'views/community/listserv/'+address.name;
+          },
+          controller: 'MediaController'
+      })
+      // CONFERENCES
+      .when('/community/conference', {
+        templateUrl: 'views/community/DictyAnnualConference/index.html'
+      })
+      .when('/community/conference/:name*', { 
+        templateUrl:  function(address) {
+          return 'views/community/DictyAnnualConference/'+address.name;
+          },
+          controller: 'MediaController'
+      })
+      .when('/community/labs', {
+        templateUrl: 'views/community/dicty_labs.html'
+      })
+      .when('/community/jobs', {
+        templateUrl: 'views/community/jobs.html'
+      })
+      .when('/community/history', {
+        templateUrl: 'views/community/history/index.html'
+      })
+      .when('/community/history/:name*', { 
+        templateUrl:  function(address) {
+          return 'views/community/history/'+address.name;
+          },
+          controller: 'MediaController'
+      })
+      // DICTY STOCK CENTER (DSC)
+      .when('/dsc', {
+        templateUrl: 'views/dsc/dsc.html'
+      })
+      .when('/dsc/history', {
+        templateUrl: 'views/dsc/StockCenterHistory.html'
       })
       .otherwise ({
         templateUrl: 'views/notyet.html',
       });
+      // 
 
       // $locationProvider.html5Mode(true);
   });

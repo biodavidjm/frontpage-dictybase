@@ -1,9 +1,15 @@
 <!-- front-news.html -->
 <link rel="stylesheet" href="scripts/frontNews/frontNews.css">
 
-<div class="row newsMain">
-	<div class="newsHeader">
-		<span class="glyphicon glyphicon-globe"></span> {{newsHeader}}
+<div class="newsMain">
+	<div class="row newsHeader">
+		<div class="col-xs-2" align="left">
+			<a href="https://twitter.com/dictybase" target="new" alt="Dicty News also available at twitter"><img src="images/logoTwitterDictySmall.png"></a>
+		</div>
+		<div class="col-xs-10">
+			<span class="glyphicon glyphicon-globe"></span> {{newsHeader}}
+		</div>
+		
 	</div>
 	<div class="row newsBox" ng-repeat="detail in details | orderBy:'-date' | limitTo:3 ">
 		<span class="newsDate">{{detail.date}}</span> 

@@ -10,16 +10,22 @@ h1 {
   margin: 2px 2px 2px 2px;
 }
 h3 {
-  padding: 0px 2px 2px 0px;
-  margin: 2px 2px 2px 2px;
+  padding: 2px 0px 5px 0px;
+  margin: 2px 0px 2px 2px;
+}
+
+h4 {
+  padding: 0px 0px 0px 0px;
+  margin: 2px 0px 2px 0px;
 }
 
 .viewHouse{
 	min-height: 600px;
+  font-size: 16px;
 }
 
 .jumbotron {
-  padding: 10px 0px 10px 0px;
+  /*padding: 10px 0px 10px 0px;*/
   min-height: 150px;
   border-bottom: 0px;
 }
@@ -36,6 +42,15 @@ h3 {
 
 .spaceul li {
   padding-bottom: 10px;
+}
+
+.size16 {
+  font-size: 16px;
+}
+
+.size40 {
+  font-size: 40px;
+ /* font-weight: bold;*/
 }
 
 .courier {
@@ -65,7 +80,7 @@ h3 {
   border-bottom: 1px solid grey;
   padding:10px 5px 10px 5px;
   margin: 30px 0px 30px 0px;
-  text-align: right;
+  text-align: center;
 }
 
 .fontlarger {
@@ -132,10 +147,23 @@ h3 {
 .blueBox {
   background-color: #15317E;
   color: white;
-  padding: 10px 20px 10px 20px;
+  padding: 5px 10px 10px 10px;
   border-radius: 5px;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.orangeBox {
+  background-color: orange;
+  color: black;
+  padding: 5px 10px 10px 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#orange {
+  color:#DF7401;
 }
 
 .blackBack {
@@ -180,6 +208,11 @@ h3 {
 
 
 /*TO IMAGES*/
+
+.img-circle {
+  border-radius: 50%;
+}
+
 .imgBox {
   /*border: 1px solid #e5e5e5; */
   margin-top: 10px;
@@ -211,6 +244,14 @@ h3 {
 }
 
 /*IMAGES THUMBNAILS*/
+
+img.top {
+    vertical-align: text-top;
+}
+
+img.padding {
+  padding: 5px 0px 10px 0px;
+}
 
 .imgThumb {
   height: 100px;

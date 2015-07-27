@@ -1,0 +1,225 @@
+<div class="container" ng-controller="AnchorController">
+    <a name="transfo" id="transfo"></a>
+    <div class="jumbotron research">
+        <div class="row" align="center">
+            <div class="techSubHeader"><h3>Community</h3></div>
+            <p>
+                <span class="size40"> <a href="#/community/listserv"><img src="images/logoListservDictySmall.png" class="top"></a> Dicty Listserv </span> 
+            </p>
+            <h1>Gene Features</h1>
+            <br>      
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-2 col-sm-2 col-xs-1"></div>
+        <div class="col-md-8 col-sm-8 col-xs-10">
+
+            <ul>
+                <li>
+                    <a href="#/community/listserv/listserv_archive_genef.html#genef5">I would like to compare the promoter sequences among a family of genes in Dictyostelium that are differentially developmentally regulated.</a>
+                </li>
+                <li style="list-style: none">
+                    <br>
+                </li>
+                <li>
+                    <a href="#/community/listserv/listserv_archive_genef.html#genef1">Dictyostelium gene structure: I am looking for information concerning the prediction of ORFs in Dictyostelium. Of particular interest would be references where the characteristics of the start codon are detailed, as well as predictions of splicing sites.</a>
+                </li>
+                <li style="list-style: none">
+                    <br>
+                </li>
+                <li>
+                    <a href="#/community/listserv/listserv_archive_genef.html#genef2">Early developmental promoters for genetic screen.</a>
+                </li>
+                <li style="list-style: none">
+                    <br>
+                </li>
+                <li>
+                    <a href="#/community/listserv/listserv_archive_genef.html#genef">Is TAG a functional codon stop in Dictyostelium genetic code?</a>
+                </li>
+                <li style="list-style: none">
+                    <a href="#/community/listserv/listserv_archive_genef.html#genef"></a><br>
+                </li>
+                <li>
+                    <a href="#/community/listserv/listserv_archive_genef.html#genef4">Terminators: What is the shortest length of sequence that anyone has shown to work as a transcriptional terminator?</a>
+                </li>
+                <li style="list-style: none">
+                    <a href="#/community/listserv/listserv_archive_genef.html#genef4"></a>
+                </li>
+            </ul>
+            <br>
+            <div align="center">
+                <a href="#/community/listserv" class="label label-info">Back to Listserv</a>
+                <a ng-click="gotoAnchor('top')" href="" class="label label-primary">Top</a> 
+            </div>
+            <br>
+            <hr>
+            <p>
+                <a name="genef5" id="genef5"></a> <b>I would like to compare the promoter sequences among a family of genes in Dictyostelium that are differentially developmentally regulated.</b><br>
+                <i>-Jennifer Lee, Vassar College, July 20, 2006</i><br>
+            </p>
+            <ul>
+                <li>There are a number of programs that can detect, compare and visualize promoter sequences. You will find links to these programs <a target="new" href="http://mips.gsf.de/proj/regulomips/links.htm">here</a>. Personally, I have good experience with AlignACE and MEME. On the following web-site you will a meta-tool that runs five different programs for you and gives  
+                <a target="new" href="http://mips.gsf.de/proj/regulomips/credo.htm">a summary of the results</a>. On the corresponding  <a target="new" href="http://mips.gsf.de/proj/regulomips/help.htm#introduction">help page</a> you will find references, links, and some documentation. Kind regards,<br>
+                    <i>-Karsten Suhre, IGS-CNRS</i><br>
+                </li>
+            </ul>
+            <br>
+            <div align="center">
+                <a href="#/community/listserv" class="label label-info">Back to Listserv</a>
+                <a ng-click="gotoAnchor('top')" href="" class="label label-primary">Top</a> 
+            </div>
+            <br>
+            <hr>
+            <p>
+                <a name="genef1" id="genef1"></a> <b>Dictyostelium gene structure: I am looking for information concerning the prediction of ORFs in Dictyostelium. Of particular interest would be references where the characteristics of the start codon are detailed, as well as predictions of splicing sites. Are there classical references addressing these points? What is the common wisdom on this subject? What would you recommend when trying to figure out the actual 5' of a very long ORF, either in silico or experimentally?</b><br>
+                <i>-Pierre Cosson, Centre Medical Universitaire, Geneva, Switzerland</i><br>
+                <br>
+                Summary of the responses:<br>
+            </p>
+            <ul>
+                <li>Coding sequences are notably higher in GC content. Non-coding sequences are typically 90% AT
+                </li>
+                <li style="list-style: none">
+                    <br>
+                </li>
+                <li>In silico you will not do better than look at the <a target="new" href="http://www.sanger.ac.uk/Projects/D_discoideum/">Dicty GeneDB</a> on the Sanger site. The pipeline that produced this used 3 different programs to predict genes (and of course they sometimes disagree!); then an additional program that takes a consensus and also introduces additional information such as cDNAs and BLAST hits and AT ratio. But a trained human will still do better than this (though still not perfect). However, only the EUDICT region of chr6 has had that human intervention. (Rob Kay)
+                </li>
+                <li style="list-style: none">
+                    <br>
+                </li>
+                <li>Algorithms used will be briefly described in the Dicty genome papers that are being prepared now for publication. (Bill Loomis)
+                </li>
+                <li style="list-style: none">
+                    <br>
+                </li>
+                <li>Prediction of Start:
+                    <ul>
+                        <li>Kozak consensus sequence is not a critical parameter for efficient expression of a gene (<a href="http://dictybase.org/db/cgi-bin/dictyBase/reference/reference.pl?refNo=6607">Vervoort et al. 2000</a>)
+                        </li>
+                        <li>In general the sequence just upstream from the ATG is quite A rich
+                        </li>
+                        <li>Everybody recommends to obtain experimental evidence, for example by RT-PCR
+                        </li>
+                    </ul>
+                </li>
+                <li style="list-style: none">
+                    <br>
+                </li>
+                <li>Prediction of introns:
+                    <ul>
+                        <li>Size between 50 and 200bp typically, occasionally larger (&gt;400bp)
+                        </li>
+                        <li>Donor site: xxGTaagt
+                        </li>
+                        <li>Acceptor site: a/g-c/t-AGxx (<a href="http://dictybase.org/db/cgi-bin/dictyBase/reference/reference.pl?refNo=8268">Rivero 2002</a>)
+                        </li>
+                    </ul>
+                </li>
+                <li style="list-style: none">
+                    <br>
+                </li>
+                <li>Prediction of termination site:
+                    <ul>
+                        <li>Always a TAA (followed at a variable distance by a AATAAA) (<a href="http://dictybase.org/db/cgi-bin/dictyBase/reference/reference.pl?refNo=8268">Rivero 2002</a>)
+                        </li>
+                    </ul>
+                </li>
+                <li style="list-style: none">
+                    <br>
+                </li>
+            </ul>
+            <p>
+                All the main parameters for determination of the coding sequence are summarized nicely in <a href="http://dictybase.org/db/cgi-bin/dictyBase/reference/reference.pl?refNo=7035">Wu and Franke 1990</a>.
+            </p>
+            <br>
+            <div align="center">
+                <a href="#/community/listserv" class="label label-info">Back to Listserv</a>
+                <a ng-click="gotoAnchor('top')" href="" class="label label-primary">Top</a> 
+            </div>
+            <br>
+            <hr>
+            <p>
+                <a name="genef2" id="genef2"></a> <b>Early developmental promoters for genetic screen: We would like to do a genetic screen by overexpressing a rather harmful gene on a developmental promoter, so aggregation is obviously killed, and trying to rescue the development of these cells by REMI or suchlike. My question is, what's the best promoter to use? It should be completely off in bacterially and vegetatively grown cells, but fully on as early as possible. The cAR1 promoter sounds right, but has anyone apart from Alan Kimmel used it for this sort of thing? Are there any other promoters which would do this job? I'll post a summary of any interesting replies I get in due course.</b><br>
+                <i>-Robert Insall, The University of Birmingham, UK, 2 Apr 2003</i><br>
+            </p>
+            <ul>
+                <li style="list-style: none">Thanks to everyone who answered this. Here's a summary of the responses:<br>
+                    <br>
+                </li>
+                <li>A number of people suggested the contact sites A (<a href="http://dictybase.org/db/cgi-bin//gene_page.pl?gene_name=csaa">csaA</a>) promoter, on the grounds that it's completely off in axenic and bacterially growing cells, but comes up sharply as cells start to aggregate. A couple did point out that it's rather difficult to clone with.
+                </li>
+                <li style="list-style: none">
+                    <br>
+                </li>
+                <li>Alan Kimmel said "I do not think the early promoter for CAR1 (<a href="http://dictybase.org/db/cgi-bin//gene_page.pl?gene_name=carA">carA</a>) will work. We have never looked on bacteria, but in axenic growth it is certainly on a low levels by 10E6 cells/ml. Expression is so robust later, that depending on exposures in the papers it may look off in veetative. The most truncated promoters were no better.".
+                </li>
+                <li style="list-style: none">
+                    <br>
+                </li>
+                <li>Bill Loomis' microarray data definitely suggest cAR1 (<a href="http://dictybase.org/db/cgi-bin//gene_page.pl?gene_name=carA">carA</a>) as a good target for high induction and early increase, if the relatively low induction in veg cells is not a problem.
+                </li>
+                <li style="list-style: none">
+                    <br>
+                </li>
+                <li>Pascale Gaudet also suggested "I found that the lowest veg/highest early dev was Barrie Coukell's <a href="http://dictybase.org/db/cgi-bin//gene_page.pl?gene_name=cbpA">cbpA</a> gene". Pascale and Barrie seem to have promoter constructs, but there's less data.
+                </li>
+                <li style="list-style: none">
+                    <br>
+                </li>
+                <li>My conclusions: Use cAR1 if a smallish amount of the protein is not a problem. Otherwise csaA is the best bet, being thoroughly tested, but cbpA could be good too.
+                </li>
+                <li style="list-style: none">
+                    <br>
+                </li>
+                <li>Of course, one shouldn't forget the Tet system, from <a href="http://dictybase.org/db/cgi-bin/dictyBase/reference/reference.pl?refNo=387">Blaauw et al.</a>, and its derivatives, although they give a whole different range of advantages and problems (including very uneven expression on bacteria in our hands).
+                </li>
+                <li style="list-style: none">
+                    <i>-Robert Insall, The University of Birmingham, UK, 3 Apr 2003</i>
+                </li>
+            </ul>
+            <br>
+            <div align="center">
+                <a href="#/community/listserv" class="label label-info">Back to Listserv</a>
+                <a ng-click="gotoAnchor('top')" href="" class="label label-primary">Top</a> 
+            </div>
+            <br>
+            <hr>
+            <p>
+                <a name="genef3" id="genef3"></a> <b>Is TAG a functional codon stop in Dictyostelium genetic code?</b><br>
+                <i>-Francesco Dondero, University of Piemonte Orientale, Italy, 20 Jul 1999</i><br>
+                <br>
+            </p>
+            <ul>
+                <li>Francesco, We frequently use TGA stop codon for Dicty expression and have confirmed the protein's authentic C terminus. TAA is of course the stop codon used by virtually all Dicty genes. We have never used TAG, but Christophe Reymond mentioned some problems with it when expressing the circumsporozoite antigen from Plasmodium.<br>
+                    <i>-Martin Slade, 21 Jul 1999</i>
+                </li>
+            </ul>
+            <br>
+            <div align="center">
+                <a href="#/community/listserv" class="label label-info">Back to Listserv</a>
+                <a ng-click="gotoAnchor('top')" href="" class="label label-primary">Top</a> 
+            </div>
+            <br>
+            <hr>
+            <p>
+                <a name="genef4" id="genef4"></a> <b>Terminators: What is the shortest length of sequence that anyone has shown to work as a transcriptional terminator? Most of the ones I use are rather large and very AT-rich.</b><br>
+                <i>-Robert Insall, The University of Birmingham, UK, 13 Dec 1999</i><br>
+            </p>
+            <ul>
+                <li>Hello Robert, Recently I faced similar question by myself. What I experienced was that, when I simply put a termination codon (TAA) at the end of sequence to be expressed, actually the protein (in this case A15-driven GFP fusion) was expressed fine without terminator. I am not sure if this situation is reproducible among all kinds of present vectors, but it is worth trying. Maybe it is possible that the expression level fell to ca 50% of the maximum level but still it should be practically OK for some kinds of experiments.<br>
+                    <i>-Masashi Fukuzawa, University of Dundee, UK, 13 Dec 1999</i>
+                </li>
+            </ul>
+            <br>
+            <div align="center">
+                <a href="#/community/listserv" class="label label-info">Back to Listserv</a>
+                <a ng-click="gotoAnchor('top')" href="" class="label label-primary">Top</a> 
+            </div>
+            <br>
+            <br>
+
+        </div> <!-- End of col-md-3 col-sm-2, i.e., the central column -->
+        <div class="col-md-3 col-sm-2 col-xs-1"></div>
+    </div> <!-- row -->
+</div> <!-- container -->

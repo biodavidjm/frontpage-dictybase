@@ -1,14 +1,14 @@
 <definition-bar text="Techniques  <  Research  <  home" look="definitionLink"></definition-bar>
 
-<div class="jumbotron research" ng-controller="AnchorController">
-    <div class="row">
-        <div class="techSubHeader"><h3>Research</h3></div>
-        <h1>Techniques</h1>
-        <img src="images/logoTechniques.png">
-    </div>
-</div>
-
 <div class="container" ng-controller="AnchorController">
+    <div class="jumbotron research" ng-controller="AnchorController">
+        <div class="row">
+            <div class="techSubHeader"><h3>Research</h3></div>
+            <h1>Techniques</h1>
+            <img src="images/logoTechniques.png">
+        </div>
+    </div>
+
     <div class="row no-padding" align="center">
         <h4>
             <div class="col-lg-3 col-md-2 col-sm-1 col-xs-0 no-padding"></div>
@@ -32,16 +32,17 @@
     <br>
     <div class="row">
         <div class="col-md-3 col-sm-2 col-xs-12"></div>
-        <div class="col-md-6 col-sm-8 col-xs-12">
-            <div>
-<!--                 <a ng-click="gotoAnchor('medbuf')" href="">Media and buffers</a>&nbsp;| <a ng-click="gotoAnchor('growth')" href="">Growth and Development</a>&nbsp;| <a ng-click="gotoAnchor('molbio')" href="">Molecular Biology</a>&nbsp;| <a ng-click="gotoAnchor('trafo')" href="">Transformation</a>&nbsp;| <a ng-click="gotoAnchor('muta')" href="">Mutagenesis</a>&nbsp;| <a ng-click="gotoAnchor('express')" href="">Gene Expression</a>&nbsp;| <a ng-click="gotoAnchor('micro')" href="">Microscopy</a>&nbsp;| <a ng-click="gotoAnchor('biochem')" href="">Biochemistry</a>&nbsp;| <a ng-click="gotoAnchor('cytoskel')" href="">Cytoskeleton</a>&nbsp;| <a ng-click="gotoAnchor('teach')" href="">Teaching Tools</a> -->
-            </div>
+        <div class="col-md-6 col-sm-8 col-xs-12 size16">
+<!--             <div>
+                <a ng-click="gotoAnchor('medbuf')" href="">Media and buffers</a>&nbsp;| <a ng-click="gotoAnchor('growth')" href="">Growth and Development</a>&nbsp;| <a ng-click="gotoAnchor('molbio')" href="">Molecular Biology</a>&nbsp;| <a ng-click="gotoAnchor('trafo')" href="">Transformation</a>&nbsp;| <a ng-click="gotoAnchor('muta')" href="">Mutagenesis</a>&nbsp;| <a ng-click="gotoAnchor('express')" href="">Gene Expression</a>&nbsp;| <a ng-click="gotoAnchor('micro')" href="">Microscopy</a>&nbsp;| <a ng-click="gotoAnchor('biochem')" href="">Biochemistry</a>&nbsp;| <a ng-click="gotoAnchor('cytoskel')" href="">Cytoskeleton</a>&nbsp;| <a ng-click="gotoAnchor('teach')" href="">Teaching Tools</a>
+            </div> -->
+
             <br>
             <p>
                 <a name="medbuf" id="medbuf"></a>
             </p>
             <h3> Media and buffers </h3>
-            <ul>
+            <ul class="spaceul">
                 <li>
                     <a ng-href="#/research/techniques/media/media.html">Media and buffers</a>
                 </li>
@@ -66,7 +67,7 @@
             <h3>
                 Growth and development of <i>Dictyostelium</i>
             </h3>
-            <ul>
+            <ul class="spaceul">
                 <li>
                     <a href="#/research/techniques/media/dicty_growth.html">Methods for growing <i>Dictyostelium</i></a>
                 </li>
@@ -94,7 +95,7 @@
             <a name="stockcenter"></a>
             ></a><h3>Stock Center Culture Media and Techniques</b></h3>
             <i>(contributed by Jakob Franke)</i><br>
-            <ul>
+            <ul class="spaceul">
             <li><a href="#/research/techniques/media/stock_center_media.html">Media recipes</a><sup> </sup></li>
             <li><a href="#/research/techniques/media/fm-medium.html">Recipe for FM Defined Medium</a><sup> </sup></li>
             <li><a href="#/research/techniques/media/cell_storage_technique.html">Cell storage procedure</a><sup> </sup></li>
@@ -112,7 +113,7 @@
             <h3>
                 Molecular Biology
             </h3>
-            <ul>
+            <ul class="spaceul">
                 <li>
                     <a href="#/research/techniques/molbio/quick_gDNA.html">Quick extraction of genomic DNA</a> <i>(contributed by Steve Charette and Pierre Cosson)</i>
                 </li>
@@ -136,7 +137,7 @@
             <h3>
                 Transformation
             </h3>
-            <ul>
+            <ul class="spaceul">
                 <li>
                     <a href="#/research/techniques/transformation/gaudet_2007_transformation.html">Transformation protocols</a> (<i>Gaudet et al. 2007</i>)
                 </li>
@@ -175,7 +176,7 @@
             <h3>
                 Mutagenesis
             </h3>
-            <ul>
+            <ul class="spaceul">
                 <li>
                     <a href="#/research/techniques/transformation/remi.html">Restriction-enzyme mediated insertional mutagenesis (REMI)</a>
                 </li>
@@ -193,7 +194,7 @@
             <!--
 
             ></a><h3>Regulated Gene Expression</b></h3>
-            <ul>
+            <ul class="spaceul">
             <li><a href="#/research/techniques/geneex/RNAi.html">RNA interference (RNAi)</a><i> (contributed by Barbara Weissenmayer)</i><sup> </sup></li>
             </ul>
             </p>
@@ -207,7 +208,7 @@
             <h3>
                 Gene Expression
             </h3>
-            <ul>
+            <ul class="spaceul">
                 <li>
                     <a href="#/research/techniques/geneex/chip.html">Chromatin Immuno-precipitation</a> <i>(contributed by Jeff Williams and Y. Yamada)</i>
                 </li>
@@ -231,7 +232,7 @@
             <h3>
                 Microscopy
             </h3>
-            <ul>
+            <ul class="spaceul">
                 <li>
                     <a href="#/research/techniques/microscopy/fixation_rgomer.html">Fixation techniques for immunonfluorescence</a> <i>(contributed by Richard Gomer)</i>
                 </li>
@@ -249,7 +250,7 @@
             <h3>
                 Biochemistry
             </h3>
-            <ul>
+            <ul class="spaceul">
                 <li>
                     <a href="#/research/techniques/biochem/metabolic_labeling.html">S-methionine labelling of <i>Dictyostelium</i></a><sup>*</sup>
                 </li>
@@ -272,7 +273,7 @@
                 <h4>
                     Protein preparation
                 </h4>
-                <ul>
+                <ul class="spaceul">
                     <li>
                         <a href="#/research/techniques/cytoskeleton/cytoskeleton_isolation.html">Isolation of <i>Dictyostelium</i> cytoskeleton</a> <sup>*</sup>
                     </li>
@@ -298,7 +299,7 @@
                 <h4>
                     Protein assays
                 </h4>
-                <ul>
+                <ul class="spaceul">
                     <li>
                         <a href="#/research/techniques/cytoskeleton/microtubule_gliding_assay.html">Microtubule gliding assay for microtubule-associated motors</a> <sup>*</sup>
                     </li>
@@ -324,7 +325,7 @@
                 <h4>
                     Protein detection
                 </h4>
-                <ul>
+                <ul class="spaceul">
                     <li>
                         <a href="#/research/techniques/cytoskeleton/gtubulin_western.html"><i>Dictyostelium</i> anti-γ-tubulin Westerns</a> <i>(contributed by Emma Dalton)</i>
                     </li>
@@ -346,7 +347,7 @@
             </p>
             <hr>
 
-            <!--<ul>
+            <!--<ul class="spaceul">
                 <li>
                     <a href="/techniques/chemotaxis/">Practical on chemotaxis</a> <i>(contributed by Thierry Soldati)</i>
                 </li>
@@ -369,5 +370,5 @@
 
         </div> <!-- End of col-md-3 col-sm-2, i.e., the central column -->
         <div class="col-md-3 col-sm-2 col-xs-12"></div>
-    </div>
-</div>
+    </div> <!-- row -->
+</div> <!-- container -->
