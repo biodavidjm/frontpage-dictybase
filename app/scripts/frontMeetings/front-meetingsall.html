@@ -13,13 +13,13 @@
 		<div class="row">
 			<div class="col-sm-3 col-xs-1"></div>
 			<div class="col-sm-6 col-xs-10 filterBox">
-				<input ng-model="q" id="search" class="form-control" reset-field type="text" placeholder="Filter by meeting, or date, or location..." typeahead="meetings.name for meetings in meetingsAll | filter:$viewValue | limitTo:8">
+				<input ng-model="query" id="search" class="form-control" type="text" placeholder="Filter by meeting, or date, or location..." typeahead="meetings.name for meetings in meetingsAll | filter:$viewValue | limitTo:8"> <span><a id="clear-filter" ng-click="clearFilter()" href="" type="button"><small>Clear</small></a></span>
 			</div>
 			<div class="col-sm-3 col-xs-1"></div>
 		</div>
 
 		<!-- Individual boxes of papers -->
-		<div class="row meetingBox full" ng-repeat="meeting in meetingsAll | orderBy:'-date'| filter:q ">
+		<div class="row meetingBox full" ng-repeat="meeting in meetingsAll | orderBy:'-date'| filter:query ">
 
 			<div class="col-lg-3 col-md-2 col-sm-2 col-xs-1"></div>
 			<div class="col-lg-6 col-md-8 col-sm-8 col-xs-10">

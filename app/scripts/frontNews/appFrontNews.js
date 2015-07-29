@@ -44,9 +44,15 @@ angular
         controller: function($scope, dictyNewsFactory) {
           $scope.newsHeaderAll = 'Dicty News';
           $scope.detailsAll = {};
+          $scope.clearFilter = function(){
+            console.log('clearing the filter');
+            $scope.query = '';
+          };
           dictyNewsFactory.getJasonFile(function(data) {
               $scope.detailsAll = data;
           });
+
+
         }
       };
     });

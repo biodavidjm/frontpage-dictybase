@@ -44,6 +44,10 @@ angular
         controller: function(dictyMeetingsFactory, $scope) {
           $scope.meetingsHeaderAll = 'Upcoming Meetings';
           $scope.meetingsAll = {};
+          $scope.clearFilter = function(){
+            console.log('clearing the filter at meetings');
+            $scope.query = '';
+          };
           dictyMeetingsFactory.getJasonFile( function(data) { 
             $scope.meetingsAll = data;
           });
