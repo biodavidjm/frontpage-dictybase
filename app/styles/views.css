@@ -47,6 +47,9 @@ h4 {
 .size16 {
   font-size: 16px;
 }
+#size16 {
+  font-size: 16px;
+}
 
 .size40 {
   font-size: 40px;
@@ -174,9 +177,18 @@ h4 {
   color: #15317E;
 }
 
+.blueDicty {
+  color: #15317E;
+}
+
 #blueInfo {
   color: #CEECF5;
 }
+
+.blueInfo {
+  color: #CEECF5;
+}
+
 
 #red{
   color:red;
