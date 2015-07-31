@@ -1,82 +1,78 @@
 <!-- Template for the front-papersall directive -->
 <link rel="stylesheet" href="scripts/frontPapers/frontPapers.css">
 
-<div id="scrollArea" ng-controller="ScrollUpController">
-	<a id="goup"></a>
+<!-- Papers header -->
+<div class="jumbotron">
+	<h1><span class="glyphicon glyphicon-paperclip"></span> {{papersHeaderAll}}</h1>
+	<br>
+	<small>All the <em>Dictyostelium</em> papers for a quick search </small>
+</div>
 
-	<!-- Papers header -->
-	<div class="jumbotron">
-		<h1><span class="glyphicon glyphicon-paperclip"></span> {{papersHeaderAll}}</h1>
+<div class="container">
+
+	<div class="row papersMain full">
+
+		<!-- Search and items boxes -->
+		<div class="row">
+			<div class="col-sm-4 col-xs-1"></div>
+			<div class="col-sm-4 col-xs-10" >
+			  <!-- <label for="search">Search:</label> -->
+			  <input ng-model="q" id="search" class="form-control" placeholder="Search for exact matches" >
+	<!-- 			  typeahead="papers.authors for papers in papersAll | filter:$viewValue | limitTo:8" -->
+			</div>
+
+	<!-- 			<div class="col-xs-3">
+			  <label for="search">items per page:</label>
+			  <input type="number" min="4" max="20" class="form-control" ng-model="pageSize">
+			</div> -->
+			<div class="col-sm-4 col-xs-1"></div>
+		</div>
+
 		<br>
-		<small>All the <em>Dictyostelium</em> papers for a quick search </small>
-	</div>
 
-	<div class="container">
-
-		<div class="row papersMain full">
-
-			<!-- Search and items boxes -->
-			<div class="row">
-				<div class="col-sm-4 col-xs-1"></div>
-				<div class="col-sm-4 col-xs-10" >
-				  <!-- <label for="search">Search:</label> -->
-				  <input ng-model="q" id="search" class="form-control" placeholder="Search for exact matches" >
-		<!-- 			  typeahead="papers.authors for papers in papersAll | filter:$viewValue | limitTo:8" -->
-				</div>
-
-		<!-- 			<div class="col-xs-3">
-				  <label for="search">items per page:</label>
-				  <input type="number" min="4" max="20" class="form-control" ng-model="pageSize">
-				</div> -->
-				<div class="col-sm-4 col-xs-1"></div>
+		<div class="row">
+			<div class="col-sm-2 col-xs-1"></div>
+			<div class="col-sm-8 col-xs-10">
+				<div align="center">
+					Showing 
+					<strong> 
+						<span id="size16" class="blueDicty">{{(papersAll|filter:q).length}}</span>
+					</strong> 
+					papers on <em>Dictyostelium discoideum</em>
+				 </div>
 			</div>
+			<div class="col-sm-2 col-xs-1"></div>
+		</div>
 
-			<br>
-
-			<div class="row">
-				<div class="col-sm-2 col-xs-1"></div>
-				<div class="col-sm-8 col-xs-10">
-					<div align="center">
-						Showing 
-						<strong> 
-							<span id="size16" class="blueDicty">{{(papersAll|filter:q).length}}</span>
-						</strong> 
-						papers on <em>Dictyostelium discoideum</em>
-					 </div>
-				</div>
-				<div class="col-sm-2 col-xs-1"></div>
-			</div>
-
-			<!-- Pagination controls -->
-			<div class="row">
-			    <div ng-controller="BarController">
-			      <div class="text-center">
-			      	<dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber)" max-size="maxSize" template-url="scripts/frontPapers/dirPagination.tpl.html"></dir-pagination-controls>
-			      </div>
-				</div>
-			</div>
-
-			<!-- Individual boxes of papers -->
-			<div class="row papersBox full" dir-paginate="apaper in papersAll | filter:q | itemsPerPage: pageSize" current-page="currentPage">
-
-				<div class="col-lg-2 col-md-1 col-sm-1 col-xs-1"></div>
-				<div class="col-lg-8 col-md-10 col-sm-10 col-xs-10">
-					<hr>
-					<div class="papersAuthors all">{{apaper.authors}}</div> 
-					<div class="papersTitle all">{{apaper.title}} </div>
-					<div class="papersJournal all">{{apaper.Details}} <span class="papersLink"> <a href="http://www.ncbi.nlm.nih.gov{{apaper.URL}}" target="_blank" >Pubmed</a></span></div>
-					
-				</div>
-				<div class="col-lg-2 col-md-2 col-sm-1 col-xs-1"></div>
-
-			</div> 
-
-			<!-- Pagination controls -->
-		    <div ng-controller="BarController" class="other-controller">
+		<!-- Pagination controls -->
+		<div class="row">
+		    <div ng-controller="BarController">
 		      <div class="text-center">
-		      	<dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber); moveUp()" max-size="maxSize" template-url="scripts/frontPapers/dirPagination.tpl.html"></dir-pagination-controls>
+		      	<dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber)" max-size="maxSize" template-url="scripts/frontPapers/dirPagination.tpl.html"></dir-pagination-controls>
 		      </div>
 			</div>
+		</div>
+
+		<!-- Individual boxes of papers -->
+		<div class="row papersBox full" dir-paginate="apaper in papersAll | filter:q | itemsPerPage: pageSize" current-page="currentPage">
+
+			<div class="col-lg-2 col-md-1 col-sm-1 col-xs-1"></div>
+			<div class="col-lg-8 col-md-10 col-sm-10 col-xs-10">
+				<hr>
+				<div class="papersAuthors all">{{apaper.authors}}</div> 
+				<div class="papersTitle all">{{apaper.title}} </div>
+				<div class="papersJournal all">{{apaper.Details}} <span class="papersLink"> <a href="http://www.ncbi.nlm.nih.gov{{apaper.URL}}" target="_blank" >Pubmed</a></span></div>
+				
+			</div>
+			<div class="col-lg-2 col-md-2 col-sm-1 col-xs-1"></div>
+
+		</div> 
+
+		<!-- Pagination controls -->
+	    <div ng-controller="BarController" class="other-controller">
+	      <div class="text-center">
+	      	<dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber); moveUp()" max-size="maxSize" template-url="scripts/frontPapers/dirPagination.tpl.html"></dir-pagination-controls>
+	      </div>
 		</div>
 	</div>
 </div>

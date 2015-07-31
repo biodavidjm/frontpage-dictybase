@@ -65,12 +65,4 @@ angular
       $scope.pageChangeHandler = function(num) {
         console.log('going to page ' + num);
       };
-    }])
-    
-    // Controller to scroll up on ng-click action
-    .controller('ScrollUpController', ['$scope', '$location', '$anchorScroll', function ($scope, $location, $anchorScroll) {
-      $scope.gotoTop = function() {
-        $location.hash('top');
-        $anchorScroll();
-      };
     }]);
