@@ -7,7 +7,7 @@
 </div>
 
 <div class="container">
-	<div class="row meetingsMain full">
+	<div class="meetingsMain full">
 
 		<!-- Search / Filter box -->
 		<div class="row">
@@ -18,19 +18,37 @@
 			<div class="col-sm-3 col-xs-1"></div>
 		</div>
 
+
+		<!-- Pagination controls Top -->
+		<div class="row">
+		    <div ng-controller="BarControllersMeetings">
+		      <div class="text-center">
+		      	<dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber)" max-size="maxSize" template-url="scripts/frontPapers/dirPagination.tpl.html"></dir-pagination-controls>
+		      </div>
+			</div>
+		</div>
+
 		<!-- Individual boxes of papers -->
-		<div class="row meetingBox full" ng-repeat="meeting in meetingsAll | orderBy:'-date'| filter:query ">
+		<div class="row meetingBox full" dir-paginate="meeting in meetingsAll | orderBy:'-date'| filter:query | itemsPerPage: pageSize">
 
 			<div class="col-lg-3 col-md-2 col-sm-2 col-xs-1"></div>
 			<div class="col-lg-6 col-md-8 col-sm-8 col-xs-10">
-
+				<hr>
 				<div class="meetingsName all"> {{meeting.name}} </div>
 				<div class="meetingsLocation all"> {{meeting.location}} </div>
 				<div class="meetingsDate all"> [{{meeting.date}}]</div> 
-				<hr>
 			</div>
 			<div class="col-lg-3 col-md-2 col-sm-2 col-xs-1"></div>
+		</div> <!-- row -->
+		<br>
+		<!-- Pagination controls Down -->
+		<div class="row">
+		    <div ng-controller="BarControllersMeetings">
+		      <div class="text-center">
+		      	<dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber); moveUp()" max-size="maxSize" template-url="scripts/frontPapers/dirPagination.tpl.html"></dir-pagination-controls>
+		      </div>
+			</div>
+		</div> <!-- row -->
 
-		</div>
-	</div>
-</div>
+	</div> <!-- meetings main -->
+</div> <!-- container -->

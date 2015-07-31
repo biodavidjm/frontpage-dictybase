@@ -51,6 +51,22 @@ angular
           dictyMeetingsFactory.getJasonFile( function(data) { 
             $scope.meetingsAll = data;
           });
+          // Pagination variables and functions
+          $scope.currentPage = 1;
+          $scope.pageSize = 10;
+          $scope.maxSize = 5;
+          $scope.numberOfPages=function(){
+              return Math.ceil($scope.meetingsAll.length/$scope.pageSize);                
+          };
+          $scope.moveUp = function() {
+            window.scrollTo(0,195);
+          };
         }
       };
-    });
+    })
+    // This controller handles updates in the navitation bar.
+    .controller('BarControllersMeetings', ['$scope', function ($scope) {
+      $scope.pageChangeHandler = function(num) {
+        console.log('going to page ' + num);
+      };
+    }]);
