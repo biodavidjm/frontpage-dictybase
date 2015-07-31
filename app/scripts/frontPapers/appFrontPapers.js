@@ -53,6 +53,9 @@ angular
           $scope.numberOfPages=function(){
               return Math.ceil($scope.papersAll.length/$scope.pageSize);                
           };
+          $scope.moveUp = function() {
+            window.scrollTo(0,0);
+          };
 
         }
       };
@@ -67,7 +70,7 @@ angular
     // Controller to scroll up on ng-click action
     .controller('ScrollUpController', ['$scope', '$location', '$anchorScroll', function ($scope, $location, $anchorScroll) {
       $scope.gotoTop = function() {
-        $location.hash('goup');
+        $location.hash('top');
         $anchorScroll();
       };
     }]);

@@ -31,14 +31,7 @@
 				<div class="col-sm-4 col-xs-1"></div>
 			</div>
 
-			<!-- Pagination controls -->
-			<div class="row">
-			    <div ng-controller="BarController">
-			      <div class="text-center">
-			      	<dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber)" max-size="maxSize" template-url="scripts/frontPapers/dirPagination.tpl.html"></dir-pagination-controls>
-			      </div>
-				</div>
-			</div>
+			<br>
 
 			<div class="row">
 				<div class="col-sm-2 col-xs-1"></div>
@@ -52,6 +45,15 @@
 					 </div>
 				</div>
 				<div class="col-sm-2 col-xs-1"></div>
+			</div>
+
+			<!-- Pagination controls -->
+			<div class="row">
+			    <div ng-controller="BarController">
+			      <div class="text-center">
+			      	<dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber)" max-size="maxSize" template-url="scripts/frontPapers/dirPagination.tpl.html"></dir-pagination-controls>
+			      </div>
+				</div>
 			</div>
 
 			<!-- Individual boxes of papers -->
@@ -72,7 +74,7 @@
 			<!-- Pagination controls -->
 		    <div ng-controller="BarController" class="other-controller">
 		      <div class="text-center">
-		      	<dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber)" max-size="maxSize" template-url="scripts/frontPapers/dirPagination.tpl.html" ng-click="gotoTop()"></dir-pagination-controls>
+		      	<dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber); moveUp()" max-size="maxSize" template-url="scripts/frontPapers/dirPagination.tpl.html"></dir-pagination-controls>
 		      </div>
 			</div>
 		</div>

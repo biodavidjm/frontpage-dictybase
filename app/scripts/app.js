@@ -41,8 +41,8 @@ angular
           // set the $location.hash to `newHash` and
           // $anchorScroll will automatically scroll to it
           $location.hash(x);
-        } 
-        else 
+        }
+        else
         {
           // call $anchorScroll() explicitly,
           // since $location.hash hasn't changed
