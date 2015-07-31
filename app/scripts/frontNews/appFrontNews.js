@@ -8,7 +8,7 @@
  */
 
 angular
-  .module('frontNewsApp', [])
+  .module('frontNewsApp', ['angularUtils.directives.dirPagination'])
     .factory('dictyNewsFactory', function ($http, $log) {
       return {
         getJasonFile: function(done) {
@@ -51,8 +51,23 @@ angular
           dictyNewsFactory.getJasonFile(function(data) {
               $scope.detailsAll = data;
           });
-
-
+          // Pagination variables and functions
+          $scope.currentPage = 1;
+          $scope.pageSize = 6;
+          $scope.maxSize = 5;
+          $scope.numberOfPages=function(){
+              return Math.ceil($scope.detailsAll.length/$scope.pageSize);                
+          };
+          $scope.moveUp = function() {
+            window.scrollTo(0,195);
+          };
         }
       };
-    });
+    })
+
+    // This controller handles updates in the navitation bar.
+    .controller('BarControllerNews', ['$scope', function ($scope) {
+      $scope.pageChangeHandler = function(num) {
+        console.log('going to page ' + num);
+      };
+    }]);

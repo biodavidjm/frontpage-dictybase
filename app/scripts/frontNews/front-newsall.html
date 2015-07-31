@@ -9,23 +9,46 @@
 </div>
 
 <div class="container">
-	<div class="row newsMain full">
+	<div class="newsMain full">
 
 		<div class="row">
 			<div class="col-sm-3 col-xs-1"></div>
 			<div class="col-sm-6 col-xs-10 filterBox">
-				<span><input ng-model="query" id="search" class="form-control" type="text" placeholder="Filter text (or date)"></span> <span><a id="clear-filter" ng-click="clearFilter()" href="" type="button"><small>Clear</small></a></span>
-
-				
+				<span>
+					<input ng-model="query" id="search" class="form-control" type="text" placeholder="Filter news by text (or date)">
+				</span> 
+				<span>
+					<a id="clear-filter" ng-click="clearFilter()" href="" type="button"><small>Clear</small></a>
+				</span>
 			</div>
 			<div class="col-sm-3 col-xs-1"></div>
+		</div> <!-- row -->
+
+		<!-- Pagination controls Top -->
+		<div class="row">
+		    <div ng-controller="BarControllerNews">
+		      <div class="text-center">
+		      	<dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber)" max-size="maxSize" template-url="scripts/frontPapers/dirPagination.tpl.html"></dir-pagination-controls>
+		      </div>
+			</div>
 		</div>
-		<div class="row newsBoxAll" ng-repeat="detail in detailsAll | orderBy:'-date' | filter:query">
+
+		<!-- Invidual pages news -->
+		<div class="row newsBoxAll" dir-paginate="detail in detailsAll | orderBy:'-date' | filter:query | itemsPerPage: pageSize">
+			<hr>
 			<div class="col-md-2 col-xs-12 newsDate all"> {{detail.date}}</div>
 			<div class="col-md-8 col-xs-12 newsContent all"> {{detail.content}} </div>
 			<div class="col-md-2 col-xs-12"> <span class="newsSource"><strong>Source</strong>: {{detail.source}} </span> </div>
-			<div class="col-md-12"><hr></div>
+			<div class="col-md-12"></div>
 		</div>
 
+		<!-- Pagination controls Down -->
+		<div class="row">
+		    <div ng-controller="BarControllerNews">
+		      <div class="text-center">
+		      	<dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber); moveUp()" max-size="maxSize" template-url="scripts/frontPapers/dirPagination.tpl.html"></dir-pagination-controls>
+		      </div>
+			</div>
+		</div> <!-- row -->
 	</div>
 </div>
