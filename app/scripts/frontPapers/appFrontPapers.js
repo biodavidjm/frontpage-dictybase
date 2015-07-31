@@ -47,6 +47,7 @@ angular
           dictyPapersFactory.getJasonFile( function(data) {
             $scope.papersAll = data;
           });
+          // Pagination variables and functions
           $scope.currentPage = 1;
           $scope.pageSize = 10;
           $scope.maxSize = 5;
@@ -54,14 +55,13 @@ angular
               return Math.ceil($scope.papersAll.length/$scope.pageSize);                
           };
           $scope.moveUp = function() {
-            window.scrollTo(0,0);
+            window.scrollTo(0,195);
           };
-
         }
       };
     })
     // This controller handles updates in the navitation bar.
-    .controller('BarController', ['$scope', function ($scope) {
+    .controller('BarControllerPapers', ['$scope', function ($scope) {
       $scope.pageChangeHandler = function(num) {
         console.log('going to page ' + num);
       };

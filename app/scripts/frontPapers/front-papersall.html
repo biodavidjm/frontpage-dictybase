@@ -10,14 +10,14 @@
 
 <div class="container">
 
-	<div class="row papersMain full">
+	<div class="papersMain full">
 
 		<!-- Search and items boxes -->
 		<div class="row">
 			<div class="col-sm-4 col-xs-1"></div>
 			<div class="col-sm-4 col-xs-10" >
 			  <!-- <label for="search">Search:</label> -->
-			  <input ng-model="q" id="search" class="form-control" placeholder="Search for exact matches" >
+			  <input ng-model="query" id="search" class="form-control" placeholder="Filter by exact matches" >
 	<!-- 			  typeahead="papers.authors for papers in papersAll | filter:$viewValue | limitTo:8" -->
 			</div>
 
@@ -30,13 +30,13 @@
 
 		<br>
 
+		<!-- Number of papers -->
 		<div class="row">
 			<div class="col-sm-2 col-xs-1"></div>
 			<div class="col-sm-8 col-xs-10">
-				<div align="center">
-					Showing 
+				<div align="center"> 
 					<strong> 
-						<span id="size16" class="blueDicty">{{(papersAll|filter:q).length}}</span>
+						<span id="size16" class="blueDicty">{{(papersAll|filter:query).length}}</span>
 					</strong> 
 					papers on <em>Dictyostelium discoideum</em>
 				 </div>
@@ -46,7 +46,7 @@
 
 		<!-- Pagination controls -->
 		<div class="row">
-		    <div ng-controller="BarController">
+		    <div ng-controller="BarControllerPapers">
 		      <div class="text-center">
 		      	<dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber)" max-size="maxSize" template-url="scripts/frontPapers/dirPagination.tpl.html"></dir-pagination-controls>
 		      </div>
@@ -54,7 +54,7 @@
 		</div>
 
 		<!-- Individual boxes of papers -->
-		<div class="row papersBox full" dir-paginate="apaper in papersAll | filter:q | itemsPerPage: pageSize" current-page="currentPage">
+		<div class="row papersBox full" dir-paginate="apaper in papersAll | filter:query | itemsPerPage: pageSize" current-page="currentPage">
 
 			<div class="col-lg-2 col-md-1 col-sm-1 col-xs-1"></div>
 			<div class="col-lg-8 col-md-10 col-sm-10 col-xs-10">
@@ -69,10 +69,12 @@
 		</div> 
 
 		<!-- Pagination controls -->
-	    <div ng-controller="BarController" class="other-controller">
-	      <div class="text-center">
-	      	<dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber); moveUp()" max-size="maxSize" template-url="scripts/frontPapers/dirPagination.tpl.html"></dir-pagination-controls>
-	      </div>
+		<div class="row">
+		    <div ng-controller="BarControllerPapers" class="other-controller">
+		      <div class="text-center">
+		      	<dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber); moveUp()" max-size="maxSize" template-url="scripts/frontPapers/dirPagination.tpl.html"></dir-pagination-controls>
+		      </div>
+			</div>
 		</div>
-	</div>
+	</div> <!-- row -->
 </div>
