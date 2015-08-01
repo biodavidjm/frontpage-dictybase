@@ -2,36 +2,43 @@
     {
         "name": "8th International Biocuration Conference",
         "location": "Beijing (China)",
-        "date": "April 23-26, 2015"
+        "date": "April 23-26, 2015",
+        "dateF": "2015.04.23"
     }, 
     {
         "name": "Gordon Research Conference Cell Contact & Adhesion",
         "location": "Proctor Academy, Andover, NH (USA)",
-        "date": "June 28 - July 3, 2015"
+        "date": "June 28 - July 3, 2015",
+        "dateF": "2015.06.28"
     }, 
     {
         "name": "Dicty 2015",
         "location": "Royal Holloway University, London (UK) ",
-        "date": "August 9-13, 2015"
+        "date": "August 9-13, 2015",
+        "dateF": "2015.08.09"
     },
     {
         "name": "GO Consortium Meeting",
         "location": "Washington DC (USA)",
-        "date": "August 30 - September 2, 2015"
+        "date": "August 30 - September 2, 2015",
+        "dateF": "2015.08.30"
     },
     {
         "name": "ASCB 2015 Annual Meeting",
         "location": "San Diego, California (USA)",
-        "date": "August 30 - September 2, 2015"
+        "date": "August 30 - September 2, 2015",
+        "dateF": "2015.08.30"
     },
     {
         "name": "The 10th International Conference on Genomics",
         "location": "China",
-        "date": "Oct 22-25, 2015"
+        "date": "Oct 22-25, 2015",
+        "dateF": "2015.10.22"
     },
     {
         "name": "Dicty 2016",
         "location": "Arizona (USA)",
-        "date": "August 9-13, 2016"
+        "date": "August 9-13, 2016",
+        "dateF": "2016.01.23"
     }
 ]
