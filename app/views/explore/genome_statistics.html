@@ -13,14 +13,14 @@
     
     <div class="row" align="center">
             <a ng-click="gotoAnchor('genome')" href="" class="label label-info">Genome</a> 
-            <a ng-click="gotoAnchor('mito')" href="" class="label label-info">Mitochondrial</a> 
+            <a ng-click="gotoAnchor('mito')" href="" class="label label-info">Mitochondrium</a> 
             <a ng-click="gotoAnchor('info')" href="" class="label label-success">Gene Info</a> 
             <a ng-click="gotoAnchor('structure')" href="" class="label label-success">Gene Structure</a> 
-            <a ng-click="gotoAnchor('annotations')" href="" class="label label-success">Annotations</a> 
+            <a ng-click="gotoAnchor('annotations')" href="" class="label label-success">Annotation</a> 
             <a ng-click="gotoAnchor('nc')" href="" class="label label-success">NC-genes</a> 
             <a ng-click="gotoAnchor('pseudo')" href="" class="label label-success">Pseudogenes</a> 
+            <a ng-click="gotoAnchor('transpo')" href="" class="label label-success">Transposons</a>
             <a ng-click="gotoAnchor('expression')" href="" class="label label-warning">Expression</a> 
-            <a ng-click="gotoAnchor('transpo')" href="" class="label label-warning">Transposable</a>
             <a ng-click="gotoAnchor('pub')" href="" class="label label-danger">Publications</a> 
     </div>
     
@@ -314,36 +314,6 @@
                 <br>
 
             <p>
-                <a name="expression" id="expression"></a>
-            </p>
-            <table class="table table-hover">
-                <col width="80%">
-                <col width="20%">
-                <tr>
-                    <th colspan="2" class="table-header warning">
-                        <h4>Expression Data <sup><a href="" ng-click="scrollTo('6')">6</a></sup></h4>
-                    </th>
-                </tr>
-                <tr>
-                    <td>Number of ESTs
-                    </td>
-                    <td>155,036
-                    </td>
-                </tr>
-                <tr>
-                    <td>Genes with ESTs
-                    </td>
-                    <td>6,801
-                    </td>
-                </tr>
-            </table>
-
-                <p align="center"><small>
-                    <a href="" ng-click="gotoAnchor('top')">Top</a>
-                </small></p>
-                <br>
-
-            <p>
                 <a name="transpo" id="transpo"></a>
             </p>
         <small>
@@ -351,7 +321,7 @@
                 <col width="80%">
                 <col width="20%">
                 <tr>
-                    <th colspan="2" class="table-header warning">
+                    <th colspan="2" class="table-header success">
                         <h4>Transposable Elements <sup><a href="" ng-click="scrollTo('7')">7</a></sup></h4>
                     </th>
                 </tr>
@@ -466,6 +436,32 @@
                     <td>3</td>
                 </tr>
             </table>
+
+            <p>
+                <a name="expression" id="expression"></a>
+            </p>
+            <table class="table table-hover">
+                <col width="80%">
+                <col width="20%">
+                <tr>
+                    <th colspan="2" class="table-header warning">
+                        <h4>Expression Data <sup><a href="" ng-click="scrollTo('6')">6</a></sup></h4>
+                    </th>
+                </tr>
+                <tr>
+                    <td>Number of ESTs
+                    </td>
+                    <td>155,036
+                    </td>
+                </tr>
+                <tr>
+                    <td>Genes with ESTs
+                    </td>
+                    <td>6,801
+                    </td>
+                </tr>
+            </table>
+
         </small>  
 
                 <p align="center"><small>
