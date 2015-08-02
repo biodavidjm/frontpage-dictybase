@@ -59,7 +59,7 @@ angular
               return Math.ceil($scope.meetingsAll.length/$scope.pageSize);                
           };
           $scope.moveUp = function() {
-            window.scrollTo(0,195);
+            window.scrollTo(0,0);
           };
         }
       };

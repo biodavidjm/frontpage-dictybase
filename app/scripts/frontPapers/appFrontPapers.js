@@ -55,7 +55,7 @@ angular
               return Math.ceil($scope.papersAll.length/$scope.pageSize);                
           };
           $scope.moveUp = function() {
-            window.scrollTo(0,195);
+            window.scrollTo(0,0);
           };
         }
       };
