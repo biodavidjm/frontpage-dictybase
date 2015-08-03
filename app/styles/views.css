@@ -109,7 +109,7 @@ h4 {
 }
 
 .techSubHeaderArt {
-  color: white;
+  color: grey;
 }
 
 
@@ -321,7 +321,7 @@ div.captionBox:hover{
 }
 a.captionLink:link {
   color:inherit;
-  text-decoration:none;
+  text-decoration:underline;
 }
 a.captionLink:visited {
   color:inherit;
@@ -333,15 +333,14 @@ a.captionLink:hover {
 }
 
 .artHeaderHouse {
-  background-color: #0489B1;
-  color:white;
+  color: black;
   text-align: center;
 }
 
 .jumbotron.artJumbo {
   margin-bottom: 0px;
-  background-color: #0489B1;
-  color:white;
+  background-color: white;
+  text-align: center;
 }
 
 .artTitle {
@@ -349,27 +348,31 @@ a.captionLink:hover {
 }
 
 .artLogo {
-  padding: 0px 0px 20px 0px;
+  padding: 20px 0px 20px 0px;
+  text-align: center;
+}
+
+#artLogoImg {
+  border: 3px solid black;
+  border-radius: 15px;
 }
 
 .artSubheader {
   padding: 10px 0px 30px 0px;
-  color: white;
   text-align: center;
+  font-size: 20px;
+
 }
 
 .artMenu {
   text-align: center;
-  padding: 20px 0px 20px 0px;
-  background-color: black;
-  font-size: 12px;
-  color: white;
+  padding: 10px 0px 10px 0px;
+  font-size: 18px;
 }
 
 .artHomo {
   padding: 30px 0px 30px 0px;
   text-align: center;
-  background-color: #C63D0F;
   color: black;
 }
 
@@ -382,19 +385,15 @@ a.captionLink:hover {
 .artPoem {
   padding: 30px 0px 30px 0px;
   text-align: center;
-  background-color: #886A08;
-  color: #E1F5A9;
 }
 
 .artWork {
   padding: 20px 0px 30px 0px;
   text-align: center;
-  background-color: #4B610B;
-  color: #FFF056;
+  color: #4B610B;
 }
 
 .artWorkText {
-  color:#DFE2DB;
   padding: 10px 0px 0px 0px;
 }
 
@@ -405,8 +404,6 @@ a.captionLink:hover {
 .geographic {
   padding: 30px 0px 30px 0px;
   text-align: center;
-  background-color: #DF3D82;
-  color: #191919;  
 }
 
 .geoText {
@@ -419,7 +416,6 @@ a.captionLink:hover {
 
 .artAltruistic {
   padding: 20px 0px 50px 0px;
-  background-color: #D0A9F5;
   text-align: center;
 }
 
