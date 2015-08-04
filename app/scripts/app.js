@@ -24,8 +24,7 @@ angular
     'frontPapersApp',
     'frontStockCenterApp',
     'frontPopularsApp',
-    'frontMeetingsApp',
-    'definitionBarApp'
+    'frontMeetingsApp'
   ])
   // anchor scroll option 1
   .run(['$anchorScroll', function($anchorScroll) {
