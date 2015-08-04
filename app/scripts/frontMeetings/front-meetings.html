@@ -8,8 +8,8 @@
 		<div><span class="glyphicon glyphicon-plane"></span></div>
 		<div>{{meetingsHeader}}</div>
 	</div>
-
-	<div class="row meetingBox" ng-repeat="meeting in meetings | orderBy:'-date' | limitTo:4 ">
+	
+	<div class="row meetingBox" ng-repeat="meeting in meetings | orderBy:'dateF':reverse| limitTo:6 | filter: upComingMeetings" >
 		<span class="meetingsName"> {{meeting.name}} </span>
 		<span class="meetingsLocation"> {{meeting.location}} </span>
 		<span class="meetingsDate"> [{{meeting.date}}]</span> 

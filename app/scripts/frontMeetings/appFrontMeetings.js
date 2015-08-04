@@ -33,6 +33,15 @@ angular
           dictyMeetingsFactory.getJasonFile( function(data) { 
             $scope.meetings = data;
           });
+          
+          // FILTER FOR ONLY FUTURE MEETINGS
+          $scope.upComingMeetings = function(meeting) {
+            var currentDate = new Date();
+            var meetingComing = new Date(meeting.dateF);
+            if (meetingComing >= currentDate) {
+              return true;
+            }
+          };
         }
       };
     })
@@ -51,6 +60,15 @@ angular
           dictyMeetingsFactory.getJasonFile( function(data) { 
             $scope.meetingsAll = data;
           });
+          // FILTER FOR ONLY FUTURE MEETINGS
+          $scope.upComingMeetings = function(meeting) {
+            var currentDate = new Date();
+            var meetingComing = new Date(meeting.dateF);
+            if (meetingComing >= currentDate) {
+              return true;
+            }
+          };
+
           // Pagination variables and functions
           $scope.currentPage = 1;
           $scope.pageSize = 10;
