@@ -46,7 +46,6 @@ angular
 
         $scope.title = 'Dynamic Header';
         $scope.sections = {};
-
         dictyhfFactory.getJasonFile()
             .success(function(data){
                 $scope.sections.menus = data;
@@ -56,7 +55,6 @@ angular
             });
       }
     };
-
   });
 
   

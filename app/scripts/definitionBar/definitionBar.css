@@ -45,4 +45,12 @@
   }
 
 }
+
+.vete {
+  /* this is just another form of hiding an element */
+  display: block!important;
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
   

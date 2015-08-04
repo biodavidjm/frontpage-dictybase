@@ -51,12 +51,57 @@ angular
     };
   }])
   // Anchor Scroll option 2
-  .controller('MainAnchorController', function($scope, $location, $anchorScroll) {
-    $scope.scrollTo = function(id) {
-       $location.hash(id);
-       $anchorScroll.yOffset = 50;
-    };
-  })
+  // .controller('MainAnchorController', ['$scope', '$location', '$anchorScroll',
+  //   function($scope, $location, $anchorScroll) {
+  //     $scope.scrollTo = function(id) {
+  //        $location.hash(id);
+  //        $anchorScroll.yOffset = 50;
+  //     };
+  // }])
+
+  .controller('MainController', function($scope, $route, $routeParams, $location, $anchorScroll) {
+       $scope.$route = $route;
+       $scope.$routeParams = $routeParams;
+       $scope.$location = $location;
+
+       // DEFINITION BAR FUNCTIONS
+       
+       
+       $scope.getout = function() {
+        if ($location.path() === '/front' || $location.path() === '/') {
+          return 'vete';
+        }
+      };
+       
+
+       $scope.defineLook = function() {
+          if ($location.path() === '/front' || $location.path() === '/') {
+            return 'definitionFront';
+          }
+          else {
+            return 'definitionLink';
+          }
+       };
+
+       $scope.defineMessage = function() {
+          if ($location.path() === '/front' || $location.path() === '/') {
+            return 'Central genomics resource for social amoebae';
+          }
+       };
+
+       $scope.passUrlMain = function() {
+          if ($location.path() !== '/front' || $location.path() !== '/') {
+            return $location.path();
+          }
+       };
+
+      // SCROLL FUNCTION
+       $scope.scrollTo = function(id) {
+         $location.hash(id);
+         $anchorScroll.yOffset = 50;
+      };
+   })
+
   .config(function ($analyticsProvider) {
     $analyticsProvider.firstPageview(true); /* Records pages that don't use $state or $route */
     $analyticsProvider.withAutoBase(true);  /* Records full path */

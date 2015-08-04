@@ -15,11 +15,19 @@ angular
         templateUrl:'scripts/definitionBar/definition-bar.html',
         scope: {
           text: '@',
-          look: '@'
+          look: '@',
+          urlhome: '@',
+          urlmain: '@',
+          urlsub: '@',
+          desaparece: '@'
         },
         controller: function($scope) {
           $scope.text = '';
           $scope.look = '';
+          $scope.urlhome = '';
+          $scope.urlmain = '';
+          $scope.urlsub = '';
+          $scope.desaparece = '';
         }
       };
     });
