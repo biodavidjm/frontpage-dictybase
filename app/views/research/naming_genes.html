@@ -1,106 +1,107 @@
-<definition-bar text="Nomenclature <  Research  <  home" look="definitionLink"></definition-bar>
-
-<div class="container" ng-controller="AnchorController">
-    <div class="jumbotron research">
-        <div class="row">
-            <div class="techSubHeader"><h3>Research</h3></div>
-            <h1><strong>Nomenclature <br>Guidelines</strong></h1>
-            <h2 id="red">Procedure for naming genes</h2>
+<div class="viewHouse">
+    <div class="container" ng-controller="AnchorController">
+        <div class="jumbotron research">
+            <div class="row">
+                <div class="techSubHeader"><h3>Research</h3></div>
+                <h1><strong>Nomenclature <br>Guidelines</strong></h1>
+                <h2 id="red">Procedure for naming genes</h2>
+            </div>
         </div>
-    </div>
 
-    <br>
+        <br>
 
-    <div class="row">
-        <div class="col-lg-3 col-md-2 col-sm-2 col-xs-1"></div>
-        <div class="col-lg-6 col-md-8 col-sm-8 col-xs-10">
+        <div class="row">
+            <div class="col-lg-3 col-md-2 col-sm-2 col-xs-1"></div>
+            <div class="col-lg-6 col-md-8 col-sm-8 col-xs-10">
 
-            <p>
-                dictyBase acts as the centralized clearinghouse for <i>Dictyostelium discoideum</i> genes names. Scientific curators at dictyBase verify proposed names to encourage the application of the <a href="#/research/nomenclature">Nomenclature Guidelines</a> and to ensure that names are not duplicated. The present document explains the procedures that dictyBase applies to name genes and how conflicts with gene names are resolved.<br>
+                <p>
+                    dictyBase acts as the centralized clearinghouse for <i>Dictyostelium discoideum</i> genes names. Scientific curators at dictyBase verify proposed names to encourage the application of the <a href="#/research/nomenclature">Nomenclature Guidelines</a> and to ensure that names are not duplicated. The present document explains the procedures that dictyBase applies to name genes and how conflicts with gene names are resolved.<br>
+                    <br>
+                </p>
+                <ol>
+                    <li>
+                        <a name="naming" id="naming"></a>
+                        Choosing a gene name <b>New gene names</b> should conform to established nomenclature, for example <i>abcA1, atg1</i> and also <i>eif3f, nmd3, dgat1</i>. If there is no established nomenclature, the conventions derived from Demerec <i>et al.</i> (1966) should be used. A gene description consisting of three lower-case, italicized letters, followed by a capital italicized letter to distinguish genes with the same descriptor that are related in a significant way.<br>
+                        Examples: <i>rdeA</i>, <i>rdeB</i> and <i>rdeC</i>; or <i>tagA</i>, <i>tagB</i> and <i>tagC</i>.<br>
+                        <br>
+                        The 3-letter gene symbol should stand for a description of a phenotype, gene product or gene function. In addition, we strongly prefer that a given gene symbol have only one associated description, i.e., all genes which use a given 3-letter symbol should have a related phenotype, gene product or gene function.<br>
+                        <br>
+                        For more information please refer to the <i>Dictyostelium</i> <a href="#/research/nomenclature">Nomenclature Guidelines</a>.
+                        <br><br>
+                    </li>
+
+                    <li>
+                        <a name="naming" id="naming"></a>
+                        Ensuring that your gene name is unique Before deciding on your choice of gene name, please search dictyBase for any gene name beginning with the 3-letter symbol. To do this, enter the 3-letter name followed by an asterisk in the query box on the top right corner. Example: abc*.<br>
+                        <br>
+                        We encourage you to search <a target="new" href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed">PubMed</a> and <a target="new" href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed">GenBank</a>/ <a target="new" href="http://www.ebi.ac.uk/embl/index.html">EMBL</a>/ <a target="new" href="http://www.ddbj.nig.ac.jp/">DDBJ</a> to ensure that the gene name has not been used previously. Please note that dictyBase curators routinely perform such searches before a gene name is entered into the database, and would be happy to check a potential gene name for you at any time.
+                    </li>
+
+                    <br>
+
+                    <li>
+                        <a name="naming" id="naming"></a>
+                        Ensuring that your gene has not already been named. Use the dictyBase <a href="http://dictybase.org/db/cgi-bin/blast.pl">BLAST server</a> to search the <i>Dictyostelium</i> genes. Genes that have dictyBase DDB_G IDs in the "Gene Name" field of the Gene Page have likely not yet been named.
+                    </li>
+                    <br>
+                    <li>
+                        <a name="naming" id="naming"></a>
+                        Naming a gene <b><u>Upon publication</u></b> in a peer-reviewed journal or submission of the sequence to GenBank/EMBL/DDBJ, the gene name will be imported into dictyBase, provided that the name is mentioned in the abstract of the paper and/or in the description of the GenBank record.<br>
+                        <br>
+                        Genes can also be named <b><u>prior to publication</u></b> by writing to dictyBase curators with the dictyBase Gene ID and the proposed name of the gene. Gene names will be reserved for one year, as long as there are no naming conflicts. Once your gene name reservation has expired, dictyBase will search PubMed to see if the reserved gene name has been published. If we are unable to determine if the gene name has been published, you will be contacted by email or phone. If you do not respond to dictyBase's attempts to contact you within 6 months, the gene name reservation will be removed. If the name is still available, the gene name reservation may be renewed if you are continuing to study the gene.<br>
+                        <br>
+                        <b>We urge you to include your gene name(s) in the abstracts of any relevant papers.</b> This simplifies the task of identifying gene names that are already in use.
+                    </li>
+                </ol>
+                
                 <br>
-            </p>
-            <ol>
-                <li>
-                    <a name="naming" id="naming"></a>
-                    Choosing a gene name <b>New gene names</b> should conform to established nomenclature, for example <i>abcA1, atg1</i> and also <i>eif3f, nmd3, dgat1</i>. If there is no established nomenclature, the conventions derived from Demerec <i>et al.</i> (1966) should be used. A gene description consisting of three lower-case, italicized letters, followed by a capital italicized letter to distinguish genes with the same descriptor that are related in a significant way.<br>
-                    Examples: <i>rdeA</i>, <i>rdeB</i> and <i>rdeC</i>; or <i>tagA</i>, <i>tagB</i> and <i>tagC</i>.<br>
-                    <br>
-                    The 3-letter gene symbol should stand for a description of a phenotype, gene product or gene function. In addition, we strongly prefer that a given gene symbol have only one associated description, i.e., all genes which use a given 3-letter symbol should have a related phenotype, gene product or gene function.<br>
-                    <br>
-                    For more information please refer to the <i>Dictyostelium</i> <a href="#/research/nomenclature">Nomenclature Guidelines</a>.
-                    <br><br>
-                </li>
+                <div align="center">
+                    <a  href="#/research/nomenclature" class="label label-danger">Guidelines</a> |
+                    <a ng-click="gotoAnchor('top')" href="" class="label label-danger">Top</a> 
+                </div>
 
-                <li>
-                    <a name="naming" id="naming"></a>
-                    Ensuring that your gene name is unique Before deciding on your choice of gene name, please search dictyBase for any gene name beginning with the 3-letter symbol. To do this, enter the 3-letter name followed by an asterisk in the query box on the top right corner. Example: abc*.<br>
-                    <br>
-                    We encourage you to search <a target="new" href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed">PubMed</a> and <a target="new" href="http://www.ncbi.nlm.nih.gov/entrez/query.fcgi?db=PubMed">GenBank</a>/ <a target="new" href="http://www.ebi.ac.uk/embl/index.html">EMBL</a>/ <a target="new" href="http://www.ddbj.nig.ac.jp/">DDBJ</a> to ensure that the gene name has not been used previously. Please note that dictyBase curators routinely perform such searches before a gene name is entered into the database, and would be happy to check a potential gene name for you at any time.
-                </li>
+                <hr>
 
+                <a name="resolving" id="resolving"></a>
+                <h3>
+                    Resolution of gene name conflicts
+                </h3>
+                <p>
+                    We occasionally must resolve gene name conflicts where multiple names have been used to describe one gene or, conversely, one name has been applied to multiple genes. We recognize that each case is unique, and we strive to choose the most appropriate solution. Whenever possible, we try to engage the participation of all interested parties in the resolution of the conflict. We use the following guidelines when resolving gene name conflicts:
+                </p>
+                <ul>
+                    <li>
+                        <strong>Researcher consensus:</strong> Above all else, if the researchers involved in the name conflict agree to a solution, we will abide by it.
+                    </li>
+                    <li>
+                        <strong>Literature consensus:</strong> In the absence of researcher consensus, we will examine the literature for the number of name usages and the number of different research groups utilizing a particular name. If there is a very obvious imbalance, we will favor the more predominant name.
+                    </li>
+                    <li>
+                        <strong>Priority:</strong> In the absence of either researcher or literature consensus, we will favor the gene name usage that was first published.
+                    </li>
+                    <li>
+                        <strong>Relevance of the name:</strong> In rare cases where none of the above points apply, we may favor a particular name usage that more accurately describes a phenotype, gene product or gene function.
+                    </li>
+                    <li>
+                        <strong>Unmapped/unsequenced genes:</strong> If there is a duplicate name for a mapped/sequenced gene and a gene that has never been mapped on the genome, the name for the latter may be removed in favor of the mapped gene.
+                    </li>
+                </ul>
+                <p>
+                    <br>
+                </p>
+                <div align="center">
+                    <small>Updated on September 4, 2009</small>
+                </div>
                 <br>
-
-                <li>
-                    <a name="naming" id="naming"></a>
-                    Ensuring that your gene has not already been named. Use the dictyBase <a href="http://dictybase.org/db/cgi-bin/blast.pl">BLAST server</a> to search the <i>Dictyostelium</i> genes. Genes that have dictyBase DDB_G IDs in the "Gene Name" field of the Gene Page have likely not yet been named.
-                </li>
+                <div align="center">
+                    <a  href="#/research/nomenclature" class="label label-danger">Guidelines</a> |
+                    <a ng-click="gotoAnchor('top')" href="" class="label label-danger">Top</a> 
+                </div>
                 <br>
-                <li>
-                    <a name="naming" id="naming"></a>
-                    Naming a gene <b><u>Upon publication</u></b> in a peer-reviewed journal or submission of the sequence to GenBank/EMBL/DDBJ, the gene name will be imported into dictyBase, provided that the name is mentioned in the abstract of the paper and/or in the description of the GenBank record.<br>
-                    <br>
-                    Genes can also be named <b><u>prior to publication</u></b> by writing to dictyBase curators with the dictyBase Gene ID and the proposed name of the gene. Gene names will be reserved for one year, as long as there are no naming conflicts. Once your gene name reservation has expired, dictyBase will search PubMed to see if the reserved gene name has been published. If we are unable to determine if the gene name has been published, you will be contacted by email or phone. If you do not respond to dictyBase's attempts to contact you within 6 months, the gene name reservation will be removed. If the name is still available, the gene name reservation may be renewed if you are continuing to study the gene.<br>
-                    <br>
-                    <b>We urge you to include your gene name(s) in the abstracts of any relevant papers.</b> This simplifies the task of identifying gene names that are already in use.
-                </li>
-            </ol>
-            
-            <br>
-            <div align="center">
-                <a  href="#/research/nomenclature" class="label label-danger">Guidelines</a> |
-                <a ng-click="gotoAnchor('top')" href="" class="label label-danger">Top</a> 
-            </div>
+            </div> <!-- End of col-->
+            <div class="col-lg-3 col-md-2 col-sm-2 col-xs-1"></div>
+        </div> <!-- row  -->
+    </div> <!-- container -->
+                
 
-            <hr>
-
-            <a name="resolving" id="resolving"></a>
-            <h3>
-                Resolution of gene name conflicts
-            </h3>
-            <p>
-                We occasionally must resolve gene name conflicts where multiple names have been used to describe one gene or, conversely, one name has been applied to multiple genes. We recognize that each case is unique, and we strive to choose the most appropriate solution. Whenever possible, we try to engage the participation of all interested parties in the resolution of the conflict. We use the following guidelines when resolving gene name conflicts:
-            </p>
-            <ul>
-                <li>
-                    <strong>Researcher consensus:</strong> Above all else, if the researchers involved in the name conflict agree to a solution, we will abide by it.
-                </li>
-                <li>
-                    <strong>Literature consensus:</strong> In the absence of researcher consensus, we will examine the literature for the number of name usages and the number of different research groups utilizing a particular name. If there is a very obvious imbalance, we will favor the more predominant name.
-                </li>
-                <li>
-                    <strong>Priority:</strong> In the absence of either researcher or literature consensus, we will favor the gene name usage that was first published.
-                </li>
-                <li>
-                    <strong>Relevance of the name:</strong> In rare cases where none of the above points apply, we may favor a particular name usage that more accurately describes a phenotype, gene product or gene function.
-                </li>
-                <li>
-                    <strong>Unmapped/unsequenced genes:</strong> If there is a duplicate name for a mapped/sequenced gene and a gene that has never been mapped on the genome, the name for the latter may be removed in favor of the mapped gene.
-                </li>
-            </ul>
-            <p>
-                <br>
-            </p>
-            <div align="center">
-                <small>Updated on September 4, 2009</small>
-            </div>
-            <br>
-            <div align="center">
-                <a  href="#/research/nomenclature" class="label label-danger">Guidelines</a> |
-                <a ng-click="gotoAnchor('top')" href="" class="label label-danger">Top</a> 
-            </div>
-            <br>
-        </div> <!-- End of col-->
-        <div class="col-lg-3 col-md-2 col-sm-2 col-xs-1"></div>
-    </div> <!-- row  -->
-</div> <!-- container -->
-            
+</div>
