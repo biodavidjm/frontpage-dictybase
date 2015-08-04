@@ -363,6 +363,12 @@ In this case, the
     font-size: 12px;
   }
 
+  .definitionLink {
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    font-size: 8px;
+  }
+
 }
 
 .vete {
