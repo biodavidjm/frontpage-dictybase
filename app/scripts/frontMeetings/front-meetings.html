@@ -9,7 +9,7 @@
 		<div>{{meetingsHeader}}</div>
 	</div>
 	
-	<div class="row meetingBox" ng-repeat="meeting in meetings | orderBy:'dateF':reverse| limitTo:6 | filter: upComingMeetings" >
+	<div class="row meetingBox" ng-repeat="meeting in meetings | orderBy:'dateF':reverse| limitTo:4" >
 		<span class="meetingsName"> {{meeting.name}} </span>
 		<span class="meetingsLocation"> {{meeting.location}} </span>
 		<span class="meetingsDate"> [{{meeting.date}}]</span> 

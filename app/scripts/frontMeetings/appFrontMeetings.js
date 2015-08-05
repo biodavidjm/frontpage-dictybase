@@ -36,7 +36,7 @@ angular
           
           // FILTER FOR ONLY FUTURE MEETINGS
           $scope.upComingMeetings = function(meeting) {
-            var currentDate = new Date();
+            var currentDate = new Date('2015.08.05');
             var meetingComing = new Date(meeting.dateF);
             if (meetingComing >= currentDate) {
               return true;
