@@ -1,0 +1,146 @@
+/*Front annotation Center CSS*/
+
+.annotationHouse{
+	padding: 5px 5px 15px 5px;
+}
+
+.annotationMain{
+	border: 1px solid #EFF8FB;
+	border-radius: 10px;
+	padding-bottom: 0px;
+}
+
+.annotationHeader{
+	color: #0489B1;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 10px 0px 10px 0px;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;	
+	border-top: 1px solid #EFF8FB;
+	border-left: 1px solid #EFF8FB;
+	border-right: 1px solid #EFF8FB;
+	border-bottom: 0px solid #EFF8FB;
+}
+
+.annotationsFooter {
+	/*border: 1px solid #EFF8FB;*/
+	color: #084B8A;
+	background-color: #EFF8FB;
+}
+
+
+.annotationGenesMain {
+	text-align: center;
+	/*padding-left: 10px;*/
+	/*background-color: #F8FBEF;*/
+/*	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+	border: 1px solid #D8D8D8;*/
+}
+
+.annotationGenesHeader{
+	font-size: 14px;
+	padding-top: 5px;
+	font-weight: bold;
+}
+
+.annotationGenesItems {
+	font-size: 11px;
+	padding-top: 3px;
+	/*padding-bottom: 5px;*/
+}
+
+.annotationPapersMain {
+	text-align: center;
+/*	border-bottom-left-radius:10px;
+	border-bottom-right-radius:10px;
+	border: 1px solid #D8D8D8;*/
+}
+
+.annotationPapersHeader{
+	font-size: 14px;
+	padding-top: 5px;
+	font-weight: bold;
+}
+
+.annotationPapersItems {
+	font-size: 11px;
+	padding-top: 3px;
+	/*padding-bottom: 5px;*/
+	
+}
+
+.moreAnnotations {
+	color: #BDBDBD;
+	font-size: 10px;
+	font-style: italic;
+	
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+
+@media(max-width:992px){
+
+	.annotationGenesItems {
+		font-size: 10px;
+		padding-top: 2px;
+		padding-bottom: 0px;
+	}
+
+	.annotationPapersItems {
+		font-size: 10px;
+		padding-top: 2px;
+		padding-bottom: 0px;
+	}
+
+	.annotationHouse {
+		padding: 0px 0px 10px 0px;
+	}
+
+	.annotationHeader {
+		padding: 5px 0px 5px 0px;
+		font-size: 14px;
+	}
+	.moreAnnotations {
+		font-size: 8px;
+	}
+}
+
+
+@media(max-width:767px){
+
+	.annotationHouse{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.annotationHeader{
+		font-size: 22px;
+	}
+
+	.annotationGenesMain {
+		border-bottom-left-radius:0px;
+		border-bottom-right-radius:0px;
+	}
+
+	.annotationGenesHeader{
+		font-size: 18px;
+		padding-top: 10px;
+	}
+
+	.annotationGenesItems {
+		font-size: 14px;
+	}
+
+	.annotationPapersHeader{
+		font-size: 18px;
+		padding-top: 10px;
+	}
+
+	.annotationPapersItems {
+		font-size: 14px;
+	}
+}
