@@ -108,6 +108,19 @@ h4 {
   margin-bottom: 0px;
 }
 
+a.techSubHeaderLink:link {
+  color:inherit;
+  text-decoration:none;
+}
+a.techSubHeaderLink:visited {
+  color:inherit;
+  text-decoration:none;
+}
+a.techSubHeaderLink:hover {
+  color:inherit;
+  text-decoration:none;
+}
+
 .techSubHeaderArt {
   color: grey;
 }
