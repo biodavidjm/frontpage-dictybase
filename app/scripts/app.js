@@ -284,6 +284,9 @@ angular
       .when('/community/jobs', {
         templateUrl: 'views/community/jobs.html'
       })
+      .when('/community/jobs01', {
+        templateUrl: 'views/community/jobsDicty15.html'
+      })
       .when('/community/history', {
         templateUrl: 'views/community/history/index.html'
       })
