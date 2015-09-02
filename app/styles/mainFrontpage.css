@@ -37,34 +37,6 @@
   margin-left: 1px;                                   
 }
 
-.frontJobsBox {
-  border-top: 1px solid #E6E6E6;
-  border-top-left-radius:30px;
-  border-bottom: 1px solid #E6E6E6;
-  border-bottom-right-radius:30px;
-
-  padding: 10px 0px 10px 0px;
-  margin: 10px 0px 10px 0px;
-
-  background-color: #F2F2F2;
-  font-size: 12px;
-  font-weight: bold;
-}
-
-div.frontJobsBox:hover {
-  background-color: #585858;
-  color:white;
-  border-top: 1px solid #E6E6E6;
-  border-top-right-radius:30px;
-  border-bottom: 1px solid #E6E6E6;
-  border-bottom-left-radius:30px;
-
-  border-top: 1px solid #E6E6E6;
-  border-top-left-radius:0px;
-  border-bottom: 1px solid #E6E6E6;
-  border-bottom-right-radius:0px;
-}
-
 @media(max-width:767px){
 
   .belowImage{
