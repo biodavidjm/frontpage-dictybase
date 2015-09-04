@@ -6,7 +6,8 @@
 	<div class="container">
 		<div class="row">
 			
-			<div class="col-md-6 col-sm-6 col-xs-12"> <!-- COLUMN OF THE IMAGE -->
+			<!-- COLUMN CELL -->
+			<div class="col-md-6 col-sm-6 col-xs-12"> 
 				
 				<div class="row imageSpace">
 					<front-image></front-image>
@@ -22,29 +23,32 @@
 					</div>
 				</div>
 
-			</div> <!-- COLUMN OF THE IMAGE -->
+			</div><!-- COLUMN CELL -->
 
-			<div class="col-md-6 col-sm-6 col-xs-12">  <!-- COLUMN OF THE NEWS -->
+			<!-- COLUMN MOUND -->
+			<div class="col-md-6 col-sm-6 col-xs-12">  
 				
-				<div class="row newsSpace"> <!-- NEWS -->
-
+				<div class="row newsSpace"> <!-- CM ROW 1 -->
 					<front-news></front-news>
-					
-				</div> <!-- NEWS -->
+				</div> <!-- CM ROW 1 -->
 
-				<div class="row"> <!-- DYNAMIC OPTIONS -->
+				<div class="row"> <!-- CM ROW 2 -->
 					<div class="col-md-6 col-sm-6 col-xs-12"> <!-- WIDGETS -->
 
 						<front-populars></front-populars>
 
 					</div> <!-- WIDGETS -->
 
-					<!-- VARIABLE SPACE -->
+					<!-- SHORTCUTS COLUMN -->
 					<div class="col-md-6 col-sm-6 col-xs-12"> 
-
-						<front-stockcenter></front-stockcenter>
-
-						<front-annotations></front-annotations>
+						
+						<div class="sc1">
+							<front-stockcenter></front-stockcenter>	
+						</div>
+						
+						<div class="sc2">
+							<front-annotations></front-annotations>	
+						</div>
 
 						<!-- Temporal Life Cicle -->
 
@@ -62,9 +66,9 @@
 
 					</div><!-- VARIABLE SPACE -->
 
-				</div><!-- DYNAMIC OPTIONS -->
+				</div><!-- SHORTCUTS COLUMN -->
 
-			</div> <!-- COLUMN OF THE NEWS -->
+			</div> <!-- COLUMN MOUND -->
 
 		</div>
 	</div>
