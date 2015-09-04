@@ -19,8 +19,11 @@ describe('Testing frontPopulars directive', function() {
 
   it('Checking the content of the front-populars directive', function(){
 
-    expect(element.html()).toContain('images/widgetBLAST1.png');
-    expect(element.html()).toContain('images/widgetBLAST2.png');
+    expect(element.html()).toContain('images/widgetLEARNDICTY1.png');
+    expect(element.html()).toContain('images/widgetLEARNDICTY2.png');
+
+    expect(element.html()).toContain('images/widgetTECHNIQUES1.png');
+    expect(element.html()).toContain('images/widgetTECHNIQUES2.png');
 
   });
 
