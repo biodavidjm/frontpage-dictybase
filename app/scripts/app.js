@@ -14,6 +14,7 @@ angular
     'ngRoute',
     'ngTouch',
     'ngAnimate',
+    'ngSanitize',
     'angulartics',
     'angulartics.google.analytics',
     'resetFieldApp',

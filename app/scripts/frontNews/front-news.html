@@ -13,7 +13,7 @@
 	</div>
 	<div class="row newsBox" ng-repeat="detail in details | orderBy:'-date' | limitTo:3 ">
 		<span class="newsDate">{{detail.date}}</span> 
-		<span class="newsContent">{{detail.content}} </span>
+		<span class="newsContent" ng-bind-html="detail.content"></span>
 		<span class="newsSource"><strong>Source</strong>: {{detail.source}} </span>
 	</div>
 	<div class="row newsMore">

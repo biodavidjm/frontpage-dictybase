@@ -37,7 +37,8 @@
 		<div class="row newsBoxAll" dir-paginate="detail in detailsAll | orderBy:'-date' | filter:query | itemsPerPage: pageSize">
 			<hr>
 			<div class="col-md-2 col-xs-12 newsDate all"> {{detail.date}}</div>
-			<div class="col-md-8 col-xs-12 newsContent all"> {{detail.content}} </div>
+			<span class="newsContent" ></span>
+			<div class="col-md-8 col-xs-12 newsContent all" ng-bind-html="detail.content"></div>
 			<div class="col-md-2 col-xs-12"> <span class="newsSource"><strong>Source</strong>: {{detail.source}} </span> </div>
 			<div class="col-md-12"></div>
 		</div>
