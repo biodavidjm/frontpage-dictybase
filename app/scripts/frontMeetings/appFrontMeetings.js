@@ -27,7 +27,7 @@ angular
         restrict:'E',
         templateUrl:'scripts/frontMeetings/front-meetings.html',
         scope: true,
-        controller: function(dictyMeetingsFactory, $scope) {
+        controller: function(dictyMeetingsFactory, $scope, $filter) {
           $scope.meetingsHeader = 'UPCOMING MEETINGS';
           $scope.meetings = {};
           dictyMeetingsFactory.getJasonFile( function(data) { 
@@ -36,11 +36,14 @@ angular
           
           // FILTER FOR ONLY FUTURE MEETINGS
           $scope.upComingMeetings = function(meeting) {
-            var currentDate = new Date('2015.08.05');
-            var meetingComing = new Date(meeting.dateF);
-            if (meetingComing >= currentDate) {
+
+            // var date = new Date();
+            var currentDate = $filter('date')(new Date(), 'yyyy.MM.dd');
+            var meetingComing = meeting.dateF;
+            if (meetingComing > currentDate) {
               return true;
             }
+
           };
         }
       };
@@ -50,7 +53,7 @@ angular
         restrict:'E',
         templateUrl:'scripts/frontMeetings/front-meetingsall.html',
         scope: true,
-        controller: function(dictyMeetingsFactory, $scope) {
+        controller: function(dictyMeetingsFactory, $scope, $filter) {
           $scope.meetingsHeaderAll = 'Upcoming Meetings';
           $scope.meetingsAll = {};
           $scope.clearFilter = function(){
@@ -60,13 +63,17 @@ angular
           dictyMeetingsFactory.getJasonFile( function(data) { 
             $scope.meetingsAll = data;
           });
+
+
           // FILTER FOR ONLY FUTURE MEETINGS
           $scope.upComingMeetings = function(meeting) {
-            var currentDate = new Date();
-            var meetingComing = new Date(meeting.dateF);
-            if (meetingComing >= currentDate) {
+            
+            var currentDate = $filter('date')(new Date(), 'yyyy.MM.dd');
+            var meetingComing = meeting.dateF;
+            if (meetingComing > currentDate) {
               return true;
             }
+            
           };
 
           // Pagination variables and functions

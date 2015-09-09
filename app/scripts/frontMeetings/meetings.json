@@ -6,6 +6,12 @@
         "dateF": "2015.08.14"
     },
     {
+        "name": "Dicty 2016",
+        "location": "Tucson, Arizona (USA)",
+        "date": "July 31 - August 4, 2016",
+        "dateF": "2016.10.22"
+    },
+    {
         "name": "GO Consortium Meeting",
         "location": "Washington DC (USA)",
         "date": "August 30 - September 2, 2015",
@@ -22,11 +28,5 @@
         "location": "China",
         "date": "Oct 22-25, 2015",
         "dateF": "2015.10.22"
-    },
-    {
-        "name": "Dicty 2016",
-        "location": "Arizona (USA)",
-        "date": "August 9-13, 2016",
-        "dateF": "2016.01.23"
     }
 ]
