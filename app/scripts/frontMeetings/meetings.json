@@ -28,5 +28,23 @@
         "location": "China",
         "date": "Oct 22-25, 2015",
         "dateF": "2015.10.22"
+    },
+    {
+        "name": "The 2nd Annual Translational Microbiome Conference",
+        "location": "USA",
+        "date": "Apr 20-21, 2016",
+        "dateF": "2016.04.22"
+    },
+    {
+        "name": "EMBL-EBI-Wellcome Trust Workshop on Proteomics Bioinformatics",
+        "location": "UK",
+        "date": "Dec 06-11, 2015",
+        "dateF": "2015.12.12"
+    },
+    {
+        "name": "G Protein-Coupled Receptors: Structure, Signaling and Drug Discovery",
+        "location": "USA",
+        "date": "Feb 21-25, 2015",
+        "dateF": "2016.02.22"
     }
 ]
