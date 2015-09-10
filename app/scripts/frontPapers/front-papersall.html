@@ -12,7 +12,7 @@
 <div class="jumbotron">
 	<h1><span class="glyphicon glyphicon-paperclip"></span> {{papersHeaderAll}}</h1>
 	<br>
-	<small>All the <em>Dictyostelium</em> papers for a quick search </small>
+	<h4>Papers on <em>Dictyostelium</em> in the last 5 years </h4>
 </div>
 
 <div class="container">
@@ -77,8 +77,8 @@
 			<div class="col-lg-2 col-md-1 col-sm-1 col-xs-1"></div>
 			<div class="col-lg-8 col-md-10 col-sm-10 col-xs-10">
 				<hr>
-				<div class="papersAuthors all">{{apaper.authors}}</div> 
-				<div class="papersTitle all">{{apaper.title}} </div>
+				<div class="papersAuthors all">{{apaper.Description}}</div> 
+				<div class="papersTitle all">{{apaper.Title}} </div>
 				<div class="papersJournal all">{{apaper.Details}} <span class="papersLink"> <a href="http://www.ncbi.nlm.nih.gov{{apaper.URL}}" target="_blank" >Pubmed</a></span></div>
 				
 			</div>
