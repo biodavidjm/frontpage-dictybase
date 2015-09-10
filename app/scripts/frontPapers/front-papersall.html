@@ -1,6 +1,13 @@
 <!-- Template for the front-papersall directive -->
 <link rel="stylesheet" href="scripts/frontPapers/frontPapers.css">
 
+<script>
+	$(".dropdown-menu li a").click(function(){
+	  $(this).parents(".dropdown").find('.btn').html($(this).text() + ' <span class="caret"></span>');
+	  $(this).parents(".dropdown").find('.btn').val($(this).data('value'));
+	});
+</script>
+
 <!-- Papers header -->
 <div class="jumbotron">
 	<h1><span class="glyphicon glyphicon-paperclip"></span> {{papersHeaderAll}}</h1>
@@ -15,57 +22,44 @@
 		<!-- Search and items boxes -->
 		<div class="row">
 			<div class="col-sm-4 col-xs-1"></div>
-			<div class="col-sm-4 col-xs-10" >
-			  <!-- <label for="search">Search:</label> -->
-			  <input ng-model="query" id="search" class="form-control" placeholder="Filter by exact matches" >
-	<!-- 			  typeahead="papers.authors for papers in papersAll | filter:$viewValue | limitTo:8" -->
-			</div>
 
-			<div class="col-xs-3">
-<!-- 			  <label for="search">items per page:</label>
-			  <input type="number" min="4" max="20" ng-model="pageSize"> -->
+			<div class="col-sm-4 col-xs-10" >
+			  <input ng-model="query" id="search" class="form-control" placeholder="Filter by exact matches" >
 			</div>
 
 			<div class="col-sm-4 col-xs-1"></div>
 		</div>
 
 		<br>
-
-		<!-- Number of papers -->
+		
 		<div class="row">
-			<div class="col-sm-2 col-xs-1"></div>
-			<div class="col-sm-8 col-xs-10">
-				<div align="center"> <small>
-					Showing 
-					<strong>{{pageSize}}</strong> per page of
-					<strong> 
-						<span id="size16" class="blueDicty">{{(papersAll|filter:query).length}}</span>
-					</strong> 
-					papers about <em>Dictyostelium discoideum</em>
-				 </small></div>
-			</div>
-			<div class="col-sm-2 col-xs-1"></div>
-		</div>
-		<br>
-		<div class="row">
-			<!-- <div class="dropdown"> -->
+				<div class="col-sm-2 col-xs-1"></div>
+				<div class="col-sm-8 col-xs-10">
+				
+					<div class="dropdown" align="center">
+						Showing
+						<span class="bewithme">
+							<select class="form-control input-sm" id="dropdownMenu1"  ng-model="pageSize" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" placeholder=".input-sm">
+								 Dropdown
+				    			<span class="caret"></span>
+								<!-- <option disabled="true" >Items per page</option> -->
+								<option>5</option>
+								<option>10</option>
+								<option>20</option>
+								<option>50</option>
+							</select>
+						</span>
+						papers per page 
+						(out of 
+						<strong> 
+							<span id="size16" class="blueDicty">{{(papersAll|filter:query).length}}</span>
+						</strong> 
+						)
+					</div>
+				
 
-				<div class="col-sm-5 col-xs-5"></div>
-				<div class="col-sm-2 col-xs-2">
-						
-					<select class="form-control form-inline" id="sel1"  ng-model="pageSize">
-						<option disabled="true" >Items per page</option>
-						<option>5</option>
-						<option>10</option>
-						<option>20</option>
-						<option>50</option>
-					</select>
-	 			      	
-
-				</div>
-				<div class="col-sm-5 col-xs-5"></div>
-
-<!-- 			</div> dropdown -->
+				</div> <!-- column -->
+				<div class="col-sm-2 col-xs-1"></div>
 		</div>
 
 		<!-- Pagination controls -->
@@ -92,7 +86,8 @@
 
 		</div> 
 
-<br>
+		<br>
+
 		<!-- Pagination controls -->
 		<div class="row">
 		    <div ng-controller="BarControllerPapers" class="other-controller">

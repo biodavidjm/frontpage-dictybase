@@ -49,7 +49,7 @@ angular
           });
           // Pagination variables and functions
           $scope.currentPage = 1;
-          $scope.pageSize = 6;
+          $scope.pageSize = 5;
           $scope.maxSize = 5;
           $scope.numberOfPages=function(){
               return Math.ceil($scope.papersAll.length/$scope.pageSize);                

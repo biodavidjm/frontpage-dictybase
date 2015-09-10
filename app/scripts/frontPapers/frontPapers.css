@@ -37,6 +37,11 @@
 
 .papersBox{
 	padding: 0px 20px 10px 25px;
+}
+
+/*DROPDOWN*/
+.bewithme { 
+	display: inline-block; 
 	font-size: 12px;
 }
 
