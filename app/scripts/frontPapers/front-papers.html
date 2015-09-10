@@ -5,14 +5,15 @@
 <div class="row papersMain">
 	
 	<div class="papersHeader">
-		<div><span class="glyphicon glyphicon-paperclip"></span> </div>
-		<div>{{papersHeader}}</div>
+		<span class="glyphicon glyphicon-paperclip"></span>
+		{{papersHeader}}
 	</div>
 
-	<div class="row papersBox" ng-repeat="paper in papers | limitTo:3">
+	<div class="row papersBox" ng-repeat="paper in papers | limitTo:5">
 		<span class="papersAuthors">{{paper.Description}}</span> 
 		<span class="papersTitle">{{paper.Title}} </span>
 		<span class="papersJournal">{{paper.ShortDetails}} </span>
+		<span> <a href="http://www.ncbi.nlm.nih.gov{{paper.URL}}" target="_blank" >Pubmed</a></span>
 	</div>
 
 	<div class="row papersMore">

@@ -2,7 +2,7 @@
 
 .papersMain {
 	text-align: left;
-	padding: 5px 0px 10px 0px;
+	padding: 0px 20px 10px 20px;
 }
 
 .papersMain.full {
@@ -30,13 +30,15 @@
 
 .papersHeader{
 	color:#086A87;
-	font-size: 18px;
-	padding: 0px 0px 8px 0px;
-	text-align: center;
+	font-size: 20px;
+	padding: 15px 30px 10px 30px;
+	vertical-align:top;
+	text-align: left;
 }
 
 .papersBox{
-	padding: 0px 20px 10px 25px;
+	padding: 0px 25px 10px 35px;
+	font-size: 12px;
 }
 
 /*DROPDOWN*/
@@ -78,6 +80,7 @@
 
 .papersJournal {
 	color: grey;
+	padding-right: 10px;
 }
 
 .papersLink {
