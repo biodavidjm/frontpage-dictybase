@@ -1,544 +1,546 @@
-<a name="top" id="top"></a>
+<div class="viewHouse">
 
-<div class="jumbotron research">
-    <div class="row">
-        <div class="techSubHeader"><h3>Explore</h3></div>
-        <img src="images/logoStats.png">
-        <h1>Genome Statistics</h1>
-        <h5><em>Dictyostelium discoideum</em></h5>
-    </div>
-</div>
-
-<div class="container" ng-controller="AnchorController">
-    
-    <div class="row" align="center">
-            <a ng-click="gotoAnchor('genome')" href="" class="label label-info">Genome</a> 
-            <a ng-click="gotoAnchor('mito')" href="" class="label label-info">Mitochondrium</a> 
-            <a ng-click="gotoAnchor('info')" href="" class="label label-success">Gene Info</a> 
-            <a ng-click="gotoAnchor('structure')" href="" class="label label-success">Gene Structure</a> 
-            <a ng-click="gotoAnchor('annotations')" href="" class="label label-success">Annotation</a> 
-            <a ng-click="gotoAnchor('nc')" href="" class="label label-success">NC-genes</a> 
-            <a ng-click="gotoAnchor('pseudo')" href="" class="label label-success">Pseudogenes</a> 
-            <a ng-click="gotoAnchor('transpo')" href="" class="label label-success">Transposons</a>
-            <a ng-click="gotoAnchor('expression')" href="" class="label label-warning">Expression</a> 
-            <a ng-click="gotoAnchor('pub')" href="" class="label label-danger">Publications</a> 
-    </div>
-    
-    <br>
-    
-    <div class="row">
-        <div class="col-md-2 col-sm-1 col-xs-1"></div>
-        <div class="col-md-8 col-sm-10 col-xs-10">
-
-            <br>
-            <p>
-                <a name="genome" id="genome"></a>
-            </p>
-            <table class="table table-hover">
-                <col width="80%">
-                <col width="20%">
-                <tr>
-                    <th colspan="2" class="table-header info">
-                        <h4>Genome Information <small>(excluding mitochondrial genome)</small><sup><a href="" ng-click="scrollTo('1')">1</a></sup></h4>
-                    </th>
-                </tr>
-                <tr>
-                    <td>Genome size</td>
-                    <td>34 Mb</td>
-                </tr>
-                <tr>
-                    <td>Chromosomes</td>
-                    <td>6</td>
-                </tr>
-                <tr>
-                    <td>Chromosome size range</td>
-                    <td>3.5-8.6 Mb</td>
-                </tr>
-                <tr>
-                    <td>Overall GC content</td>
-                    <td>22.4%</td>
-                </tr>
-            </table>
-
-                <p align="center"><small>
-                    <a href="" ng-click="gotoAnchor('top')">Top</a>
-                </small></p>
-                <br>
-
-            <p>
-                <a name="mito" id="mito"></a>
-            </p>
-            
-            <table class="table table-hover">
-                <col width="80%">
-                <col width="20%">
-                <tr>
-                    <th colspan="2" class="table-header info">
-                        <h4>Mitochondrial Genome <sup><a href="" ng-click="scrollTo('2')">2</a></sup></h4>
-                    </th>
-                </tr>
-                <tr>
-                    <td>Mitochondrial genome size</td>
-                    <td>55.6 kb</td>
-                </tr>
-                <tr>
-                    <td>Number of mitochondrial genes</td>
-                    <td>41</td>
-                </tr>
-                <tr>
-                    <td>Mitochondrial GC content</td>
-                    <td>27.4%</td>
-                </tr>
-            </table>
-
-                <p align="center"><small>
-                    <a href="" ng-click="gotoAnchor('top')">Top</a>
-                </small></p>
-                <br>
-
-            <p>
-                <a name="info" id="info"></a>
-            </p>
-            <table class="table table-hover">
-                <col width="80%">
-                <col width="20%">
-                <tr>
-                    <th colspan="2" class="table-header success">
-                        <h4>Gene Information <small>(excluding non-protein-coding genes)</small> </h4>
-                    </th>
-                </tr>
-                <tr>
-                    <td>Mean gene size <sup><a href="" ng-click="scrollTo('8')">8</a></sup>
-                    </td>
-                    <td>1,908 bp
-                    </td>
-                </tr>
-                <tr>
-                    <td>Mean protein size <sup><a href="" ng-click="scrollTo('8')">8</a></sup>
-                    </td>
-                    <td>580 aa
-                    </td>
-                </tr>
-                <tr>
-                    <td>Gene spacing <sup><a href="" ng-click="scrollTo('1')">1</a></sup>
-                    </td>
-                    <td>2.5 kb
-                    </td>
-                </tr>
-                <tr>
-                    <td>GC content in exons <sup><a href="" ng-click="scrollTo('8')">8</a></sup>
-                    </td>
-                    <td>27%
-                    </td>
-                </tr>
-                <tr>
-                    <td>GC content in introns <sup><a href="" ng-click="scrollTo('1')">1</a></sup>
-                    </td>
-                    <td>12%
-                    </td>
-                </tr>
-                <tr>
-                    <td>GC content in intergenic regions <sup><a href="" ng-click="scrollTo('1')">1</a></sup>
-                    </td>
-                    <td>15%
-                    </td>
-                </tr>
-            </table>
-
-                <p align="center"><small>
-                    <a href="" ng-click="gotoAnchor('top')">Top</a>
-                </small></p>
-                <br>
-
-            <p>
-                <a name="structure" id="structure"></a>
-            </p>
-            <table class="table table-hover">
-                <col width="80%">
-                <col width="20%">
-                <tr>
-                    <th colspan="2" class="table-header success">
-                        <h4>Gene Structure <sup><a href="" ng-click="scrollTo('8')">8</a></sup></h4>
-                    </th>
-                </tr>
-                <tr>
-                    <td>Number of genes with introns</td>
-                    <td>7,996</td>
-                </tr>
-                <tr>
-                    <td>Mean intron size </td>
-                    <td>129 bp</td>
-                </tr>
-                <tr>
-                    <td>Mean number of introns per spliced gene </td>
-                    <td>1.85</td>
-                </tr>
-            </table>
-
-                <p align="center"><small>
-                    <a href="" ng-click="gotoAnchor('top')">Top</a>
-                </small></p>
-                <br>
-
-            <p>
-                <a name="annotations" id="annotations"></a>
-            </p>
-            <table class="table table-hover">
-                <col width="80%">
-                <col width="20%">
-                <tr>
-                    <th colspan="2" class="table-header success">
-                        <h4>Gene Annotation Status at dictyBase <sup><a href="" ng-click="scrollTo('9')">9</a></sup> <sup>&nbsp;</sup> </h4>
-                    </th>
-                </tr>
-                <tr>
-                    <td>Number of protein-coding genes</td>
-                    <td>12,257</td>
-                </tr>
-                <tr>
-                    <td>Number of curated gene models (including pseudogenes)</td>
-                    <td>11,987</td>
-                </tr>
-                <tr>
-                    <td>Genes with GO annotations</td>
-                    <td>8,167</td>
-                </tr>
-                <tr>
-                    <td>Genes with manual GO annotations </td>
-                    <td>6,152</td>
-                </tr>
-                <tr>
-                    <td>Genes with associated strains </td>
-                    <td>3,127</td>
-                </tr>
-                <tr>
-                    <td>Genes with strains that have phenotypes </td>
-                    <td>1,034</td>
-                </tr>
-                <!--<tr>
-                    <td>Number of metabolic pathways</td>
-                    <td>213</td>
-                </tr>
-                <tr>
-                    <td>Number of genes in metabolic pathways</td>
-                    <td>606</td>-->
-                </tr>
-            </table>
-            
-                <p align="center"><small>
-                    <a href="" ng-click="gotoAnchor('top')">Top</a>
-                </small></p>
-                <br>
-
-             <p>
-                <a name="nc" id="nc"></a>
-            </p>
-            <br/>
-            <table class="table table-hover">
-                <col width="80%">
-                <col width="20%">
-                <tr>
-                    <th colspan="2" class="table-header success">
-                        <h4>Non-Protein-Coding Genes <sup>&nbsp;</sup></h4>
-                    </th>
-                </tr>
-                <tr>
-                    <td>Number of each rRNA gene (extrachromosomal) <sup><font size="1"><b><a href="" ng-click="scrollTo('3')">3</a></b></font></sup>
-                    </td>
-                    <td>200
-                    </td>
-                </tr>
-                <tr>
-                    <td>tRNA genes
-                    </td>
-                    <td>418
-                    </td>
-                </tr>
-                <tr>
-                    <td>Small nuclear RNA (snRNA) genes <sup><font size="1"><b><a href="" ng-click="scrollTo('4')">4</a></b></font></sup>
-                    </td>
-                    <td>18
-                    </td>
-                </tr>
-                <tr>
-                    <td>Small nucleolar RNA (snoRNA) genes <sup><font size="1"><b><a href="" ng-click="scrollTo('5')">5</a></b></font></sup>
-                    </td>
-                    <td>19
-                    </td>
-                </tr>
-                <tr>
-                    <td>Other non-coding RNA (ncRNA) genes <sup><font size="1"><b><a href="" ng-click="scrollTo('5')">5</a></b></font></sup>
-                    </td>
-                    <td>35
-                    </td>
-                </tr>
-             </table>
-
-                <p align="center"><small>
-                    <a href="" ng-click="gotoAnchor('top')">Top</a>
-                </small></p>
-                <br>
-
-            <p>
-                <a name="pseudo" id="pseudo"></a>
-            </p>
-             <table>
-                     <table class="table table-hover">
-    		              <col width="80%">
-    		              <col width="20%">
-    		              <tr>
-    		                  <th colspan="2" class="table-header success">
-    		                      <h4>Pseudogenes</h4>
-    		                  </th>
-    		              </tr>
-
-              <tr>
-    		        <td>Number of annotated pseudogenes <small><i>(Genes are annotated as pseudogenes when they are truncated, have
-    		        frameshifts or stop codons, and are similar to another (parent) gene in the genome).<sup><a href="" ng-click="scrollTo('8')">8</a></sup> </i></small></td>
-    		        <td>650</td>
-    		        </tr>
-
-              <tr>
-                    <td>Predicted pseudogenes <i>(William Loomis, personal communication, 2005, estimated from number of genes with sequence similarity and ESTs).</i></a><br>
-
-                    </td>
-                    <td>1,910
-                    </td>
-                </tr>
-
-            </table>
-
-                <p align="center"><small>
-                    <a href="" ng-click="gotoAnchor('top')">Top</a>
-                </small></p>
-                <br>
-
-            <p>
-                <a name="transpo" id="transpo"></a>
-            </p>
-        <small>
-            <table class="table table-hover">
-                <col width="80%">
-                <col width="20%">
-                <tr>
-                    <th colspan="2" class="table-header success">
-                        <h4>Transposable Elements <sup><a href="" ng-click="scrollTo('7')">7</a></sup></h4>
-                    </th>
-                </tr>
-                <tr>
-                    <td>Total annotated transposable elements
-                    </td>
-                    <td>522
-                    </td>
-                </tr>
-                <tr>
-                    <td>Tdd-4
-                    </td>
-                    <td>26
-                    </td>
-                </tr>
-                <tr>
-                    <td>Tdd-5
-                    </td>
-                    <td>2</td>
-                </tr>
-                <tr>
-                    <td>DDT-A
-                    </td>
-                    <td>32</td>
-                </tr>
-                <tr>
-                    <td>DDT-B
-                    </td>
-                    <td>8</td>
-                </tr>
-                <!--<tr>
-                    <td>DDT-S
-                    </td>
-                    <td>130
-                    </td>
-                </tr>-->
-                <tr>
-                    <td>thug-S
-                    </td>
-                    <td>14
-                    </td>
-                </tr>
-                <!--<tr>
-                    <td>thug-T
-                    </td>
-                    <td>10
-                    </td>
-                </tr>-->
-                <tr>
-                    <td>DIRS-1
-                    </td>
-                    <td>67</td>
-                </tr><!--
-          <tr><td>DREa (Dictyostelium repetitive element) [X57034]</td>
-            <td></td></tr>
-          <tr><td>DREb (Dictyostelium repetitive element) [X68231]</td>
-            <td></td></tr>
-          -->
-                <tr>
-                    <td>Skipper
-                    </td>
-                    <td>30</td>
-                </tr><!--
-          <tr><td>Tdd-2</td>
-            <td>?</td></tr>
-          <tr><td>Tdd-3</td>
-            <td>?</td></tr>
-          -->
-                <tr>
-                    <td>DGLT-A
-                    </td>
-                    <td>12</td>
-                </tr>
-                <tr>
-                    <td>DGLT-B
-                    </td>
-                    <td>4</td>
-                </tr>
-                <tr>
-                    <td>TRE3-A
-                    </td>
-                    <td>82</td>
-                </tr>
-                <tr>
-                    <td>TRE3-B
-                    </td>
-                    <td>73</td>
-                </tr>
-                <tr>
-                    <td>TRE3-C
-                    </td>
-                    <td>39</td>
-                </tr>
-                <tr>
-                    <td>TRE3-D
-                    </td>
-                    <td>10</td>
-                </tr>
-                <tr>
-                    <td>TRE5-A
-                    </td>
-                    <td>90</td>
-                </tr>
-                <tr>
-                    <td>TRE5-B
-                    </td>
-                    <td>30</td>
-                </tr>
-                <tr>
-                    <td>TRE5-C
-                    </td>
-                    <td>3</td>
-                </tr>
-            </table>
-
-            <p>
-                <a name="expression" id="expression"></a>
-            </p>
-            <table class="table table-hover">
-                <col width="80%">
-                <col width="20%">
-                <tr>
-                    <th colspan="2" class="table-header warning">
-                        <h4>Expression Data <sup><a href="" ng-click="scrollTo('6')">6</a></sup></h4>
-                    </th>
-                </tr>
-                <tr>
-                    <td>Number of ESTs
-                    </td>
-                    <td>155,036
-                    </td>
-                </tr>
-                <tr>
-                    <td>Genes with ESTs
-                    </td>
-                    <td>6,801
-                    </td>
-                </tr>
-            </table>
-
-        </small>  
-
-                <p align="center"><small>
-                    <a href="" ng-click="gotoAnchor('top')">Top</a>
-                </small></p>
-                <br>
-                
-            <p>
-                <a name="pub" id="pub"></a>
-            </p>
-           <table class="table table-hover">
-                <col width="80%">
-                <col width="20%">
-                <tr>
-                    <th colspan="2" class="table-header danger">
-                        <h4>Publications <sup><a href="" ng-click="scrollTo('9')">9</a></sup><sup>&nbsp;</sup></h4>
-                    </th>
-                </tr>
-                <tr>
-                    <td>PubMed references for <i>Dictyostelium discoideum</i> 
-                    </td>
-                    <td>7,702
-                    </td>
-                </tr>
-                <tr>
-                    <td>Curated references
-                    </td>
-                    <td>2,271
-                    </td>
-                </tr>
-            </table>
-
-                <!--
-            <p>
-                <br>
-    <table class="table table-hover">
-          <col width="75%"/><col width="25%"/>
-          <tr><th colspan="2" class="table-header info">Intergenic Distance <sup>&nbsp;</sup></td></tr>
-          <tr><td>Intergenic regions</td>
-            <td>not yet available</td></tr>
-          <tr><td>Mean distance between divergent genes</td>
-            <td>not yet available</td></tr>
-          <tr><td>Mean distance between tandem genes</td>
-            <td>not yet available</td></tr>
-          <tr><td>Mean distance between convergent genes </td>
-            <td>not yet available</td></tr>
-    </table>
-    <br/>
-            </p>
-    -->
-
-        <br>
-        <h4>References</h4>
-        <div class="justRight">
-            1)<a name="1"></a> <a href="http://dictybase.org/publication/1131">Eichinger <i>et al.</i> (2005)</a><br>
-            2)<a name="2"></a> <a href="http://dictybase.org/publication/3082">Ogawa <i>et al.</i> (2000)</a><br>
-            3)<a name="3"></a> <a href="http://dictybase.org/publication/1665">Sucgang <i>et al.</i> (2003)</a><br>
-            4)<a name="4"></a> <a href="http://dictybase.org/publication/871">Hinas <i>et al.</i> (2006)</a><br>
-            5)<a name="5"></a> <a href="http://dictybase.org/publication/1373">Aspegren <i>et al.</i> (2004)</a><br>
-            6)<a name="6"></a> <a href="http://dictybase.org/publication/1326">Urushihara <i>et al.</i> (2004)</a><br>
-            7)<a name="7"></a> dictyBase annotations in collaboration with T. Winckler, 2010; see also <a href="http://dictybase.org/publication/2192">Winckler <i>et al.</i> (2005)</a>, <a href="http://dictybase.org/publication/11337">Siol <i>et al.</i> (2011)</a><br>
-            8)<a name="8"> dictyBase, first pass gene curation, including pseudogenes, completed in 2011. </a><br>
-            9)<a name="9"> Gene annotations and (curated) PubMed references as present in dictyBase at time of update.</a><br>
-            <br>
-            <br>
-            <i>Last Updated March 2, 2015</i><br>
-            <br>
+    <div class="jumbotron research">
+        <div class="row">
+            <div class="techSubHeader"><h4><a class="techSubHeaderLink" href="#/explore">Explore</a> </h4></div>
+            <img src="images/logoStats.png">
+            <h1>Genome Statistics</h1>
+            <h5><em>Dictyostelium discoideum</em></h5>
         </div>
+    </div>
+
+    <div class="container" ng-controller="AnchorController">
+        
+        <div class="row" align="center">
+                <a ng-click="gotoAnchor('genome')" href="" class="label label-info">Genome</a> 
+                <a ng-click="gotoAnchor('mito')" href="" class="label label-info">Mitochondrium</a> 
+                <a ng-click="gotoAnchor('info')" href="" class="label label-success">Gene Info</a> 
+                <a ng-click="gotoAnchor('structure')" href="" class="label label-success">Gene Structure</a> 
+                <a ng-click="gotoAnchor('annotations')" href="" class="label label-success">Annotation</a> 
+                <a ng-click="gotoAnchor('nc')" href="" class="label label-success">NC-genes</a> 
+                <a ng-click="gotoAnchor('pseudo')" href="" class="label label-success">Pseudogenes</a> 
+                <a ng-click="gotoAnchor('transpo')" href="" class="label label-success">Transposons</a>
+                <a ng-click="gotoAnchor('expression')" href="" class="label label-warning">Expression</a> 
+                <a ng-click="gotoAnchor('pub')" href="" class="label label-danger">Publications</a> 
+        </div>
+        
+        <br>
+        
+        <div class="row">
+            <div class="col-md-2 col-sm-1 col-xs-1"></div>
+            <div class="col-md-8 col-sm-10 col-xs-10">
 
                 <br>
-                <p align="center">
-                    <a ng-click="gotoAnchor('top')" href=""><small>Top</small></a>
+                <p>
+                    <a name="genome" id="genome"></a>
                 </p>
+                <table class="table table-hover">
+                    <col width="80%">
+                    <col width="20%">
+                    <tr>
+                        <th colspan="2" class="table-header info">
+                            <h4>Genome Information <small>(excluding mitochondrial genome)</small><sup><a href="" ng-click="scrollTo('1')">1</a></sup></h4>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Genome size</td>
+                        <td>34 Mb</td>
+                    </tr>
+                    <tr>
+                        <td>Chromosomes</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Chromosome size range</td>
+                        <td>3.5-8.6 Mb</td>
+                    </tr>
+                    <tr>
+                        <td>Overall GC content</td>
+                        <td>22.4%</td>
+                    </tr>
+                </table>
 
+                    <p align="center"><small>
+                        <a href="" ng-click="gotoAnchor('top')">Top</a>
+                    </small></p>
+                    <br>
+
+                <p>
+                    <a name="mito" id="mito"></a>
+                </p>
+                
+                <table class="table table-hover">
+                    <col width="80%">
+                    <col width="20%">
+                    <tr>
+                        <th colspan="2" class="table-header info">
+                            <h4>Mitochondrial Genome <sup><a href="" ng-click="scrollTo('2')">2</a></sup></h4>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Mitochondrial genome size</td>
+                        <td>55.6 kb</td>
+                    </tr>
+                    <tr>
+                        <td>Number of mitochondrial genes</td>
+                        <td>41</td>
+                    </tr>
+                    <tr>
+                        <td>Mitochondrial GC content</td>
+                        <td>27.4%</td>
+                    </tr>
+                </table>
+
+                    <p align="center"><small>
+                        <a href="" ng-click="gotoAnchor('top')">Top</a>
+                    </small></p>
+                    <br>
+
+                <p>
+                    <a name="info" id="info"></a>
+                </p>
+                <table class="table table-hover">
+                    <col width="80%">
+                    <col width="20%">
+                    <tr>
+                        <th colspan="2" class="table-header success">
+                            <h4>Gene Information <small>(excluding non-protein-coding genes)</small> </h4>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Mean gene size <sup><a href="" ng-click="scrollTo('8')">8</a></sup>
+                        </td>
+                        <td>1,908 bp
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mean protein size <sup><a href="" ng-click="scrollTo('8')">8</a></sup>
+                        </td>
+                        <td>580 aa
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Gene spacing <sup><a href="" ng-click="scrollTo('1')">1</a></sup>
+                        </td>
+                        <td>2.5 kb
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>GC content in exons <sup><a href="" ng-click="scrollTo('8')">8</a></sup>
+                        </td>
+                        <td>27%
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>GC content in introns <sup><a href="" ng-click="scrollTo('1')">1</a></sup>
+                        </td>
+                        <td>12%
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>GC content in intergenic regions <sup><a href="" ng-click="scrollTo('1')">1</a></sup>
+                        </td>
+                        <td>15%
+                        </td>
+                    </tr>
+                </table>
+
+                    <p align="center"><small>
+                        <a href="" ng-click="gotoAnchor('top')">Top</a>
+                    </small></p>
+                    <br>
+
+                <p>
+                    <a name="structure" id="structure"></a>
+                </p>
+                <table class="table table-hover">
+                    <col width="80%">
+                    <col width="20%">
+                    <tr>
+                        <th colspan="2" class="table-header success">
+                            <h4>Gene Structure <sup><a href="" ng-click="scrollTo('8')">8</a></sup></h4>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Number of genes with introns</td>
+                        <td>7,996</td>
+                    </tr>
+                    <tr>
+                        <td>Mean intron size </td>
+                        <td>129 bp</td>
+                    </tr>
+                    <tr>
+                        <td>Mean number of introns per spliced gene </td>
+                        <td>1.85</td>
+                    </tr>
+                </table>
+
+                    <p align="center"><small>
+                        <a href="" ng-click="gotoAnchor('top')">Top</a>
+                    </small></p>
+                    <br>
+
+                <p>
+                    <a name="annotations" id="annotations"></a>
+                </p>
+                <table class="table table-hover">
+                    <col width="80%">
+                    <col width="20%">
+                    <tr>
+                        <th colspan="2" class="table-header success">
+                            <h4>Gene Annotation Status at dictyBase <sup><a href="" ng-click="scrollTo('9')">9</a></sup> <sup>&nbsp;</sup> </h4>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Number of protein-coding genes</td>
+                        <td>12,257</td>
+                    </tr>
+                    <tr>
+                        <td>Number of curated gene models (including pseudogenes)</td>
+                        <td>11,987</td>
+                    </tr>
+                    <tr>
+                        <td>Genes with GO annotations</td>
+                        <td>8,167</td>
+                    </tr>
+                    <tr>
+                        <td>Genes with manual GO annotations </td>
+                        <td>6,152</td>
+                    </tr>
+                    <tr>
+                        <td>Genes with associated strains </td>
+                        <td>3,127</td>
+                    </tr>
+                    <tr>
+                        <td>Genes with strains that have phenotypes </td>
+                        <td>1,034</td>
+                    </tr>
+                    <!--<tr>
+                        <td>Number of metabolic pathways</td>
+                        <td>213</td>
+                    </tr>
+                    <tr>
+                        <td>Number of genes in metabolic pathways</td>
+                        <td>606</td>-->
+                    </tr>
+                </table>
+                
+                    <p align="center"><small>
+                        <a href="" ng-click="gotoAnchor('top')">Top</a>
+                    </small></p>
+                    <br>
+
+                 <p>
+                    <a name="nc" id="nc"></a>
+                </p>
+                <br/>
+                <table class="table table-hover">
+                    <col width="80%">
+                    <col width="20%">
+                    <tr>
+                        <th colspan="2" class="table-header success">
+                            <h4>Non-Protein-Coding Genes <sup>&nbsp;</sup></h4>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Number of each rRNA gene (extrachromosomal) <sup><font size="1"><b><a href="" ng-click="scrollTo('3')">3</a></b></font></sup>
+                        </td>
+                        <td>200
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>tRNA genes
+                        </td>
+                        <td>418
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Small nuclear RNA (snRNA) genes <sup><font size="1"><b><a href="" ng-click="scrollTo('4')">4</a></b></font></sup>
+                        </td>
+                        <td>18
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Small nucleolar RNA (snoRNA) genes <sup><font size="1"><b><a href="" ng-click="scrollTo('5')">5</a></b></font></sup>
+                        </td>
+                        <td>19
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Other non-coding RNA (ncRNA) genes <sup><font size="1"><b><a href="" ng-click="scrollTo('5')">5</a></b></font></sup>
+                        </td>
+                        <td>35
+                        </td>
+                    </tr>
+                 </table>
+
+                    <p align="center"><small>
+                        <a href="" ng-click="gotoAnchor('top')">Top</a>
+                    </small></p>
+                    <br>
+
+                <p>
+                    <a name="pseudo" id="pseudo"></a>
+                </p>
+                 <table>
+                         <table class="table table-hover">
+                              <col width="80%">
+                              <col width="20%">
+                              <tr>
+                                  <th colspan="2" class="table-header success">
+                                      <h4>Pseudogenes</h4>
+                                  </th>
+                              </tr>
+
+                  <tr>
+                        <td>Number of annotated pseudogenes <small><i>(Genes are annotated as pseudogenes when they are truncated, have
+                        frameshifts or stop codons, and are similar to another (parent) gene in the genome).<sup><a href="" ng-click="scrollTo('8')">8</a></sup> </i></small></td>
+                        <td>650</td>
+                        </tr>
+
+                  <tr>
+                        <td>Predicted pseudogenes <i>(William Loomis, personal communication, 2005, estimated from number of genes with sequence similarity and ESTs).</i></a><br>
+
+                        </td>
+                        <td>1,910
+                        </td>
+                    </tr>
+
+                </table>
+
+                    <p align="center"><small>
+                        <a href="" ng-click="gotoAnchor('top')">Top</a>
+                    </small></p>
+                    <br>
+
+                <p>
+                    <a name="transpo" id="transpo"></a>
+                </p>
+            <small>
+                <table class="table table-hover">
+                    <col width="80%">
+                    <col width="20%">
+                    <tr>
+                        <th colspan="2" class="table-header success">
+                            <h4>Transposable Elements <sup><a href="" ng-click="scrollTo('7')">7</a></sup></h4>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Total annotated transposable elements
+                        </td>
+                        <td>522
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tdd-4
+                        </td>
+                        <td>26
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Tdd-5
+                        </td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>DDT-A
+                        </td>
+                        <td>32</td>
+                    </tr>
+                    <tr>
+                        <td>DDT-B
+                        </td>
+                        <td>8</td>
+                    </tr>
+                    <!--<tr>
+                        <td>DDT-S
+                        </td>
+                        <td>130
+                        </td>
+                    </tr>-->
+                    <tr>
+                        <td>thug-S
+                        </td>
+                        <td>14
+                        </td>
+                    </tr>
+                    <!--<tr>
+                        <td>thug-T
+                        </td>
+                        <td>10
+                        </td>
+                    </tr>-->
+                    <tr>
+                        <td>DIRS-1
+                        </td>
+                        <td>67</td>
+                    </tr><!--
+              <tr><td>DREa (Dictyostelium repetitive element) [X57034]</td>
+                <td></td></tr>
+              <tr><td>DREb (Dictyostelium repetitive element) [X68231]</td>
+                <td></td></tr>
+              -->
+                    <tr>
+                        <td>Skipper
+                        </td>
+                        <td>30</td>
+                    </tr><!--
+              <tr><td>Tdd-2</td>
+                <td>?</td></tr>
+              <tr><td>Tdd-3</td>
+                <td>?</td></tr>
+              -->
+                    <tr>
+                        <td>DGLT-A
+                        </td>
+                        <td>12</td>
+                    </tr>
+                    <tr>
+                        <td>DGLT-B
+                        </td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>TRE3-A
+                        </td>
+                        <td>82</td>
+                    </tr>
+                    <tr>
+                        <td>TRE3-B
+                        </td>
+                        <td>73</td>
+                    </tr>
+                    <tr>
+                        <td>TRE3-C
+                        </td>
+                        <td>39</td>
+                    </tr>
+                    <tr>
+                        <td>TRE3-D
+                        </td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>TRE5-A
+                        </td>
+                        <td>90</td>
+                    </tr>
+                    <tr>
+                        <td>TRE5-B
+                        </td>
+                        <td>30</td>
+                    </tr>
+                    <tr>
+                        <td>TRE5-C
+                        </td>
+                        <td>3</td>
+                    </tr>
+                </table>
+
+                <p>
+                    <a name="expression" id="expression"></a>
+                </p>
+                <table class="table table-hover">
+                    <col width="80%">
+                    <col width="20%">
+                    <tr>
+                        <th colspan="2" class="table-header warning">
+                            <h4>Expression Data <sup><a href="" ng-click="scrollTo('6')">6</a></sup></h4>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>Number of ESTs
+                        </td>
+                        <td>155,036
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Genes with ESTs
+                        </td>
+                        <td>6,801
+                        </td>
+                    </tr>
+                </table>
+
+            </small>  
+
+                    <p align="center"><small>
+                        <a href="" ng-click="gotoAnchor('top')">Top</a>
+                    </small></p>
+                    <br>
+                    
+                <p>
+                    <a name="pub" id="pub"></a>
+                </p>
+               <table class="table table-hover">
+                    <col width="80%">
+                    <col width="20%">
+                    <tr>
+                        <th colspan="2" class="table-header danger">
+                            <h4>Publications <sup><a href="" ng-click="scrollTo('9')">9</a></sup><sup>&nbsp;</sup></h4>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>PubMed references for <i>Dictyostelium discoideum</i> 
+                        </td>
+                        <td>7,702
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Curated references
+                        </td>
+                        <td>2,271
+                        </td>
+                    </tr>
+                </table>
+
+                    <!--
+                <p>
+                    <br>
+        <table class="table table-hover">
+              <col width="75%"/><col width="25%"/>
+              <tr><th colspan="2" class="table-header info">Intergenic Distance <sup>&nbsp;</sup></td></tr>
+              <tr><td>Intergenic regions</td>
+                <td>not yet available</td></tr>
+              <tr><td>Mean distance between divergent genes</td>
+                <td>not yet available</td></tr>
+              <tr><td>Mean distance between tandem genes</td>
+                <td>not yet available</td></tr>
+              <tr><td>Mean distance between convergent genes </td>
+                <td>not yet available</td></tr>
+        </table>
+        <br/>
+                </p>
+        -->
+
+            <br>
+            <h4>References</h4>
+            <div class="justRight">
+                1)<a name="1"></a> <a href="http://dictybase.org/publication/1131">Eichinger <i>et al.</i> (2005)</a><br>
+                2)<a name="2"></a> <a href="http://dictybase.org/publication/3082">Ogawa <i>et al.</i> (2000)</a><br>
+                3)<a name="3"></a> <a href="http://dictybase.org/publication/1665">Sucgang <i>et al.</i> (2003)</a><br>
+                4)<a name="4"></a> <a href="http://dictybase.org/publication/871">Hinas <i>et al.</i> (2006)</a><br>
+                5)<a name="5"></a> <a href="http://dictybase.org/publication/1373">Aspegren <i>et al.</i> (2004)</a><br>
+                6)<a name="6"></a> <a href="http://dictybase.org/publication/1326">Urushihara <i>et al.</i> (2004)</a><br>
+                7)<a name="7"></a> dictyBase annotations in collaboration with T. Winckler, 2010; see also <a href="http://dictybase.org/publication/2192">Winckler <i>et al.</i> (2005)</a>, <a href="http://dictybase.org/publication/11337">Siol <i>et al.</i> (2011)</a><br>
+                8)<a name="8"> dictyBase, first pass gene curation, including pseudogenes, completed in 2011. </a><br>
+                9)<a name="9"> Gene annotations and (curated) PubMed references as present in dictyBase at time of update.</a><br>
                 <br>
+                <br>
+                <i>Last Updated March 2, 2015</i><br>
+                <br>
+            </div>
 
-        </div> <!-- End of col-md-2 col-sm-8, i.e., the central column -->
-        <div class="col-md-2 col-sm-1 col-xs-1"></div>
-    </div> <!-- row  -->
-</div> <!-- container -->
+                    <br>
+                    <p align="center">
+                        <a ng-click="gotoAnchor('top')" href=""><small>Top</small></a>
+                    </p>
+
+                    <br>
+
+            </div> <!-- End of col-md-2 col-sm-8, i.e., the central column -->
+            <div class="col-md-2 col-sm-1 col-xs-1"></div>
+        </div> <!-- row  -->
+    </div> <!-- container -->
+
+</div>
