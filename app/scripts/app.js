@@ -134,7 +134,7 @@ angular
       .when('/papers', {
         templateUrl: 'views/front-papers-all.html'
       })
-      .when('/meetings', {
+      .when('/community/meetings', {
         templateUrl: 'views/front-meetings-all.html'
       })
       .when('/tools', {

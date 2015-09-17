@@ -8,6 +8,7 @@
     {
         "name": "Dicty 2016",
         "location": "Tucson, Arizona (USA)",
+        "url": "#/community/conference",
         "date": "July 31 - August 4, 2016",
         "dateF": "2016.10.22"
     },
@@ -27,24 +28,35 @@
         "name": "The 10th International Conference on Genomics",
         "location": "China",
         "date": "Oct 22-25, 2015",
+        "url": "https://www.icg-10.org/",
         "dateF": "2015.10.22"
     },
     {
         "name": "The 2nd Annual Translational Microbiome Conference",
         "location": "USA",
+        "url": "http://www.microbiomeconference.com/",
         "date": "Apr 20-21, 2016",
         "dateF": "2016.04.22"
     },
     {
         "name": "EMBL-EBI-Wellcome Trust Workshop on Proteomics Bioinformatics",
         "location": "UK",
-        "date": "Dec 06-11, 2015",
-        "dateF": "2015.12.12"
+        "url": "https://www.ebi.ac.uk/training/events/2016/proteomics-bioinformatics-0",
+        "date": "Dec 04-09, 2015",
+        "dateF": "2015.12.10"
     },
     {
         "name": "G Protein-Coupled Receptors: Structure, Signaling and Drug Discovery",
         "location": "USA",
-        "date": "Feb 21-25, 2015",
+        "url": "http://www.keystonesymposia.org/16B3",
+        "date": "Feb 21-25, 2016",
         "dateF": "2016.02.22"
+    },
+    {
+        "name": "2015 ASCB Annual Meeting",
+        "location": "San Diego, CA-USA",
+        "url": "http://www.ascb.org/2015meeting/",
+        "date": "Dec 12-16, 2015",
+        "dateF": "2015.12.16"
     }
 ]

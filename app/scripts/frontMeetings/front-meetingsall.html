@@ -1,56 +1,71 @@
 <!-- front-meetingsall directive template -->
 <link rel="stylesheet" href="scripts/frontMeetings/frontMeetings.css">
 
-<!-- Meetings Header -->
-<div class="jumbotron">
-	<h1><span class="glyphicon glyphicon-plane"></span> {{meetingsHeaderAll}}</h1>
+<div class="viewHouse">
+
+	<div class="container">
+	        <div class="jumbotron research">
+	            <div class="row" align="center">
+	                <div class="techSubHeader"><h4><a class="techSubHeaderLink" href="#/community">Community</a> </h4></div>
+	                <h1>
+	                	<span class="glyphicon glyphicon-plane" aria-hidden="true"></span><br>
+	                	{{meetingsHeaderAll}}
+	                </h1>
+	            </div>
+	        </div>
+	        <br>
+		<div class="meetingsMain full">
+
+			<!-- Search / Filter box -->
+			<div class="row">
+				<div class="col-sm-3 col-xs-1"></div>
+				<div class="col-sm-6 col-xs-10 filterBox">
+					<input ng-model="query" id="search" class="form-control" type="text" placeholder="Filter by meeting, or date, or location..." typeahead="meetings.name for meetings in meetingsAll | filter:$viewValue"> <span><a id="clear-filter" ng-click="clearFilter()" href="" type="button"><small>Clear</small></a></span>
+				</div>
+				<div class="col-sm-3 col-xs-1"></div>
+			</div>
+
+
+			<!-- Pagination controls Top -->
+			<div class="row">
+			    <div ng-controller="BarControllersMeetings">
+			      <div class="text-center">
+			      	<dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber)" max-size="maxSize" template-url="scripts/frontPapers/dirPagination.tpl.html"></dir-pagination-controls>
+			      </div>
+				</div>
+			</div>
+
+			<!-- Individual boxes of papers -->
+			<div class="row meetingBox full" dir-paginate="meeting in meetingsAll | filter:upComingMeetings | orderBy:'dateF':reverse| filter:query | itemsPerPage: pageSize">
+
+				<div class="col-lg-3 col-md-2 col-sm-2 col-xs-1"></div>
+				<div class="col-lg-6 col-md-8 col-sm-8 col-xs-10">
+					<hr>
+					<div class="meetingsName all"> <a href="{{meeting.url}}" target="new">{{meeting.name}}</a></div>
+					<div class="meetingsLocation all"> {{meeting.location}} </div>
+					<div class="meetingsDate all"> [{{meeting.date}}]</div> 
+				</div>
+				<div class="col-lg-3 col-md-2 col-sm-2 col-xs-1"></div>
+			</div> <!-- row -->
+			<br>
+			<!-- Pagination controls Down -->
+			<div class="row">
+			    <div ng-controller="BarControllersMeetings">
+			      <div class="text-center">
+			      	<dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber); moveUp()" max-size="maxSize" template-url="scripts/frontPapers/dirPagination.tpl.html"></dir-pagination-controls>
+			      </div>
+				</div>
+			</div> <!-- row -->
+
+	        <br>
+		    <div align="center">
+		        <a href="#/front" class="label label-primary">Back home</a> 
+		    </div>
+	    	<br><br>
+
+
+
+		</div> <!-- meetings main -->
+	</div> <!-- container -->
+
 </div>
-
-<div class="container">
-	<div class="meetingsMain full">
-
-		<!-- Search / Filter box -->
-		<div class="row">
-			<div class="col-sm-3 col-xs-1"></div>
-			<div class="col-sm-6 col-xs-10 filterBox">
-				<input ng-model="query" id="search" class="form-control" type="text" placeholder="Filter by meeting, or date, or location..." typeahead="meetings.name for meetings in meetingsAll | filter:$viewValue"> <span><a id="clear-filter" ng-click="clearFilter()" href="" type="button"><small>Clear</small></a></span>
-			</div>
-			<div class="col-sm-3 col-xs-1"></div>
-		</div>
-
-
-		<!-- Pagination controls Top -->
-		<div class="row">
-		    <div ng-controller="BarControllersMeetings">
-		      <div class="text-center">
-		      	<dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber)" max-size="maxSize" template-url="scripts/frontPapers/dirPagination.tpl.html"></dir-pagination-controls>
-		      </div>
-			</div>
-		</div>
-
-		<!-- Individual boxes of papers -->
-		<div class="row meetingBox full" dir-paginate="meeting in meetingsAll | filter:upComingMeetings | orderBy:'dateF':reverse| filter:query | itemsPerPage: pageSize">
-
-			<div class="col-lg-3 col-md-2 col-sm-2 col-xs-1"></div>
-			<div class="col-lg-6 col-md-8 col-sm-8 col-xs-10">
-				<hr>
-				<div class="meetingsName all"> {{meeting.name}} </div>
-				<div class="meetingsLocation all"> {{meeting.location}} </div>
-				<div class="meetingsDate all"> [{{meeting.date}}]</div> 
-			</div>
-			<div class="col-lg-3 col-md-2 col-sm-2 col-xs-1"></div>
-		</div> <!-- row -->
-		<br>
-		<!-- Pagination controls Down -->
-		<div class="row">
-		    <div ng-controller="BarControllersMeetings">
-		      <div class="text-center">
-		      	<dir-pagination-controls boundary-links="true" on-page-change="pageChangeHandler(newPageNumber); moveUp()" max-size="maxSize" template-url="scripts/frontPapers/dirPagination.tpl.html"></dir-pagination-controls>
-		      </div>
-			</div>
-		</div> <!-- row -->
-
-		<br>
-
-	</div> <!-- meetings main -->
-</div> <!-- container -->
