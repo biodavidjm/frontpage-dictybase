@@ -58,5 +58,12 @@
         "url": "http://www.ascb.org/2015meeting/",
         "date": "Dec 12-16, 2015",
         "dateF": "2015.12.16"
+    },
+    {
+        "name": "The First International Workshop on Physarum Transport Networks",
+        "location": "NYC, NY-USA",
+        "url": "http://physnet.bionetics.org/2015/",
+        "date": "Dec 3-5, 2015",
+        "dateF": "2015.12.06"
     }
 ]
