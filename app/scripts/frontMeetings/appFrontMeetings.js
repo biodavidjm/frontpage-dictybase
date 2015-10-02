@@ -8,7 +8,7 @@
  */
 
 angular
-  .module('frontMeetingsApp', [])
+  .module('frontMeetingsApp', ['angularUtils.directives.dirPagination'])
     .factory('dictyMeetingsFactory', function ($http, $log) {
       return {
         getJasonFile: function(done) {
