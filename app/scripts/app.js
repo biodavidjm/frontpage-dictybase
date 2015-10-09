@@ -51,15 +51,6 @@ angular
         }
     };
   }])
-  // Anchor Scroll option 2
-  // .controller('MainAnchorController', ['$scope', '$location', '$anchorScroll',
-  //   function($scope, $location, $anchorScroll) {
-  //     $scope.scrollTo = function(id) {
-  //        $location.hash(id);
-  //        $anchorScroll.yOffset = 50;
-  //     };
-  // }])
-
   .controller('MainController', function($scope, $route, $routeParams, $location, $anchorScroll) {
        $scope.$route = $route;
        $scope.$routeParams = $routeParams;
@@ -107,8 +98,9 @@ angular
     $analyticsProvider.firstPageview(true); /* Records pages that don't use $state or $route */
     $analyticsProvider.withAutoBase(true);  /* Records full path */
   })
-  // .config(function ($routeProvider, $locationProvider) {
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $locationProvider) {
+    $locationProvider.html5Mode(true);
+  // .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/mainFrontpage.html',
@@ -309,5 +301,5 @@ angular
       });
       // 
 
-      // $locationProvider.html5Mode(true);
+      
   });

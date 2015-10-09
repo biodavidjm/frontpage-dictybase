@@ -17,7 +17,7 @@ To test different browser, first they plugging must be installed. For example:
 
 And then the `test/karma.conf.js` file must be updated in the section `plugins`:
 
-```
+```javascript
     // Start these browsers, currently available:
     // - Chrome
     // - ChromeCanary
@@ -74,6 +74,37 @@ These are interesting readings about Angular:
 ### Principles
 
 The general consensus - shared at some conference talks by members of the AngularJS team - is fortunately quite clear: it's best to group your source-code into modules by functionality. 
+
+## REMOVING HASHTAG in Angular (pretty URLs)
+
+This is a very annoying feature of Angular. By default, it routes URLs with a hashtag.
+The following steps were followed:
+
+- Install `npm install connect-modrewrite --save-dev`
+- Modify the `Gruntfile.js`, adding the following line:
+```javascript
+      livereload: {
+        options: {
+          open: true,
+          middleware: function (connect) {
+            return [
+              modRewrite(['^[^\\.]*$ /index.html [L]']), //ADD THIS LINE
+              connect.static('.tmp'),
+              connect().use(
+                '/bower_components',
+                connect.static('./bower_components')
+              ),
+              connect.static(appConfig.app)
+            ];
+          }
+        }
+      },
+```
+- Setting up a `<base>` in the `index.html` (The <base> element specifies the base URL to use for all relative URLs contained within the document). Use this script to facilitate the integration of the site in any folder of the server:
+```html
+<script>document.write('<base href="' + document.location + '" />');</script>
+```
+- The hastag has to be removed from all the files in the href links
 
 ## Unit testing
 
