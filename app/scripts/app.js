@@ -99,8 +99,9 @@ angular
     $analyticsProvider.withAutoBase(true);  /* Records full path */
   })
   .config(function ($routeProvider, $locationProvider) {
+
     $locationProvider.html5Mode(true);
-  // .config(function ($routeProvider) {
+
     $routeProvider
       .when('/', {
         templateUrl: 'views/mainFrontpage.html',
@@ -298,8 +299,5 @@ angular
       })
       .otherwise ({
         templateUrl: 'views/notyet.html',
-      });
-      // 
-
-      
+      }); 
   });

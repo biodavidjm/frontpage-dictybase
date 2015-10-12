@@ -105,6 +105,7 @@ The following steps were followed:
 <script>document.write('<base href="' + document.location + '" />');</script>
 ```
 - The hastag has to be removed from all the files in the href links
+- Follow instructions on the [`ui-router` FAQ page](https://github.com/angular-ui/ui-router/wiki/Frequently-Asked-Questions#how-to-configure-your-server-to-work-with-html5mode) about how to configure the server side
 
 ## Unit testing
 
