@@ -9,7 +9,7 @@
     	
 			<div class="logoSpace col-sm-5 col-xs-12"> <!-- The logo -->
 				<div class="logoImageDiv">
-					<a ng-href="#/front">
+					<a ng-href="/front">
 						<img src="scripts/dictyHF/dictyLogo.png" alt="dictyBase home" width=220>
 					</a>
 				</div>
@@ -19,19 +19,19 @@
 
  				<div class="row linksSpace"> 
 
-					<a ng-href="#/citation">
+					<a ng-href="/citation">
 						<span class="submenuFront"> <span class="glyphicon glyphicon-plus"></span> Cite us</span>
 					</a>
-					<a ng-href="#/downloads">
+					<a ng-href="/downloads">
 						<span class="submenuFront"> <span class="glyphicon glyphicon-download"></span> Downloads</span>
 					</a>
-					<a ng-href="#/about"> 
+					<a ng-href="/about"> 
 						<span class="submenuFront"><span class="glyphicon glyphicon-info-sign"></span> About dictyBase</span>
 					</a>
-<!-- 					<a ng-href="#/contact">
+<!-- 					<a ng-href="/contact">
 						<span class="submenuFront"><span class="glyphicon glyphicon-envelope"></span> Contact</span>
 					</a> -->
-<!-- 					<a ng-href="#/login" disabled>
+<!-- 					<a ng-href="/login" disabled>
 						<span class="submenuFront"><span class="glyphicon glyphicon-user"></span> Login</span>
 					</a> -->
 				</div>
@@ -80,8 +80,8 @@
 				        <li class="dropdown" ng-repeat="menu in sections.menus">
 				          <a class="dropdown-toggle" data-toggle="dropdown" ng-repeat="(section, enlace) in menu.main">{{section}} <span class="caret"></span></a>
 				          <ul class="dropdown-menu" role="menu" ng-repeat="(section, enlace) in menu.main">
-				          	<li><a ng-href="#/{{enlace}}">{{section}} home</a></li>
-				            <li ng-repeat="(submenu, link) in menu.submain"><a ng-href="#/{{link}}">{{submenu}}</a></li>
+				          	<li><a ng-href="/{{enlace}}">{{section}} home</a></li>
+				            <li ng-repeat="(submenu, link) in menu.submain"><a ng-href="/{{link}}">{{submenu}}</a></li>
 				          </ul>
 				        </li>
 				      </ul>
