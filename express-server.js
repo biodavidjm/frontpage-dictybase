@@ -24,6 +24,12 @@ else {
 var staticStats = fs.statSync( currentDir + '/www');
 if (staticStats.isDirectory()) {
     app.use('/', express.static(currentDir + '/www'));
+
+	app.all('/*', function(req, res, next) {
+	    // Just send the index.html for other files to support HTML5Mode
+	    res.sendFile('www/index.html', { root: __dirname });
+	});
+
     var server = app.listen(9596);
     console.log('Express static server listening on http://%s:%d', server.address().address,9596);
 }
