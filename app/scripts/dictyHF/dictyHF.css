@@ -1,4 +1,7 @@
-/* DICTYHEADERFOOTER CSS STYLESHEET */
+/* DICTY HEADER FOOTER CSS STYLESHEET */
+
+
+/* HEADER */
 
 .dictyHeader {
     min-width: 320px;
@@ -6,21 +9,12 @@
     margin-bottom: 0px;
 }
 
-/*.dictyHeader > .container {     
-    max-width: 1100px;     
-}*/
-
 .dictyHeader > .menuContainer > .container {
     padding-left: 0px;
-    /*max-width: 1100px;*/
 }
 
-/*HEADER details*/
-
-/*equalheights: solves the issue of a row with two columns with 
-content that results in different height.
-In this case, the 
-*/
+/* equalheights: solves the issue of a row with two columns with 
+content that results in different height.*/
 .row.equalheights {
   overflow: hidden; 
 }
@@ -31,8 +25,6 @@ In this case, the
 
 .logoSpace {    
     text-align: left;
-/*    border-style: solid;
-    border-color: red;*/
 }
 
 .logoImageDiv {
@@ -42,16 +34,10 @@ In this case, the
 
 .cologoSpace {
     text-align: right;
-    /*height: 93;*/
     height: 100%;
-
-/*    border-style: solid;
-    border-color: red;*/
 }
 
 .row.linksSpace {
-/*    border-style: solid;
-    border-color: green;*/
     padding-top: 15px;
     font-size: 12px;
     color: #15317E;
@@ -80,29 +66,22 @@ In this case, the
 }
 
 
+/*Header: SEARCH BOXES*/
 
-/*SEARCH BOXES*/
-
-.row.searchBoxSpace {
-/*    border-style: solid;
-    border-color: green;*/    
+.row.searchBoxSpace {   
     padding-top: 10px;
 }
 
 
-/*HEADER NAVIGATION BAR CUSTOMIZED*/
+/*Header NAVIGATION BAR CUSTOMIZED*/
 
 .menuContainer {
     background-color: #15317E;
 }
 
-.menuContainer > .container {
-    /*Needed to keep the menu on top of the divs*/
-    /*position: relative;*/
-}
-
 /*CUSTOMIZE DEFAULT PARAMETERS*/
 /* navbar */
+
 .navbar-default {
     background-color: #15317E;
     border-style: none;
@@ -206,12 +185,13 @@ In this case, the
     }
 }
 
-/*FOOTER DETAILS*/ 
+
+/* FOOTER */ 
+
 .dictyFooter {
     margin-top: 0px;
     min-width:320px;
     padding-bottom: 20px;
-    
 
     /*BACKGROUND COLOR*/
     background: #15317E;
@@ -219,10 +199,6 @@ In this case, the
     background: -webkit-linear-gradient(#15317E, #0099FF); /*Safari 5.1 to 6.0 */
     background: -o-linear-gradient(#15317E, #0099FF);  /*Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(#15317E, #0099FF);  /*Firefox 3.6 to 15 */
-}
-
-.dictyFooter > .container {
-    /*max-width: 1100px;*/
 }
 
 .dictyFooter > .col-xs-12 > .footMenuSupport {
@@ -263,9 +239,6 @@ In this case, the
 
 
 /* Responsive: define what to do on every screen size */
-/*@media(min-width:1200px){
-
-}*/
 
 @media(max-width:767px){
 
@@ -328,14 +301,11 @@ In this case, the
   
   font-size: 12px;
   font-style: italic;
-  /*font-weight: bold;*/
-
-  /*background-color: #EFF8FB;*/
+  
   background-color: #F2F2F2;
   border-radius: 5px;
   padding: 5px 30px 5px 30px;
   margin-bottom: 5px;
-
 }
 
 
@@ -346,15 +316,12 @@ In this case, the
   font-style: italic;
   font-weight: bold;
 
-  /*background-color: #EFF8FB;*/
   background-color: #CEECF5;
   border-radius: 5px;
   padding: 5px 30px 5px 30px;
-
 }
 
 @media(max-width:767px){
-
   .definitionFront {
     text-align: center;
     padding-left: 0px;
@@ -368,7 +335,6 @@ In this case, the
     padding: 5px 0px 5px 0px;
     font-size: 8px;
   }
-
 }
 
 .vete {
