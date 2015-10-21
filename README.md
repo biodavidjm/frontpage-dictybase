@@ -65,6 +65,3 @@ To find out more, check the file `test/karma.conf.js`
 # Design principles
 
 Documentation about design [can be found here](/documentation/frontpage-design.md).
-
-
-
